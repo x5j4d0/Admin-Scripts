@@ -1,16 +1,23 @@
-﻿## SharePoint Server: PowerShell Script to find all user profiles without a specified User Profile Property ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to find all user profiles without a specified User Profile Property.
 
-<#
+.DESCRIPTION
+    PowerShell Script to find all user profiles without a specified User Profile Property.
 
-Usage: Edit the required variables and run the script
+.PARAMETER mySiteUrl
+    Provide the path to your My Site Web Application.
 
-Environments: SharePoint Server 2010 / 2013 Farms
+.PARAMETER findProperty
+    Provide the User Profile Service Property you want to query.
 
-Resources: 
+.EXAMPLE
+    PS C:\> .\SP2013GetMissingUserProfileProperties.ps1
+    Edit the variables section and run to powerShell Script to find all user profiles without a specified User Profile Property.
 
-http://stevemannspath.blogspot.ch/2013/05/sharepoint-20102013-using-powershell-to.html
-http://social.technet.microsoft.com/wiki/contents/articles/20692.sharepoint-2013-get-set-and-copy-user-profile-properties-using-powershell.aspx
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://stevemannspath.blogspot.ch/2013/05/sharepoint-20102013-using-powershell-to.html; http://social.technet.microsoft.com/wiki/contents/articles/20692.sharepoint-2013-get-set-and-copy-user-profile-properties-using-powershell.aspx
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue

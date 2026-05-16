@@ -1,25 +1,17 @@
-﻿## SharePoint Server: PowerShell Script to Export Site Content Types to an XML File ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Export Site Content Types to an XML File.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Export Site Content Types to an XML File.
 
-Overview: Script that exports Site Content Types and Fields to an XML file. These exports can be filtered on Content Types Group names 
+.EXAMPLE
+    PS C:\> .\SP2010ExportSiteContentTypes.ps1
+    PowerShell Script to Export Site Content Types to an XML File.
 
-Environments: SharePoint Server 2010 / 2013 Farms
-
-Usage: Edit the variables below to match your environment and run the script
-
-Resources: 
-
-http://get-spscripts.com/2011/02/export-and-importcreate-site-content.html
-http://get-spscripts.com/2011/01/export-and-importcreate-site-columns-in.html
-
-
-Note: If you want to export all Site Content Types then comment out the following like below
-
- ##if ($_.Group -eq "$contentTypesGroup") {
-        Add-Content $xmlFilePath $_.SchemaXml
-   ## }
-
+.NOTES
+    Requires:   Microsoft.SharePoint.Powershell
+    Resources:  http://get-spscripts.com/2011/02/export-and-importcreate-site-content.html; http://get-spscripts.com/2011/01/export-and-importcreate-site-columns-in.html
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.Powershell" -ErrorAction SilentlyContinue

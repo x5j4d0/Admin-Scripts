@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : Add-SPSite
-## Description : Adds a New SharePoint Site.
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : Add-SPSite [[-url] <String>] [[-WebUrl] <String>] [[-Title] <String>] [[-Description] <String>] [[-Template] <String>]
-## Output      : 
-## Usage       : Add-SPSite -url http://moss -weburl "IT" -Title "Information Technology" -Description "IT Department" -Template "STS#0"
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : Site, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Add Site.
+
+.DESCRIPTION
+    Add Site.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\Add-SPSite.ps1
+
+#>
 
 param (
 

@@ -1,7 +1,5 @@
-﻿## PowerShell: Script with a Function to Move Files Older than a number of days to a Destination Folder before Deleting them from the Source Folder ##
-
-<#
-.Synopsis
+﻿<#
+.SYNOPSIS
    Searches for files with last write time and xdays old. Then copies them to a Destination folder prior to deleting the files from the Source folder
 
 .Resource

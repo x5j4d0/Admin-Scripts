@@ -1,27 +1,18 @@
-## SharePoint Server: PowerShell Functions to allow People Picker to select user accounts across trusted Domains ##
+﻿<#
+.SYNOPSIS
+    PowerShell Functions to allow People Picker to select user accounts across trusted Domains.
 
-<#
+.DESCRIPTION
+    PowerShell Functions to allow People Picker to select user accounts across trusted
+    Domains.
 
-Environments: SharePoint Server 2010 / 2013 Farms
+.EXAMPLE
+    PS C:\> .\SP2013PeoplePickerSearchADForests.ps1
+    PowerShell Functions to allow People Picker to select user accounts across trusted Domains.
 
-Usage: Edit the 'SetAppPassword' and 'PeoplePickerSearchADForests' functions parameters at the end of the script, and run this on each machine in your SharePoint Farm
-
-Usage Syntax: SetAppPassword <password>; PeoplePickerSearchADForests <url> "forest:<source forest>;domain:<trusted domain>"
-
-Tip: If prompted to provide trust credentials; ensure that you put the domain prefix before your credentials
-
-Resource: http://blog.hompus.nl/2011/01/17/configure-people-picker-over-a-one-way-trust-using-powershell
-
-STSADM -o setapppassword -password <password>
-
-Trouble-shooting:
-
-In the windows application event log you encounter the following error message: 'An exception occurred in AD claim provider when calling SPClaimProvider.FillSearch(): Requested registry access is not allowed..'
-
-Your Web Application Pool Account needs read access to the following Registry Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Web Server Extensions\15.0\Secure
-
-** Your Web Applications app pool accounts should normally be members of the 'WSS_WPG' group; so add this with read access to the registry key
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://blog.hompus.nl/2011/01/17/configure-people-picker-over-a-one-way-trust-using-powershell
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue

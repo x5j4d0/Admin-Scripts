@@ -1,4 +1,23 @@
-﻿## PowerShell: Script to Stop / Start / Recycle an IIS Application Pool Remotely ##
+﻿<#
+.SYNOPSIS
+    Script to Stop / Start / Recycle an IIS Application Pool Remotely.
+
+.DESCRIPTION
+    Script to Stop / Start / Recycle an IIS Application Pool Remotely.
+
+.PARAMETER pc
+    #Provide your machine name here.
+
+.PARAMETER Name
+    #This is the __RELPATH property for the IIsApplicationPool.Name determined from the query above.
+
+.PARAMETER Path
+    #This is the __RELPATH.
+
+.EXAMPLE
+    PS C:\> .\IIS_Recycle_App_Pool_Remotely.ps1
+    Edit the variables section and run to script to Stop / Start / Recycle an IIS Application Pool Remotely.
+#>
 
 $pc = "MachineName" ##Provide your machine name here
  

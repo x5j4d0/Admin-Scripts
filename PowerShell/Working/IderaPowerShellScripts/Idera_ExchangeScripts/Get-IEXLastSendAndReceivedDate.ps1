@@ -1,17 +1,17 @@
-## =====================================================================
-## Title       : Get-IEXLastSendAndReceivedDate
-## Description : Retrieve the newest/oldest email item dates for each mailbox
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : Get-IEXLastSendAndReceivedDate [[-Server] <String>]
-##   
-## Output      : System.Management.Automation.PSCustomObject 
-## Usage       : Get-IEXLastSendAndReceivedDate -Server ExchangeServerName
-##                                                   
-## Notes       :
-## Tag         : Exchange 2007, mailbox, statistics, get
-## Change log  :
-## ===================================================================== 
+﻿<#
+.SYNOPSIS
+    Retrieve Last Send And Received Date.
+
+.DESCRIPTION
+    Retrieve Last Send And Received Date.
+
+.PARAMETER Server
+    Server.
+
+.EXAMPLE
+    PS C:\> .\Get-IEXLastSendAndReceivedDate.ps1
+
+#>
 
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
 

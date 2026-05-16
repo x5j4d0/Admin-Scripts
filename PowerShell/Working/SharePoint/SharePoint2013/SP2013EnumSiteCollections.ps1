@@ -1,17 +1,20 @@
-﻿## SharePoint Server: PowerShell Script to Produce a Report on All Site Collections Within a Web Application ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Produce a Report on All Site Collections Within a Web Application.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Produce a Report on All Site Collections Within a Web Application.
 
-Overview: PowerShell Script to produce a CSV File with properties on All Site Collections in a Web Application
+.PARAMETER SitesReport
+    Change this path to match your environment.
 
-Environments: SharePoint Server 2013 + Farms
+.EXAMPLE
+    PS C:\> .\SP2013EnumSiteCollections.ps1
+    Edit the variables section and run to powerShell Script to Produce a Report on All Site Collections Within a Web Application.
 
-Usage: Edit the '$SitesReport' variable to match your environment and run the script
-
-Note: You can add additional Site Collection properties to report on under the '$CSVOutput' variable
-
-Resource: https://blogs.technet.microsoft.com/sharepoint_-_inside_the_lines/2015/09/08/get-site-collection-size-with-powershell/
-
+.NOTES
+    Requires:   microsoft.sharepoint.powershell
+    Resources:  https://blogs.technet.microsoft.com/sharepoint_-_inside_the_lines/2015/09/08/get-site-collection-size-with-powershell/
 #>
 
 Add-PSSnapin microsoft.sharepoint.powershell

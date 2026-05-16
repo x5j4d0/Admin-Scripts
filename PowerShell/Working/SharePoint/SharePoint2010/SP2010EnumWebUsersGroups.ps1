@@ -1,20 +1,17 @@
-## SharePoint Server: PowerShell Script to Enumerate all Permissions throughout a Farm with XML output ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Enumerate all Permissions throughout a Farm with XML output.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Enumerate all Permissions throughout a Farm with XML output.
 
-Overview: Script enumerates SharePoint 2010 / 2013 permissions across the entire farm down to the site (SPWeb) level. It also recursively expands the membership of any AD group and lists the assignment role binding on the permission. The output is an XML format.
+.EXAMPLE
+    PS C:\> .\SP2010EnumWebUsersGroups.ps1
+    PowerShell Script to Enumerate all Permissions throughout a Farm with XML output.
 
-Resource: http://gallery.technet.microsoft.com/scriptcenter/Enumerate-SharePoint-2010-35976bdb
-
-Environments: SP2010 / 2013 Farms
-
-Usage Examples: 
-
-./SP2010EnumWebUsersGroups.ps1 | Out-File SPWebApppsPermissions.xml
-./SP2013EnumWebUsersGroups.ps1 | Out-File SPWebApppsPermissions.xml
-
+.NOTES
+    Resources:  http://gallery.technet.microsoft.com/scriptcenter/Enumerate-SharePoint-2010-35976bdb
 #>
-
 
 function Expand-ADGroupMembership
 {

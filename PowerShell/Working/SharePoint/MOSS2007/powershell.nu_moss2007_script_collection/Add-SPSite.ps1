@@ -1,3 +1,33 @@
+﻿<#
+.SYNOPSIS
+    Add SP Site.
+
+.DESCRIPTION
+    Add SP Site.
+
+.PARAMETER url
+    url.
+
+.PARAMETER Weburl
+    Weburl.
+
+.PARAMETER Title
+    Title.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER Template
+    Template.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPSite.ps1
+    Add SP Site.
+#>
+
 ##################################################################################
 #
 #

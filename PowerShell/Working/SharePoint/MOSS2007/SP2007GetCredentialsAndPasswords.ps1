@@ -1,4 +1,16 @@
-﻿#################################### Get-SPCredentials.PS1 ########################################
+﻿<#
+.SYNOPSIS
+    SP2007 Get Credentials And Passwords.
+
+.DESCRIPTION
+    SP2007 Get Credentials And Passwords.
+
+.EXAMPLE
+    PS C:\> .\SP2007GetCredentialsAndPasswords.ps1
+    SP2007 Get Credentials And Passwords.
+#>
+
+#################################### Get-SPCredentials.PS1 ########################################
 #    PowerShell:				  Script to return MOSS 2007 Service Accounts And Passwords		  #
 #    Script name:                 Get SharePoint credentials                                      #
 #    Author:                      Sergey Zelenov (szelenov@microsoft.com), Microsoft PFE UK       #

@@ -1,10 +1,18 @@
-﻿## MSOnline: PowerShell Script to Check and Report on Distribution Group Objects that are not correctly Synced between Exchange Online and MSOnline (o365) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Check and Report on Distribution Group Objects that are not correctly Synced between Exchange Online and MSOnline (o365).
 
-## Overview: Script that compares Distribution Group Objects and reports on ones that are not Synced. Results are exported to a Text and CSV file for analysis
+.DESCRIPTION
+    PowerShell Script to Check and Report on Distribution Group Objects that are not
+    correctly Synced between Exchange Online and MSOnline (o365).
 
-## Requires: MSOnline and Exchange Online PowerShell Modules / Connections
+.PARAMETER msol_objectID
+    externaldirectoryobjectid identifies both group and members across MSODS and EXODS.
 
-## Usage: Edit the following variables to match your environment and run the script: '$path'; '$OutputPath'
+.EXAMPLE
+    PS C:\> .\ExchangeOnlineCheckDistributionGroupSync.ps1
+    Edit the variables section and run to powerShell Script to Check and Report on Distribution Group Objects that are not correctly Synced between Exchange Online and MSOnline (o365).
+#>
 
 #===================
 # Disclaimer

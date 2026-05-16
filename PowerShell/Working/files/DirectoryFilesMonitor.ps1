@@ -1,6 +1,24 @@
-﻿## PowerShell: Script to Monitor Files In Directories and Moves or Copies Files To A Destination When New Files Are Created ##
-## Resource: Uses the .NET FileSystemWatcher Class; http://msdn.microsoft.com/en-us/library/system.io.filesystemwatcher.aspx
-## Alternate Solution: http://archive.msdn.microsoft.com/PowerShellPack
+﻿<#
+.SYNOPSIS
+    Script to Monitor Files In Directories and Moves or Copies Files To A Destination When New Files Are Created.
+
+.DESCRIPTION
+    Script to Monitor Files In Directories and Moves or Copies Files To A Destination When
+    New Files Are Created.
+
+.PARAMETER folder
+    <-- set your source folder here.
+
+.PARAMETER filter
+    <-- set this filter according to your requirements.
+
+.PARAMETER destination
+    <-- set your destination folder here.
+
+.EXAMPLE
+    PS C:\> .\DirectoryFilesMonitor.ps1
+    Edit the variables section and run to script to Monitor Files In Directories and Moves or Copies Files To A Destination When New Files Are Created.
+#>
 
 $folder = 'C:\ztemp\FileMonitorSource\' # <-- set your source folder here
 $filter = '*.*'                             # <-- set this filter according to your requirements

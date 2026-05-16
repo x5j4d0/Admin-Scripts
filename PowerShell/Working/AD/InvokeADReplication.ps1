@@ -1,7 +1,5 @@
-﻿## Active Directory: PowerShell Function that Invokes / Triggers Replication between Domain Controllers (DCs) ##
-
-<#
-.Synopsis
+﻿<#
+.SYNOPSIS
    Invoke-ADReplication forces an immediate replication between domain controllers.
 .DESCRIPTION
    Invoke-ADReplication is a PowerShell advanced function that uses repadmin to 

@@ -1,10 +1,35 @@
-﻿## VMWare Server: PowerShell Script to deploy Patches / Updates to ESXi Host Servers ##
+﻿<#
+.SYNOPSIS
+    Deploy patches and updates to VMware ESXi host servers using PowerCLI.
 
-## Powercli - http://communities.vmware.com/community/vmtn/server/vsphere/automationtools/powercli
+.DESCRIPTION
+    Connects to an ESXi host, copies a patch bundle to a designated datastore, places the
+    host in maintenance mode, installs the patch via esxcli, then returns the host to
+    connected state and cleans up the datastore.
 
-## VMware vSphere CLI - http://communities.vmware.com/community/vmtn/server/vsphere/automationtools/vsphere_cli
+.PARAMETER esxcli
+    Path to the local vSphere CLI installation (esxcli.exe).
 
-## Resource: http://geauxvirtual.wordpress.com/2011/12/02/applying-patches-to-esxi-5-with-the-help-of-powercli
+.PARAMETER server
+    IP address or hostname of the ESXi host to patch.
+
+.PARAMETER patch
+    Filename of the patch bundle to apply (e.g. ESXi500-201207001.zip).
+
+.PARAMETER patchLocation
+    Local path to the directory containing the patch bundle.
+
+.PARAMETER datastore
+    Name of the ESXi datastore used as a staging area for the patch.
+
+.EXAMPLE
+    PS C:\> .\DeployESXiPatch.ps1
+    Edit the variables section and run to deploy the configured patch to the target ESXi host.
+
+.NOTES
+    Requires:   VMware.VimAutomation.Core, VMware.VumAutomation
+    Resources:  http://geauxvirtual.wordpress.com/2011/12/02/applying-patches-to-esxi-5-with-the-help-of-powercli
+#>
 
 Add-PSSnapin VMware.VimAutomation.Core -ErrorAction SilentlyContinue
 Add-PSSnapin VMware.VumAutomation -ErrorAction SilentlyContinue

@@ -1,4 +1,22 @@
-﻿########################################################################################################
+﻿<#
+.SYNOPSIS
+    SP2010 Warm Up Farm UR Ls.
+
+.DESCRIPTION
+    SP2010 Warm Up Farm UR Ls.
+
+.PARAMETER timeout
+    =60 seconds.
+
+.PARAMETER filename
+    Change your 'success' log file name here.
+
+.EXAMPLE
+    PS C:\> .\SP2010WarmUpFarmURLs.ps1
+    Edit the variables section and run to sP2010 Warm Up Farm UR Ls.
+#>
+
+########################################################################################################
 # Name: SP2010WarmUpFarmURLs.ps1
 # Overview: Script accepts All / Specific URLs, and also writes to application event log and log files
 # Author: Ingo Karstein: http://ikarstein.wordpress.com/2011/08/03/sharepoint-warm-up-now-with-timeout/                    

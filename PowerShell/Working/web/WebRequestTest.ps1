@@ -1,4 +1,17 @@
-﻿## PowerShell: Web Request Test Script ##
+﻿<#
+.SYNOPSIS
+    Web Request Test Script.
+
+.DESCRIPTION
+    Web Request Test Script.
+
+.EXAMPLE
+    PS C:\> .\WebRequestTest.ps1
+    Web Request Test Script.
+
+.NOTES
+    Resources:  http://www.posttestserver.com/
+#>
 
 <#>
 

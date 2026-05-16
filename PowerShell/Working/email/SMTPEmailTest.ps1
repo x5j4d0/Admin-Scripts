@@ -1,5 +1,14 @@
-﻿## PowerShell: Simple SMTP Email Check Script ##
-## Requires PowerShell 2.0 and higher for the Send-MailMessage Commandlet ##
+﻿<#
+.SYNOPSIS
+    Simple SMTP Email Check Script.
+
+.DESCRIPTION
+    Simple SMTP Email Check Script.
+
+.EXAMPLE
+    PS C:\> .\SMTPEmailTest.ps1
+    Simple SMTP Email Check Script.
+#>
 
 ############# Start Variables ################
 $SMTPServerName = "smtp.servername.com"

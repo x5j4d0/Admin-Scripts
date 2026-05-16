@@ -1,4 +1,25 @@
-﻿<# SharePoint Server: PowerShell Script To Delete All Items From A List Without Sending Them To The Recycle Bin ##
+﻿<#
+.SYNOPSIS
+    SP2010 Delete SP List Items Permanently.
+
+.DESCRIPTION
+    SP2010 Delete SP List Items Permanently.
+
+.PARAMETER SITEURL
+    Change this to match your environment.
+
+.PARAMETER oList
+    Change this to match your environment list name.
+
+.EXAMPLE
+    PS C:\> .\SP2010DeleteSPListItemsPermanently.ps1
+    Edit the variables section and run to sP2010 Delete SP List Items Permanently.
+
+.NOTES
+    Resources:  http://yalla.itgroove.net/2012/03/delete-all-items-from-a-sharepoint-list-powershell
+#>
+
+<# SharePoint Server: PowerShell Script To Delete All Items From A List Without Sending Them To The Recycle Bin ##
 
 Overview: PowerShell script that deletes all items from a list library. The list and columns will remain, while all the items
 are deleted from this. This script deletes the items directly and they do not get sent to the End User Recycle Bin

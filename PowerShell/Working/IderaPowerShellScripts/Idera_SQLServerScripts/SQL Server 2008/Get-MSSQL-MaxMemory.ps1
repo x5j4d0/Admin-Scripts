@@ -1,20 +1,24 @@
-## =====================================================================
-## Title       : Get-MSSQL-MaxMemory
-## Description : Get max memory property from SQL Server
-## Author      : Idera
-## Date        : 9/1/2008
-## Input       : -serverInstance	<server\instance>
-## 				  -verbose 
-## 				  -debug	
-## Output      : Integer in MB, 
-## 					-1 if memory is unlimited,
-## 		 			-2 if no connection to the desired DB can be obtained
-## Usage			: PS> .\Get-MSSQL-MaxMemory -serverInstance MyServer -verbose -debug
-## Notes			: Adapted from Jakob Bindslet script
-## Tag			: SQL Server, ADO, Configuration, Memory
-## Change log  :
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Retrieve Max Memory.
+
+.DESCRIPTION
+    Retrieve Max Memory.
+
+.PARAMETER serverInstance
+    server Instance.
+
+.PARAMETER verbose
+    verbose.
+
+.PARAMETER debug
+    debug.
+
+.EXAMPLE
+    PS C:\> .\Get-MSSQL-MaxMemory.ps1
+
+#>
+
 param
 (
   	[string]$serverInstance = "local",

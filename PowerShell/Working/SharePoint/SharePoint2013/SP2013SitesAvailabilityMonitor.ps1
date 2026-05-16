@@ -1,13 +1,31 @@
-## SharePoint Server: PowerShell Script to Monitor Site Collections Availability With HTML Report Output ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Monitor Site Collections Availability With HTML Report Output.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Monitor Site Collections Availability With HTML Report Output.
 
-Overview: PowerShell Script that uses SharePoint commandlets to get a list of all site collections into a text file so that these can be checked with a web request (Invoke-WebRequest), and their availability status reported into a HTML report file
+.PARAMETER ReportLastRun
+    Change the date format to suite your requirements.
 
-Environments: SharePoint Server 2010 / 2013 Farms
+.PARAMETER SitesFilePath
+    Change the path to the Site Collections list text file to match your environment.
 
-Usage: Edit the variables below to suit your requirements and run the script. If you don't want to launch the HTML report in a browser after running the script comment out the 'Invoke-Expression' command at the end of the script
+.PARAMETER ReportFilePath
+    Change the path to the Sites Availability Monitor HTML report.
 
+.PARAMETER SPWebApplication
+    Provide your Web Application URL here.
+
+.PARAMETER Outputreport
+    336699"" face=""verdana""><H3> Website Availability Report - $ReportLastRun </H3></font><Table border=1 cellpadding=1 cellspacing=1><TR bgcolor=LightSlateGray align=center><TD><B>URL</B></TD><TD><B>StatusCode</B></TD><TD><B>StatusDescription</B></TD><TD><B>ResponseLength</B></TD><TD><B>TimeTaken</B></TD</TR>".
+
+.EXAMPLE
+    PS C:\> .\SP2013SitesAvailabilityMonitor.ps1
+    Edit the variables section and run to powerShell Script to Monitor Site Collections Availability With HTML Report Output.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
 #>
 
 ######################## Start Variables ########################

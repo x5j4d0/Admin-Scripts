@@ -1,4 +1,23 @@
-﻿Function Rename-FTPItem
+﻿<#
+.SYNOPSIS
+    Renames an item in ftp session.
+
+.DESCRIPTION
+    The Rename-FTPItem cmdlet changes the name of a specified item. This cmdlet does not
+    affect the content of the item being renamed.
+
+.PARAMETER Path
+    Path.
+
+.EXAMPLE
+    PS C:\> .\Rename-FTPItem.ps1
+    Renames an item in ftp session.
+
+.NOTES
+    Resources:  http://commandlinegeeks.com/
+#>
+
+Function Rename-FTPItem
 {
     <#
 	.SYNOPSIS

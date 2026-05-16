@@ -1,15 +1,22 @@
-﻿## SharePoint Server: PowerShell Script to Check / Test Network Latency with Ping Across a Farm ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Check / Test Network Latency with Ping Across a Farm.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Check / Test Network Latency with Ping Across a Farm.
 
-Overview: Useful PowerShell Script that pings specified machines in a Farm on the SQL Instance / App / Web layers to check latency between these machines
+.PARAMETER InHost
+    In Host.
 
-Environments: MOSS 2007 and SharePoint Server 2010 / 2013 Farms
+.PARAMETER RunTime
+    Run Time.
 
-Usage: Edit the following variables and run the script on your farm: '$SPServerNames'; '$SQLServername'; '$RunTime'
+.EXAMPLE
+    PS C:\> .\SP2007TestNetworkLatency.ps1
+    PowerShell Script to Check / Test Network Latency with Ping Across a Farm.
 
-Resource: http://blogs.msdn.com/b/erica/archive/2013/11/11/sharepoint-2013-network-latency-test-script.aspx
-
+.NOTES
+    Resources:  http://blogs.msdn.com/b/erica/archive/2013/11/11/sharepoint-2013-network-latency-test-script.aspx
 #>
 
 # Edit these variables to match your environment

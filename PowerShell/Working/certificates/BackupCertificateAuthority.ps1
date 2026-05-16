@@ -1,23 +1,17 @@
-﻿## PowerShell Script to Backup a Windows Server Certificate Authority (CA) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Backup a Windows Server Certificate Authority (CA).
 
-<#
+.DESCRIPTION
+    PowerShell Script to Backup a Windows Server Certificate Authority (CA).
 
-Overview: PowerShell Function that takes a backup of a Certification Authority (CA) database files and Cert Authority 'Root' CA certificate', along with the CA configuration settings registry key
+.EXAMPLE
+    PS C:\> .\BackupCertificateAuthority.ps1
+    PowerShell Script to Backup a Windows Server Certificate Authority (CA).
 
-Usage Examples:
-
-Backup-CertificationAuthority -path "C:\Backup\CA" -type "Full" -Password "YourPassword" -BackupKey -KeepLog -Force
-
-Backup-CertificationAuthority -path "C:\Backup\CA" -type "Incremental" -Password "YourPassword" -BackupKey -KeepLog -Force
-
-Resources:
-
-https://blog.ahasayen.com/pki-recovery-plan
-
-https://blog.ahasayen.com/wp-content/uploads/2013/10/CABackup.zip
-
+.NOTES
+    Resources:  https://blog.ahasayen.com/pki-recovery-plan; https://blog.ahasayen.com/wp-content/uploads/2013/10/CABackup.zip
 #>
-
 
 function Backup-CertificationAuthority {
 [CmdletBinding()]

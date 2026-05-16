@@ -1,4 +1,14 @@
-﻿## SharePoint Online: Enable SideLoading Feature for SharePoint Online (SPOnline) Site Collections via CSOM ##
+﻿<#
+.SYNOPSIS
+    Enable SideLoading Feature for SharePoint Online (SPOnline) Site Collections via CSOM.
+
+.DESCRIPTION
+    Enable SideLoading Feature for SharePoint Online (SPOnline) Site Collections via CSOM.
+
+.EXAMPLE
+    PS C:\> .\SPOnlineEnableSideLoadingForSiteCollections.ps1
+    Enable SideLoading Feature for SharePoint Online (SPOnline) Site Collections via CSOM.
+#>
 
 #http://www.raihaniqbal.net/blog/2014/06/enable-app-sideloading-in-sharepoint-online/
 

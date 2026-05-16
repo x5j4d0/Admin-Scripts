@@ -1,5 +1,18 @@
-﻿## SharePoint Server 2010: PowerShell Script to flush the BLOB cache in SharePoint Server 2010 Farms ##
-## Resource: http://blog.isaacblum.com/2010/12/27/flush-cache-sharepoint-2010-powershell
+﻿<#
+.SYNOPSIS
+    PowerShell Script to flush the BLOB cache in SharePoint Server 2010 Farms.
+
+.DESCRIPTION
+    PowerShell Script to flush the BLOB cache in SharePoint Server 2010 Farms.
+
+.EXAMPLE
+    PS C:\> .\SP2010FlushFarmBLOBCache.ps1
+    PowerShell Script to flush the BLOB cache in SharePoint Server 2010 Farms.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
+
 Write-Host -ForegroundColor White " - Enabling SP PowerShell cmdlets..."
 If ((Get-PsSnapin |?{$_.Name -eq "Microsoft.SharePoint.PowerShell"})-eq $null)
 {

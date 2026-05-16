@@ -1,4 +1,14 @@
-﻿## SharePoint Server: List all Installed SharePoint Products on a Machine with PowerShell ##
+﻿<#
+.SYNOPSIS
+    List all Installed SharePoint Products on a Machine with PowerShell.
+
+.DESCRIPTION
+    List all Installed SharePoint Products on a Machine with PowerShell.
+
+.EXAMPLE
+    PS C:\> .\SP2013ListAllInstalledProducts.ps1
+    List all Installed SharePoint Products on a Machine with PowerShell.
+#>
 
 #Currently looking for SharePoint Server 2013 '90150000'
 $listApps=Get-WmiObject -Class Win32_Product | Where {$_.IdentifyingNumber -like “*90150000-*”}

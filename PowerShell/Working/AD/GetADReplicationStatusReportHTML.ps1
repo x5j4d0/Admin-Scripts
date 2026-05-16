@@ -1,17 +1,20 @@
-## Active Directory: PowerShell Script to check the Status of AD Replication across a Forest. Includes HTML report and Email Functionality ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to check the Status of AD Replication across a Forest. Includes HTML report and Email Functionality.
 
-<#
+.DESCRIPTION
+    PowerShell Script to check the Status of AD Replication across a Forest. Includes HTML
+    report and Email Functionality.
 
-Overview:
+.PARAMETER days
+    days.
 
-This script uses the output of the repadmin command (repadmin /showrepl) to check the AD replication on all the domain controllers and naming contexts all over an Active Directory forest.
- 
-If errors are found, a HTML report is sent by email. A full HTML report is also created in a shared folder
+.EXAMPLE
+    PS C:\> .\GetADReplicationStatusReportHTML.ps1
+    PowerShell Script to check the Status of AD Replication across a Forest. Includes HTML report and Email Functionality.
 
-Resource: https://www.shellandco.net/check-the-ad-replication-status-forest-wide-and-send-html-report
-
-Usage: Edit the 'Variables' below, along with the mail details in the 'Function send_mail' function and run the script
-
+.NOTES
+    Resources:  https://www.shellandco.net/check-the-ad-replication-status-forest-wide-and-send-html-report
 #>
 
 #Variables

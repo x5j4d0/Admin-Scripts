@@ -1,17 +1,20 @@
-﻿## SQL Server: PowerShell Script To Script Out The Database Mail Configuration For Re-use From A SQL Instance ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Script Out The Database Mail Configuration For Re-use From A SQL Instance.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Script Out The Database Mail Configuration For Re-use From A SQL
+    Instance.
 
-Overview: Useful PowerShell Script To Connect To A SQL Instance and obtain the 'Database Mail' configuration options
-for re-use on other SQL Server Instances.
+.PARAMETER ServerName
+    Change the SQL Instance Name To Suit Your Environment.
 
-Usage: Edit the '$ServerName' variable to match your environments source server you want to get the DB Mail config from
+.EXAMPLE
+    PS C:\> .\SQLServerGetDatabaseMailConfiguration.ps1
+    Edit the variables section and run to powerShell Script To Script Out The Database Mail Configuration For Re-use From A SQL Instance.
 
-Resources:
-
-http://www.ssistalk.com/2012/09/28/sql-scripting-out-db-mail-config-with-powershell-and-smo
-http://sqlblog.com/blogs/jonathan_kehayias/archive/2010/08/23/scripting-database-mail-configuration-with-powershell-and-smo.aspx
-
+.NOTES
+    Resources:  http://www.ssistalk.com/2012/09/28/sql-scripting-out-db-mail-config-with-powershell-and-smo; http://sqlblog.com/blogs/jonathan_kehayias/archive/2010/08/23/scripting-database-mail-configuration-with-powershell-and-smo.aspx
 #>
 
 [void][reflection.assembly]::LoadWithPartialName("Microsoft.SqlServer.Smo");

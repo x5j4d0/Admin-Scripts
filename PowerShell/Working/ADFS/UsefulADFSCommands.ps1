@@ -1,4 +1,17 @@
-﻿## ADFS Server: Useful Powershell Commandlets To Run On Your ADFS Server ##
+﻿<#
+.SYNOPSIS
+    Useful Powershell Commandlets To Run On Your ADFS Server.
+
+.DESCRIPTION
+    Useful Powershell Commandlets To Run On Your ADFS Server.
+
+.EXAMPLE
+    PS C:\> .\UsefulADFSCommands.ps1
+    Useful Powershell Commandlets To Run On Your ADFS Server.
+
+.NOTES
+    Requires:   microsoft.adfs.powershell
+#>
 
 Add-PSSnapin "microsoft.adfs.powershell" -ErrorAction SilentlyContinue
 

@@ -1,5 +1,20 @@
-## SharePoint Server 2010: PowerShell Script To Download SP2010 Prerequisites 
-## Resource: http://autospinstaller.codeplex.com/releases/view/44442
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Download SP2010 Prerequisites.
+
+.DESCRIPTION
+    PowerShell Script To Download SP2010 Prerequisites.
+
+.PARAMETER UrlList
+    http://go.microsoft.com/fwlink/?LinkID=141237&clcid=0x409 - Microsoft Sync Framework Runtime v1.0 (x64).
+
+.EXAMPLE
+    PS C:\> .\SP2010DownloadPreReqs.ps1
+    Edit the variables section and run to powerShell Script To Download SP2010 Prerequisites.
+
+.NOTES
+    Requires:   BitsTransfer
+#>
 
 Import-Module BitsTransfer
 ## Prompt for the destination path

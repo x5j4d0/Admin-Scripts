@@ -1,5 +1,24 @@
-﻿## PowerShell Script that queries SQL server and outputs the results to be imported for other commands ##
-## PowerShell Script creates a function to connect to and query a SQL Server ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script that queries SQL server and outputs the results to be imported for other commands.
+
+.DESCRIPTION
+    PowerShell Script that queries SQL server and outputs the results to be imported for
+    other commands.
+
+.PARAMETER server
+    server.
+
+.PARAMETER query
+    query.
+
+.PARAMETER database
+    database.
+
+.EXAMPLE
+    PS C:\> .\SQLServerConnectAndRunQueries.ps1
+    PowerShell Script that queries SQL server and outputs the results to be imported for other commands.
+#>
 
 function ConnectSQL {
     Param ($server, $query, $database)

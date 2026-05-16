@@ -1,17 +1,30 @@
-﻿## SharePoint Online: Import List Items from a CSV File via CSOM (SPOnline) ##
+﻿<#
+.SYNOPSIS
+    Import List Items from a CSV File via CSOM (SPOnline).
 
-<#
+.DESCRIPTION
+    Import List Items from a CSV File via CSOM (SPOnline).
 
-Overview: PowerShell script that uses a CSV input file to insert items into a SharePoint Online list. The script effectively deletes all the items from the list before inserting them from the CSV file
+.PARAMETER csv
+    Change the path to the CSV file to match your environment.
 
-Usage: Edit the variables below, and provide your CSV to SPList mapping columns under 'Add additional columns mappings here', and run the script
+.PARAMETER siteUrl
+    Change this site URL to match your environment.
 
-Variables: '$csv'; '$siteUrl'; '$listName'; '$userName'
+.PARAMETER listName
+    Change this list name to match your environment.
 
-Resource: http://sharepoint-community.net/profiles/blogs/powershell-import-list-items-from-csv-client-object-model
+.PARAMETER userName
+    Change this to match your o365 tenant user name.
 
+.EXAMPLE
+    PS C:\> .\SPOnlineUpdateListItemsFromCSV.ps1
+    Edit the variables section and run to import List Items from a CSV File via CSOM (SPOnline).
+
+.NOTES
+    Resources:  http://sharepoint-community.net/profiles/blogs/powershell-import-list-items-from-csv-client-object-model
 #>
- 
+
 # Load the SharePoint CSOM binaries
 [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
 [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.Runtime")

@@ -1,33 +1,38 @@
-## =====================================================================
-## Title       : Set-IADUser
-## Description : Modify attributes of a user object in Active Directory.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       :   Set-IADUser [[-DistinguishedName] <String>] [[-sAMAccountname] <String>] [[-FirstName] <String>] [[-LastName] <String>]
-##                     [[-Initials] <String>] [[-Description] <String>] [[-UserPrincipalName] <String>] [[-DisplayName] <String>] 
-##                     [[-Office] <String>] [[-Department] <String>] [[-ManagerDN] <String>] [[-EmployeeID] <String>] [[-EmployeeNumber] <String>]
-##                     [[-HomeDirectory] <String>] [[-HomeDrive] <String>] [[-Mobile] <String>] [[-Password] <String>] 
-##                     [[-UserMustChangePassword] <Object>] [[-PasswordNeverExpires] <Object>]
-##   
-## Output      : System.DirectoryServices.DirectoryEntry
-## Usage       :
-##               1. Sets the FirstName, LastName and Initials of a user
-##               Get-IADUser User1 | Set-IADUser -FirstName Heli -LastName Copter -Initials HC
-##
-##               2. Set the HomeDirectory and HomeDrive for User1
-##               Get-IADUser User1 | Set-IADUser -HomeDirectory '\\server\share\user1' -HomeDrive 'H:'
-##
-##               3. Set the Office attribute for all users in the Test OU
-##               Get-IADUser -SearchRoot 'OU=TEST,DC=Domain,DC=com' | Set-IADUser -Description TestUsers -Office QA
-##
-##               4. Set the Description attribute for all users in the Test OU and password to never expiry
-##               Get-IADUser -SearchRoot 'OU=TEST,DC=Domain,DC=com' | Set-IADUser -Description TestUsers -PasswordNeverExpires  
-##            
-## Notes       :
-## Tag         : user, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Set properties on Active Directory user objects using ADSI..
 
+.DESCRIPTION
+    Set properties on Active Directory user objects using ADSI..
+
+.PARAMETER DistinguishedName
+    Distinguished Name.
+
+.PARAMETER sAMAccountname
+    s AM Accountname.
+
+.PARAMETER FirstName
+    First Name.
+
+.PARAMETER LastName
+    Last Name.
+
+.PARAMETER Initials
+    Initials.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER UserPrincipalName
+    User Principal Name.
+
+.PARAMETER DisplayName
+    Display Name.
+
+.EXAMPLE
+    PS C:\> .\Set-IADUser.ps1
+    Run the script to perform the described operation.
+#>
 
 filter Set-IADUser {
  param(

@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    Add SP Folder.
+
+.DESCRIPTION
+    Add SP Folder.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPFolder.ps1
+    Add SP Folder.
+#>
+
 ##################################################################################
 #
 #

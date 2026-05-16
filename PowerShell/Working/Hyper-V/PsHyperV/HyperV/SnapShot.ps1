@@ -1,4 +1,17 @@
+﻿<#
+.SYNOPSIS
+    Snap Shot.
 
+.DESCRIPTION
+    Snap Shot.
+
+.PARAMETER Server
+    May need to look for VM(s) on Multiple servers.
+
+.EXAMPLE
+    PS C:\> .\SnapShot.ps1
+    Edit the variables section and run to snap Shot.
+#>
 
 Function Get-VMSnapshot
 {# .ExternalHelp  MAML-VMSnapshot.XML

@@ -1,23 +1,27 @@
-## =====================================================================
-## Title       : Remove-IEXDisabledUser
-## Description : Delete all disabled user accounts and associated  mailboxes (or mark them for removal)
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : Remove-IEXDisabledUser [[-Days] <Int32>] [-Permanent] [-Confirm] [-WhatIf]
-##   
-## Output      : None
-## Usage       : 
-##               1. Delete all user accounts (and mailboxes) that are disabled more than 40 days ago. Display confirmation message. 
-##               Remove-IEXDisabledUser  -Days 40 -Permanent $true
-## 
-##               2. Delete all user accounts that are disabled more than 30 days ago. The mailboxes will be marked for removal. Suppress confirmation message. 
-##               Remove-IEXDisabledUser -confirm:$false 
-##            
-## Notes       :
-## Tag         : Exchange 2007, user, mailbox, remove
-## Change log  :
-## ===================================================================== 
- 
+﻿<#
+.SYNOPSIS
+    Remove Disabled User.
+
+.DESCRIPTION
+    Remove Disabled User.
+
+.PARAMETER Days
+    Days.
+
+.PARAMETER Permanent
+    Permanent.
+
+.PARAMETER Confirm
+    Confirm.
+
+.PARAMETER WhatIf
+    What If.
+
+.EXAMPLE
+    PS C:\> .\Remove-IEXDisabledUser.ps1
+
+#>
+
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
 
 function Remove-IEXDisabledUser 

@@ -1,17 +1,17 @@
-﻿## SharePoint Server: PowerShell Function to Force a Publish of Content Types in a Content Type Hub ##
+﻿<#
+.SYNOPSIS
+    PowerShell Function to Force a Publish of Content Types in a Content Type Hub.
 
-<#
+.DESCRIPTION
+    PowerShell Function to Force a Publish of Content Types in a Content Type Hub.
 
-Overview: When working with a Content Type Hub and Multiple Content Types it can be time consuming to have to Publish / Republish these changes via 'Manage publishing for this content type'
+.EXAMPLE
+    PS C:\> .\SP2010PublishContentTypeInContentTypeHub.ps1
+    PowerShell Function to Force a Publish of Content Types in a Content Type Hub.
 
-The PowerShell function below essentially takes the URL of the Content Type Hub site collection in your Farm along with the Content Type Group Name and forces a Publish / Republish of this
-
-Environments: SharePoint Server 2010 / 2013 Farms
-
-Usage Example: Publish-ContentTypeHub "[URL to CTH]" "[Group Name Containing Content Types]"
-
-Resource: http://www.mice-ts.com/force-a-publish-of-content-types-in-a-content-type-hub-using-powershell
-
+.NOTES
+    Requires:   Microsoft.SharePoint.Powershell
+    Resources:  http://www.mice-ts.com/force-a-publish-of-content-types-in-a-content-type-hub-using-powershell
 #>
 
 Add-PSSnapin Microsoft.SharePoint.Powershell -ErrorAction SilentlyContinue

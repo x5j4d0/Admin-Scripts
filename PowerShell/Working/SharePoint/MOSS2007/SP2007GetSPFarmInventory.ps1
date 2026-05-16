@@ -1,23 +1,40 @@
-## SharePoint Server: PowerShell Farm Inventory Script ##
+﻿<#
+.SYNOPSIS
+    PowerShell Farm Inventory Script.
 
-<#
-	Overview: PowerShell Script that provides a detailed Inventory of a SharePoint Farm Configuration in CSV Output files. Also includes Inventory on Site Collections, Webs, and Lists
-	
-	Resource: http://gallery.technet.microsoft.com/scriptcenter/Inventory-SharePoint-Farm-dc11fc28
+.DESCRIPTION
+    PowerShell Farm Inventory Script.
 
-	Versions: MOSS 2007, SharePoint Server 2010 / 2013 Farms
-	
-	Usage Example: Run-FullInventory -DestinationFolder "M:\SP2013Migration\FarmAudits" -LogFilePrefix "PROD_"
-	
-	.author
-		James Hammonds, @jameswh3
-		The web part inventory section is mostly borrowed from Joe Rodgers
-	.notes
-		This script is a collection of functions that will inventory a SharePoint 2007, SharePoint 2010, or SharePoint 2013 (not yet tested, but everything should work) content.  The output is a collection of csv files that can then be ported to Excel, PowerPivot, Access, SQL Server (you get the idea) for futher analysis.  If you so desire, you can selectively inventory subsets of data.
-		
-	.getStarted
-		To run the full inventory, load this script in PowerShell, then enter: Run-FullInventory -DestinationFolder "e:\temp" -LogFilePrefix "YourFarm_"
-		Just make sure that the destination folder (and drive) has enough space for the log files (gigs in some cases), and that your LogFilePrefix is appropriate
+.PARAMETER InventoryFarmSolutions
+    Inventory Farm Solutions.
+
+.PARAMETER InventoryFarmFeatures
+    Inventory Farm Features.
+
+.PARAMETER InventoryWebTemplates
+    Inventory Web Templates.
+
+.PARAMETER InventoryWebApplications
+    Inventory Web Applications.
+
+.PARAMETER InventoryContentDatabases
+    Inventory Content Databases.
+
+.PARAMETER InventorySiteCollections
+    Inventory Site Collections.
+
+.PARAMETER InventorySiteCollectionAdmins
+    Inventory Site Collection Admins.
+
+.PARAMETER InventorySiteCollectionFeatures
+    Inventory Site Collection Features.
+
+.EXAMPLE
+    PS C:\> .\SP2007GetSPFarmInventory.ps1
+    PowerShell Farm Inventory Script.
+
+.NOTES
+    Resources:  http://gallery.technet.microsoft.com/scriptcenter/Inventory-SharePoint-Farm-dc11fc28
 #>
 
 function Inventory-SPFarm {

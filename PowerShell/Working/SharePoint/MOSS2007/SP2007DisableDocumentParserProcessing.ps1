@@ -1,5 +1,17 @@
-﻿## MOSS 2007: PowerShell Script To Enable Or Disable Document Parser Processing ##
-## Overview: http://msdn.microsoft.com/en-us/library/aa543341(v=office.12).aspx
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Enable Or Disable Document Parser Processing.
+
+.DESCRIPTION
+    PowerShell Script To Enable Or Disable Document Parser Processing.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\SP2007DisableDocumentParserProcessing.ps1
+    PowerShell Script To Enable Or Disable Document Parser Processing.
+#>
 
 param($url=$(Throw "Parameter missing: -url"), $switch=$(Throw "Parameter missing (on/off): -switch"))
 "URL -> $url, switch-> $switch"

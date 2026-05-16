@@ -1,6 +1,4 @@
-﻿ ## Active Directory: PowerShell Script to Perform Health Reports on Domain Controllers in an Active Directory Forest ##
-
- <#
+﻿ <#
 .SYNOPSIS
 Test-DomainControllerHealth - Domain Controller Health Check Script.
 

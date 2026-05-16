@@ -1,3 +1,33 @@
+﻿<#
+.SYNOPSIS
+    Add SP Currency Field.
+
+.DESCRIPTION
+    Add SP Currency Field.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER Required
+    Required.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPCurrencyField.ps1
+    Add SP Currency Field.
+#>
+
 ##################################################################################
 #
 #

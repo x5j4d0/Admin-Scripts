@@ -1,4 +1,17 @@
-﻿## AzureRM: PowerShell Script to Get Azure AD Application Details with Azure Resource Manager ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get Azure AD Application Details with Azure Resource Manager.
+
+.DESCRIPTION
+    PowerShell Script to Get Azure AD Application Details with Azure Resource Manager.
+
+.EXAMPLE
+    PS C:\> .\GetAzureRmADApplication.ps1
+    PowerShell Script to Get Azure AD Application Details with Azure Resource Manager.
+
+.NOTES
+    Requires:   AzureRM
+#>
 
 Import-Module "AzureRM"
 

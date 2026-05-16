@@ -1,4 +1,26 @@
-﻿##SharePoint Server 2010: PowerShell Function to Set Web Application Access to: Read Only; No Additions; No Access; and Unlock ##
+﻿<#
+.SYNOPSIS
+    PowerShell Function to Set Web Application Access to: Read Only; No Additions; No Access; and Unlock.
+
+.DESCRIPTION
+    PowerShell Function to Set Web Application Access to: Read Only; No Additions; No Access;
+    and Unlock.
+
+.PARAMETER WebAppUrl
+    Web App Url.
+
+.PARAMETER LockState
+    Lock State.
+
+.EXAMPLE
+    PS C:\> .\SP2010SetWebApplicationAccessLevels.ps1
+    PowerShell Function to Set Web Application Access to: Read Only; No Additions; No Access; and Unlock.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://intranet; http://www.sharepointryan.com
+#>
+
 # Note: Also available through Central Admin under 'Central Administration -- Site Collection Quotas and Locks'
 
 function Set-SPSiteLockState {

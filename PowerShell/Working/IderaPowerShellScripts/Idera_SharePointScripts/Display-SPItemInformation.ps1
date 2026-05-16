@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : Display-SPItemInformation
-## Description : Displays Detailed Item Information
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : Display-SPItemInformation [[-url] <String>] [[-List] <String>] [[-Item] <String>]
-## Output      : 
-## Usage       : Display-SPItemInformation -url http://moss -List Announcements -Item "My Item"
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : Item, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Display Item Information.
+
+.DESCRIPTION
+    Display Item Information.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\Display-SPItemInformation.ps1
+
+#>
 
 param (
 

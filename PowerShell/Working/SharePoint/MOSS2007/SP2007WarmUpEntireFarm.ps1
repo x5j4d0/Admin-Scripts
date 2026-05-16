@@ -1,4 +1,15 @@
-﻿## SharePoint Server:  PowerShell Script To Warmup All Web Applications And Sites In A Farm ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Warmup All Web Applications And Sites In A Farm.
+
+.DESCRIPTION
+    PowerShell Script To Warmup All Web Applications And Sites In A Farm.
+
+.EXAMPLE
+    PS C:\> .\SP2007WarmUpEntireFarm.ps1
+    PowerShell Script To Warmup All Web Applications And Sites In A Farm.
+#>
+
 # Usage: Works on both MOSS 2007 and SharePoint Server 2010 Farms
 # Overview: performs an HTTP GET against the homepeage of each SPWeb of each SPSite of each SPWebapplication in the local farm. This version is NOT compatible with multi-server farm!
 # Dependencies: Assemblies Microsoft.SharePoint and Microsoft.SharePoint.Administration. The account running the script must be farm admin and must have full read on web application to be processed.

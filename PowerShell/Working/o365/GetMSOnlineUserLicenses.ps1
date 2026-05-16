@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    Get MS Online User Licenses.
+
+.DESCRIPTION
+    Get MS Online User Licenses.
+
+.PARAMETER UserNameFileLocation
+    Change the path here to suit your environment.
+
+.PARAMETER PasswordFileLocation
+    Change the path here to suit your environment.
+
+.PARAMETER LogFile
+    Change this file name here to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\GetMSOnlineUserLicenses.ps1
+    Edit the variables section and run to get MS Online User Licenses.
+
+.NOTES
+    Resources:  http://gallery.technet.microsoft.com/scriptcenter/Export-a-Licence-b200ca2a#content
+#>
+
 <# PowerShell: Script To Connect To MS Online (o365) And Get A CSV Report On User Licenses Assigned To Accounts
 
 Overview: The script below takes credentials for a MS Online office 365 account and stores these in specified text files
@@ -20,7 +44,7 @@ Key requirements for this script:
 
 Sample command to set a MS Online account password not to expire:
 
-Set-MsolUser �UserPrincipalName UserName@YourDomain.onmicrosoft.com -PasswordNeverExpires $True
+Set-MsolUser UserPrincipalName UserName@YourDomain.onmicrosoft.com -PasswordNeverExpires $True
 
 Script Resource: http://gallery.technet.microsoft.com/scriptcenter/Export-a-Licence-b200ca2a#content
 

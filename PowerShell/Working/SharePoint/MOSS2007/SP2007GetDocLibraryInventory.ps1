@@ -1,4 +1,25 @@
-﻿################################################################################################
+﻿<#
+.SYNOPSIS
+    SP2007 Get Doc Library Inventory.
+
+.DESCRIPTION
+    SP2007 Get Doc Library Inventory.
+
+.PARAMETER siteurl
+    site collection URL.
+
+.PARAMETER weburl
+    blank denotes root web of a site collection.
+
+.PARAMETER listurl
+    list URL.
+
+.EXAMPLE
+    PS C:\> .\SP2007GetDocLibraryInventory.ps1
+    Edit the variables section and run to sP2007 Get Doc Library Inventory.
+#>
+
+################################################################################################
 # SharePoint 2007: PowerShell Script to Enumerate All Documents on a MOSS 20007 List Library
 # 
 # Resource: http://www.timeggleston.co.uk/powershell.php

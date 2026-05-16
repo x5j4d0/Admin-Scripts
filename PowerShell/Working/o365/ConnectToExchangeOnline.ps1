@@ -1,4 +1,14 @@
-﻿## MSOnline: PowerShell Script to Connect to Exchange Online PowerShell Module (o365) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Connect to Exchange Online PowerShell Module (o365).
+
+.DESCRIPTION
+    PowerShell Script to Connect to Exchange Online PowerShell Module (o365).
+
+.EXAMPLE
+    PS C:\> .\ConnectToExchangeOnline.ps1
+    PowerShell Script to Connect to Exchange Online PowerShell Module (o365).
+#>
 
 Import-PSSession $(New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Authentication Basic -AllowRedirection -Credential $(Get-Credential))
 

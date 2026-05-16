@@ -1,11 +1,17 @@
-﻿## Exchange Online: PowerShell Script to Get Mail Traffic Reports from an o365 Tenant (includes Malware and Spam reports) using Exchange Online Protection PowerShell ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get Mail Traffic Reports from an o365 Tenant (includes Malware and Spam reports) using Exchange Online Protection PowerShell.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Get Mail Traffic Reports from an o365 Tenant (includes Malware and
+    Spam reports) using Exchange Online Protection PowerShell.
 
-Overview: PowerShell Script that connects to Exchange Online and produces Mail Traffic reports using the Exchange Online Protection PowerShell Reports Cmdlets
+.EXAMPLE
+    PS C:\> .\ExchangeOnlineProtectionGetMailTrafficReports.ps1
+    PowerShell Script to Get Mail Traffic Reports from an o365 Tenant (includes Malware and Spam reports) using Exchange Online Protection PowerShell.
 
-Resources: http://www.checkyourlogs.net/?p=43563; https://technet.microsoft.com/EN-US/library/dn621038(v=exchg.160).aspx
-
+.NOTES
+    Resources:  http://www.checkyourlogs.net/?p=43563; https://technet.microsoft.com/EN-US/library/dn621038(v=exchg.160).aspx
 #>
 
 #Connect to Office 365

@@ -1,21 +1,18 @@
-﻿## SharePoint Server: PowerShell Script to Configure the Memory Used by the Distributed Cache Service (AppFabric) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Configure the Memory Used by the Distributed Cache Service (AppFabric).
 
-<#
+.DESCRIPTION
+    PowerShell Script to Configure the Memory Used by the Distributed Cache Service
+    (AppFabric).
 
-Overview: PowerShell script that configures the maximum memory to be used for the Distributed Cache Service (AppFabric) service
+.EXAMPLE
+    PS C:\> .\SP2013SetDistributedCacheServiceMemory.ps1
+    PowerShell Script to Configure the Memory Used by the Distributed Cache Service (AppFabric).
 
-Environments: SharePoint Server 2013
-
-Usage: Change the MB of the '-cachesize' variable under the 'Set-CacheHostConfig' command to suit your requirements
-
-Quick Tip: Use the PowerShell below to check your current Distributed Cache Service Configuration
-
-Add-PSSnapin -Name "Microsoft.SharePoint.PowerShell"
-Use-CacheCluster
-Get-AFCacheHostConfiguration -ComputerName "YourMachineName" -CachePort "22233"
-
-Resource: http://platinumdogs.me/2012/09/24/sharepoint-configure-the-distributed-cache-service-appfabric
-
+.NOTES
+    Requires:   ActiveDirectory
+    Resources:  http://platinumdogs.me/2012/09/24/sharepoint-configure-the-distributed-cache-service-appfabric
 #>
 
 Clear-Host

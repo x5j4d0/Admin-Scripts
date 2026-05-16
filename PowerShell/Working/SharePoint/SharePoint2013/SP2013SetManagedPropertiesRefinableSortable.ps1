@@ -1,20 +1,17 @@
-﻿## SharePoint Server 2013: PowerShell Script to set Managed Properties to Refinable And / Or Sortable ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to set Managed Properties to Refinable And / Or Sortable.
 
-<#
+.DESCRIPTION
+    PowerShell Script to set Managed Properties to Refinable And / Or Sortable.
 
-Overview: The two PowerShell functions below allow for Managed Properties values to be changed to Refinable And / Or Sortable
+.EXAMPLE
+    PS C:\> .\SP2013SetManagedPropertiesRefinableSortable.ps1
+    PowerShell Script to set Managed Properties to Refinable And / Or Sortable.
 
-Environments: SharePoint Server 2013 Farms
-
-Usage: Edit the functions to provide the required parameters that match your environment, like the examples below, and run the script
-
-SetRefinable "https://yoursite.yourdomain.com" "Search Service Application" "Title"
-SetSortable "https://yoursite.yourdomain.com" "Search Service Application" "Title"
-
-Note: Normally after updating these Managed Properties; you will need to complete a Full Crawl to pick up the changes
-
-Resource: http://srevathi.wordpress.com/2013/06/29/powershell-to-make-managed-properties-sortable-and-refinable-in-sharepoint-2013
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  https://yoursite.yourdomain.com"; http://srevathi.wordpress.com/2013/06/29/powershell-to-make-managed-properties-sortable-and-refinable-in-sharepoint-2013
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue

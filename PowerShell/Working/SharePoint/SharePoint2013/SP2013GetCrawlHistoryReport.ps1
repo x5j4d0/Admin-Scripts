@@ -1,18 +1,21 @@
-﻿## SharePoint Server: PowerShell Script to Get a Report on the Crawl Log / Crawl History for the Search Service Application (SSA) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get a Report on the Crawl Log / Crawl History for the Search Service Application (SSA).
 
-<#
+.DESCRIPTION
+    PowerShell Script to Get a Report on the Crawl Log / Crawl History for the Search Service
+    Application (SSA).
 
-Overview: PowerShell Script to Get Crawl History Results from the Search Service Application (SSA), and export them to a CSV file for analysis
+.PARAMETER numberOfResults
+    Change this to specify how many crawl history results you want to report back on.
 
-Usage: Edit the following variables to match your environment and run the script: '$numberOfResults'; '$contentSourceName'; '$ReportPath'
+.EXAMPLE
+    PS C:\> .\SP2013GetCrawlHistoryReport.ps1
+    Edit the variables section and run to powerShell Script to Get a Report on the Crawl Log / Crawl History for the Search Service Application (SSA).
 
-Environments: SharePoint Server 2010 / 2013 Farms
-
-Resources: 
-
-http://cameron-verhelst.be/blog/2014/06/13/powershell-search-crawl-history
-http://blogs.technet.com/b/rycampbe/archive/2014/08/15/sharepoint-2013-export-index-a-la-crawl-log.aspx
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://cameron-verhelst.be/blog/2014/06/13/powershell-search-crawl-history; http://blogs.technet.com/b/rycampbe/archive/2014/08/15/sharepoint-2013-export-index-a-la-crawl-log.aspx
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue

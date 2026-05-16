@@ -1,18 +1,17 @@
-## =====================================================================
-## Title       : Get-IADObjectBySID
-## Description : Retrieve domain account for known SID.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : Get-IADObjectBySID [[-SID] <String>]
-##                                                      
-## Output      : System.String
-## Usage       : Get-IADObjectBySID -SID  'S-1-5-21-3889274798-524451202-2197197945-1112'
-##            
-## Notes       :
-## Tag         : security, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory object by sid objects using ADSI..
 
+.DESCRIPTION
+    Retrieve Active Directory object by sid objects using ADSI..
+
+.PARAMETER SID
+    SID.
+
+.EXAMPLE
+    PS C:\> .\Get-IADObjectBySID.ps1
+    Run the script to perform the described operation.
+#>
 
 function Get-IADObjectBySID 
 {

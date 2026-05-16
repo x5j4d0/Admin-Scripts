@@ -1,7 +1,20 @@
-﻿## SharePoint Server: PowerShell Script To Extract Individual Solutions From The Farm Solution Store ##
-## Environments: MOSS 2007 and SharePoint Server 2010 Farms
-## Resource: http://sharepointpsscripts.codeplex.com/releases/view/32748
-## Usage Example: ./Get-SolutionFile.ps1 -name "lifeinsharepoint.metro.wsp" -localpath "C:\BoxBuild\Solutions"
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Extract Individual Solutions From The Farm Solution Store.
+
+.DESCRIPTION
+    PowerShell Script To Extract Individual Solutions From The Farm Solution Store.
+
+.PARAMETER name
+    name.
+
+.PARAMETER localpath
+    localpath.
+
+.EXAMPLE
+    PS C:\> .\SP2007ExportSingleSolutionsFromSolutionStore.ps1
+    PowerShell Script To Extract Individual Solutions From The Farm Solution Store.
+#>
 
 ##################################### Get-SolutionFile.PS1 ########################################
 #                                                                                                 #

@@ -1,17 +1,23 @@
-## Azure: PowerShell Script to Upload Files to an Azure Web App from an Azure Storage Account File Service Share ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Upload Files to an Azure Web App from an Azure Storage Account File Service Share.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Upload Files to an Azure Web App from an Azure Storage Account File
+    Service Share.
 
-Overview: PowerShell Script that Uploads files from an Azure Storage Account File Service Share to an Azure Web App via the Kudu API using the Publish Profile Credentials
+.PARAMETER kuduApiUrl
+    Change this path to another Azure web app folder location if required.
 
-Usage: Modify the 'Setting variables' below to suit your environment and run the script
+.PARAMETER shareName
+    Note: Azure shares need to be in lower case.
 
-Note: To upload files to a different location than the Azure web app 'wwwroot' folder, modify the path on the '$kuduApiUrl' variable
+.EXAMPLE
+    PS C:\> .\AzureWebAppUploadFromStorageAccount.ps1
+    Edit the variables section and run to powerShell Script to Upload Files to an Azure Web App from an Azure Storage Account File Service Share.
 
-Important: The Script currently only uploads 'flat' files in a directory and not folders and sub-folders
-
-Resource: http://blog.octavie.nl/index.php/2017/03/03/copy-files-to-azure-web-app-with-powershell-and-kudu-api
-
+.NOTES
+    Resources:  http://blog.octavie.nl/index.php/2017/03/03/copy-files-to-azure-web-app-with-powershell-and-kudu-api
 #>
 
 #Requires -Version 3.0

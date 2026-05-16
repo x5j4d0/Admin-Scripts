@@ -1,4 +1,19 @@
-﻿##SharePoint Server 2010: Set-SPSite Commands to Set Site Collections Access to: Read Only; No Additions; No Access; and Unlock ##
+﻿<#
+.SYNOPSIS
+    Set-SPSite Commands to Set Site Collections Access to: Read Only; No Additions; No Access; and Unlock.
+
+.DESCRIPTION
+    Set-SPSite Commands to Set Site Collections Access to: Read Only; No Additions; No
+    Access; and Unlock.
+
+.EXAMPLE
+    PS C:\> .\SP2010SetSiteCollectionAccessLevels.ps1
+    Set-SPSite Commands to Set Site Collections Access to: Read Only; No Additions; No Access; and Unlock.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
+
 # Note: Also available through Central Admin under 'Central Administration -- Site Collection Quotas and Locks'
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell"

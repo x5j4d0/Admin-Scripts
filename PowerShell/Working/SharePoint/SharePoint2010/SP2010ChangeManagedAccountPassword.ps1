@@ -1,5 +1,15 @@
-﻿## SharePoint Server 2010: PowerShell Script to change Managed Account Passwords ##
-## Resource: http://blog.rafelo.com/2010/04/changing-sharepoint-2010-managed.html ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to change Managed Account Passwords.
+
+.DESCRIPTION
+    PowerShell Script to change Managed Account Passwords.
+
+.EXAMPLE
+    PS C:\> .\SP2010ChangeManagedAccountPassword.ps1
+    PowerShell Script to change Managed Account Passwords.
+#>
+
 $ver = $host | select version
 if ($ver.Version.Major -gt 1)  {$Host.Runspace.ThreadOptions = "ReuseThread"}
 Add-PsSnapin Microsoft.SharePoint.PowerShell

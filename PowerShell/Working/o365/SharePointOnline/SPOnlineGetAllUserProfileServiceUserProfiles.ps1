@@ -1,121 +1,17 @@
-﻿## SharePoint Online: PowerShell Script to Export User Profile Service Profiles Data From a Tenant via CSOM (SPOnline) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Export User Profile Service Profiles Data From a Tenant via CSOM (SPOnline).
 
-<#
+.DESCRIPTION
+    PowerShell Script to Export User Profile Service Profiles Data From a Tenant via CSOM
+    (SPOnline).
 
-Overview: PowerShell Script that Exports All User Profile Service User Profiles to a CSV File via CSOM
+.EXAMPLE
+    PS C:\> .\SPOnlineGetAllUserProfileServiceUserProfiles.ps1
+    PowerShell Script to Export User Profile Service Profiles Data From a Tenant via CSOM (SPOnline).
 
-Usage: Provide parameters listed below, and the paths to your SharePoint binaries for the CSOM
-
-Provide the required Parameters below in the Script: 
-
-$site: SharePoint Online My Site Collection
-$admin: SharePoint Online Account with SPAdmin access 
-$password: Provide the password for the Admin account when prompted
-
-Provide the paths to your SharePoint DLLs for CSOM under '#Adding the CSOM Assemblies'
-
-Provide the path to your CSV report file under '$collection'
-
-Note: You can add / map additional properties under '#Add required User Information fields'
-
-List of main User Profile Properties:
-
-UserProfile_GUID
-SID
-ADGuid
-AccountName
-FirstName
-SPS-PhoneticFirstName
-LastName
-SPS-PhoneticLastName
-PreferredName
-SPS-PhoneticDisplayName
-WorkPhone
-Department
-Title
-SPS-JobTitle
-SPS-Department
-Manager
-AboutMe
-PersonalSpace
-PictureURL
-UserName
-QuickLinks
-WebSite
-SPS-DataSource  
-SPS-MemberOf   
-SPS-Dotted-line   
-SPS-Peers  
-SPS-Responsibility  
-SPS-SipAddress   
-SPS-MySiteUpgrade   
-SPS-DontSuggestList   
-SPS-ProxyAddresses   
-SPS-HireDate   
-SPS-DisplayOrder   
-SPS-ClaimID   
-SPS-ClaimProviderID   
-SPS-ClaimProviderType   
-SPS-LastColleagueAdded   
-SPS-OWAUrl   
-SPS-SavedAccountName   
-SPS-SavedSID   
-SPS-ResourceSID   
-SPS-ResourceAccountName   
-SPS-ObjectExists   
-SPS-MasterAccountName   
-SPS-UserPrincipalName   
-SPS-PersonalSiteCapabilities   
-SPS-O15FirstRunExperience   
-SPS-PersonalSiteFirstCreationTime  
-SPS-PersonalSiteLastCreationTime   
-SPS-PersonalSiteNumberOfRetries   
-SPS-PersonalSiteFirstCreationError  
-SPS-DistinguishedName   
-SPS-SourceObjectDN   
-SPS-LastKeywordAdded   
-SPS-FeedIdentifier   
-SPS-PersonalSiteInstantiationState   
-WorkEmail   
-CellPhone  
-Fax   
-HomePhone   
-Office  
-SPS-Location   
-Assistant   
-SPS-PastProjects   
-SPS-Skills   
-SPS-School   
-SPS-Birthday   
-SPS-StatusNotes   
-SPS-Interests   
-SPS-HashTags  
-SPS-PictureTimestamp   
-SPS-EmailOptin   
-SPS-PicturePlaceholderState   
-SPS-PrivacyPeople   
-SPS-PrivacyActivity   
-SPS-PictureExchangeSyncState   
-SPS-MUILanguages   
-SPS-ContentLanguages  
-SPS-TimeZone   
-SPS-RegionalSettings-FollowWeb   
-SPS-Locale   
-SPS-CalendarType   
-SPS-AltCalendarType  
-SPS-AdjustHijriDays   
-SPS-ShowWeeks   
-SPS-WorkDays   
-SPS-WorkDayStartHour  
-SPS-WorkDayEndHour   
-SPS-Time24   
-SPS-FirstDayOfWeek   
-SPS-FirstWeekOfYear   
-SPS-RegionalSettings-Initialized   
-OfficeGraphEnabled
-
-Resource: http://social.technet.microsoft.com/wiki/contents/articles/29415.export-sharepoint-online-user-profile-information-using-powershell-csom.aspx
-
+.NOTES
+    Resources:  http://social.technet.microsoft.com/wiki/contents/articles/29415.export-sharepoint-online-user-profile-information-using-powershell-csom.aspx
 #>
 
 #Adding the CSOM Assemblies

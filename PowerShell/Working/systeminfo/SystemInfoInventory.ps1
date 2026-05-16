@@ -1,4 +1,22 @@
-﻿#########################################################################################################
+﻿<#
+.SYNOPSIS
+    System Info Inventory.
+
+.DESCRIPTION
+    System Info Inventory.
+
+.PARAMETER htmlFilePath
+    Change your output file path here.
+
+.PARAMETER strOutputString
+    Initalise the file by writing the first line.
+
+.EXAMPLE
+    PS C:\> .\SystemInfoInventory.ps1
+    Edit the variables section and run to system Info Inventory.
+#>
+
+#########################################################################################################
 # PowerShell: Script To Get System Info and Inventory Data And Writes This To An HTML File
 # Created: 18/11/2006
 # Updated: June 10, 2009 

@@ -1,5 +1,15 @@
-﻿## PowerShell: Script To Delete File Types from Folders Older Than a Specified Number of Days ##
-## Usage: Goes through specified folders and sub-folders deleting all specified file types older than a specified date 
+﻿<#
+.SYNOPSIS
+    Script To Delete File Types from Folders Older Than a Specified Number of Days.
+
+.DESCRIPTION
+    Script To Delete File Types from Folders Older Than a Specified Number of Days.
+
+.EXAMPLE
+    PS C:\> .\DeleteFilesAfterNumberOfDays.ps1
+    Script To Delete File Types from Folders Older Than a Specified Number of Days.
+#>
+
 #--- Start define parameters ---#
 #--- get current date ---#
 $Now = Get-Date 

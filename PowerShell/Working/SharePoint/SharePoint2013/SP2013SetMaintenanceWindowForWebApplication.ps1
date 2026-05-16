@@ -1,7 +1,21 @@
-﻿## SharePoint Server: PowerShell Script to Set Maintenance Window Notifications at Content Database Level for a Web Application ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Set Maintenance Window Notifications at Content Database Level for a Web Application.
 
+.DESCRIPTION
+    PowerShell Script to Set Maintenance Window Notifications at Content Database Level for a
+    Web Application.
 
-## Resource: http://www.sharepointdiary.com/2013/12/sharepoint-2013-maintenance-windows.html#ixzz4k9v5EcHz
+.PARAMETER WebAppURL
+    Change this to match your environment.
+
+.EXAMPLE
+    PS C:\> .\SP2013SetMaintenanceWindowForWebApplication.ps1
+    Edit the variables section and run to powerShell Script to Set Maintenance Window Notifications at Content Database Level for a Web Application.
+
+.NOTES
+    Requires:   Microsoft.sharepoint.powershell
+#>
 
 Add-PSSnapin Microsoft.sharepoint.powershell -ErrorAction SilentlyContinue
  

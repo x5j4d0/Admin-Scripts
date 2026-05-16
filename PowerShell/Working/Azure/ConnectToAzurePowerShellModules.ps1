@@ -1,6 +1,18 @@
-﻿## Azure: PowerShell Commands For Importing and Connecting with the Azure PowerShell Modules (Azure and AzureRM) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Commands For Importing and Connecting with the Azure PowerShell Modules (Azure and AzureRM).
 
-## Connecting to Azure Service Management ##
+.DESCRIPTION
+    PowerShell Commands For Importing and Connecting with the Azure PowerShell Modules (Azure
+    and AzureRM).
+
+.EXAMPLE
+    PS C:\> .\ConnectToAzurePowerShellModules.ps1
+    PowerShell Commands For Importing and Connecting with the Azure PowerShell Modules (Azure and AzureRM).
+
+.NOTES
+    Requires:   Azure, AzureRM
+#>
 
 Import-Module Azure
 

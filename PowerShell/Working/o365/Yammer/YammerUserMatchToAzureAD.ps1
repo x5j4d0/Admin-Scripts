@@ -1,78 +1,27 @@
-﻿## Yammer: PowerShell Script to Compare an Export of Yammer Users Against Azure AD (o365 / Azure AD) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Compare an Export of Yammer Users Against Azure AD (o365 / Azure AD).
 
-<# 
+.DESCRIPTION
+    PowerShell Script to Compare an Export of Yammer Users Against Azure AD (o365 / Azure
+    AD).
 
-Copyright 2016 
+.PARAMETER UseExistingConnection
+    Use Existing Connection.
 
-Microsoft Licensed under the Apache License, Version 2.0 (the "License"); 
+.PARAMETER InputFile
+    Input File.
 
-you may not use this file except in compliance with the License. 
+.PARAMETER Outputfile
+    Outputfile.
 
-You may obtain a copy of the License at     
+.EXAMPLE
+    PS C:\> .\YammerUserMatchToAzureAD.ps1
+    PowerShell Script to Compare an Export of Yammer Users Against Azure AD (o365 / Azure AD).
 
-
-http://www.apache.org/licenses/LICENSE-2.0 
-
-
-Unless required by applicable law or agreed to in writing, software 
-
-distributed under the License is distributed on an "AS IS" BASIS, 
-
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
-
-See the License for the specific language governing permissions 
-
-and limitations under the License. 
-
-
-Yammer auditing tool for Office 365 looks for active Yammer accounts 
-
-that  are missing from Office 365 / Azure AD. 
-
-
-Takes User.csv file from Yammer Data Export as the input file.  
-
-Compares all Active Yammer accounts in the input file to user  
-
-lookup in Azure AD. User is searched by both email and proxyAddresses.  
-
-
-The output csv file is exactly matching the source file, but it includes 
-
-three new columns: exists_in_azure_ad, object_id and azure_licenses: 
-
-exists_in_azure_ad: Will be TRUE or FALSE, and signals that the user
-
-                     can be, or cannot be found in Office 365 / Azure AD 
-
-object_id: For users that can be found, lists the ObjectId in Azure AD 
-
-azure_licenses: For users that can be found, lists the SKUs assigned to the
-
-                 user in Azure AD. This information can be used to double check
-
-                 licenses are assigned correctly for each user. 
-
-Params - 
-
-UseExistingConnection: Defines if the script should try to use an existing
-
-                        Azure AD connection. Will prompt for credentials and will
-
-                        start a new connection if $FALSE. Default is $FALSE 
-
-InputFile: Source CSV file of users, coming from the Yammer User Export tool - https://www.yammer.com/YourTenant/data_exports/new_user_export
-
-OutputFile: Output location to save the final CSV to 
-
-
-Example - 
-
-./YammerUserMatchToAzureAD.ps1 -InputFile .\Users.csv -OutputFile .\Results.csv 
-
-
-
-#> 
+.NOTES
+    Resources:  http://www.apache.org/licenses/LICENSE-2.0; https://www.yammer.com/YourTenant/data_exports/new_user_export
+#>
 
 Param(
 

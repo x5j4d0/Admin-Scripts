@@ -1,21 +1,17 @@
-﻿## PowerShell Script to Upgrade a Windows Server Certificate Authority (CA) from CSP to KSP and from SHA-1 to SHA-256 ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Upgrade a Windows Server Certificate Authority (CA) from CSP to KSP and from SHA-1 to SHA-256.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Upgrade a Windows Server Certificate Authority (CA) from CSP to KSP
+    and from SHA-1 to SHA-256.
 
-Synopsis: PowerShell Script that backs up a Certification Authority (CA) and migrates the CA from CSP (Microsoft Strong Cryptographic Provider) to KSP (Microsoft Software Key Storage Provider), and from SHA-1 to SHA-256
+.EXAMPLE
+    PS C:\> .\UpgradeCertificateAuthority.ps1
+    PowerShell Script to Upgrade a Windows Server Certificate Authority (CA) from CSP to KSP and from SHA-1 to SHA-256.
 
-Overview: PowerShell script that takes a backup of a Certification Authority (CA) database files and Cert Authority 'Root' CA certificate', along with the CA configuration settings registry key, and then migrates the CA from CSP to KSP, and from SHA-1 to SHA-256
-
-Note: If your CA is already set to KSP (Microsoft Software Key Storage Provider) and you want to change the 'CNGHashAlgorithm' to 'SHA256'; you should only neeed to run the command below. New certs created moving forward will use the 'SHA256' Hash Algorithm
-
-certutil -setreg ca\csp\CNGHashAlgorithm SHA256
-
-Resources:
-
-https://blogs.technet.microsoft.com/heyscriptingguy/2016/02/15/migrate-windows-ca-from-csp-to-ksp-and-from-sha-1-to-sha-256-part-1/
-
-http://www.workingsysadmin.com/quick-script-share-upgrade-windows-certificate-authority-from-csp-to-ksp-and-from-sha-1-to-sha-256/
-
+.NOTES
+    Resources:  https://blogs.technet.microsoft.com/heyscriptingguy/2016/02/15/migrate-windows-ca-from-csp-to-ksp-and-from-sha-1-to-sha-256-part-1/; http://www.workingsysadmin.com/quick-script-share-upgrade-windows-certificate-authority-from-csp-to-ksp-and-from-sha-1-to-sha-256/
 #>
 
 #requires -Version 2

@@ -1,5 +1,17 @@
-﻿## o365: PowerShell Commands For The Online Services Module ##
-## You need to have the Online Services Module installed: http://g.microsoftonline.com/0BX10EN/423
+﻿<#
+.SYNOPSIS
+    PowerShell Commands For The Online Services Module.
+
+.DESCRIPTION
+    PowerShell Commands For The Online Services Module.
+
+.EXAMPLE
+    PS C:\> .\ConnectToMSOnline.ps1
+    PowerShell Commands For The Online Services Module.
+
+.NOTES
+    Requires:   MSOnline, MSOnlineExtended
+#>
 
 Import-Module MSOnline
 Import-Module MSOnlineExtended

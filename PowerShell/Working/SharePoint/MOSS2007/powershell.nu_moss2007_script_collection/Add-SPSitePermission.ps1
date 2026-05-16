@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    Add SP Site Permission.
+
+.DESCRIPTION
+    Add SP Site Permission.
+
+.PARAMETER url
+    url.
+
+.PARAMETER Group
+    Group.
+
+.PARAMETER Permission
+    Permission.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPSitePermission.ps1
+    Add SP Site Permission.
+#>
+
 ##################################################################################
 #
 #

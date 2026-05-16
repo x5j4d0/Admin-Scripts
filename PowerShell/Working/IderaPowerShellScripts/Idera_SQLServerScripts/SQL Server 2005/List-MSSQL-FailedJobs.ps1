@@ -1,18 +1,18 @@
-## =====================================================================
-## Title       : List-MSSQL-FailedJobs
-## Description : List failed SQL Server jobs using SMO
-## Author      : Idera
-## Date        : 9/1/2008
-## Input       : -serverInstance <server\instance>
-## 				  -verbose 
-## 				  -debug	
-## Output      : List failed jobs
-## Usage			: PS> .\List-MSSQL-FailedJobs -serverInstance MyServer -verbose -debug
-## Notes			: Adapted from Jakob Bindslet script
-## Tag			: SQL Server, SMO, SQL Agent Jobs
-## Change log  :
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    List Failed Jobs.
+
+.DESCRIPTION
+    List Failed Jobs.
+
+.PARAMETER serverInstance
+    server Instance.
+
+.EXAMPLE
+    PS C:\> .\List-MSSQL-FailedJobs.ps1
+
+#>
+
 param
 (
   	[string]$serverInstance="(local)",

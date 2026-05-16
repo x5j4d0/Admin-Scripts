@@ -1,10 +1,17 @@
-﻿## SharePoint Server: PowerShell Script to Add a Certificate File (.cer) to the Farm Trust ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Add a Certificate File (.cer) to the Farm Trust.
 
-## Overview: Adds a certificate (.cer) to the Farms trust relationship manager (/_admin/ManageTrust.aspx)
+.DESCRIPTION
+    PowerShell Script to Add a Certificate File (.cer) to the Farm Trust.
 
-## Environments: SharePoint Server 2010 / 2013 Farms
+.EXAMPLE
+    PS C:\> .\SP2010AddCertificateToManageTrust.ps1
+    PowerShell Script to Add a Certificate File (.cer) to the Farm Trust.
 
-## Usage: Edit the Variables to match your environment and run the script
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 ### Start Variables ###
 

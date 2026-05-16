@@ -1,14 +1,23 @@
-﻿## SharePoint Server: PowerShell Script To Check Service Accounts Permissions Set On A SQL Server Instance ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Check Service Accounts Permissions Set On A SQL Server Instance.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Check Service Accounts Permissions Set On A SQL Server Instance.
 
-Overview: PowerShell script that connects to a SQL Server Instance checking some details related to the SQL Instance, and also checks 
-server roles for the service account.
+.PARAMETER currentUser
+    Add your environment specific DOMAIN and USERNAME here.
 
-Resource: http://sharemypoint.in/2011/04/18/powershell-script-to-check-sql-server-connectivity-version-custering-status-user-permissions
+.PARAMETER sqlServer
+    Add your environment specific SQL Instance here.
 
+.EXAMPLE
+    PS C:\> .\SQLServerCheckSharePointAccountsPermissions.ps1
+    Edit the variables section and run to powerShell Script To Check Service Accounts Permissions Set On A SQL Server Instance.
+
+.NOTES
+    Resources:  http://sharemypoint.in/2011/04/18/powershell-script-to-check-sql-server-connectivity-version-custering-status-user-permissions
 #>
-
 
 $currentUser = "$env:USERDOMAIN\$Env:USERNAME" #Add your environment specific DOMAIN and USERNAME here
 $sqlServer = "SQLINSTANCE" #Add your environment specific SQL Instance here

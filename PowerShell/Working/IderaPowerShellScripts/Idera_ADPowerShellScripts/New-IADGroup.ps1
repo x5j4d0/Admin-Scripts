@@ -1,20 +1,17 @@
-## =====================================================================
-## Title       : New-IADGroup 
+﻿<#
+.SYNOPSIS
+    Create a new Active Directory group objects using ADSI..
 
-## Description : Create a new group in Active Directory.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       :  New-IADGroup [[-Name] <String>] [[-ParentContainer] <String>] [[-GroupScope] <String>] [[-GroupType] <String>] [[-Description] <String>]             
-##                     
-## Output      : System.DirectoryServices.DirectoryEntry
-## Usage       :
-##               1. Create universal security group TestGroup in Test OU
-##               New-IADGroup -Name  TestGroup -GroupScope universal -GroupType security -ParentContainer  "OU=Test,DC=domain,DC=com"
-##            
-## Notes       :
-## Tag         : group, activedirectory
-## Change log  :
-## =====================================================================
+.DESCRIPTION
+    Create a new Active Directory group objects using ADSI..
+
+.PARAMETER Name
+    Name.
+
+.EXAMPLE
+    PS C:\> .\New-IADGroup.ps1
+    Run the script to perform the described operation.
+#>
 
 function New-IADGroup {
     param(

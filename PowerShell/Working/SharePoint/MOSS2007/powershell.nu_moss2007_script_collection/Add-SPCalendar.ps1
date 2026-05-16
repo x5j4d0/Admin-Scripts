@@ -1,3 +1,39 @@
+﻿<#
+.SYNOPSIS
+    Add SP Calendar.
+
+.DESCRIPTION
+    Add SP Calendar.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Title
+    Title.
+
+.PARAMETER Location
+    Location.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER StartTime
+    Start Time.
+
+.PARAMETER EndTime
+    End Time.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPCalendar.ps1
+    Add SP Calendar.
+#>
+
 ##################################################################################
 #
 #

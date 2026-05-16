@@ -1,13 +1,20 @@
-﻿## SharePoint Server: PowerShell Script to run the Content Type Hub related Timer Jobs following Content Type Updates ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to run the Content Type Hub related Timer Jobs following Content Type Updates.
 
-<#
+.DESCRIPTION
+    PowerShell Script to run the Content Type Hub related Timer Jobs following Content Type
+    Updates.
 
-Overview: PowerShell Script that triggers the following timer jobs 'Content Type Hub'; 'Content Type Subscriber'. This is useful to run following changes made in the Content Type Hub that need to be pushed out
+.PARAMETER ctSubTJ
+    Change this path to match your web application URL.
 
-Usage: Edit the '-WebApplication' parameter to match the web applications you want the 'Content Type Subscriber' timer job to run against in your environment
+.EXAMPLE
+    PS C:\> .\SP2010RunContentTypeHubTimerJobs.ps1
+    Edit the variables section and run to powerShell Script to run the Content Type Hub related Timer Jobs following Content Type Updates.
 
-Environments: SharePoint Server 2010 / 2013 Farms
-
+.NOTES
+    Requires:   Microsoft.SharePoint.Powershell
 #>
 
 Add-PSSnapin Microsoft.SharePoint.Powershell -ErrorAction SilentlyContinue

@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : Get-SPView
-## Description : Gets A SP View
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : Get-SPView [[-url] <String>] [[-List] <String>] [[-View] <String>]
-## Output      : 
-## Usage       : Get-SPView -url http://moss -List "Shared Documents" -View "All Documents"
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : View, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve View.
+
+.DESCRIPTION
+    Retrieve View.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\Get-SPView.ps1
+
+#>
 
 param (
 

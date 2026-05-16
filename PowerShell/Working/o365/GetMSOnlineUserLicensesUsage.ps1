@@ -1,4 +1,27 @@
-## MSOnline: PowerShell Script To Connect To MS Online (o365) And Get A CSV Report On User License Usage Across Your Tenant ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Connect To MS Online (o365) And Get A CSV Report On User License Usage Across Your Tenant.
+
+.DESCRIPTION
+    PowerShell Script To Connect To MS Online (o365) And Get A CSV Report On User License
+    Usage Across Your Tenant.
+
+.PARAMETER o365login
+    Username of O365 Admin, will prompt if left empty.
+
+.PARAMETER o365pw
+    Password of O365 Admin, will prompt if left empty.
+
+.PARAMETER report_folder
+    don't forget the trailing \.
+
+.PARAMETER delimiter
+    CSV column delimiter, uses your local settings if not configured.
+
+.EXAMPLE
+    PS C:\> .\GetMSOnlineUserLicensesUsage.ps1
+    Edit the variables section and run to powerShell Script To Connect To MS Online (o365) And Get A CSV Report On User License Usage Across Your Tenant.
+#>
 
 ######## 
 #LicReport365 v0.5 

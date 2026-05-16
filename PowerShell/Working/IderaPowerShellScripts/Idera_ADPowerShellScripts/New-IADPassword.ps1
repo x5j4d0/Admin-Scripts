@@ -1,20 +1,23 @@
-## =====================================================================
-## Title       : New-IADPassword
-## Description : Generates a random password of the specified length.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : New-IADPassword [[-Length] <Int32>] [[-NumberOfNonAlphanumericCharacters] <Int32>] [[-HowMany] <Int32>]
-##                     
-## Output      : System.String 
-## Usage       :
-##               1. Generate 3 passwords, 8 characters length each with 2 punctuation characters. 
-##               New-IADPassword -HowMany 3 -Length 8 -NumberOfNonAlphanumericCharacters 2 
-##
-## Notes       : http://msdn.microsoft.com/en-us/library/system.web.security.membership.generatepassword.aspx
-## Tag         : password, security
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Create a new Active Directory password objects using ADSI..
 
+.DESCRIPTION
+    Create a new Active Directory password objects using ADSI..
+
+.PARAMETER Length
+    Length.
+
+.PARAMETER NumberOfNonAlphanumericCharacters
+    Number Of Non Alphanumeric Characters.
+
+.PARAMETER HowMany
+    How Many.
+
+.EXAMPLE
+    PS C:\> .\New-IADPassword.ps1
+    Run the script to perform the described operation.
+#>
 
 function New-IADPassword 
 

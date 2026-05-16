@@ -1,17 +1,14 @@
-## =====================================================================
-## Title       : Get-IADTombstoneUser
-## Description : Retrieve all deleted users in Active Directory.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No input               
-##                     
-## Output      : System.DirectoryServices.SearchResult
-## Usage       : Get-IADTombstoneUser
-##            
-## Notes       :
-## Tag         : user, tombstone, deleted, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory tombstone user objects using ADSI..
+
+.DESCRIPTION
+    Retrieve Active Directory tombstone user objects using ADSI..
+
+.EXAMPLE
+    PS C:\> .\Get-IADTombstoneUser.ps1
+    Run the script to perform the described operation.
+#>
 
 function Get-IADTombstoneUser 
 {

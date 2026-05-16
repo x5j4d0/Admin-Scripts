@@ -1,4 +1,18 @@
-﻿## MSOnline: PowerShell Script to Download All Office 365 Pre-requisites and PowerShell Modules (o365 / MSOnline) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Download All Office 365 Pre-requisites and PowerShell Modules (o365 / MSOnline).
+
+.DESCRIPTION
+    PowerShell Script to Download All Office 365 Pre-requisites and PowerShell Modules (o365
+    / MSOnline).
+
+.EXAMPLE
+    PS C:\> .\MSOnlineGetAllPowerShellModules.ps1
+    PowerShell Script to Download All Office 365 Pre-requisites and PowerShell Modules (o365 / MSOnline).
+
+.NOTES
+    Resources:  http://hochwald.net"; https://github.com/jhochwald/MyPowerShellStuff/issues"
+#>
 
 #region License
 

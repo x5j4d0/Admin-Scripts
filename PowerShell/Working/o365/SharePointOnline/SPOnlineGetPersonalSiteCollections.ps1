@@ -1,23 +1,21 @@
-﻿## SharePoint Online: PowerShell Script to Get All Personal Sites (MySite) for One Drive For Business (OD4B) in a Tenant via CSOM (SPOnline) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get All Personal Sites (MySite) for One Drive For Business (OD4B) in a Tenant via CSOM (SPOnline).
 
-<#
+.DESCRIPTION
+    PowerShell Script to Get All Personal Sites (MySite) for One Drive For Business (OD4B) in
+    a Tenant via CSOM (SPOnline).
 
-Overview: PowerShell Script that returns all user Personal Sites for MySite / One Drive For Business in a Tenant via CSOM - with Text file output of the Personal site paths
+.PARAMETER LogFile
+    Change this path to match your requirements.
 
-Usage:
+.EXAMPLE
+    PS C:\> .\SPOnlineGetPersonalSiteCollections.ps1
+    Edit the variables section and run to powerShell Script to Get All Personal Sites (MySite) for One Drive For Business (OD4B) in a Tenant via CSOM (SPOnline).
 
-- Replace the 'contoso' placeholder values with your own tenant prefix
-
-- Provide the Tenant Administrator credentials for the following variables '$AdminAccount'; '$AdminPass'
-
-- Provide the path to the text file report in the '$LogFile' variable
-
-Note: The 'Request-SPOPersonalSite' cmdlet requests that the users specified be enqueued so that a Personal Site be created for each. The actual Personal site is created by a Timer Job later.
-
-Resource: https://technet.microsoft.com/en-us/library/dn911464.aspx
-
+.NOTES
+    Resources:  https://technet.microsoft.com/en-us/library/dn911464.aspx
 #>
-
 
 $credentials = Get-Credential
 Connect-SPOService -Url "https://contoso-admin.sharepoint.com" -credential $credentials

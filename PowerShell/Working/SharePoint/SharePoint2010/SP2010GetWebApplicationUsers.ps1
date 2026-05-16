@@ -1,4 +1,23 @@
-﻿## SharePoint Server: PowerShell Script To Export Web Application User Profiles To A CSV File ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Export Web Application User Profiles To A CSV File.
+
+.DESCRIPTION
+    PowerShell Script To Export Web Application User Profiles To A CSV File.
+
+.PARAMETER siteUrl
+    Change this to suit your environment.
+
+.PARAMETER outputFile
+    Change this path to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\SP2010GetWebApplicationUsers.ps1
+    Edit the variables section and run to powerShell Script To Export Web Application User Profiles To A CSV File.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 # Environments: SharePoint Server 2010 Farms
 

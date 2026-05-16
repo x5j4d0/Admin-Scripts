@@ -1,4 +1,19 @@
-﻿##########################################################################################
+﻿<#
+.SYNOPSIS
+    Get AD Group Modifications Report.
+
+.DESCRIPTION
+    Get AD Group Modifications Report.
+
+.PARAMETER Content
+    Content.
+
+.EXAMPLE
+    PS C:\> .\GetADGroupModificationsReport.ps1
+    Get AD Group Modifications Report.
+#>
+
+##########################################################################################
 # PowerShell: Script To Query Your Domain Controllers For A Daily HTMl Group Modifications Report
 #
 # NAME: GetADGroupModificationsReport.ps1

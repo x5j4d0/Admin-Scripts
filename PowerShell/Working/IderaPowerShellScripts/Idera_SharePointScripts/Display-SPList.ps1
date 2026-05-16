@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : Display-SPList
-## Description : Displays All Lists
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : Display-SPList [[-url] <String>]
-## Output      : 
-## Usage       : Display-SPList -url http://moss
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : List, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Display List.
+
+.DESCRIPTION
+    Display List.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\Display-SPList.ps1
+
+#>
 
 param (
 

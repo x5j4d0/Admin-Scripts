@@ -1,20 +1,14 @@
-## =====================================================================
-## Title       : Disable-IADObject
-## Description : Disable a user or computer object in Active Directory.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No Input                 
-##                     
-## Output      : System.DirectoryServices.DirectoryEntry
-## Usage       : 
-##               1. Disable computer Server1
-##               Get-IADComputer Server1 | Disable-IADObject
-##            
-## Notes       :
-## Tag         : user, computer, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Disable Active Directory object objects using ADSI..
 
+.DESCRIPTION
+    Disable Active Directory object objects using ADSI..
+
+.EXAMPLE
+    PS C:\> .\Disable-IADObject.ps1
+    Run the script to perform the described operation.
+#>
 
 filter Disable-IADObject {
 

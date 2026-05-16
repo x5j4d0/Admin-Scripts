@@ -1,4 +1,18 @@
-﻿## DirSync: PowerShell Commands to Configure Accidental Deletion Functionality (Prevent Accidental Deletes) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Commands to Configure Accidental Deletion Functionality (Prevent Accidental Deletes).
+
+.DESCRIPTION
+    PowerShell Commands to Configure Accidental Deletion Functionality (Prevent Accidental
+    Deletes).
+
+.EXAMPLE
+    PS C:\> .\DirSyncSetPreventAccidentalDeletes.ps1
+    PowerShell Commands to Configure Accidental Deletion Functionality (Prevent Accidental Deletes).
+
+.NOTES
+    Requires:   Dirsync
+#>
 
 #Import the DirSync Module
 Import-Module Dirsync

@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : Get-SPWeb
-## Description : Gets a SP WebSite
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : Get-SPWeb [[-url] <String>]
-## Output      : 
-## Usage       : Get-SPWeb -url http://moss
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : Site, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Web.
+
+.DESCRIPTION
+    Retrieve Web.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\Get-SPWeb.ps1
+
+#>
 
 param (
 

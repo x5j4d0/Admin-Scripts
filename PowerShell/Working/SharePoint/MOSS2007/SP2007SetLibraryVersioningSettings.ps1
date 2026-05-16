@@ -1,5 +1,29 @@
-﻿## MOSS 2007: PowerShell Script To Set Library Version Settings And Delete Major and Minor Versions
-## Resource: http://blogs.sharepointpro.net/2011/04/29/limit-the-number-of-versions-in-sharepoint-2007.aspx
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Set Library Version Settings And Delete Major and Minor Versions.
+
+.DESCRIPTION
+    PowerShell Script To Set Library Version Settings And Delete Major and Minor Versions.
+
+.PARAMETER siteUrl
+    Change this to suit your environment.
+
+.PARAMETER csvFile
+    Change this to suit your environment.
+
+.PARAMETER useCsvFile
+    If set to $true; this will look for the $csvFile specified above.
+
+.PARAMETER deleteVersion
+    CAUTION!!!When set to false will only report on files that would be Deleted, else if $true versions are Deleted.
+
+.PARAMETER setVersionLimit
+    When set to $true will set Major Versions to $keepMajorVersions.  If minor versions are enabled, will set number of minor versions to $keepMinorVersions.
+
+.EXAMPLE
+    PS C:\> .\SP2007SetLibraryVersioningSettings.ps1
+    Edit the variables section and run to powerShell Script To Set Library Version Settings And Delete Major and Minor Versions.
+#>
 
 ### BEGIN VARIABLES ###
 $siteUrl="http://teamsites.training.local/sites/Versions" #Change this to suit your environment

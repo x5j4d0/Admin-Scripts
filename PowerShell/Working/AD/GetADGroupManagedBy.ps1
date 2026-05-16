@@ -1,4 +1,23 @@
-﻿## Active Directory: PowerShell Script to Get AD Groups Details Including the Manager (ManagedBy) Property ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get AD Groups Details Including the Manager (ManagedBy) Property.
+
+.DESCRIPTION
+    PowerShell Script to Get AD Groups Details Including the Manager (ManagedBy) Property.
+
+.PARAMETER GroupName
+    Provide your Group Name filter, or leave blank to report on all Groups in the domain.
+
+.PARAMETER ReportPath
+    Change this path to match your environment.
+
+.EXAMPLE
+    PS C:\> .\GetADGroupManagedBy.ps1
+    Edit the variables section and run to powerShell Script to Get AD Groups Details Including the Manager (ManagedBy) Property.
+
+.NOTES
+    Requires:   ActiveDirectory
+#>
 
 ### Start Variables ###
 $GroupName = "Sharepoint" #Provide your Group Name filter, or leave blank to report on all Groups in the domain

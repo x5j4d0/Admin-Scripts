@@ -1,4 +1,31 @@
-﻿##  MSOnline: PowerShell Script to Get Detailed Office 365 User Information With Regards To User MSOnline and Exchange Online Properties (o365 / MSOnline / ExchangeOnline) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get Detailed Office 365 User Information With Regards To User MSOnline and Exchange Online Properties (o365 / MSOnline / ExchangeOnline).
+
+.DESCRIPTION
+    This script will establish a connection with the Office 365 provision web service API and
+    Exchange Online (https://ps.outlook.com/powershell) and collect information about users
+    including licenses, mailbox usage, retention, activesync devices, etc. If a credential is
+    specified, it will be used to establish a connection with the provisioning web service
+    API. If a credential is not specified, an attempt is made to identify an existing
+    connection to the provisioning web service API. If an existing connection is identified,
+    the existing connection is used. If an existing connection is not identified, the user is
+    prompted for credentials so that a new connection can be established. If a credential is
+    specified, it will be used to establish a new remote PowerShell session connected to
+    Exchange Online. If a PowerShell session(s) exists that is connected to Exchange Online,
+    the session(s) will be removed so that a new session can be created using the specified
+    credential. If a credential is not specified, an attempt is made to connect to Exchange
+    Online. If the connection attempt is successful, the existing connection is used. If it
+    is not successful, the user is prompted for credentials so that a new connection can be
+    established.
+
+.EXAMPLE
+    PS C:\> .\GetMSOnlineUserReport.ps1
+    PowerShell Script to Get Detailed Office 365 User Information With Regards To User MSOnline and Exchange Online Properties (o365 / MSOnline / ExchangeOnline).
+
+.NOTES
+    Resources:  https://ps.outlook.com/powershell
+#>
 
 #------------------------------------------------------------------------------
 #

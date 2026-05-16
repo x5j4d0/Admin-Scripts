@@ -1,3 +1,30 @@
+﻿<#
+.SYNOPSIS
+    Add SP List.
+
+.DESCRIPTION
+    Add SP List.
+
+.PARAMETER url
+    url.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER Type
+    Type.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPList.ps1
+    Add SP List.
+#>
+
 ##################################################################################
 #
 #

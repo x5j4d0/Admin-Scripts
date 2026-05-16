@@ -1,18 +1,18 @@
-## =====================================================================
-## Title       : Get-MSSQL-DB-UsingSMO
-## Description : Show all databases using SMO for a given server instance
-## Author      : Idera
-## Date        : 6/27/2008
-## Input       : -serverInstance <server\instance>
-## 				  -verbose 
-## 				  -debug	
-## Output      : Database IDs and Names
-## Usage			: PS> .\Get-MSSQL-DB-UsingSMO -serverInstance MyServer -verbose -debug
-## Notes			: Adapted from Jakob Bindslet script
-## Tag			: SQL Server, SMO, List databases
-## Change log  :
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Retrieve DB Using SMO.
+
+.DESCRIPTION
+    Retrieve DB Using SMO.
+
+.PARAMETER serverInstance
+    server Instance.
+
+.EXAMPLE
+    PS C:\> .\Get-MSSQL-DB-UsingSMO.ps1
+
+#>
+
 param
 (
   	[string]$serverInstance = "(local)",

@@ -1,3 +1,15 @@
+﻿<#
+.SYNOPSIS
+    Load MSSQL SMO.
+
+.DESCRIPTION
+    Load MSSQL SMO.
+
+.EXAMPLE
+    PS C:\> .\Load-MSSQL-SMO.ps1
+    Load MSSQL SMO.
+#>
+
 # Load-MSSQL-SMO.ps1
 #
 

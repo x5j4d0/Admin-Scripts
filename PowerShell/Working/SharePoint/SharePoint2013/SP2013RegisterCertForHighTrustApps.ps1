@@ -1,29 +1,27 @@
-## SharePoint Server: PowerShell Script To Register Certificates For High Trust Provider Hosted Apps On A SharePoint Farm ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Register Certificates For High Trust Provider Hosted Apps On A SharePoint Farm.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Register Certificates For High Trust Provider Hosted Apps On A
+    SharePoint Farm.
 
-Overview: PowerShell Script to configure a SharePoint Farm to use Certificates and configure trust for Provider Hosted Apps
+.PARAMETER publicCertPath
+    Change this path to match your environment. CER certificate type should be 'Base-64 encoded X.509'.
 
-A high-trust app is a provider-hosted app for SharePoint that uses the digital certificates to establish trust between the remote web application and SharePoint. 
-"High-trust" is not the same as "full trust". A high-trust app must still request app permissions.
-The app is considered "high-trust" because it is trusted to use any user identity that the app needs, because the app is responsible for creating the user portion of the access token that it passes to SharePoint.
+.PARAMETER issuerId
+    IssuerId GUID requires lower case alpha characters.
 
-Environments: SP2013 Farms
+.PARAMETER spurl
+    Change this Web Application URL to match your environment.
 
-Usage: Change the following variables to match your requirements '$publicCertPath'; '$issuerId'; '$spurl'; '$serviceConfig.AllowOAuthOverHttp' and run the script
+.EXAMPLE
+    PS C:\> .\SP2013RegisterCertForHighTrustApps.ps1
+    Edit the variables section and run to powerShell Script To Register Certificates For High Trust Provider Hosted Apps On A SharePoint Farm.
 
-Tip: Use the following PowerShell Commandlets to enumerate and manage your SharePoint Farm Security Token Service and Trusted Root Authority
-
-Get-SPSecurityTokenServiceConfig (http://technet.microsoft.com/en-us/library/ff607642.aspx)
-Get-SPTrustedRootAuthority (http://technet.microsoft.com/en-us/library/ff607623.aspx)
-Remove-SPTrustedRootAuthority (http://technet.microsoft.com/en-us/library/ff607741.aspx)
-Get-SPTrustedSecurityTokenIssuer (http://technet.microsoft.com/en-us/library/jj219760.aspx)
-Remove-SPTrustedSecurityTokenIssuer (http://technet.microsoft.com/en-us/library/jj219755.aspx)
-
-Important: Always leave the default 'local' SPTrustedRootAuthority in place on a Farm (Microsoft.SharePoint.Administration.SPTrustedRootAuthority)
-
-Resources: http://msdn.microsoft.com/en-us/library/fp179901.aspx; http://www.sharepointpals.com/post/Step-by-Step-approach-to-create-a-Provider-Hosted-Application-in-SharePoint-2013
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://technet.microsoft.com/en-us/library/ff607642.aspx; http://technet.microsoft.com/en-us/library/ff607623.aspx
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue
@@ -46,7 +44,7 @@ $certificate = Get-PfxCertificate $publicCertPath
 
 $fullIssuerIdentifier = $issuerId + '@' + $realm
 
-New-SPTrustedSecurityTokenIssuer -Name $issuerId -Certificate $certificate -RegisteredIssuerName $fullIssuerIdentifier �IsTrustBroker
+New-SPTrustedSecurityTokenIssuer -Name $issuerId -Certificate $certificate -RegisteredIssuerName $fullIssuerIdentifier IsTrustBroker
 
 iisreset
 

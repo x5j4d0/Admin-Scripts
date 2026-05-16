@@ -1,7 +1,17 @@
-﻿## PowerShell: Using PowerShell To Run Log Parser Queries ## 
-## Overview: The Script below is an example of how you can use Log Parser with PowerShell to query IIS logs for Protocol Status messages
-## Requirements: Needs Log Parser 2.2 installed on the machine you run the script from
-## Usage Example: ./ProtocolStatusQuery.ps1 "\\ServerName\d$\Logs\IIS\*.log"
+﻿<#
+.SYNOPSIS
+    Using PowerShell To Run Log Parser Queries.
+
+.DESCRIPTION
+    Using PowerShell To Run Log Parser Queries.
+
+.PARAMETER iisfiles
+    Variable for the IIS log files.
+
+.EXAMPLE
+    PS C:\> .\ProtocolStatusQuery.ps1
+    Edit the variables section and run to using PowerShell To Run Log Parser Queries.
+#>
 
 $iisfiles = dir $args[0] #Variable for the IIS log files
 #The 2 variables below make use of the LogParser COM Object

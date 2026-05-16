@@ -1,4 +1,22 @@
-﻿Function New-FTPItem
+﻿<#
+.SYNOPSIS
+    Creates a new folder on ftp.
+
+.DESCRIPTION
+    The New-FTPItem cmdlet creates a new folder in specific path in current ftp session.
+
+.PARAMETER Path
+    Path.
+
+.EXAMPLE
+    PS C:\> .\New-FTPItem.ps1
+    Creates a new folder on ftp.
+
+.NOTES
+    Resources:  http://commandlinegeeks.com/
+#>
+
+Function New-FTPItem
 {
     <#
 	.SYNOPSIS

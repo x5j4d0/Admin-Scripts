@@ -1,18 +1,24 @@
-## =====================================================================
-## Title       : Get-MSSQL-ServerRegisterations
-## Description : Exports current groups and servers
-## Author      : Idera
-## Date        : 1/28/2009
-## Input       : $file -verbose -debug	
-## Output      : 
-## Usage			
-## 	Function	: Get-MSSQL-ServerRegisterations($file)
-##    Script	: PS> .\GetRegisteredSQLServers -file 'C:\Temp\File.txt' -verbose -debug
-## Notes			:
-## Tag			:
-## Change Log  : Revised SMO Assemblies
-##======================================================================
- 
+﻿<#
+.SYNOPSIS
+    Retrieve Server Registerations.
+
+.DESCRIPTION
+    Retrieve Server Registerations.
+
+.PARAMETER file
+    file.
+
+.PARAMETER verbose
+    verbose.
+
+.PARAMETER debug
+    debug.
+
+.EXAMPLE
+    PS C:\> .\Get-MSSQL-ServerRegisterations.ps1
+
+#>
+
 param
 (
   	[string]$file = "C:\TEMP\SQLServerRegistrations.txt",

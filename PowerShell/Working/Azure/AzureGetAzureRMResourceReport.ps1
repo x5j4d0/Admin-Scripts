@@ -1,18 +1,16 @@
-﻿## Azure: PowerShell Script to Perform an Azure Resources Report by Tags ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Perform an Azure Resources Report by Tags.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Perform an Azure Resources Report by Tags.
 
-Overview: PowerShell Script that reports on Azure Resources according to Tags. Uses the 'Get-AzureRmResource' PowerShell commandlet.
+.EXAMPLE
+    PS C:\> .\AzureGetAzureRMResourceReport.ps1
+    PowerShell Script to Perform an Azure Resources Report by Tags.
 
-Usage: Edit the following properties / variables and run the script: 'Select-AzureRmSubscription'; '$results'
-
-Requires: AzureRM PowerShell Module
-
-Resources: 
-
-http://harvestingclouds.com/post/script-sample-generate-azure-resources-report-by-tags
-https://github.com/HarvestingClouds/PowerShellSamples/blob/a4eb910aa8eb2cdd340c2866cde150282b47067e/Scripts/Azure%20Resources%20Report%20by%20Tags.ps1
-
+.NOTES
+    Resources:  http://harvestingclouds.com/post/script-sample-generate-azure-resources-report-by-tags; https://github.com/HarvestingClouds/PowerShellSamples/blob/a4eb910aa8eb2cdd340c2866cde150282b47067e/Scripts/Azure%20Resources%20Report%20by%20Tags.ps1
 #>
 
 #Adding Azure Account and Subscription

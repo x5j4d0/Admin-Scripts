@@ -1,24 +1,17 @@
-﻿## SharePoint Server: PowerShell Script to Update the Values used in the Security Token Service Configuration ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Update the Values used in the Security Token Service Configuration.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Update the Values used in the Security Token Service Configuration.
 
-Overview: When using Claims Based Authentication; Security Token Caching is set as a default in SharePoint Server 2013 Farms to the following values
+.EXAMPLE
+    PS C:\> .\SP2013UpdateSecurityTokenServiceConfig.ps1
+    PowerShell Script to Update the Values used in the Security Token Service Configuration.
 
-WindowsTokenLifetime = 600 Minutes 
-LogonTokenCacheExpirationWindow = 10 Minutes
-
-If you have an environment where Active Directory Group Memberships are changing more frequently; then these properties can be adjusted
-
-Environments: SharePoint Server 2013 Farms
-
-Usage: Edit the minute values in the following properties: '$sts.WindowsTokenLifetime'; '$sts.LogonTokenCacheExpirationWindow' and run the script
-
-Resources: 
-
-http://blog.trivadis.com/b/collaboration/archive/2014/06/04/ad-group-membership-not-updated-immediately-to-sharepoint.aspx
-
-https://technet.microsoft.com/en-us/library/ff607642.aspx
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://blog.trivadis.com/b/collaboration/archive/2014/06/04/ad-group-membership-not-updated-immediately-to-sharepoint.aspx; https://technet.microsoft.com/en-us/library/ff607642.aspx
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue

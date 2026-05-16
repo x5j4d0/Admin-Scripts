@@ -1,3 +1,18 @@
+﻿<#
+.SYNOPSIS
+    Web Site Availability Monitor.
+
+.DESCRIPTION
+    Web Site Availability Monitor.
+
+.PARAMETER Outputreport
+    99000"" face=""Microsoft Tai le""><H2> Website Availability Report </H2></font><Table border=1 cellpadding=1 cellspacing=1><TR bgcolor=gray align=center><TD><B>URL</B></TD><TD><B>StatusCode</B></TD><TD><B>StatusDescription</B></TD><TD><B>ResponseLength</B></TD><TD><B>TimeTaken</B></TD</TR>".
+
+.EXAMPLE
+    PS C:\> .\WebSiteAvailabilityMonitor.ps1
+    Edit the variables section and run to web Site Availability Monitor.
+#>
+
 ###############################################################################################
 ## 
 ## Website Availability Monitoring With PowerShell

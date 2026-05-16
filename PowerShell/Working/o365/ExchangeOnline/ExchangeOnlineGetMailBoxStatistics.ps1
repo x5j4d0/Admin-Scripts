@@ -1,4 +1,18 @@
-﻿## Exchange Online: PowerShell Script to Get Mail Box Statistics / Sizes for All MS Exchange Online Mail Boxes Or those listed in a Text Input File (o365)  ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get Mail Box Statistics / Sizes for All MS Exchange Online Mail Boxes Or those listed in a Text Input File (o365).
+
+.DESCRIPTION
+    PowerShell Script to Get Mail Box Statistics / Sizes for All MS Exchange Online Mail
+    Boxes Or those listed in a Text Input File (o365).
+
+.PARAMETER OutputFile
+    The CSV Output file that is created, change this to match your environment.
+
+.EXAMPLE
+    PS C:\> .\ExchangeOnlineGetMailBoxStatistics.ps1
+    Edit the variables section and run to powerShell Script to Get Mail Box Statistics / Sizes for All MS Exchange Online Mail Boxes Or those listed in a Text Input File (o365).
+#>
 
 ################################################################################################################################################################
 # Parameters: Script accepts 3 parameters from the command line

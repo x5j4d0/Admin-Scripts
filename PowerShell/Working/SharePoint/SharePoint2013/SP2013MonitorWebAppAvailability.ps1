@@ -1,7 +1,15 @@
-﻿## SharePoint Server: PowerShell Script To Monitor SharePoint Web App Availability With Exception HTML Email Functionality ##
-## Environments: MOSS 2007 and SharePoint Server 2010 / 2013 Environments - can be modified for any other .NET Web Apps
-## Usage: Edit variables to suit your environment. Script tries to download page content and sends email alert for errors
-## Resource: http://blog.henryong.com/2011/11/30/sharepoint-web-pagevalid-site-monitoring-with-email-alerts-powershell-script
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Monitor SharePoint Web App Availability With Exception HTML Email Functionality.
+
+.DESCRIPTION
+    PowerShell Script To Monitor SharePoint Web App Availability With Exception HTML Email
+    Functionality.
+
+.EXAMPLE
+    PS C:\> .\SP2013MonitorWebAppAvailability.ps1
+    PowerShell Script To Monitor SharePoint Web App Availability With Exception HTML Email Functionality.
+#>
 
 ############# Start Variables ################
 $urls = @("https://url1", "https://url2")

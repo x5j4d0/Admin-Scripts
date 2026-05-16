@@ -1,17 +1,23 @@
-## SharePoint Server: PowerShell Script to Enable Email Notifications on Lists via CSOM ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Enable Email Notifications on Lists via CSOM.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Enable Email Notifications on Lists via CSOM.
 
-Overview: In some SharePoint Farms the 'E-Mail Notification' option to 'Send e-mail when ownership is assigned?' is not present under 'List Settings --> Advanced settings'
+.PARAMETER SPSite
+    Provide your SharePoint site URL here.
 
-Note: This option only appears to be available on 'Issue Tracking' lists on the affected Farms 'out of the box'
+.PARAMETER SPList
+    provide your List Name here.
 
-Environments: SharePoint Server 2013 Farms
+.EXAMPLE
+    PS C:\> .\SP2013EnableEMailNotificationOnLists.ps1
+    Edit the variables section and run to powerShell Script to Enable Email Notifications on Lists via CSOM.
 
-Usage: Edit the following variables to match your environment and run the script: '$SPSite'; '$SPList'. Change the 'EnableAssignToEmail' value to '$false' if you want to disable this property
-
-Resource: https://gallery.technet.microsoft.com/office/Enable-email-notifications-390a927c
-
+.NOTES
+    Requires:   Microsoft.SharePoint.Powershell
+    Resources:  https://gallery.technet.microsoft.com/office/Enable-email-notifications-390a927c
 #>
 
 Add-PSSnapin Microsoft.SharePoint.Powershell -ErrorAction SilentlyContinue

@@ -1,4 +1,15 @@
-﻿## PowerShell: Script to list Certificate Details stored in a Local Machine / Currecnt User Certificate Store  ##
+﻿<#
+.SYNOPSIS
+    Script to list Certificate Details stored in a Local Machine / Currecnt User Certificate Store.
+
+.DESCRIPTION
+    Script to list Certificate Details stored in a Local Machine / Currecnt User Certificate
+    Store.
+
+.EXAMPLE
+    PS C:\> .\GetInstalledCertificates.ps1
+    Script to list Certificate Details stored in a Local Machine / Currecnt User Certificate Store.
+#>
 
 Set-Location Cert:\LocalMachine\My #Set the path to the 'Local Computer' Personal certificate store
 #Set-Location Cert:\CurrentUser\My #Set the path to the 'Current User' Personal Certfiicate store

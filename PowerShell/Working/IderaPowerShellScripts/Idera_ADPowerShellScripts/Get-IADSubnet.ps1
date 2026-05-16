@@ -1,22 +1,17 @@
-## =====================================================================
-## Title       : Get-IADSubnet
-## Description : Retrieve the subnets in a forest or current site.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No input             
-##                     
-## Output      : System.Management.Automation.PSCustomObject
-## Usage       : 
-##               1. Retrieve all subnets in the current site 
-##               Get-IADSubnet 
-## 
-##               2. Retrieve all subnets in the current forest 
-##               Get-IADSubnet -All
-## Notes       :
-## Tag         : subnet, site, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory subnet objects using ADSI..
 
+.DESCRIPTION
+    Retrieve Active Directory subnet objects using ADSI..
+
+.PARAMETER All
+    All.
+
+.EXAMPLE
+    PS C:\> .\Get-IADSubnet.ps1
+    Run the script to perform the described operation.
+#>
 
 function Get-IADSubnet 
 {

@@ -1,24 +1,35 @@
-## =====================================================================
-## Title       : Get-IADComputer
-## Description : Retrieve all computer objects in a domain or container.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : Get-IADComputer [[-Name] <String>] [[-SearchRoot] <String>] [[-PageSize] <Int32>] [[-SizeLimit] <Int32>] [[-SearchScope] <String>]
-##                     
-## Output      : System.DirectoryServices.DirectoryEntry
-## Usage       : 
-##               1. Get all domain enabled computers which name starts with WRK
-##               Get-IADComputer -Name WRK* -Enabled 
-##
-##               2. Get all disabled computers from the Computers container
-##               Get-IADComputer -SearchRoot 'CN=Computers,DC=Domain,DC=com' -Disabled 
-##
-## Notes       :
-## Tag         : computer, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory computer objects using ADSI..
 
+.DESCRIPTION
+    Retrieve Active Directory computer objects using ADSI..
 
+.PARAMETER Name
+    Name.
+
+.PARAMETER SearchRoot
+    Search Root.
+
+.PARAMETER PageSize
+    Page Size.
+
+.PARAMETER SizeLimit
+    Size Limit.
+
+.PARAMETER SearchScope
+    Search Scope.
+
+.PARAMETER Enabled
+    Enabled.
+
+.PARAMETER Disabled
+    Disabled.
+
+.EXAMPLE
+    PS C:\> .\Get-IADComputer.ps1
+    Run the script to perform the described operation.
+#>
 
 function Get-IADComputer { 
  param(

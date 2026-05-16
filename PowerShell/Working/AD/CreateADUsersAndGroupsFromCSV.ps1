@@ -1,39 +1,18 @@
-﻿## Active Directory: PowerShell Functions to Create AD Users and Groups, and Assign Members to Groups from CSV Input Files ##
+﻿<#
+.SYNOPSIS
+    PowerShell Functions to Create AD Users and Groups, and Assign Members to Groups from CSV Input Files.
 
-<#
+.DESCRIPTION
+    PowerShell Functions to Create AD Users and Groups, and Assign Members to Groups from CSV
+    Input Files.
 
-Overview: PowerShell functions to create AD User and Group accounts, and can also be modified to create Groups with specified Members assigned to them. Script uses CSV Input files
+.EXAMPLE
+    PS C:\> .\CreateADUsersAndGroupsFromCSV.ps1
+    PowerShell Functions to Create AD Users and Groups, and Assign Members to Groups from CSV Input Files.
 
-Usage:
-
-1. Creating users
-
-Create a CSV with the following headers, and add your data to it:
-
-sAMAccountName,FirstName,LastName,DisplayName,Description,Password
-
-Run the script calling the function, and specifying the required parameters like the example below:
-
-Create-ADAccountsFromCSV -CSVPath "C:\Scripts\UserAccounts.csv" -OrgUnit "OU=Staff,DC=acme,DC=local" -Type "User"
-
-2. Creating Groups and Assigning Members to the Groups
-
-Create a CSV with the following headers, and add your data to it:
-
-sAMAccountName,Member1,Member2,Member3,Member4,Member5
-
-Note: For additional Members; just add additional member columns to the CSV file - for example 'Member6','Member7'
-
-Run the script calling the function, and specifying the required parameters like the example below:
-
-Create-ADAccountsFromCSV -CSVPath "C:\Scripts\GroupAccounts.csv" -OrgUnit "OU=Groups,DC=acme,DC=local" -Type "Group"
-
-Resources: 
-
-http://get-spscripts.com/2011/08/creating-bulk-active-directory-user-and.html
-http://technet.microsoft.com/en-us/library/ee617253.aspx
-http://technet.microsoft.com/en-us/library/ee617258.aspx
-
+.NOTES
+    Requires:   ActiveDirectory
+    Resources:  http://get-spscripts.com/2011/08/creating-bulk-active-directory-user-and.html; http://technet.microsoft.com/en-us/library/ee617253.aspx
 #>
 
 #Import the PowerShell module containing AD cmdlets

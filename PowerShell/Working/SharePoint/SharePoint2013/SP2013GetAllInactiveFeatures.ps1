@@ -1,19 +1,21 @@
-﻿## SharePoint Server: PowerShell Script to List All Inactive Features at Farm, Web Application, Site Collection, Web (sub-site) Scope ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to List All Inactive Features at Farm, Web Application, Site Collection, Web (sub-site) Scope.
 
-<#
+.DESCRIPTION
+    PowerShell Script to List All Inactive Features at Farm, Web Application, Site
+    Collection, Web (sub-site) Scope.
 
-Overview: Script that reports on all inactive SharePoint Features at Farm, Web Application, Site Collection, Web (sub-site) Scope
+.PARAMETER siteFeatures
+    Farm, WebApp, Site and Web.
 
-Environments: SharePoint Server 2010 / 2013 Farms
+.EXAMPLE
+    PS C:\> .\SP2013GetAllInactiveFeatures.ps1
+    Edit the variables section and run to powerShell Script to List All Inactive Features at Farm, Web Application, Site Collection, Web (sub-site) Scope.
 
-Usage: Edit the following areas to meet your Scope requirements and run the sctipt: '$_.Scope', 'Get-SPFeature'
-
-Resources: 
- 
-http://www.theroks.com/list-all-installed-features-that-are-not-active-with-powershell
-
-http://sharepoint.stackexchange.com/questions/76245/powershell-command-to-find-active-features-for-site-collection
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://www.theroks.com/list-all-installed-features-that-are-not-active-with-powershell; http://sharepoint.stackexchange.com/questions/76245/powershell-command-to-find-active-features-for-site-collection
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell"

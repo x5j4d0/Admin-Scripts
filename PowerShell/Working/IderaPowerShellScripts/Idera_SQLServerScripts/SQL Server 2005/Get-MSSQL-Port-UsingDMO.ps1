@@ -1,18 +1,24 @@
-## =====================================================================
-## Title       : Get-MSSQL-Port-UsingDMO
-## Description : Retrieve SQL Server port configured for use
-## Author      : Idera
-## Date        : 9/1/2008
-## Input       : -serverInstance <server\instance> 
-## 				  -verbose 
-## 				  -debug	
-## Output      : SQL Server port #
-## Usage			: PS> .\Get-MSSQL-Port-UsingDMO -serverInstance MyServer -verbose -debug
-## Notes			: Adapted from Jakob Bindslet script
-## Tag			: SQL Server, DMO, Port, Configuration
-## Change log  :
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Retrieve Port Using DMO.
+
+.DESCRIPTION
+    Retrieve Port Using DMO.
+
+.PARAMETER serverInstance
+    server Instance.
+
+.PARAMETER verbose
+    verbose.
+
+.PARAMETER debug
+    debug.
+
+.EXAMPLE
+    PS C:\> .\Get-MSSQL-Port-UsingDMO.ps1
+
+#>
+
 param
 (
   	[string]$serverInstance,

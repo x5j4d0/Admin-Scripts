@@ -1,19 +1,24 @@
-## =====================================================================
-## Title       : Connect-MSSQL-IPWindowsAuth
-## Description : Connect to SQL Server using IP address, instance and 
-##                  Windows authentication
-## Author      : Idera
-## Date        : 9/1/2008
-## Input       : -ipAddress < xxx.xxx.xxx.xxx | xxx.xxx.xxx.xxx\instance >
-##               -verbose 
-##               -debug	
-## Output      : Database names and owners
-## Usage			: PS> .\Connect-MSSQL-IPWindowsAuth -ipAddress 127.0.0.1 -verbose -debug
-## Notes 		: 
-##	Tag			: MSSQL, connect, IP, Windows Authentication
-## Change Log	:
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Connect to IP Windows Auth.
+
+.DESCRIPTION
+    Connect to IP Windows Auth.
+
+.PARAMETER ipAddress
+    ip Address.
+
+.PARAMETER verbose
+    verbose.
+
+.PARAMETER debug
+    debug.
+
+.EXAMPLE
+    PS C:\> .\Connect-MSSQL-IPWindowsAuth.ps1
+
+#>
+
 param
 (
   	[string]$ipAddress = "127.0.0.1",

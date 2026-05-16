@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : Add-SPUser
-## Description : Adds A New User To A Group in SharePoint
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : Add-SPUser -url http://moss -Group "New Group" -DomainUser "powershell\nigo" -FullName "Niklas Goude" -mail "goude@powershell.nu"
-## Output      : 
-## Usage       : Add-SPGroup -url http://moss -Group "New Group" -Role Read -Owner powershell\nigo
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : Users, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Add User.
+
+.DESCRIPTION
+    Add User.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\Add-SPUser.ps1
+
+#>
 
 param (
 

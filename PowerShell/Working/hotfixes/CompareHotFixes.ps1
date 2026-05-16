@@ -1,4 +1,14 @@
-﻿## PowerShell: Useful Query To Compare Hot Fixes Between 2 Machines ##
+﻿<#
+.SYNOPSIS
+    Useful Query To Compare Hot Fixes Between 2 Machines.
+
+.DESCRIPTION
+    Useful Query To Compare Hot Fixes Between 2 Machines.
+
+.EXAMPLE
+    PS C:\> .\CompareHotFixes.ps1
+    Useful Query To Compare Hot Fixes Between 2 Machines.
+#>
 
 $node1 = Get-HotFix -ComputerName "MachineName1"
 $node2 = Get-HotFix -ComputerName "MachineName2"

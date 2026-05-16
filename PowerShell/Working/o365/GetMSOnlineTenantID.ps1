@@ -1,8 +1,17 @@
-﻿## MSOnline: PowerShell Command to Get you Office 365 (o365) Tenant ID Value (GUID) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Command to Get you Office 365 (o365) Tenant ID Value (GUID).
 
-## Tip: You can also get the Tenant ID from the Azure Active Directory Module under Properties - Directory ID: https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties
+.DESCRIPTION
+    PowerShell Command to Get you Office 365 (o365) Tenant ID Value (GUID).
 
-## Resource: http://tomtalks.uk/2015/09/how-to-get-your-office-365-tenant-id
+.PARAMETER TenantPrefix
+    Change the prefix here to match your tenant name.
+
+.EXAMPLE
+    PS C:\> .\GetMSOnlineTenantID.ps1
+    Edit the variables section and run to powerShell Command to Get you Office 365 (o365) Tenant ID Value (GUID).
+#>
 
 $TenantPrefix = "YourTenantName" #Change the prefix here to match your tenant name
 

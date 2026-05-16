@@ -1,17 +1,13 @@
-﻿## SharePoint Server: PowerShell Script To Extract All Documents From A Library To A File Location ##
-## Environments: MOSS 2007, and SharePoint Server 2010 / 2013 Farms
-## Important: Use SharePoint Manager to confirm Doc Library names (http://spm.codeplex.com)
-
-<#
-.Synopsis
+﻿<#
+.SYNOPSIS
 	Use Pull-Documents to copy the entire document library to disk
-.Description
+.DESCRIPTION
 	This script iterates recursively over all directories and files in a document library and writes binary data to the disk
 	The same folder structure is kept as in the Document library	
 .Usage Examples
 	1. Run the script and provide parameters for the following variables '$Url', '$Library' when prompted
     2. Call the script with the parameters - example: ./SP2007ExtractDocLibraryToDisk.ps1 "http://YourWebAppURL" "YourDocLibrary"
-.Notes
+.NOTES
     In SharePoint Server 2013 'Documents' is actually still called 'Shared Documents' via the Object Model
 	The files will be saved in the same location where you run the script from
 	Keywords: SPList, Documents, Files, SPDocumentLibrary

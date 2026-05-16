@@ -1,4 +1,17 @@
-﻿## PowerShell: Function To Run a SQL Query From A Text File And Output The Results To HTML ##
+﻿<#
+.SYNOPSIS
+    Function To Run a SQL Query From A Text File And Output The Results To HTML.
+
+.DESCRIPTION
+    Function To Run a SQL Query From A Text File And Output The Results To HTML.
+
+.PARAMETER sqlConnection
+    Change the SQL Instance to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\SQLServerConnectAndRunQueriesFromTextFile.ps1
+    Edit the variables section and run to function To Run a SQL Query From A Text File And Output The Results To HTML.
+#>
 
 function SQLQueryHTMLOutput 
 {

@@ -1,8 +1,4 @@
-﻿## SharePoint Server 2010: PowerShell Script To Get Which W3WP IIS Process Is Running Against Each Web App ##
-## Overview: Queries which w3wp.exe Process ID (PID) is running against which web application, along with Memory and CPU usage
-## Resource: http://sp2010adminpack.codeplex.com
-
-<#
+﻿<#
 .SYNOPSIS
     Gets the SharePoint processes running with current performance statistics
 .DESCRIPTION

@@ -1,17 +1,23 @@
-﻿## SQL Server: PowerShell Script to Connect to a SQL Instance to Get Database and Log Files Location, Size, and Autogrowth Details ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Connect to a SQL Instance to Get Database and Log Files Location, Size, and Autogrowth Details.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Connect to a SQL Instance to Get Database and Log Files Location,
+    Size, and Autogrowth Details.
 
-Overview: PowerShell script that connects to a remote SQL instance and reports on Database and Log Files Location, Size, along with Database Autogrowth Details 
+.PARAMETER dbfilesize
+    Convert to MB.
 
-Requirements: The client machine the script runs from requires the SQL Server Management Tools to be installed (http://msdn.microsoft.com/en-us/library/bb500441.aspx; http://www.microsoft.com/en-us/download/details.aspx?id=29062)
+.PARAMETER dblogfilesize
+    Convert to MB.
 
-Environments: Tested with Sharepoint Server 2010 / 2013 Farms, but should work with any SQL Instance as long as the Client machine has the SQL Server Management Tools installed
+.EXAMPLE
+    PS C:\> .\SQLServerConnectAndQueryDatabaseSizeAndGrowth.ps1
+    Edit the variables section and run to powerShell Script to Connect to a SQL Instance to Get Database and Log Files Location, Size, and Autogrowth Details.
 
-Usage: Check the following variables, if applicable, and run the script: '$Conn.ServerInstance'; '$Conn.LoginSecure'; '$Conn.Login'; '$Conn.Password'; '$db.name -like' 
-
-Resource: http://jespermchristensen.wordpress.com/2013/03/06/checking-sql-database-db-and-log-file-sizes-and-growth-with-powershell-from-your-windows-78
-
+.NOTES
+    Resources:  http://msdn.microsoft.com/en-us/library/bb500441.aspx; http://www.microsoft.com/en-us/download/details.aspx?id=29062
 #>
 
 CLS

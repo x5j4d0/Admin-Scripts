@@ -1,4 +1,14 @@
-﻿## Exchange Online: PowerShell Script to Get User Account Details ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get User Account Details.
+
+.DESCRIPTION
+    PowerShell Script to Get User Account Details.
+
+.EXAMPLE
+    PS C:\> .\ExchangeOnlineGetUserDetails.ps1
+    PowerShell Script to Get User Account Details.
+#>
 
 $ExchangeCredential= Get-Credential
 

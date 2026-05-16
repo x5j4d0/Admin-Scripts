@@ -1,19 +1,14 @@
-## =====================================================================
-## Title       : Get-IADExchangeAdmin
-## Description : Retrieve all Exchange 2003 administrators. 
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No input          
-##                     
-## Output      : System.Management.Automation.PSCustomObject
-## Usage       : Get-IADExchangeAdmins
-##            
-## Notes       : You can read more about Exchange administrative role permissions in Exchange 2003.
-##               http://support.microsoft.com/default.aspx/kb/823018
-##
-## Tag         : administrator, exchange2003, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory exchange admin objects using ADSI..
+
+.DESCRIPTION
+    Retrieve Active Directory exchange admin objects using ADSI..
+
+.EXAMPLE
+    PS C:\> .\Get-IADExchangeAdmin.ps1
+    Run the script to perform the described operation.
+#>
 
 function Get-IADExchangeAdmin 
 {

@@ -1,4 +1,15 @@
-﻿## SharePoint Server: PowerShell Script to Export / Import / Delete Managed Properties from a Search Service Application (SSA) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Export / Import / Delete Managed Properties from a Search Service Application (SSA).
+
+.DESCRIPTION
+    PowerShell Script to Export / Import / Delete Managed Properties from a Search Service
+    Application (SSA).
+
+.EXAMPLE
+    PS C:\> .\SP2013ExportImportSearchServiceManagedProperties.ps1
+    PowerShell Script to Export / Import / Delete Managed Properties from a Search Service Application (SSA).
+#>
 
 #------------------------------------------------------------------------------------------------------------------------------
 # Name:             SP2013ExportImportSearchServiceManagedProperties.ps1   

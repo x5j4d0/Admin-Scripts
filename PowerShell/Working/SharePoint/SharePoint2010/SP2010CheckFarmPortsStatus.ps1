@@ -1,13 +1,21 @@
-﻿## SharePoint Server: PowerShell Script To Check Access To Common Ports And Protocols Across An N-Tier Farm ##
-## Usage: Edit the IPs and Authentication Options to match your Farm and save and run the script on each server
-## Environments: MOSS 2007 and SharePoint Server 2010, along with any other N-Tier web application farms
-## Resource: http://blogbaris.blogspot.ch/2012/06/check-ports-for-extranet-sharepoint.html
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Check Access To Common Ports And Protocols Across An N-Tier Farm.
 
-<#
-These values can be modified
-Enter the IPS of the server
-Ports from http://technet.microsoft.com/en-us/library/cc262849.aspx
+.DESCRIPTION
+    PowerShell Script To Check Access To Common Ports And Protocols Across An N-Tier Farm.
+
+.PARAMETER CLIENT
+    IP of a client which should access SharePoint.
+
+.EXAMPLE
+    PS C:\> .\SP2010CheckFarmPortsStatus.ps1
+    Edit the variables section and run to powerShell Script To Check Access To Common Ports And Protocols Across An N-Tier Farm.
+
+.NOTES
+    Resources:  http://technet.microsoft.com/en-us/library/cc262849.aspx
 #>
+
 $SERVER_APP = "xxx.xxx.xxx.xxx"
 $SERVER_WEBAPPS = @("xxx.xxx.xxx.xxx", "xxx.xxx.xxx.xxx")
 $SERVER_DB = "xxx.xxx.xxx.xxx"

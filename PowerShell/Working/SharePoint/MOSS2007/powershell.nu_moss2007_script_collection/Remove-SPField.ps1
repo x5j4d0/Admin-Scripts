@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    Remove SP Field.
+
+.DESCRIPTION
+    Remove SP Field.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Field
+    Field.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Remove-SPField.ps1
+    Remove SP Field.
+#>
+
 ##################################################################################
 #
 #

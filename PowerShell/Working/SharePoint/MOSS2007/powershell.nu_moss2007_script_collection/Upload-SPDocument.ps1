@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    Upload SP Document.
+
+.DESCRIPTION
+    Upload SP Document.
+
+.PARAMETER url
+    url.
+
+.PARAMETER Folder
+    Folder.
+
+.PARAMETER Document
+    Document.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Upload-SPDocument.ps1
+    Upload SP Document.
+#>
+
 ##################################################################################
 #
 #

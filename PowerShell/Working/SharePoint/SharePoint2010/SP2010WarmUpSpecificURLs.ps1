@@ -1,8 +1,15 @@
-﻿## SharePoint Server: PowerShell Script To Warm Up Specified URLs On A SharePoint Farm ##
-## Resource: http://ikarstein.wordpress.com/2011/01/27/sharepoint-warm-up-with-powershell
-## Usage: Works on both MOSS 2007 and SharePoint Server 2010 Farms. Save the script and run it as a scheduled task
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Warm Up Specified URLs On A SharePoint Farm.
 
-##Add your environment specific URLs here
+.DESCRIPTION
+    PowerShell Script To Warm Up Specified URLs On A SharePoint Farm.
+
+.EXAMPLE
+    PS C:\> .\SP2010WarmUpSpecificURLs.ps1
+    PowerShell Script To Warm Up Specified URLs On A SharePoint Farm.
+#>
+
 $urls= @("http://YourWebSite/1", "http://YourWebSite/2")
 ## Change your application event log details here
 New-EventLog -LogName "Application" -Source "SharePoint Warmup Script" -ErrorAction SilentlyContinue | Out-Null

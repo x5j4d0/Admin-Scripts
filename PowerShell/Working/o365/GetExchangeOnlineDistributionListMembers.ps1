@@ -1,10 +1,15 @@
-﻿## MSOnline: PowerShell Script to Connect to Exchange Online and Get Distribution Lists Group Members (o365) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Connect to Exchange Online and Get Distribution Lists Group Members (o365).
 
-## Overview: Script that connects to Office 365 Exchange Online and retrieves Distribution Lists Group Members
+.DESCRIPTION
+    PowerShell Script to Connect to Exchange Online and Get Distribution Lists Group Members
+    (o365).
 
-## Usage: Change the '-Identity' parameter for the 'Get-DistributionGroup' to match a specific group or multiple groups with the wild card '*' asterix
-
-## Resource: http://www.lazywinadmin.com/2015/08/powershello365-get-distribution-groups.html#more
+.EXAMPLE
+    PS C:\> .\GetExchangeOnlineDistributionListMembers.ps1
+    PowerShell Script to Connect to Exchange Online and Get Distribution Lists Group Members (o365).
+#>
 
 Import-PSSession $(New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Authentication Basic -AllowRedirection -Credential $(Get-Credential))
 

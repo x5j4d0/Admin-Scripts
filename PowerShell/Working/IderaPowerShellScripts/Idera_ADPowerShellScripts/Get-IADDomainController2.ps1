@@ -1,18 +1,17 @@
-## =====================================================================
-## Title       : Get-IADDomainController2
-## Description : Retrieve domain controllers.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No input
-##                                    
-## Output      : System.Object[]
-## Usage       : Get-IADDomainController2 -descending
-##            
-## Notes       :
-## Tag         : domain, domaincontroller, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory domain controller2 objects using ADSI..
 
+.DESCRIPTION
+    Retrieve Active Directory domain controller2 objects using ADSI..
+
+.PARAMETER descending
+    descending.
+
+.EXAMPLE
+    PS C:\> .\Get-IADDomainController2.ps1
+    Run the script to perform the described operation.
+#>
 
 function Get-IADDomainController2 { 
   

@@ -1,15 +1,13 @@
-﻿## SharePoint: PowerShell Script to Get All Groups and Users From a Site Collection and Sub Sites ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get All Groups and Users From a Site Collection and Sub Sites.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Get All Groups and Users From a Site Collection and Sub Sites.
 
-Overview: PowerShell Script that Gets all Groups and Users from a Site Collection into a tab delimited output text file
-
-Environments: SharePoint Server 2010 / 2013 Farms
-
-Usage: Edit the following variables below and run the script: '$ReportLocation';  '$URL'
-
-Tip: You should be able to import the tab delimited data into Excel for better review / analysis (Excel --> Data --> From Text)
-
+.EXAMPLE
+    PS C:\> .\SP2013GetAllGroupsAndUsers.ps1
+    PowerShell Script to Get All Groups and Users From a Site Collection and Sub Sites.
 #>
 
 ### Start Variables ###

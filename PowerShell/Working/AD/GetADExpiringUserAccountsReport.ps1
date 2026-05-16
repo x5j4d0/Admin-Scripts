@@ -1,6 +1,4 @@
-﻿## Active Directory: PowerShell Script to Report on Expiring User Accounts in AD ##
-
-<#
+﻿<#
 .SYNOPSIS
 	Script to report expiring user account
 .DESCRIPTION

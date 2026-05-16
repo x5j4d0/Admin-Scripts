@@ -1,4 +1,16 @@
-﻿# =================================================================================================
+﻿<#
+.SYNOPSIS
+    System Info On Servers.
+
+.DESCRIPTION
+    System Info On Servers.
+
+.EXAMPLE
+    PS C:\> .\SystemInfoOnServers.ps1
+    System Info On Servers.
+#>
+
+# =================================================================================================
 # 
 # Microsoft PowerShell Script to run an inventory of local and remote systems and outputs to Excel
 # 

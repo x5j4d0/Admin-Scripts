@@ -1,5 +1,20 @@
-﻿## PowerShell: Script To Move File Types From One Location To Another ##
-## Usage: Powershell move backup files script – useful for SQL backups or any other files that need to be moved
+﻿<#
+.SYNOPSIS
+    Script To Move File Types From One Location To Another.
+
+.DESCRIPTION
+    Script To Move File Types From One Location To Another.
+
+.PARAMETER file
+    # This will be your source backup folder.
+
+.PARAMETER archive
+    # This will be your destination folder.
+
+.EXAMPLE
+    PS C:\> .\MoveBackupFiles.ps1
+    Edit the variables section and run to script To Move File Types From One Location To Another.
+#>
 
 $file = "F:\temp\Job_logs" ## This will be your source backup folder
 $archive = "F:\temp\archive\" ## This will be your destination folder

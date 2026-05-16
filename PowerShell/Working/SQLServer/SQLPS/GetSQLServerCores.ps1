@@ -1,3 +1,21 @@
+﻿<#
+.SYNOPSIS
+    Get SQL Server Cores.
+
+.DESCRIPTION
+    Get SQL Server Cores.
+
+.PARAMETER OutputFile
+    Output File.
+
+.EXAMPLE
+    PS C:\> .\GetSQLServerCores.ps1
+    Get SQL Server Cores.
+
+.NOTES
+    Requires:   SqlServerCmdletSnapin100
+#>
+
 #Gets the number of CPU Cores and TempDB datafiles outputs to a given file
 #Adapted from: http://www.sqlskills.com/BLOGS/PAUL/post/Survey-how-is-your-tempdb-configured.aspx
 param

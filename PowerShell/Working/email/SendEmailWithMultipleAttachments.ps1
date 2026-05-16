@@ -1,7 +1,20 @@
-﻿## PowerShell: Script to send an Email with Multiple Attachments from a File Path Folder ##
+﻿<#
+.SYNOPSIS
+    Script to send an Email with Multiple Attachments from a File Path Folder.
 
-## Usage: Edit the variables below to match your requirements and run the script
-## Note: Ensure you set the file path to the folder where you want the attachments to be extracted from under '$filepath'
+.DESCRIPTION
+    Script to send an Email with Multiple Attachments from a File Path Folder.
+
+.PARAMETER filepath
+    Change this to match your requirements.
+
+.PARAMETER files
+    You can modify the 'Get-ChildItem' parameters to refine what files you want to attach - Example: Get-ChildItem $filepath -Include *.txt.
+
+.EXAMPLE
+    PS C:\> .\SendEmailWithMultipleAttachments.ps1
+    Edit the variables section and run to script to send an Email with Multiple Attachments from a File Path Folder.
+#>
 
 #Connection Details
 $username=""

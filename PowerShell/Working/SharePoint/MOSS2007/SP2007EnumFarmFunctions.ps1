@@ -1,4 +1,15 @@
-﻿## SharePoint 2007: PowerShell Functions To Query Farms, Web Apps, Site Collections Properties ##
+﻿<#
+.SYNOPSIS
+    PowerShell Functions To Query Farms, Web Apps, Site Collections Properties.
+
+.DESCRIPTION
+    PowerShell Functions To Query Farms, Web Apps, Site Collections Properties.
+
+.EXAMPLE
+    PS C:\> .\SP2007EnumFarmFunctions.ps1
+    PowerShell Functions To Query Farms, Web Apps, Site Collections Properties.
+#>
+
 # Resources: http://www.dunxd.com/2008/12/17/administering-sharepoint-some-perspectives
 #			 http://sharepoint.microsoft.com/Blogs/zach/Script%20Library/functions.ps1.txt
 

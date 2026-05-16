@@ -1,17 +1,22 @@
-﻿ ## SharePoint Server 2010: PowerShell Script To Add MIME Types As File Types For Display In The Browser ##
- ## Overview: Useful if you want to allow MIME types like PDF documents to be displayed 'inline' in the browser
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Add MIME Types As File Types For Display In The Browser.
 
- <#  
-.DESCRIPTION  
+.DESCRIPTION
+    This script adds new MIME type to "AllowedInlineDownloadedMimeTypes" property list of
+    defined SharePoint 2010 Web Application. Script prompts you for the Web Application URL
+    and MIME type. Code shall run in context of Farm Administrators group member. Resource:
+    http://gallery.technet.microsoft.com/scriptcenter/Add-new-MIME-type-open-PDF-f6c57c32.
 
-This script adds new MIME type to "AllowedInlineDownloadedMimeTypes" property list of defined SharePoint 2010 Web Application. 
-Script prompts you for the Web Application URL and MIME type.
-Code shall run in context of Farm Administrators group member.
+.EXAMPLE
+    PS C:\> .\SP2010AddFileTypesToInlineBrowsing.ps1
+    PowerShell Script To Add MIME Types As File Types For Display In The Browser.
 
-Resource: http://gallery.technet.microsoft.com/scriptcenter/Add-new-MIME-type-open-PDF-f6c57c32
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://gallery.technet.microsoft.com/scriptcenter/Add-new-MIME-type-open-PDF-f6c57c32
 #>
- 
+
 If ( (Get-PSSnapin -Name "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue) -eq $null ) { 
     Add-PSSnapin "Microsoft.SharePoint.PowerShell" 
 } 

@@ -1,20 +1,18 @@
-## =====================================================================
-## Title       : Get-MSSQL-Views-Csv
-## Description : Connect to SQL Server and output selected views to CSV
-## Author      : Idera
-## Date        : 1/28/2009
-## Input       : -serverInstance <server\instance>
-## 				  -tempDir <output path>
-## 				  -filter <filter views by an arbitrary string>
-## 				  -verbose 
-## 				  -debug	
-## Output      : View list in CSV format
-## Usage			: PS> .\Get-MSSQL-Views-Csv -serverInstance MyServer -tempDir C:\TEMP\ -filter objects -verbose -debug
-## Notes			:
-## Tag			: SQL Server, Views, SMO
-## Change log  : Revised SMO Assemblies
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Retrieve Views Csv.
+
+.DESCRIPTION
+    Retrieve Views Csv.
+
+.PARAMETER serverInstance
+    server Instance.
+
+.EXAMPLE
+    PS C:\> .\Get-MSSQL-Views-Csv.ps1
+
+#>
+
 param
 (
 	[string]$serverInstance = "(local)",

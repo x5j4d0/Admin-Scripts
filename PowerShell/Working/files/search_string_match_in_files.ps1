@@ -1,3 +1,24 @@
+﻿<#
+.SYNOPSIS
+    Search string match in files.
+
+.DESCRIPTION
+    Search string match in files.
+
+.PARAMETER files
+    Change the file format in the $path variable if needed.
+
+.PARAMETER controls
+    Change this to suit your environment.
+
+.PARAMETER output
+    Change this to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\search_string_match_in_files.ps1
+    Edit the variables section and run to search string match in files.
+#>
+
 ########################################################### 
 # AUTHOR  : Marius / Hican - http://www.hican.nl - @hicannl  
 # DATE    : 05-07-2012  

@@ -1,4 +1,17 @@
+﻿<#
+.SYNOPSIS
+    Disk.
 
+.DESCRIPTION
+    Disk.
+
+.PARAMETER Server
+    May need to look for VM(s) on Multiple servers.
+
+.EXAMPLE
+    PS C:\> .\disk.ps1
+    Edit the variables section and run to disk.
+#>
 
 Function Add-VMNewHardDisk 
 {# .ExternalHelp  MAML-VMDisk.XML

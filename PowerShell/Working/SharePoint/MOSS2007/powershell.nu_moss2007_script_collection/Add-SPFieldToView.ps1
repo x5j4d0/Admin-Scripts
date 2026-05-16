@@ -1,3 +1,30 @@
+﻿<#
+.SYNOPSIS
+    Add SP Field To View.
+
+.DESCRIPTION
+    Add SP Field To View.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Field
+    Field.
+
+.PARAMETER View
+    View.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPFieldToView.ps1
+    Add SP Field To View.
+#>
+
 ##################################################################################
 #
 #

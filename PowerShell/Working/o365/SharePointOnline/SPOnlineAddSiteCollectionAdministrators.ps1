@@ -1,15 +1,17 @@
-## SharePoint Online: PowerShell Script to Add Users as Site Collection Administrators on All Site Collections (SPOnline) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Add Users as Site Collection Administrators on All Site Collections (SPOnline).
 
-<#
+.DESCRIPTION
+    PowerShell Script to Add Users as Site Collection Administrators on All Site Collections
+    (SPOnline).
 
-Overview: PowerShell Script to Add Users as Site Collection Administrators on All Site Collections in an SPOnline Tenant
+.EXAMPLE
+    PS C:\> .\SPOnlineAddSiteCollectionAdministrators.ps1
+    PowerShell Script to Add Users as Site Collection Administrators on All Site Collections (SPOnline).
 
-Usage: Edit the following 'Admin' variables to match your environment: '$Adminurl'; '$username'; '$TenantURL'; '$SiteCollectionAdmins'
-
-Requires: SharePoint Online Management Shell
-
-Resource: http://sharepointjack.com/2015/add-a-person-as-a-site-collection-administrator-to-every-office-365-site-sharepoint-online-site-collection
-
+.NOTES
+    Resources:  http://sharepointjack.com/2015/add-a-person-as-a-site-collection-administrator-to-every-office-365-site-sharepoint-online-site-collection
 #>
 
 #setup a log path

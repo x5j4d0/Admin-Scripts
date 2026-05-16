@@ -1,3 +1,21 @@
+﻿<#
+.SYNOPSIS
+    Get SP Site.
+
+.DESCRIPTION
+    Get SP Site.
+
+.PARAMETER Url
+    Url.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Get-SPSite.ps1
+    Get SP Site.
+#>
+
 ##################################################################################
 #
 #

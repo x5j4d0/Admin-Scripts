@@ -1,6 +1,21 @@
-﻿## SharePoint Server 2010: PowerShell Script To Deploy The SharePoint 2010 STSADM Commands and PowerShell Cmdlets WSP ##
-## Resource: Gary Lapointe SharePoint Automation: http://blog.falchionconsulting.com/index.php/downloads
-## Usage: Can effectively be used to add and install any SharePoint WSP that requires "GACDeployment"
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Deploy The SharePoint 2010 STSADM Commands and PowerShell Cmdlets WSP.
+
+.DESCRIPTION
+    PowerShell Script To Deploy The SharePoint 2010 STSADM Commands and PowerShell Cmdlets
+    WSP.
+
+.PARAMETER SolutionLocation
+    Change this path to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\SP2010DeploySTSADMExtensionsWithPowerShellCmdlets.ps1
+    Edit the variables section and run to powerShell Script To Deploy The SharePoint 2010 STSADM Commands and PowerShell Cmdlets WSP.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue
 

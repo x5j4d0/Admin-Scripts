@@ -1,4 +1,20 @@
-﻿## PowerShell: Simple Function to generate Secure Passwords ##
+﻿<#
+.SYNOPSIS
+    Simple Function to generate Secure Passwords.
+
+.DESCRIPTION
+    Simple Function to generate Secure Passwords.
+
+.PARAMETER len
+    len.
+
+.PARAMETER chars
+    chars.
+
+.EXAMPLE
+    PS C:\> .\GenerateSecurePasswords.ps1
+    Simple Function to generate Secure Passwords.
+#>
 
 Function GeneratePassword {
 param( 

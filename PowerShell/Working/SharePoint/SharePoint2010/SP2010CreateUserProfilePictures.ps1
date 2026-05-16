@@ -1,3 +1,25 @@
+﻿<#
+.SYNOPSIS
+    SP2010 Create User Profile Pictures.
+
+.DESCRIPTION
+    SP2010 Create User Profile Pictures.
+
+.PARAMETER CSVFile
+    Change this to suit your environment.
+
+.PARAMETER mySiteUrl
+    Change this to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\SP2010CreateUserProfilePictures.ps1
+    Edit the variables section and run to sP2010 Create User Profile Pictures.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://YourSite.com/userphotos/Adam.Evans.jpg; http://YourSite.com/userphotos/John.Murray.jpg
+#>
+
 <# SharePoint Server 2010: PowerShell Script To Populate The User Profile Picture Property From A CSV File
 
 Overview: The script below updates the Picture (PictureURL) User Profile Property from a CSV file that contains

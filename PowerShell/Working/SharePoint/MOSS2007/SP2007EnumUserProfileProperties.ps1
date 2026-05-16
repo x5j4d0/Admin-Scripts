@@ -1,10 +1,15 @@
-﻿## SharePoint Server 2007: PowerShell Script To Output SSP User Profiles To A CSV File ##
-## Usage: Composed of 2 scripts you need to run. '1' to view your farm profile properties, and '2' to export these to a CSV file
-## Script 1: Run '.\Get-UserProfileConfigManager.ps1 YourSSPName' to get a list of profile properties
-## Script 2: Edit your '$arProperties' variable to include the profile properties you want. Can also change other variables
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Output SSP User Profiles To A CSV File.
 
-## Script 1: Outputs a list of User profile names - both the internal name, and the name displayed in Sharepoint
- 
+.DESCRIPTION
+    PowerShell Script To Output SSP User Profiles To A CSV File.
+
+.EXAMPLE
+    PS C:\> .\SP2007EnumUserProfileProperties.ps1
+    PowerShell Script To Output SSP User Profiles To A CSV File.
+#>
+
 [void][System.Reflection.Assembly]::LoadWithPartialName("Microsoft.Office.Server")
 [void][System.Reflection.Assembly]::LoadWithPartialName("Microsoft.Office.Server.UserProfiles")
 # Function:          Get-UserProfileConfigManager

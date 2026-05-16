@@ -1,6 +1,14 @@
-﻿## PowerShell: Useful Script to display Get-Date Format Info Options ##
+﻿<#
+.SYNOPSIS
+    Useful Script to display Get-Date Format Info Options.
 
-## Resources: http://jdhitsolutions.com/blog/2014/10/powershell-dates-times-and-formats; http://msdn.microsoft.com/en-us/library/system.globalization.datetimeformatinfo%28VS.85%29.aspx
+.DESCRIPTION
+    Useful Script to display Get-Date Format Info Options.
+
+.EXAMPLE
+    PS C:\> .\GetDateFormatOptions.ps1
+    Useful Script to display Get-Date Format Info Options.
+#>
 
 $patterns = "d","D","g","G","f","F","m","o","r","s", "t","T","u","U","Y","dd","MM","yyyy","yy","hh","mm","ss","yyyyMMdd","yyyyMMddhhmm","yyyyMMddhhmmss"
 

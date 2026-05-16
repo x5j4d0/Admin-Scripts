@@ -1,9 +1,21 @@
-﻿## SharePoint Server: PowerShell Script That Uses the 'Hide-SPField' Function To Hide And Unhide SharePoint List Fields Specified In A CSV File ##
-## Environments: Works on both MOSS 2007 and SharePoint Server 2010 Farms
-## Usage: Create a CSV file with headings for the following fields: listurl,listname,listfield and run your script
-## Tip: Use the SQL Query commented below to help you get your 'listurl' and 'listname' data from your Content Databases
+﻿<#
+.SYNOPSIS
+    PowerShell Script That Uses the 'Hide-SPField' Function To Hide And Unhide SharePoint List Fields Specified In A CSV File.
 
-## Include a reference to the 'SP2007HideListField.ps1' file containing the 'Hide-SPField' function
+.DESCRIPTION
+    PowerShell Script That Uses the 'Hide-SPField' Function To Hide And Unhide SharePoint
+    List Fields Specified In A CSV File.
+
+.PARAMETER ImportFile
+    Change this path to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\SP2007HideListFieldLoop.ps1
+    Edit the variables section and run to powerShell Script That Uses the 'Hide-SPField' Function To Hide And Unhide SharePoint List Fields Specified In A CSV File.
+
+.NOTES
+    Resources:  http://YourSharePointApp/'
+#>
 
 . "C:\Scripts\PowerShell\SP2007HideListField.ps1" #Change this path to suit your environment. Important: Note the space after the dot '.'
 

@@ -1,17 +1,18 @@
-﻿## SharePoint Server: PowerShell Script to Download All Document Libraries from a Site Collection or Sub Site (web) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Download All Document Libraries from a Site Collection or Sub Site (web).
 
-<#
+.DESCRIPTION
+    PowerShell Script to Download All Document Libraries from a Site Collection or Sub Site
+    (web).
 
-Overview: PowerShell Function that downloads all files from all libraries at Site Collection or Web level. Also includes logging in the same directory specified in the Output Location
+.EXAMPLE
+    PS C:\> .\SP2013ExtractSiteWebDocLibrariesToDisk.ps1
+    PowerShell Script to Download All Document Libraries from a Site Collection or Sub Site (web).
 
-Environments: SharePoint Server 2013 + Farms
-
-Usage: Run the script and when prompted provide the details for the '$exportPath' and '$URL' variables, or run the script like the example below passing the parameters
-
-./SP2013ExtractSiteWebDocLibrariesToDisk.ps1 -OutputLocation "C:\export" -url "https://portal.sharepointfire.com"
-
-Resource: http://www.sharepointfire.com/2015/12/download-documents-from-a-sharepoint-site-or-web/
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  https://portal.sharepointfire.com"; http://www.sharepointfire.com/2015/12/download-documents-from-a-sharepoint-site-or-web/
 #>
 
 Add-PSSnapin Microsoft.SharePoint.PowerShell -erroraction "silentlycontinue"

@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : CheckOut-SPDocument
-## Description : Checks out a Document in SharePoint
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : CheckOut-SPDocument [[-url] <String>] [[-List] <String>] [[-Document] <String>]
-## Output      : 
-## Usage       : CheckOut-SPDocument -url http://moss -List "Shared Documents" -Document "MyDoc.Doc"
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : Document, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    CheckOut Document.
+
+.DESCRIPTION
+    CheckOut Document.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\CheckOut-SPDocument.ps1
+
+#>
 
 param (
 

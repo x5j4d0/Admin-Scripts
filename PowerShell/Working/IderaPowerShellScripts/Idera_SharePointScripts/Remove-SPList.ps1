@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : Remove-SPList
-## Description : Removes A List
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : Remove-SPList [[-url] <String>] [[-List] <String>]
-## Output      : 
-## Usage       : Remove-SPList -url http://moss -List "Users"
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : List, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Remove List.
+
+.DESCRIPTION
+    Remove List.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\Remove-SPList.ps1
+
+#>
 
 param (
 

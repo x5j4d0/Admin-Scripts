@@ -1,4 +1,28 @@
-﻿############################################################################################################################################ 
+﻿<#
+.SYNOPSIS
+    SP2013 Configure Outgoing E Mail Settings.
+
+.DESCRIPTION
+    SP2013 Configure Outgoing E Mail Settings.
+
+.PARAMETER sSMTPServer
+    s SMTP Server.
+
+.PARAMETER sFromEMail
+    s From E Mail.
+
+.PARAMETER sReplyEmail
+    s Reply Email.
+
+.PARAMETER sCharSet
+    s Char Set.
+
+.EXAMPLE
+    PS C:\> .\SP2013ConfigureOutgoingEMailSettings.ps1
+    SP2013 Configure Outgoing E Mail Settings.
+#>
+
+############################################################################################################################################ 
 # SharePoint: PowerShell Script to configure Outgoing E-Mail Settings
 # Environments: SharePoint Server 2010 / 2013 Farms
 # Resource: https://gallery.technet.microsoft.com/office/Script-to-configure-b420245a

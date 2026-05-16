@@ -1,20 +1,20 @@
-## =====================================================================
-## Title       : Get-IEXDatabaseSize 
-## Description : Retrieve database size. It must be run on Exchange server.
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : Get-IEXDatabaseSize [[-Server] <String>]
-##   
-## Output      : System.Management.Automation.PSCustomObject
-## Usage       : 
-##              1. Retrieve database size on Exchange server Exch1
-##              Get-IEXDatabaseSize -Server Exch1
-##                        
-## Notes       :
-## Tag         : Exchange 2007, database, get
-## Change log  :
-## ===================================================================== 
+﻿<#
+.SYNOPSIS
+    Retrieve Database Size.
 
+.DESCRIPTION
+    Retrieve Database Size.
+
+.PARAMETER Server
+    Server.
+
+.PARAMETER env
+    env.
+
+.EXAMPLE
+    PS C:\> .\Get-IEXDatabaseSize.ps1
+
+#>
 
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
  

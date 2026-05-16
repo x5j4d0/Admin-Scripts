@@ -1,16 +1,22 @@
-﻿ ## Active Directory: PowerShell Script that uses the Active Directory Module to check AD Computers for Specified Hot Fixes (KB numbers) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script that uses the Active Directory Module to check AD Computers for Specified Hot Fixes (KB numbers).
 
- <#
+.DESCRIPTION
+    PowerShell Script that uses the Active Directory Module to check AD Computers for
+    Specified Hot Fixes (KB numbers).
 
- Overview: PowerShell Script that uses the Active Directory Module to check AD Computers for Specified Hot Fixes (KB numbers), and outputs the results to a Log file
+.PARAMETER log
+    Current report is written to the user running the script's 'Documents' folder.
 
- Usage: If required, edit the following variables and run the script: '$log'; '$Patches'; '$WindowsComputers'
+.EXAMPLE
+    PS C:\> .\GetADComputerInstalledKBsReport.ps1
+    Edit the variables section and run to powerShell Script that uses the Active Directory Module to check AD Computers for Specified Hot Fixes (KB numbers).
 
- Requires: Active Directory PowerShell Module
- 
- Resource: https://github.com/kieranwalsh/PowerShell/tree/master/Get-WannaCryPatchState
- 
- #>
+.NOTES
+    Requires:   ActiveDirectory
+    Resources:  https://github.com/kieranwalsh/PowerShell/tree/master/Get-WannaCryPatchState
+#>
 
 Import-Module ActiveDirectory
 

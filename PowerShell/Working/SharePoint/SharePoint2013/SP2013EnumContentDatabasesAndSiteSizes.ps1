@@ -1,4 +1,18 @@
-## SharePoint Server: PowerShell Script to Report on Content Databases and the Size of Site Collections and Sub-sites (webs) within these ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Report on Content Databases and the Size of Site Collections and Sub-sites (webs) within these.
+
+.DESCRIPTION
+    PowerShell Script to Report on Content Databases and the Size of Site Collections and
+    Sub-sites (webs) within these.
+
+.EXAMPLE
+    PS C:\> .\SP2013EnumContentDatabasesAndSiteSizes.ps1
+    PowerShell Script to Report on Content Databases and the Size of Site Collections and Sub-sites (webs) within these.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 # Environments: SharePoint Server 2010 / 2013 Farms
 # Example: GetGeneralInfo "http://yourwebapp/yoursitecollection.com" "C:\GeneralInfo.csv"

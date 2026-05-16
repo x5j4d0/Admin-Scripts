@@ -1,6 +1,14 @@
-﻿## Internet Explorer: PowerShell Script to List Trusted Sites in IE Browser ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to List Trusted Sites in IE Browser.
 
-## Overview: Script Gets all the Trusted Sites stored in Internet Explorer (IE) under 'Internet Options - Security - Trusted Sites'
+.DESCRIPTION
+    PowerShell Script to List Trusted Sites in IE Browser.
+
+.EXAMPLE
+    PS C:\> .\GetInternetExplorerTrustedSites.ps1
+    PowerShell Script to List Trusted Sites in IE Browser.
+#>
 
 $_List1 = @()
 $_List2 = @()

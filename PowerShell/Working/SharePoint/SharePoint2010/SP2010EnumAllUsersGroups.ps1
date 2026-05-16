@@ -1,13 +1,17 @@
-﻿## SharePoint Server: PowerShell Script To Enumerate All Users In Groups Across All Sites In A Farm ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Enumerate All Users In Groups Across All Sites In A Farm.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Enumerate All Users In Groups Across All Sites In A Farm.
 
-Overview: PowerShell Script that gets each SharePoint site in a farm, enumerates all users against groups in site collections, and dumps the output to screen and a CSV file.
+.EXAMPLE
+    PS C:\> .\SP2010EnumAllUsersGroups.ps1
+    PowerShell Script To Enumerate All Users In Groups Across All Sites In A Farm.
 
-Environments: SharePoint Server 2010 / 2013 Farms
-
-Resource: http://basementjack.com/sharepoint-2/get-all-users-in-the-farm-sort-of
-
+.NOTES
+    Requires:   microsoft.sharepoint.powershell
+    Resources:  http://basementjack.com/sharepoint-2/get-all-users-in-the-farm-sort-of
 #>
 
 Add-PSSnapin microsoft.sharepoint.powershell -ErrorAction SilentlyContinue

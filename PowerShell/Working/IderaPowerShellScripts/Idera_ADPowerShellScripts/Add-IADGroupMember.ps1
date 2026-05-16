@@ -1,24 +1,17 @@
-## =====================================================================
-## Title       : Add-IADGroupMember
-## Description : Add one or more objects to a group in Active Directory.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : Add-IADGroupMember [[-MemberDN] <String[]>]
-##                     
-## Output      : No Output
-## Usage       :
-##               1. Add the domain administrator account to the QA group 
-##               Get-IADGroup QA | Add-IADGroupMember -MemberDN 'CN=Administrator,CN=Users,DC=domain,DC=com'  
-## 
-##               2. Add multiple accounts to the QA group 
-##               $members = Get-IADUser -Name QAUser* | Foreach-Object { $_.distinguishedName } 
-##               Get-IADGroup QA | Add-IADGroupMember -MemberDN $members 
-##            
-## Notes       :
-## Tag         : group, member, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Add Active Directory group member objects using ADSI..
 
+.DESCRIPTION
+    Add Active Directory group member objects using ADSI..
+
+.PARAMETER MemberDN
+    Member DN.
+
+.EXAMPLE
+    PS C:\> .\Add-IADGroupMember.ps1
+    Run the script to perform the described operation.
+#>
 
 filter Add-IADGroupMember {
  param(

@@ -1,6 +1,4 @@
-﻿## Active Directory: PowerShell Script to Import / Update User Photos in Active Directory (AD). Includes Logging, Email, Lync Update Functionality ##
-
-<#
+﻿<#
 	.SYNOPSIS
 		Import user photos into Active Directory from a File / Network Share Location. Includes Logging, Email Reporting, and Lync address book update functionality.
 		

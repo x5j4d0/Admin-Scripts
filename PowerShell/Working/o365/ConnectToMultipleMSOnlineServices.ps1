@@ -1,19 +1,18 @@
-﻿## MSOnline: PowerShell Script that Connects to the PowerShell Modules for Core Office 365 (o365) Services ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script that Connects to the PowerShell Modules for Core Office 365 (o365) Services.
 
+.DESCRIPTION
+    PowerShell Script that Connects to the PowerShell Modules for Core Office 365 (o365)
+    Services.
 
-<#
+.EXAMPLE
+    PS C:\> .\ConnectToMultipleMSOnlineServices.ps1
+    PowerShell Script that Connects to the PowerShell Modules for Core Office 365 (o365) Services.
 
-Overview: PowerShell Script that connects to the following o365 MSOnline Services
-
-- Azure Active Directory Module for Windows PowerShell (MSOnline)
-- Skype for Business Online Windows PowerShell Module (LyncOnlineConnector)
-- SharePoint Online Management Shell (Microsoft.Online.Sharepoint.PowerShell)
-- Exchange Online (https://outlook.office365.com/powershell-liveid)
-
-Usage: For SharePoint Online replace the 'contoso' placeholder value under 'Connect-SPOService' with your own tenant prefix, and provide your o365 administrative credentials when run
-
-Resources: http://powershell.office.com/script-samples/getting-connected-to-office-365; https://technet.microsoft.com/en-us/library/dn568015.aspx
-
+.NOTES
+    Requires:   MSOnline, LyncOnlineConnector, Microsoft.Online.Sharepoint.PowerShell
+    Resources:  https://outlook.office365.com/powershell-liveid; http://powershell.office.com/script-samples/getting-connected-to-office-365
 #>
 
 #Capture administrative credential for future connections.

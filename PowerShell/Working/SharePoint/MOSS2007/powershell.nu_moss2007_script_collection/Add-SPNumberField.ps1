@@ -1,3 +1,33 @@
+﻿<#
+.SYNOPSIS
+    Add SP Number Field.
+
+.DESCRIPTION
+    Add SP Number Field.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER Required
+    Required.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPNumberField.ps1
+    Add SP Number Field.
+#>
+
 ##################################################################################
 #
 #

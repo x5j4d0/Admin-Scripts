@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : Import-SPSite
-## Description : Imports a Site to from a Backup File
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : Import-SPSite [[-url] <String>] [[-File] <String>] [[-Location] <String>]
-## Output      : 
-## Usage       : Import-SPSite -url http://moss -file Backup.bak -Location C:\Backup\
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : Site, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Import Site.
+
+.DESCRIPTION
+    Import Site.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\Import-SPSite.ps1
+
+#>
 
 param (
 

@@ -1,13 +1,13 @@
-﻿## DNS: PowerShell Script to Update an IP Address for an 'A' Record on a Windows DNS Server ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Update an IP Address for an 'A' Record on a Windows DNS Server.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Update an IP Address for an 'A' Record on a Windows DNS Server.
 
-Overview: PowerShell Script to Update an IP Address for an 'A' Record on a Windows DNS Server
-
-Note:  Script works on DNS role servers, along with AD / DNS role servers
-
-Usage: Provide your variables to match your requirements and run the script
-
+.EXAMPLE
+    PS C:\> .\UpdateDNSARecordIPAddress.ps1
+    PowerShell Script to Update an IP Address for an 'A' Record on a Windows DNS Server.
 #>
 
 ### Start Variables ###

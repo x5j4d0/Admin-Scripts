@@ -1,11 +1,16 @@
-﻿## Windows NLB: PowerShell Script to Install and Configure a 2 Node NLB Cluster ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Install and Configure a 2 Node NLB Cluster.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Install and Configure a 2 Node NLB Cluster.
 
-Overview: PowerShell Script that installs the appropriate Windows NLB features and creates a 2 Node NLB cluster with the appropriate Cluster Port Rules
+.EXAMPLE
+    PS C:\> .\CreateNLBCluster.ps1
+    PowerShell Script to Install and Configure a 2 Node NLB Cluster.
 
-Usage: Edit the Variables section below to match your environment and run the script on the Primary machine that you want to create the NLB cluster for
-
+.NOTES
+    Requires:   NetworkLoadBalancingClusters
 #>
 
 ## Start Variables ##

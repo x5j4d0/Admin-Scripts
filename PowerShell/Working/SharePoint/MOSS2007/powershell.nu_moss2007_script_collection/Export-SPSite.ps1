@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    Export SP Site.
+
+.DESCRIPTION
+    Export SP Site.
+
+.PARAMETER url
+    url.
+
+.PARAMETER File
+    File.
+
+.PARAMETER Location
+    Location.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Export-SPSite.ps1
+    Export SP Site.
+#>
+
 ##################################################################################
 #
 #

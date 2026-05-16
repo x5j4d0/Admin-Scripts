@@ -1,23 +1,23 @@
-## =====================================================================
-## Title       : Disable-IEXUser
-## Description : Disable Active Directory user, move it to specified location and hide it from the address lists
-##                   no matter if it's UserMailbox or MailUser
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : Disable-IEXUser [[-Identity] <String>] [[-NewLocationDN] <String>] [-HideFromAddressLists]
-##   
-## Output      : None
-## Usage       : 
-##              1. Disable user TestUser1 and  hide it from the address lists
-##              Disable-IEXUser -Identity TestUser1 -HideFromAddressLists
-## 
-##              2. Disable user TestUser2, hide it from the address lists and move it to DisabledUsers OU 
-##              Disable-IEXUser -Identity TestUser2 -NewLocationDN "OU=DisabledUsers,DC=domain,DC=com" -HideFromAddressLists 
-##            
-## Notes       :
-## Tag         : Exchange 2007, user, address list, disable
-## Change log  :
-## ===================================================================== 
+﻿<#
+.SYNOPSIS
+    Disable User.
+
+.DESCRIPTION
+    Disable User.
+
+.PARAMETER Identity
+    Identity.
+
+.PARAMETER NewLocationDN
+    New Location DN.
+
+.PARAMETER HideFromAddressLists
+    Hide From Address Lists.
+
+.EXAMPLE
+    PS C:\> .\Disable-IEXUser.ps1
+
+#>
 
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin
 

@@ -1,11 +1,4 @@
-﻿## SharePoint Server 2010: PowerShell Script To Import CSV File Data Into A List ##
-## Overview: Imports data from a CSV file into a SharePoint list set up with the same columns as in the CSV file
-## Usage: Create your SharePoint list columns and then include the same column headings in your CSV file
-## Additional Columns: Add these below in the script to your 'foreach' loop as per the example
-## Note: Any re-imports of existing data will create new columns with this data as if though they were new records
-## Resource: http://sp2010adminpack.codeplex.com
-
-<#
+﻿<#
 .SYNOPSIS
     Imports data from your Excel CSV file into SharePoint
 .DESCRIPTION

@@ -1,12 +1,33 @@
-﻿## SharePoint Online: PowerShell Script to Replace / Renew / Update Client Secrets and Start / End Dates for a SharePoint Online Add-in (SPOnline) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Replace / Renew / Update Client Secrets and Start / End Dates for a SharePoint Online Add-in (SPOnline).
 
-## http://vannick.me/2016/02/13/how-to-renew-sharepoint-add-in-client-secret/
-## https://dev.office.com/sharepoint/docs/sp-add-ins/replace-an-expiring-client-secret-in-a-sharepoint-add-in
-## App identifiers are also visible at Site Collection Level under 'Site App Permissions' - /_layouts/15/appprincipals.aspx
-## https://cann0nf0dder.wordpress.com/2016/05/18/updating-an-expired-client-secret-of-sharepoint-add-in
+.DESCRIPTION
+    PowerShell Script to Replace / Renew / Update Client Secrets and Start / End Dates for a
+    SharePoint Online Add-in (SPOnline).
 
-## Get information about current SharePoint Online Add-Ins ##
-## Take note of the 'Client Id' and 'KeyId' values for the following 3 property types: 'Password' (Verify); 'Symmetric' (Verify); 'Symmetric' (Sign)
+.PARAMETER addIn
+    Change this wild card '*' value to something more specific if you know the name/s of the SharePoint Online Add-in.
+
+.PARAMETER newClientSecret
+    Important: Replace this value with your original Client Secret GUID if you want to retain your original Client Secret.
+
+.PARAMETER endDate
+    Can only have a maximum value period of '3' years here.
+
+.PARAMETER clientId
+    Provide the Client ID you obtained from the 'Get information about current SharePoint Online Add-Ins' query above.
+
+.PARAMETER appPrincipal
+    Provide the Client ID you obtained from the 'Get information about current SharePoint Online Add-Ins' query above.
+
+.EXAMPLE
+    PS C:\> .\SPOnlineRenewAddInsClientSecrets.ps1
+    Edit the variables section and run to powerShell Script to Replace / Renew / Update Client Secrets and Start / End Dates for a SharePoint Online Add-in (SPOnline).
+
+.NOTES
+    Requires:   MSOnline
+#>
 
 [CmdletBinding()]
 Param(

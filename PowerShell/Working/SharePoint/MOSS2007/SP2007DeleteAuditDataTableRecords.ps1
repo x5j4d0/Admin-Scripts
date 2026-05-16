@@ -1,4 +1,21 @@
-﻿## SharePoint Server: Powershell Script to delete AuditData Table Records ##
+﻿<#
+.SYNOPSIS
+    Powershell Script to delete AuditData Table Records.
+
+.DESCRIPTION
+    Powershell Script to delete AuditData Table Records.
+
+.PARAMETER constantNumberDays
+    Change the number of days to suite your requirements.
+
+.PARAMETER newSTSADM2
+    Change your content database name here.
+
+.EXAMPLE
+    PS C:\> .\SP2007DeleteAuditDataTableRecords.ps1
+    Edit the variables section and run to powershell Script to delete AuditData Table Records.
+#>
+
 # Overview: PowerShell script built on the stsadm -o trimauditlog command
 # Environments: MOSS 2007 Farms
 # Usage: Edit the following two variable to suit your requirements and run the script: '$constantNumberDays', '$newSTSADM2'

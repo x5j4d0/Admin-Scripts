@@ -1,19 +1,19 @@
-﻿## SharePoint Server: PowerShell Script To Add Items To A List Library From A CSV File ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Add Items To A List Library From A CSV File.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Add Items To A List Library From A CSV File.
 
-Overview: PowerShell Script that takes data from a CSV file and adds this to a SharePoint List Library through the Object Model
+.PARAMETER FilePath
+    Change this path to suit your environment.
 
-Environments: MOSS 2007 and SharePoint Server 2010 / 2013 Farms
+.PARAMETER docliburl
+    Change this URL to suit your environment (full path to the list library).
 
-Usage: Change the '$FilePath' and '$docliburl' variables to match your environment, and add additional '$item' variables to match your CSV file
-
-Note: The SharePoint List and 'Mapped' Columns Must Have Been Created Already
-
-Important: The script will add records to the existing list the each time it is run (cannot differentiate between duplicates)
-
-Check your script repositories for 'DeleteSPListItems' type scripts to clear down / delete the list before adding list items again
-
+.EXAMPLE
+    PS C:\> .\SP2007AddListItemsFromCSVFile.ps1
+    Edit the variables section and run to powerShell Script To Add Items To A List Library From A CSV File.
 #>
 
 $FilePath = "YourCSVFile.csv" #Change this path to suit your environment

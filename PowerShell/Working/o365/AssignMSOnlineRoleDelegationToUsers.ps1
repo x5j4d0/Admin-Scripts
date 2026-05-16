@@ -1,4 +1,14 @@
-﻿## Office 365: PowerShell Commands to Get / Add / Remove Members from Delegated Roles ##
+﻿<#
+.SYNOPSIS
+    PowerShell Commands to Get / Add / Remove Members from Delegated Roles.
+
+.DESCRIPTION
+    PowerShell Commands to Get / Add / Remove Members from Delegated Roles.
+
+.EXAMPLE
+    PS C:\> .\AssignMSOnlineRoleDelegationToUsers.ps1
+    PowerShell Commands to Get / Add / Remove Members from Delegated Roles.
+#>
 
 Connect-MsolService
 

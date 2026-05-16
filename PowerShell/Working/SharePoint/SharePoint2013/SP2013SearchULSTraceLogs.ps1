@@ -1,13 +1,23 @@
-﻿## SharePoint Server: PowerShell Script to Search for Strings or Correlation IDs in ULS / Trace Logs Across a Farm ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Search for Strings or Correlation IDs in ULS / Trace Logs Across a Farm.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Search for Strings or Correlation IDs in ULS / Trace Logs Across a
+    Farm.
 
-Overview: Useful PowerShell Script that queries the ULS / Trace log files on specified machines in the farm and extracts logs related to a specified Search Pattern. The combined log files are then provided where the script is run from
+.PARAMETER Servers
+    Add the SharePoint Servers you want to query the ULS logs on here.
 
-Environments: MOSS 2007 / SharePoint Server 2010 / 2013 Farms
+.PARAMETER SearchPattern
+    Add your Correlation ID or Search Pattern here.
 
-Usage: Edit the following variables '$Servers'; '$SearchPattern'; '$LogDuration'; '$LogDirectory' along with the '-FilePath' parameter to match your environment before running
+.PARAMETER LogDirectory
+    Change this path to match the location of the Farm ULS logs.
 
+.EXAMPLE
+    PS C:\> .\SP2013SearchULSTraceLogs.ps1
+    Edit the variables section and run to powerShell Script to Search for Strings or Correlation IDs in ULS / Trace Logs Across a Farm.
 #>
 
 $Servers = "SPWEB1","SPWEB2" #Add the SharePoint Servers you want to query the ULS logs on here

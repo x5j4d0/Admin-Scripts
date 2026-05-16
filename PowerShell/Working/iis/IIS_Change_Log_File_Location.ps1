@@ -1,5 +1,17 @@
-﻿## PowerShell Function to set IIS logging locations on all or individual IIS web sites ##
-## Important: This doesn't change Global 'centralBinaryLogFile' and 'centralW3CLogFile' locations in the applicationHost.config
+﻿<#
+.SYNOPSIS
+    PowerShell Function to set IIS logging locations on all or individual IIS web sites.
+
+.DESCRIPTION
+    This command will allow you to set the IIS log location on a server or multiple servers.
+
+.EXAMPLE
+    PS C:\> .\IIS_Change_Log_File_Location.ps1
+    PowerShell Function to set IIS logging locations on all or individual IIS web sites.
+
+.NOTES
+    Resources:  http://boeprox.wordpress.com; http://learn-powershell.net/2011/01/22/setting-iis-log-locations-with-powershell
+#>
 
 Function Set-IISLogLocation {
 <#

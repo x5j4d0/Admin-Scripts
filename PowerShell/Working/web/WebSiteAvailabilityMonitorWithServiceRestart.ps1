@@ -1,8 +1,30 @@
-﻿## PowerShell: Script that checks a Content String on a Web Site and Restarts a Specified Service if Not Matched ##
+﻿<#
+.SYNOPSIS
+    Script that checks a Content String on a Web Site and Restarts a Specified Service if Not Matched.
 
-## Overview: PowerShell: Script that checks a Content String on a Web Site and Restarts a Specified Service if Not Matched. Includes HTML email functionality
+.DESCRIPTION
+    Script that checks a Content String on a Web Site and Restarts a Specified Service if Not
+    Matched.
 
-## Usage: Edit the variables below and test in your environment prior to setting up to run as a scheduled task
+.PARAMETER output
+    Define output variable.
+
+.PARAMETER serviceName
+    Short windows service name (check via services.msc).
+
+.PARAMETER smtpServerName
+    SMTP Server name.
+
+.PARAMETER fromEmailAddress
+    Email address for mail to come from/reply address.
+
+.PARAMETER toEmailAddress
+    Email address for mail to come from/reply address.
+
+.EXAMPLE
+    PS C:\> .\WebSiteAvailabilityMonitorWithServiceRestart.ps1
+    Edit the variables section and run to script that checks a Content String on a Web Site and Restarts a Specified Service if Not Matched.
+#>
 
 #Initialising
 $webClient = new-object System.Net.WebClient

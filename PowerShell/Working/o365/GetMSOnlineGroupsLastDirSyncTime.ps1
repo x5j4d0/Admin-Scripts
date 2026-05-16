@@ -1,6 +1,18 @@
-﻿## MSOnline: PowerShell Script to Get All MSOnline Groups Last Sync Time via DirSync (o365) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get All MSOnline Groups Last Sync Time via DirSync (o365).
 
-## Connect to MSOnline Tenant
+.DESCRIPTION
+    PowerShell Script to Get All MSOnline Groups Last Sync Time via DirSync (o365).
+
+.EXAMPLE
+    PS C:\> .\GetMSOnlineGroupsLastDirSyncTime.ps1
+    PowerShell Script to Get All MSOnline Groups Last Sync Time via DirSync (o365).
+
+.NOTES
+    Requires:   MSOnline, MSOnlineExtended
+#>
+
 Import-Module MSOnline
 Import-Module MSOnlineExtended
 $cred=Get-Credential

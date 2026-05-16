@@ -1,15 +1,20 @@
-﻿## SharePoint Server: PowerShell Script to Create a CSV Audit Log Report For a Site Collection ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Create a CSV Audit Log Report For a Site Collection.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Create a CSV Audit Log Report For a Site Collection.
 
-Overview: PowerShell Script that uses the 'SharePoint Auditing Classes' to produce a CSV Audit Log Report For a Site Collection
+.PARAMETER site
+    Change this to match your site collection name.
 
-Environments: SharePoint Server 2010 / 2013 Farms
+.EXAMPLE
+    PS C:\> .\SP2010AuditLogReport.ps1
+    Edit the variables section and run to powerShell Script to Create a CSV Audit Log Report For a Site Collection.
 
-Usage: Edit the following variables to suit your environment and run the script: '$site'; '$FileName'; '$tabCsv'
-
-Resource: http://shokochino-sharepointexperience.blogspot.ch/2013/05/create-auditing-reports-in-sharepoint.html
-
+.NOTES
+    Requires:   Microsoft.SharePoint.Powershell
+    Resources:  http://shokochino-sharepointexperience.blogspot.ch/2013/05/create-auditing-reports-in-sharepoint.html
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.Powershell" -ErrorAction SilentlyContinue

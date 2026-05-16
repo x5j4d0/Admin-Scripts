@@ -1,6 +1,4 @@
-## SharePoint Server: PowerShell Script To Check Details On A Farms Search Service Application Topology ##
-
-<# 
+﻿<# 
 .SYNOPSIS 
        The purpose of this SharePoint 2013 script is to present the status of the Search  
        Service Application, with main focus on the state of the search topology.  

@@ -1,26 +1,17 @@
-## =====================================================================
-## Title       : Set-IEXEmailAddress
-## Description : Add/remove email address. Set it as primary optionally.
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : Set-IEXEmailAddress [[-EmailAddress] <String>] [[-DisableEmailAddressPolicy] <Object>] [-Add] [-Remove] [-SetAsPrimary] [-PassThru]
-##   
-## Output      : Microsoft.Exchange.Data.Directory.Management.Mailbox
-## Usage       : 
-##               1. Add email address.
-##               Get-Mailbox shaytest | Set-IEXEmailAddress -Add -EmailAddress foo@company.com -PassThru | Select-Object -Expand EmailAddresses
-##
-##               2. Add email address and set it as primary.
-##               Get-Mailbox shaytest | Set-IEXEmailAddress -Add -EmailAddress foo@company.com -SetAsPrimary -PassThru -DisableEmailAddressPolicy $true | Select-object -Expand EmailAddresses
-##
-##               3. Remove email address.
-##               Get-Mailbox shaytest | Set-IEXEmailAddress -Remove -EmailAddress  foo@company.com  -PassThru | Select-Object -Expand EmailAddresses
-##               (Get-Mailbox shaytest).EmailAddresses
-##                                        
-## Notes       :
-## Tag         : Exchange 2007, email address, set
-## Change log  :
-## ===================================================================== 
+﻿<#
+.SYNOPSIS
+    Set properties on Email Address.
+
+.DESCRIPTION
+    Set properties on Email Address.
+
+.PARAMETER EmailAddress
+    Email Address.
+
+.EXAMPLE
+    PS C:\> .\Set-IEXEmailAddress.ps1
+
+#>
 
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
 

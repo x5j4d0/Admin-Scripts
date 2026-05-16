@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    Add SP Image Web Part.
+
+.DESCRIPTION
+    Add SP Image Web Part.
+
+.PARAMETER url
+    url.
+
+.PARAMETER Image
+    Image.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER BackgroundColor
+    Background Color.
+
+.EXAMPLE
+    PS C:\> .\Add-SPImageWebPart.ps1
+    Add SP Image Web Part.
+#>
+
 ##################################################################################
 #
 #

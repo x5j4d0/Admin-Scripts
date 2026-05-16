@@ -1,4 +1,19 @@
-﻿## SQL Server: PowerShell Script To Output SQL Server Agent Jobs From SQL Servers Defined In A Text File ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Output SQL Server Agent Jobs From SQL Servers Defined In A Text File.
+
+.DESCRIPTION
+    PowerShell Script To Output SQL Server Agent Jobs From SQL Servers Defined In A Text
+    File.
+
+.PARAMETER ServerListPath
+    Server List Path.
+
+.EXAMPLE
+    PS C:\> .\SQLServerOutputAgentJobs.ps1
+    PowerShell Script To Output SQL Server Agent Jobs From SQL Servers Defined In A Text File.
+#>
+
 # Author:   John Sansom
 # Resource: http://www.johnsansom.com/script-sql-server-agent-jobs-using-powershell
 # Description:  PS script to generate all SQL Server Agent jobs on the given instance.

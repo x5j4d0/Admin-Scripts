@@ -1,25 +1,18 @@
-﻿## Active Directory: PowerShell Script To Query DCs in a Domain to Report on Users SIDs and SIDHistory to Estimate their Token Size  ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Query DCs in a Domain to Report on Users SIDs and SIDHistory to Estimate their Token Size.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Query DCs in a Domain to Report on Users SIDs and SIDHistory to
+    Estimate their Token Size.
 
-Overview:
+.EXAMPLE
+    PS C:\> .\CheckMaxTokenSize.ps1
+    PowerShell Script To Query DCs in a Domain to Report on Users SIDs and SIDHistory to Estimate their Token Size.
 
-This script will query for the items which make up the token and then calculate the token size based on that dynamic result using the formula in KB327825. It will also give you a total of how many SIDs are in the SIDHistory for the user, how many of each group scope the user has, and whether the account is trusted for delegation or not (if it is the token size may be much larger).
-
-The script has had a major rewrite and now can be ran against a single user or a collection of users to gauge their estimate token size and provide information about where the "bloat" or size is coming from-specific groups, types of groups, group SIDHistory SIDs, user SIDHistory SIDs or Windows Kerberos claims (for Windows 8/Server 2012 or later computers).
-
-Requires: ActiveDirectory PowerShell Module
-
-Usage Example:
-
-.\CheckMaxTokenSize.ps1 -Principals @('FirstName.LastName@YourOrganization.com', 'FirstName1.LastName1@YourOrganization.com') $OSEmulation $false -Details $true
-
-Resources:
-
-https://gallery.technet.microsoft.com/scriptcenter/Check-for-MaxTokenSize-520e51e5#content
-
-http://support.microsoft.com/kb/327825
-
+.NOTES
+    Requires:   ActiveDirectory
+    Resources:  https://gallery.technet.microsoft.com/scriptcenter/Check-for-MaxTokenSize-520e51e5#content; http://support.microsoft.com/kb/327825
 #>
 
 PARAM ([array]$Principals = ($env:USERNAME), $OSEmulation = $false, $Details = $false)

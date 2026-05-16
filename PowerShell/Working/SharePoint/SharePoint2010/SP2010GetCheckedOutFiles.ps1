@@ -1,5 +1,17 @@
-﻿## SharePoint Server 2010: PowerShell Script to get all Checked Out files for all Site Collections in a Farm
-## Resource: http://blog.falchionconsulting.com/index.php/2011/06/getting-and-taking-ownership-of-checked-out-files-using-windows-powershell/
+﻿<#
+.SYNOPSIS
+    PowerShell Script to get all Checked Out files for all Site Collections in a Farm.
+
+.DESCRIPTION
+    PowerShell Script to get all Checked Out files for all Site Collections in a Farm.
+
+.EXAMPLE
+    PS C:\> .\SP2010GetCheckedOutFiles.ps1
+    PowerShell Script to get all Checked Out files for all Site Collections in a Farm.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue
 

@@ -1,8 +1,17 @@
-﻿## PowerShell: Script to produce a Report on All Scheduled Tasks on a Machine ##
+﻿<#
+.SYNOPSIS
+    Script to produce a Report on All Scheduled Tasks on a Machine.
 
-## Usage: Edit the '$reportPath' variable to suit your environment location and run the script
+.DESCRIPTION
+    Script to produce a Report on All Scheduled Tasks on a Machine.
 
-## Resource: http://learningpcs.blogspot.ch/2011/10/powershell-working-with-scheduled-tasks.html
+.PARAMETER reportpath
+    Change this path to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\EnumScheduledTasks.ps1
+    Edit the variables section and run to script to produce a Report on All Scheduled Tasks on a Machine.
+#>
 
 $reportpath = "C:\ztemp\ScheduledTasksReport.csv" #Change this path to suit your environment
 

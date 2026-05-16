@@ -1,4 +1,19 @@
-﻿####################################
+﻿<#
+.SYNOPSIS
+    This function has been deprecated. The [VMState] enum should be used instead".
+
+.DESCRIPTION
+    This function has been deprecated. The [VMState] enum should be used instead".
+
+.PARAMETER ID
+    ID.
+
+.EXAMPLE
+    PS C:\> .\v1Compatability.ps1
+    This function has been deprecated. The [VMState] enum should be used instead".
+#>
+
+####################################
 # Aliases for backward compatability
 ####################################
 

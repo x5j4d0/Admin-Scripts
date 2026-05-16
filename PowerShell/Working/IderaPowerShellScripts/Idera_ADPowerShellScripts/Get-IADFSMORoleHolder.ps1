@@ -1,20 +1,14 @@
-## =====================================================================
-## Title       : Get-IADFSMORoleHolder
-## Description : Retrieve the forest and domain FSMO roles holders.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No input              
-##                     
-## Output      : System.Management.Automation.PSCustomObject
-## Usage       :  Get-IADFSMORoleHolder
-##            
-## Notes       :
-## Tag         : fsmo, forest, domain, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory fsmo role holder objects using ADSI..
 
+.DESCRIPTION
+    Retrieve Active Directory fsmo role holder objects using ADSI..
 
-   
+.EXAMPLE
+    PS C:\> .\Get-IADFSMORoleHolder.ps1
+    Run the script to perform the described operation.
+#>
 
 function Get-IADFSMORoleHolder 
 {

@@ -1,19 +1,22 @@
-﻿## SharePoint Server: PowerShell Script To Automatically Check In Documents Across A Document Library ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Automatically Check In Documents Across A Document Library.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Automatically Check In Documents Across A Document Library.
 
-Overview: Useful script that loops through a SharePoint document folder and checks in all documents that have a version count of zero.
-This can be beneficial when a user has added documents to a SharePoint document library through 'Windows Explorer' and the document library
-has kept them in 'Checked Out' status. The version count setting of zero '0' can be changed if needed lower down in the script, but keeping
-it to this ensures that only new documents that don't have a version history associated with them and could be in the process of been edited
-are not checked in losing the users edits.
+.PARAMETER site
+    Change this to suit your environment.
 
-Environments: MOSS 2007 and SharePoint Server 2010 Farms
+.PARAMETER folder
+    Change this to suit your environment.
 
-Usage: Edit the following variables before running the script: '$site'; '$folder'
+.EXAMPLE
+    PS C:\> .\SP2010CheckInDocuments.ps1
+    Edit the variables section and run to powerShell Script To Automatically Check In Documents Across A Document Library.
 
-Resource: http://blogs.msdn.com/b/paulking/archive/2011/10/14/using-powershell-to-clean-up-sharepoint-document-library-files-with-no-versions.aspx
-
+.NOTES
+    Resources:  http://blogs.msdn.com/b/paulking/archive/2011/10/14/using-powershell-to-clean-up-sharepoint-document-library-files-with-no-versions.aspx
 #>
 
 [system.reflection.assembly]::LoadWithPartialName("Microsoft.Sharepoint") 

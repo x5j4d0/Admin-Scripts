@@ -1,25 +1,20 @@
-## =====================================================================
-## Title       : Get-IEXTip
-## Description : Enhanced built-in function Get-Tip with Online switch to list online version of
-##               'Exchange Management Shell Tips of the Day'
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : Get-IEXTip [[-number] <Object>] [-Online]
-##   
-## Output      : System.String
-## Usage       : 
-##               1. Open 'Exchange Management Shell Tips of the Day' in default browser 
-##               Get-IEXTip -Online
-## 
-##               2. View a random tip of the day (same as Get-Tip) 
-##               Get-IEXTip
-##
-##               3. View a tip number 69
-##               Get-IEXTip -Number 69        
-## Notes       :
-## Tag         : Exchange 2007, tip, online, get
-## Change log  :
-## ===================================================================== 
+﻿<#
+.SYNOPSIS
+    Retrieve Tip.
+
+.DESCRIPTION
+    Retrieve Tip.
+
+.PARAMETER number
+    number.
+
+.PARAMETER Online
+    Online.
+
+.EXAMPLE
+    PS C:\> .\Get-IEXTip.ps1
+
+#>
 
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
 

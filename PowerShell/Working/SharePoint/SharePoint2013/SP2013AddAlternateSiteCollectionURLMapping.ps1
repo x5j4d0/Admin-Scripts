@@ -1,8 +1,26 @@
-﻿## SharePoint Server: PowerShell Script to Add additional URLs in Zones for Host Named Site Collections (HNSC) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Add additional URLs in Zones for Host Named Site Collections (HNSC).
 
-## Environments: SharePoint Server 2013 + Farms
+.DESCRIPTION
+    PowerShell Script to Add additional URLs in Zones for Host Named Site Collections (HNSC).
 
-## Resource: https://blogs.msdn.microsoft.com/brian_farnhill/2014/07/07/multiple-zones-for-host-named-site-collections-in-sp2013
+.PARAMETER SiteCollectionURL
+    Provide your original HNSC URL here.
+
+.PARAMETER SiteCollectionAlternateURL
+    Provide the new URL to be mapped to the original HNSC.
+
+.PARAMETER SiteCollectionZone
+    Provide the Zone property for the new URL (Default; Intranet; Internet; Custom; Extranet).
+
+.EXAMPLE
+    PS C:\> .\SP2013AddAlternateSiteCollectionURLMapping.ps1
+    Edit the variables section and run to powerShell Script to Add additional URLs in Zones for Host Named Site Collections (HNSC).
+
+.NOTES
+    Requires:   microsoft.sharepoint.powershell
+#>
 
 $SiteCollectionURL = "https://external.theglobalfund.org" #Provide your original HNSC URL here
 $SiteCollectionAlternateURL = "https://vdc2-external.theglobalfund.org" #Provide the new URL to be mapped to the original HNSC

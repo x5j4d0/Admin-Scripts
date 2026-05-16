@@ -1,21 +1,18 @@
-﻿## SharePoint Server: PowerShell Script to Stop All Search Crawls and Reset the Search Index for All Content Sources ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Stop All Search Crawls and Reset the Search Index for All Content Sources.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Stop All Search Crawls and Reset the Search Index for All Content
+    Sources.
 
-Overview: PowerShell script that Stops all currently running crawls (including continuous crawls), and then resets the Search Index for all content sources
+.EXAMPLE
+    PS C:\> .\SP2013ResetSearchIndex.ps1
+    PowerShell Script to Stop All Search Crawls and Reset the Search Index for All Content Sources.
 
-Note: Sometimes the Crawl Status might get stuck with a status message of 'Stopping'. This can often be resolved by attempting the script again
-
-Environments: SharePoint Server 201 / 2013 Farms
-
-Resources: 
-
-http://www.sharepointdiary.com/2015/05/reset-search-index-in-sharepoint-2013-using-powershell.html
-
-http://www.c-sharpcorner.com/blogs/force-stop-and-then-start-a-full-crawl-search-in-sharepoint-2013
-
-https://technet.microsoft.com/en-us/library/jj219802.aspx#Disable_for_all
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://www.sharepointdiary.com/2015/05/reset-search-index-in-sharepoint-2013-using-powershell.html; http://www.c-sharpcorner.com/blogs/force-stop-and-then-start-a-full-crawl-search-in-sharepoint-2013
 #>
 
 Add-PSSnapin Microsoft.SharePoint.PowerShell –ErrorAction SilentlyContinue

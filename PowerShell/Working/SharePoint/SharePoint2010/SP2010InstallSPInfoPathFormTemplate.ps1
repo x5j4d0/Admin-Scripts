@@ -1,21 +1,18 @@
-﻿## SharePoint Server: PowerShell Script to Deploy and Activate InfoPath Form Templates (Administrator-approved form template) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Deploy and Activate InfoPath Form Templates (Administrator-approved form template).
 
-<#
+.DESCRIPTION
+    PowerShell Script to Deploy and Activate InfoPath Form Templates (Administrator-approved
+    form template).
 
-Overview: PowerShell Script to Deploy and Enable Administrator Approved InfoPath Form Templates
+.EXAMPLE
+    PS C:\> .\SP2010InstallSPInfoPathFormTemplate.ps1
+    PowerShell Script to Deploy and Activate InfoPath Form Templates (Administrator-approved form template).
 
-Note: Essentially the same functionality as uploading these through Central Administration - /_admin/ManageFormTemplates.aspx
-
-Environments: SharePoint Server 2010 / 2013 Farms
-
-Usage: Edit the variables to match your environment and run the script
-
-Resources:
-
-http://www.appvity.com/blogs/post/2013/06/16/How-to-configure-and-publish-InfoPath-to-SharePoint-2013.aspx
-https://technet.microsoft.com/en-us/library/ff608053.aspx
-https://technet.microsoft.com/en-us/library/ff607608.aspx
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://www.appvity.com/blogs/post/2013/06/16/How-to-configure-and-publish-InfoPath-to-SharePoint-2013.aspx; https://technet.microsoft.com/en-us/library/ff608053.aspx
 #>
 
 ### Start Variables ###

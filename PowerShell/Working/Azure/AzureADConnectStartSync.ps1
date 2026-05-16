@@ -1,8 +1,18 @@
-﻿## PowerShell: Script to manually start Azure Active Directory Synchronization (Azure AD Connect) with Azure / o365 ##
+﻿<#
+.SYNOPSIS
+    Script to manually start Azure Active Directory Synchronization (Azure AD Connect) with Azure / o365.
 
-## Overview: PowerShell script to trigger a full or incremental sync for the Azure AD Connect tool. Also launches the Azure AD Connect Client
+.DESCRIPTION
+    Script to manually start Azure Active Directory Synchronization (Azure AD Connect) with
+    Azure / o365.
 
-## Note: Replaces the 'Start-OnlineCoexistenceSync' command
+.PARAMETER ADSyncType
+    # 'initial' for Full Sync or 'delta' for Incremental Sync.
+
+.EXAMPLE
+    PS C:\> .\AzureADConnectStartSync.ps1
+    Edit the variables section and run to script to manually start Azure Active Directory Synchronization (Azure AD Connect) with Azure / o365.
+#>
 
 ### Start Variables ###
 $ADSyncLocation = "C:\Program Files\Microsoft Azure AD Sync\Bin\"

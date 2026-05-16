@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    Remove SP Item.
+
+.DESCRIPTION
+    Remove SP Item.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Field
+    Field.
+
+.EXAMPLE
+    PS C:\> .\Remove-SPItem.ps1
+    Remove SP Item.
+#>
+
 ##################################################################################
 #
 #

@@ -1,19 +1,19 @@
-﻿## Exchange Online: PowerShell Script to Disable the Creation of Office 365 Groups in Outlook Web Access ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Disable the Creation of Office 365 Groups in Outlook Web Access.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Disable the Creation of Office 365 Groups in Outlook Web Access.
 
-Overview: PowerShell script to Get the current setting for Office 365 Groups set in the Outlook Web App mailbox policy, and then disables this to prevent the creation of Office 365 Groups
+.PARAMETER OwaMailboxPolicyName
+    Change this Policy to match your tenant if required.
 
-Usage: Only if different to the default o365 tenant policy; change the name/identity of the Outlook Web App mailbox policy variable under '$OwaMailboxPolicyName', and run the script
+.EXAMPLE
+    PS C:\> .\ExchangeOnlineDisableOffice365GroupCreation.ps1
+    Edit the variables section and run to powerShell Script to Disable the Creation of Office 365 Groups in Outlook Web Access.
 
-Note: If you want to Re-enable the creation of Office 365 Groups, just change the value after '-GroupCreationEnabled' to '$true'
-
-Resources:
-
-https://support.office.com/en-us/article/Use-PowerShell-to-manage-Office-365-Groups-Admin-help-aeb669aa-1770-4537-9de2-a82ac11b0540?ui=en-US&rs=en-US&ad=US
-
-https://technet.microsoft.com/en-us/library/dd351097(v=exchg.150).aspx
-
+.NOTES
+    Resources:  https://support.office.com/en-us/article/Use-PowerShell-to-manage-Office-365-Groups-Admin-help-aeb669aa-1770-4537-9de2-a82ac11b0540?ui=en-US&rs=en-US&ad=US; https://technet.microsoft.com/en-us/library/dd351097(v=exchg.150).aspx
 #>
 
 $OwaMailboxPolicyName = "OwaMailboxPolicy-Default" #Change this Policy to match your tenant if required

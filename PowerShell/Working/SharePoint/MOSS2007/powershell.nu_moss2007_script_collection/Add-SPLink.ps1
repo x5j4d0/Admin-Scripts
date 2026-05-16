@@ -1,3 +1,33 @@
+﻿<#
+.SYNOPSIS
+    Add SP Link.
+
+.DESCRIPTION
+    Add SP Link.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Link
+    Link.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER Notes
+    Notes.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPLink.ps1
+    Add SP Link.
+#>
+
 ##################################################################################
 #
 #

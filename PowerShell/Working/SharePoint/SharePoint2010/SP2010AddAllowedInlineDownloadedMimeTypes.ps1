@@ -1,17 +1,17 @@
-﻿## SharePoint Server: PowerShell Script to Add MIME Types At Web Application Level ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Add MIME Types At Web Application Level.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Add MIME Types At Web Application Level.
 
-Overview: PowerShell Script to Check whether MIME Types exist in a SharePoint Web Application, and adds the entry to the 'AllowedInlineDownloadedMimeTypes' list when speciified
+.EXAMPLE
+    PS C:\> .\SP2010AddAllowedInlineDownloadedMimeTypes.ps1
+    PowerShell Script to Add MIME Types At Web Application Level.
 
-Environments: SharePoint Server 2010 / 2013 Farms
-
-Resources:
-
-http://sharepoint.stackexchange.com/questions/39020/how-do-i-prevent-sharepoint-from-asking-to-download-html-files-to-my-local-machi 
-
-http://jasonwarren.ca/add-and-remove-mime-types-from-sharepoint-powershell
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://sharepoint.stackexchange.com/questions/39020/how-do-i-prevent-sharepoint-from-asking-to-download-html-files-to-my-local-machi; http://jasonwarren.ca/add-and-remove-mime-types-from-sharepoint-powershell
 #>
 
 Add-PSSnapin Microsoft.SharePoint.PowerShell -ErrorAction SilentlyContinue

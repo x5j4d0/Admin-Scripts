@@ -1,6 +1,4 @@
-﻿## Scheduled Tasks: PowerShell Script to Get Details on All Scheduled Tasks on a Local or Remote Machine ##
-
-<#   
+﻿<#   
 .SYNOPSIS   
 Script that returns scheduled tasks on a computer (local or remote)
     

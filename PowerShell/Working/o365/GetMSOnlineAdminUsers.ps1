@@ -1,18 +1,22 @@
-﻿## MSOnline: PowerShell Script to Get All MSOnline Users With Admin Roles Access (o365) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get All MSOnline Users With Admin Roles Access (o365).
 
-<#
+.DESCRIPTION
+    PowerShell Script to Get All MSOnline Users With Admin Roles Access (o365).
 
-Overview: PowerShell Script to connect to an o365 tenant to get a report of all MSOnline Role Members
+.PARAMETER evidence
+    Change this path to match your environment.
 
-Usage: Edit the '$evidence' report path variable to match your environment and run the script
+.EXAMPLE
+    PS C:\> .\GetMSOnlineAdminUsers.ps1
+    Edit the variables section and run to powerShell Script to Get All MSOnline Users With Admin Roles Access (o365).
 
-Requires: Windows Azure Active Directory PowerShell Module
-
-Resource: http://bachtothecloud.com/office-365-admin-accounts-extraction-via-powershell
-
+.NOTES
+    Requires:   MSOnline, MSOnlineExtended
+    Resources:  http://bachtothecloud.com/office-365-admin-accounts-extraction-via-powershell
 #>
 
-##Import MSOnline PowerShell Module and connect to o365 tenant
 Import-Module MSOnline
 Import-Module MSOnlineExtended
 $cred=Get-Credential

@@ -1,3 +1,21 @@
+﻿<#
+.SYNOPSIS
+    Get SQL Config Info.
+
+.DESCRIPTION
+    Get SQL Config Info.
+
+.PARAMETER OutputFile
+    Output File.
+
+.EXAMPLE
+    PS C:\> .\GetSQLConfigInfo.ps1
+    Get SQL Config Info.
+
+.NOTES
+    Requires:   SqlServerCmdletSnapin100
+#>
+
 #Gets the general config settings for SQL
 param
 (		

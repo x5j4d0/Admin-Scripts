@@ -1,22 +1,17 @@
-﻿## Active Directory: PowerShell Script to Add and Remove Users from AD Security Groups based on CSV File ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Add and Remove Users from AD Security Groups based on CSV File.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Add and Remove Users from AD Security Groups based on CSV File.
 
-Overview: PowerShell Script to Add and Remove Users from AD Security Groups based on CSV File Input
+.EXAMPLE
+    PS C:\> .\AddADGroupMembersFromCSV.ps1
+    PowerShell Script to Add and Remove Users from AD Security Groups based on CSV File.
 
-Usage: 
-
-Create a CSV file with columns like the example below. 1st column for your 'adusers' SAM account names, and additional columns for the Security Groups
-Add an 'x' value in each Security Group column you want the SAM account name to be a member of
-Users will be removed from Security Groups they are already members of if no 'x' value is provided
-
-adusers Test Group    Test Group 1    Test Group 2    Test Group 3
-------- ------------- --------------- --------------- ---------------
-User1    x             x               x                              
-User2                  x               x               x 
-
-Resource: http://mikefrobbins.com/2016/02/25/use-powershell-to-add-active-directory-users-to-specific-groups-based-on-a-csv-file
-
+.NOTES
+    Requires:   ActiveDirectory
+    Resources:  http://mikefrobbins.com/2016/02/25/use-powershell-to-add-active-directory-users-to-specific-groups-based-on-a-csv-file
 #>
 
 Import-Module ActiveDirectory

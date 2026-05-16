@@ -1,20 +1,18 @@
-## =====================================================================
-## Title       : CreateDB-MSSQL-UsingSMO
-## Description : Create and empty database, drop if existing
-## Author      : Idera
-## Date        : 1/28/2009
-## Input       : -server <server\instance>
-##               -dbName <database name>
-##               -verbose 
-##               -debug	
-## Output      : Formatted table with database name and creation date
-## Usage			: PS> .\CreateDB-MSSQL-UsingSMO -server MyServer -dbName SMOTestDB -verbose -debug
-## Notes			: Adapted from Allen White script
-## Tag			: SQL Server, SMO, Create database
-## Change Log  : Revised SMO Assemblies
-##   5/11/2011   Added this line -> $database.LogFiles.Add($dblfile) before Create
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Create a database in Using SMO.
+
+.DESCRIPTION
+    Create a database in Using SMO.
+
+.PARAMETER server
+    server.
+
+.EXAMPLE
+    PS C:\> .\CreateDB-MSSQL-UsingSMO.ps1
+
+#>
+
 param
 (
   	[string]$server = "(local)",

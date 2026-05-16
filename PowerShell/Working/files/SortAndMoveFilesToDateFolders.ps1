@@ -1,13 +1,16 @@
-﻿## PowerShell: Script to Move Files to Folders Sorted By Year and Month ##
+﻿<#
+.SYNOPSIS
+    Script to Move Files to Folders Sorted By Year and Month.
 
-<#
+.DESCRIPTION
+    Script to Move Files to Folders Sorted By Year and Month.
 
-Overview: PowerShell script that takes all the files from a Source Folder and sorts them into Yearly Folders with Monthly Sub Folders 
+.EXAMPLE
+    PS C:\> .\SortAndMoveFilesToDateFolders.ps1
+    Script to Move Files to Folders Sorted By Year and Month.
 
-Resource: http://www.thomasmaurer.ch/2015/03/move-files-to-folder-sorted-by-year-and-month-with-powershell
-
-Usage: Edit the following variables to match your environment and run the script: '$files'; '$targetPath' 
-
+.NOTES
+    Resources:  http://www.thomasmaurer.ch/2015/03/move-files-to-folder-sorted-by-year-and-month-with-powershell
 #>
 
 # Get the files which should be moved, without folders

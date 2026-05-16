@@ -1,18 +1,18 @@
-﻿## SharePoint Server 2013: PowerShell Script To Provision An Isolated App Domain For Custom Applications ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Provision An Isolated App Domain For Custom Applications.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Provision An Isolated App Domain For Custom Applications.
 
-Overview: The script below provisions your 'App Management Service' and 'Subscription Settings Service Application' service apps,
-and also configures an Isolated App Domain for your on-premise farm.
+.EXAMPLE
+    PS C:\> .\SP2013CreateIsolatedAppDomain.ps1
+    PowerShell Script To Provision An Isolated App Domain For Custom Applications.
 
-Usage: Run the script and when prompted provide details for the following variables; '$appdomain', '$login' (provide a managed account for this).
-
-Important: You will also need to configure your DNS settings for the new App Domain as per the last resource link below
-
-Resources: http://tomvangaever.be/blogv2/2012/08/prepare-sharepoint-2013-server-for-app-development-create-an-isolated-app-domain
-           http://msdn.microsoft.com/en-us/library/fp179923(v=office.15).aspx
-           http://sharepointchick.com/archive/2012/07/29/setting-up-your-app-domain-for-sharepoint-2013.aspx
- #>
+.NOTES
+    Requires:   microsoft.sharepoint.powershell
+    Resources:  http://tomvangaever.be/blogv2/2012/08/prepare-sharepoint-2013-server-for-app-development-create-an-isolated-app-domain; http://msdn.microsoft.com/en-us/library/fp179923(v=office.15).aspx
+#>
 
 # Check if the execution policy is set to Unrestricted
 $policy = Get-ExecutionPolicy

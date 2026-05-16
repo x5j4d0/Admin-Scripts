@@ -1,4 +1,22 @@
-﻿## Active Directory: PowerShell Script To Query All DCs in a Domain to Determine an AD Account Locked Out Location ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Query All DCs in a Domain to Determine an AD Account Locked Out Location.
+
+.DESCRIPTION
+    This function will locate the computer that processed a failed user logon attempt which
+    caused the user account to become locked out. The locked out location is found by
+    querying the PDC Emulator for locked out events (4740). The function will display the
+    BadPasswordTime attribute on all of the domain controllers to add in further
+    troubleshooting.
+
+.EXAMPLE
+    PS C:\> .\GetADAccountLockedOutLocation.ps1
+    PowerShell Script To Query All DCs in a Domain to Determine an AD Account Locked Out Location.
+
+.NOTES
+    Requires:   ActiveDirectory
+    Resources:  https://gallery.technet.microsoft.com/scriptcenter/Get-LockedOutLocation-b2fd0cab
+#>
 
 Import-Module ActiveDirectory
  

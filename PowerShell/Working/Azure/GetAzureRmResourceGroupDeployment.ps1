@@ -1,6 +1,14 @@
-## Azure: Useful Azure RM Resource Group Deployment Commands (AzureRMResourceGroupDeployment) ##
+﻿<#
+.SYNOPSIS
+    Useful Azure RM Resource Group Deployment Commands (AzureRMResourceGroupDeployment).
 
-## Resource: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/?view=azurermps-5.3.0
+.DESCRIPTION
+    Useful Azure RM Resource Group Deployment Commands (AzureRMResourceGroupDeployment).
+
+.EXAMPLE
+    PS C:\> .\GetAzureRmResourceGroupDeployment.ps1
+    Useful Azure RM Resource Group Deployment Commands (AzureRMResourceGroupDeployment).
+#>
 
 # Get Azure RM Resource Group Deployment Details
 Get-AzureRmResourceGroupDeployment -ResourceGroupName "YourResourceGroupName"

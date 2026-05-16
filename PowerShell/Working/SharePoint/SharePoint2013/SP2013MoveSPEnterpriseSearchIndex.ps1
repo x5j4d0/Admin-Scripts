@@ -1,19 +1,17 @@
-## SharePoint Server 2013: PowerShell Script to Move the Search Index Location ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Move the Search Index Location.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Move the Search Index Location.
 
-Overview: PowerShell Script Function to Move the Search Index Location for the Search Service Application
+.EXAMPLE
+    PS C:\> .\SP2013MoveSPEnterpriseSearchIndex.ps1
+    PowerShell Script to Move the Search Index Location.
 
-Environments: SharePoint Server 2013 Farms
-
-Usage: Provide the following parameters and run this script on each Machine you want to move the location on: '-SearchServiceName'; '-Server'; '-IndexLocation'
-
-Usage Example: Move-SPEnterpriseSearchIndex -SearchServiceName "Search Service Application" -Server "SP2013-WFE" -IndexLocation "C:\Index"
-
-Note: You might need to reboot your machines where the Search Service Application is configured on after making the changes
-
-Resources: https://gallery.technet.microsoft.com/office/Move-SharePoint-2013-242869e2; http://consulting.risualblogs.com/blog/2013/09/03/sharepoint-2013move-the-search-index-location
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  https://gallery.technet.microsoft.com/office/Move-SharePoint-2013-242869e2; http://consulting.risualblogs.com/blog/2013/09/03/sharepoint-2013move-the-search-index-location
 #>
 
 function Move-SPEnterpriseSearchIndex($SearchServiceName,$Server,$IndexLocation){ 

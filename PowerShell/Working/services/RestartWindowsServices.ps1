@@ -1,4 +1,31 @@
-﻿######################################################################################################################
+﻿<#
+.SYNOPSIS
+    Restart Windows Services.
+
+.DESCRIPTION
+    Restart Windows Services.
+
+.PARAMETER strTo
+    str To.
+
+.PARAMETER strFrom
+    str From.
+
+.PARAMETER strSubject
+    str Subject.
+
+.PARAMETER strBody
+    str Body.
+
+.PARAMETER smtpServer
+    smtp Server.
+
+.EXAMPLE
+    PS C:\> .\RestartWindowsServices.ps1
+    Restart Windows Services.
+#>
+
+######################################################################################################################
 ##     Name        : RestartWindowsServices.ps1
 ##     Function    : Restart the service/s on any given server/s
 ##    Version      : 1.0

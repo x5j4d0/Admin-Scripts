@@ -1,11 +1,15 @@
-﻿## MOSS 2007: PowerShell Script To Migrate All Site Collections and Sites From One Content Database to Another ##
-## Resource: http://mysharepointofview.com/2010/12/a-word-about-moving-site-collections
-## Notes: Script at Resource has some issues along with this one like Set Site Lock not working
-## Usage: Ensure that you have created your Destination / Target DB through CA 'Manage Content Databases' or STSADM
-##		  Edit the 'Variables' to suit your environment, and run the script 
-##		  You will get a 'You cannot call a method' exception and 'setsitelock' errors
-##		  Check the site move results under CA 'Manage Content Databases'
-## Important: This approach won't really be useful for large site collection moves
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Migrate All Site Collections and Sites From One Content Database to Another.
+
+.DESCRIPTION
+    PowerShell Script To Migrate All Site Collections and Sites From One Content Database to
+    Another.
+
+.EXAMPLE
+    PS C:\> .\SP2007MigrateSiteCollections.ps1
+    PowerShell Script To Migrate All Site Collections and Sites From One Content Database to Another.
+#>
 
 $env:PATH = $env:PATH +
 ";C:Program FilesCommon FilesMicrosoft SharedWeb Server Extensions12BIN"

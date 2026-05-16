@@ -1,4 +1,20 @@
-﻿Function Get-FTPChildItem
+﻿<#
+.SYNOPSIS
+    Gets the item and child items from ftp location.
+
+.DESCRIPTION
+    The Get-FTPChildItem cmdlet gets the items from ftp locations. If the item is a
+    container, it gets the items inside the container, known as child items.
+
+.EXAMPLE
+    PS C:\> .\Get-FTPChildItem.ps1
+    Gets the item and child items from ftp location.
+
+.NOTES
+    Resources:  http://commandlinegeeks.com/
+#>
+
+Function Get-FTPChildItem
 {
 	<#
 	.SYNOPSIS

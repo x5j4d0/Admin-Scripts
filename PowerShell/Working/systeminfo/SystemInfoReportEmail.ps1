@@ -1,4 +1,19 @@
-﻿################################################################################################################
+﻿<#
+.SYNOPSIS
+    System Info Report Email.
+
+.DESCRIPTION
+    System Info Report Email.
+
+.PARAMETER FileName
+    File Name.
+
+.EXAMPLE
+    PS C:\> .\SystemInfoReportEmail.ps1
+    System Info Report Email.
+#>
+
+################################################################################################################
 # PowerShell: Script To Get Systems Report For Servers Listed In File With HTML Email Chart Functionality
 # Overview: Edit the region variables and arguments below and save a list of machine names in a text file
 # Usage Example: .\SystemInfoReportEmail.ps1 .\list.txt

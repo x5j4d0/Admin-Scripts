@@ -1,18 +1,26 @@
-## =====================================================================
-## Title       : CheckDB-MSSQL-UsingADO
-## Description : Run a DBCC against specified server instance and database
-## Author      : Idera
-## Date        : 9/1/2008
-## Input       : -serverInstance <server\instance>
-##               -dbName <database name>
-##               -verbose 
-##               -debug	
-## Output      : 
-## Usage			: PS> .\CheckDB-MSSQL-UsingADO -serverInstance local -dbName master -verbose -debug
-## Notes			: Adapted from Jakob Bindslet script
-## Tag			: SQL Server, ADO, CheckDB
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Check database integrity for Using ADO.
+
+.DESCRIPTION
+    Check database integrity for Using ADO.
+
+.PARAMETER serverInstance
+    server Instance.
+
+.PARAMETER dbName
+    db Name.
+
+.PARAMETER verbose
+    verbose.
+
+.PARAMETER debug
+    debug.
+
+.EXAMPLE
+    PS C:\> .\CheckDB-MSSQL-UsingADO.ps1
+
+#>
 
 param
 (

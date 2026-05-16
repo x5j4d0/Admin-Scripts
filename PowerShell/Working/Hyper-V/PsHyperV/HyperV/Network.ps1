@@ -1,4 +1,17 @@
+﻿<#
+.SYNOPSIS
+    Network.
 
+.DESCRIPTION
+    Network.
+
+.PARAMETER Server
+    May need to look for VM(s) on Multiple servers.
+
+.EXAMPLE
+    PS C:\> .\Network.ps1
+    Edit the variables section and run to network.
+#>
 
 Function Add-VMNIC
 {# .ExternalHelp  MAML-VMNetwork.XML

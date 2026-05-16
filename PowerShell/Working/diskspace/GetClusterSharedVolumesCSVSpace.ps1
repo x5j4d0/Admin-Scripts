@@ -1,4 +1,17 @@
-﻿## PowerShell Script to Display Disk Information for Cluster Shared Volumes (CSV) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Display Disk Information for Cluster Shared Volumes (CSV).
+
+.DESCRIPTION
+    PowerShell Script to Display Disk Information for Cluster Shared Volumes (CSV).
+
+.EXAMPLE
+    PS C:\> .\GetClusterSharedVolumesCSVSpace.ps1
+    PowerShell Script to Display Disk Information for Cluster Shared Volumes (CSV).
+
+.NOTES
+    Requires:   FailoverClusters
+#>
 
 Import-Module FailoverClusters
 

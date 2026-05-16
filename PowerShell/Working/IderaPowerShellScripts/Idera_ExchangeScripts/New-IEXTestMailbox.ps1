@@ -1,19 +1,24 @@
-## =====================================================================
-## Title       : New-IEXTestMailbox
-## Description : Use the function to create a test user in the Active Directory and mailbox-enable this new user.
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : New-IEXTestMailbox [[-Name] <String>] [[-Password] <String>] [[-Database] <String>] [[-OrganizationalUnit] <String>] [[-Count] <Int32>] [-WhatIf] [-Confirm]
-##   
-## Output      : Microsoft.Exchange.Data.Directory.Management.Mailbox
-## Usage       : 
-##               1. Create 10 test mailboxes (TestUser01,TestUser02...) in the Test OU  
-##               New-IEXTestMailbox -Name TestUser -Server ServerName -StorageGroup 'First Storage Group' -Database 'Mailbox Database' -OrganizationalUnit "domain.com/test" -Count 10            
-## Notes       :
-## Tag         : Exchange 2007, user, mailbox, lab, new
-## Change log  :
-## ===================================================================== 
-  
+﻿<#
+.SYNOPSIS
+    Create a new Test Mailbox.
+
+.DESCRIPTION
+    Create a new Test Mailbox.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Password
+    Password.
+
+.PARAMETER Database
+    Database.
+
+.EXAMPLE
+    PS C:\> .\New-IEXTestMailbox.ps1
+
+#>
+
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
 
   

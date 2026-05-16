@@ -1,16 +1,25 @@
-﻿## IIS Server: PowerShell Script to create Short Cuts to the IIS Logs by their 'friendly' Site Names ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to create Short Cuts to the IIS Logs by their 'friendly' Site Names.
 
-<#
+.DESCRIPTION
+    PowerShell Script to create Short Cuts to the IIS Logs by their 'friendly' Site Names.
 
-Overview: This PowerShell Script creates a Shortcuts directory, then creates shortcuts to the IIS Log file directories based off of their 'friendly' IIS website name
+.PARAMETER shortcutbasedir
+    Change this to match your environment.
 
-Usage: Edit the following variables to match your environment: '$shortcutbasedir'; '$shortcutsdir'
+.PARAMETER shortcutsdir
+    Change the 'Shortcuts' to match your environment.
 
-The Script must be run locally on the web server, and must have sufficient access to the IIS and specified shortcuts directory
+.EXAMPLE
+    PS C:\> .\IIS_Create_Shortcuts_To_Log_Files.ps1
+    Edit the variables section and run to powerShell Script to create Short Cuts to the IIS Logs by their 'friendly' Site Names.
 
-Resouce: https://blog.netnerds.net/2014/07/powershell-create-human-readable-shortcuts-to-iis-log-file-directories
-
+.NOTES
+    Requires:   WebAdministration
+    Resources:  https://blog.netnerds.net/2014/07/powershell-create-human-readable-shortcuts-to-iis-log-file-directories
 #>
+
 #############################################################
  
 # Set the folder where the Shortcuts folder will be 

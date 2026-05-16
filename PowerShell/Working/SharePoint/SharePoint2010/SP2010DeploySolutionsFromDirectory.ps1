@@ -1,6 +1,17 @@
-﻿## PowerShell Script to Deploy SharePoint 2010 Solutions from a Source Directory ##
-## Name: SP2010DeploySolutionsFromDirectory.ps1
-## Resource: http://blog.isaacblum.com/2011/08/19/powershell-install-multiple-wsps
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Deploy SharePoint 2010 Solutions from a Source Directory.
+
+.DESCRIPTION
+    PowerShell Script to Deploy SharePoint 2010 Solutions from a Source Directory.
+
+.EXAMPLE
+    PS C:\> .\SP2010DeploySolutionsFromDirectory.ps1
+    PowerShell Script to Deploy SharePoint 2010 Solutions from a Source Directory.
+
+.NOTES
+    Requires:   microsoft.sharepoint.powershell
+#>
 
 ######################################
 ######## Set Variables ###############

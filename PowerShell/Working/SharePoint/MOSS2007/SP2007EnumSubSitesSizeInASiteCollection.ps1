@@ -1,8 +1,17 @@
-﻿## SharePoint Server: PowerShell Script to Enumerate the Sub Sites (Webs) Size in a Site Collection ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Enumerate the Sub Sites (Webs) Size in a Site Collection.
 
-## Environments: MOSS 2007 and SharePoint Server 2010 / 2013 Farms
-## Usage: Edit the '$SiteURL' variable and run the script
-## Resource: http://www.sharepointdiary.com/2012/03/sharepoint-sub-site-storage-report.html
+.DESCRIPTION
+    PowerShell Script to Enumerate the Sub Sites (Webs) Size in a Site Collection.
+
+.PARAMETER SiteURL
+    Provide the site collection URL here.
+
+.EXAMPLE
+    PS C:\> .\SP2007EnumSubSitesSizeInASiteCollection.ps1
+    Edit the variables section and run to powerShell Script to Enumerate the Sub Sites (Webs) Size in a Site Collection.
+#>
 
 #Get Size of all Sub-sites in a Site Collection
 [void][System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint")

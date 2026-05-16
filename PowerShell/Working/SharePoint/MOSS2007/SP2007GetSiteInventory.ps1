@@ -1,6 +1,20 @@
-﻿## SharePoint Server: PowerShell Script To produce A CSV Report On All Sites Within A Web App ##
-## Usage: This Script Should Work On MOSS 2007 And SharePoint Server 2010 Farms
-## Edit Tip: Use CodePlex SharePoint Manager To Find Additional Properties To Add To The Script
+﻿<#
+.SYNOPSIS
+    PowerShell Script To produce A CSV Report On All Sites Within A Web App.
+
+.DESCRIPTION
+    PowerShell Script To produce A CSV Report On All Sites Within A Web App.
+
+.PARAMETER siteURL
+    URL to any site in the web application.
+
+.PARAMETER filePath
+    Path for exported CSV file.
+
+.EXAMPLE
+    PS C:\> .\SP2007GetSiteInventory.ps1
+    Edit the variables section and run to powerShell Script To produce A CSV Report On All Sites Within A Web App.
+#>
 
 ######################## Start Variables #######################################################
 $siteURL = "http://intranet.theglobalfund.org" #URL to any site in the web application.

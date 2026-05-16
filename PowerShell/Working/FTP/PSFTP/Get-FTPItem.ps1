@@ -1,4 +1,19 @@
-﻿Function Get-FTPItem
+﻿<#
+.SYNOPSIS
+    Send specific file from ftop server to location disk.
+
+.DESCRIPTION
+    The Get-FTPItem cmdlet download file to specific location on local machine.
+
+.EXAMPLE
+    PS C:\> .\Get-FTPItem.ps1
+    Send specific file from ftop server to location disk.
+
+.NOTES
+    Resources:  http://commandlinegeeks.com/
+#>
+
+Function Get-FTPItem
 {
     <#
 	.SYNOPSIS

@@ -1,15 +1,17 @@
-## SharePoint Server: PowerShell Script To List All Site Columns At List Library Level ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To List All Site Columns At List Library Level.
 
-<#
+.DESCRIPTION
+    PowerShell Script To List All Site Columns At List Library Level.
 
-Overview: PowerShell Script To List All Site Columns At List Library Level. Provides information on the Field Name, Internal Name, and Column Type
+.EXAMPLE
+    PS C:\> .\SP2013GetAllListColumns.ps1
+    PowerShell Script To List All Site Columns At List Library Level.
 
-Environments: SharePoint Server 2010 / 2013 + Farms
-
-Usage: Edit the following variables to match your environment and run the script: '$SiteURL'; '$ListName'
-
-Resource: http://www.sharepointdiary.com/2016/04/get-list-fields-in-sharepoint-using-powershell.html
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://www.sharepointdiary.com/2016/04/get-list-fields-in-sharepoint-using-powershell.html
 #>
 
 Add-PSSnapin Microsoft.SharePoint.PowerShell -ErrorAction SilentlyContinue

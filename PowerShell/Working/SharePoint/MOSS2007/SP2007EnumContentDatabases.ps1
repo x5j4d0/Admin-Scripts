@@ -1,3 +1,21 @@
+﻿<#
+.SYNOPSIS
+    SP2007 Enum Content Databases.
+
+.DESCRIPTION
+    SP2007 Enum Content Databases.
+
+.PARAMETER OutputFormat
+    Output Format.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\SP2007EnumContentDatabases.ps1
+    SP2007 Enum Content Databases.
+#>
+
 ###################################################
 #
 #  SharePoint 2007: Content Database Enumerator

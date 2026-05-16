@@ -1,3 +1,33 @@
+﻿<#
+.SYNOPSIS
+    Add SP Yes No Field.
+
+.DESCRIPTION
+    Add SP Yes No Field.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER Required
+    Required.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPYesNoField.ps1
+    Add SP Yes No Field.
+#>
+
 ##################################################################################
 #
 #

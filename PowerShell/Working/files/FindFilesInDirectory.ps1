@@ -1,24 +1,16 @@
-﻿## PowerShell: Script to Search a File Path For All Files by Name Or Type ##
+﻿<#
+.SYNOPSIS
+    Script to Search a File Path For All Files by Name Or Type.
 
-<#
-			" Satnaam WaheGuru Ji"	
-			Resource: https://gallery.technet.microsoft.com/scriptcenter/Search-for-Files-Using-340397aa
-			Author  :  Aman Dhally
-			E-Mail  :  amandhally@gmail.com
-			website :  www.amandhally.net
-			twitter : https://twitter.com/#!/AmanDhally
-			facebook: http://www.facebook.com/groups/254997707860848/
-			Linkedin: http://www.linkedin.com/profile/view?id=23651495
+.DESCRIPTION
+    Script to Search a File Path For All Files by Name Or Type.
 
-			Date	: 13-Sept-2012, 11:43 AM
-			File	: Find_Files
-			Purpose : FInd Files Using Powershell
-			
-			Version : 1
+.EXAMPLE
+    PS C:\> .\FindFilesInDirectory.ps1
+    Script to Search a File Path For All Files by Name Or Type.
 
-			
-
-
+.NOTES
+    Resources:  https://gallery.technet.microsoft.com/scriptcenter/Search-for-Files-Using-340397aa; https://twitter.com/#!/AmanDhally
 #>
 
 "`n"

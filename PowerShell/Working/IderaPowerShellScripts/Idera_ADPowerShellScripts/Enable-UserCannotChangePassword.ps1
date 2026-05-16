@@ -1,19 +1,14 @@
-## =====================================================================
-## Title       : Enable-UserCannotChangePassword
-## Description : Set the 'User Cannot Change Password' checkbox on the user account in ADUC.
-##                   The user won't be able to change his password.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No input
-##                                                       
-## Output      : System.DirectoryServices.DirectoryEntry
-## Usage       : Get-IADUser Jim* | Enable-UserCannotChangePassword
-##            
-## Notes       :
-## Tag         : user, password, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Enable Active Directory user cannot change password objects using ADSI..
 
+.DESCRIPTION
+    Enable Active Directory user cannot change password objects using ADSI..
+
+.EXAMPLE
+    PS C:\> .\Enable-UserCannotChangePassword.ps1
+    Run the script to perform the described operation.
+#>
 
 filter Enable-UserCannotChangePassword {
 

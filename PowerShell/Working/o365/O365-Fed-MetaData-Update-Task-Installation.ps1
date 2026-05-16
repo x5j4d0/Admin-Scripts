@@ -1,3 +1,18 @@
+ï»¿<#
+.SYNOPSIS
+    O365 Fed Meta Data Update Task Installation.
+
+.DESCRIPTION
+    O365 Fed Meta Data Update Task Installation.
+
+.EXAMPLE
+    PS C:\> .\O365-Fed-MetaData-Update-Task-Installation.ps1
+    O365 Fed Meta Data Update Task Installation.
+
+.NOTES
+    Resources:  http://gallery.technet.microsoft.com/scriptcenter/Office-365-Federation-27410bdc; http://community.office365.com/en-us/wikis/sso/2062.aspx
+#>
+
 <# PowerShell: Automation Installation Tool To Automate Metadata Updates Between Your ADFS Servers And MS Online
 
 Overview: The script below essentially is run and installed on your ADFS federation servers to create a scheduled task
@@ -32,9 +47,9 @@ Support Resource: http://community.office365.com/en-us/wikis/sso/2062.aspx
 
 #------------------------------------------------------------------------------
 #
-# Copyright © 2012 Microsoft Corporation.  All rights reserved.
+# Copyright Â© 2012 Microsoft Corporation.  All rights reserved.
 #
-# THIS CODE AND ANY ASSOCIATED INFORMATION ARE PROVIDED “AS IS” WITHOUT
+# THIS CODE AND ANY ASSOCIATED INFORMATION ARE PROVIDED Â“AS ISÂ” WITHOUT
 # WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
 # LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS
 # FOR A PARTICULAR PURPOSE. THE ENTIRE RISK OF USE, INABILITY TO USE, OR 

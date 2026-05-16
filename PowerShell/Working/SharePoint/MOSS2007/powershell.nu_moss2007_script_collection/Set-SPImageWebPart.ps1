@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    Set SP Image Web Part.
+
+.DESCRIPTION
+    Set SP Image Web Part.
+
+.PARAMETER url
+    url.
+
+.PARAMETER WebPart
+    Web Part.
+
+.PARAMETER Image
+    Image.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Set-SPImageWebPart.ps1
+    Set SP Image Web Part.
+#>
+
 ##################################################################################
 #
 #

@@ -1,3 +1,33 @@
+﻿<#
+.SYNOPSIS
+    Add SP Announcement.
+
+.DESCRIPTION
+    Add SP Announcement.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Title
+    Title.
+
+.PARAMETER Body
+    Body.
+
+.PARAMETER Expires
+    Expires.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPAnnouncement.ps1
+    Add SP Announcement.
+#>
+
 ##################################################################################
 #
 #
@@ -33,7 +63,7 @@ SYNTAX:
 
 Add-SPAnnouncement
 
-Add-SPAnnouncement -url http://moss -List "Announcements" -Title "Demo fr�n PowerShell.nu" -Body "<h1>PowerShell</h1><p />is Cool!" -Expires (Get-Date).AddHours(1)
+Add-SPAnnouncement -url http://moss -List "Announcements" -Title "Demo från PowerShell.nu" -Body "<h1>PowerShell</h1><p />is Cool!" -Expires (Get-Date).AddHours(1)
 
 Adds A new Announcement to the Announcements List
 

@@ -1,3 +1,30 @@
+﻿<#
+.SYNOPSIS
+    Set SP View.
+
+.DESCRIPTION
+    Set SP View.
+
+.PARAMETER Url
+    Url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER View
+    View.
+
+.PARAMETER Query
+    Query.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Set-SPView.ps1
+    Set SP View.
+#>
+
 ##################################################################################
 #
 #

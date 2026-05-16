@@ -1,13 +1,28 @@
-﻿## SharePoint Server: PowerShell Script To Test SharePoint Send Mail Functionality ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Test SharePoint Send Mail Functionality.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Test SharePoint Send Mail Functionality.
 
-Overview: PowerShell Script that uses the Object Model to test sending email using the same 'SPUtility.SendMail' configured in the Incoming/Outgoing Central Admin E-Mail Settings
+.PARAMETER spsite
+    Provide your SharePoint site details here.
 
-Environments: SharePoint Server 2010 / 2013 Farms
+.PARAMETER email
+    Add your recipient email address here.
 
-Usage: Edit the variables below and run the script
+.PARAMETER subject
+    Change your subject here.
 
+.PARAMETER body
+    Change your body text here.
+
+.EXAMPLE
+    PS C:\> .\SP2010TestEmailFunctionality.ps1
+    Edit the variables section and run to powerShell Script To Test SharePoint Send Mail Functionality.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue

@@ -1,4 +1,15 @@
-﻿## MSOnline: PowerShell Function to Connect to MS Online and Exchange Online PowerShell Modules (o365) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Function to Connect to MS Online and Exchange Online PowerShell Modules (o365).
+
+.DESCRIPTION
+    PowerShell Function to Connect to MS Online and Exchange Online PowerShell Modules
+    (o365).
+
+.EXAMPLE
+    PS C:\> .\ConnectToMSOnlineAndExchangeOnlineFunction.ps1
+    PowerShell Function to Connect to MS Online and Exchange Online PowerShell Modules (o365).
+#>
 
 Function Connect-O365 {
  

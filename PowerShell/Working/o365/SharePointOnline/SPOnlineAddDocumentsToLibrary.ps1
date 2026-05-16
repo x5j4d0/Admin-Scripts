@@ -1,25 +1,17 @@
-﻿## SharePoint Online: PowerShell function to upload Documents from a Source folder to a Document Library via CSOM (SPOnline) ##
+﻿<#
+.SYNOPSIS
+    PowerShell function to upload Documents from a Source folder to a Document Library via CSOM (SPOnline).
 
-<#
+.DESCRIPTION
+    PowerShell function to upload Documents from a Source folder to a Document Library via
+    CSOM (SPOnline).
 
-Overview: PowerShell function to upload Documents from a folder to a Document Library via CSOM in SharePoint Online
+.EXAMPLE
+    PS C:\> .\SPOnlineAddDocumentsToLibrary.ps1
+    PowerShell function to upload Documents from a Source folder to a Document Library via CSOM (SPOnline).
 
-Note: The script also preserves the folder structure from the source location
-
-Usage: Provide parameters listed below, and the paths to your SharePoint binaries for the CSOM
-
-Provide the required Parameters below in the Script: 
-
-$Url = "https://contoso.sharepoint.com"
-$UserName = "username@contoso.onmicrosoft.com"
-$Password = "password"
-$TargetListTitle = "Documents"   #Target Library
-$SourceFolderPath = "C:\Users\user\Upload"  #Source Path
-
-Provide the paths to your SharePoint DLLs for CSOM under '#Adding the CSOM Assemblies'
-
-Resource: https://gist.github.com/vgrem/cf6cba630dc6b81b1bd8
-
+.NOTES
+    Resources:  https://contoso.sharepoint.com"; https://gist.github.com/vgrem/cf6cba630dc6b81b1bd8
 #>
 
 #Adding the CSOM Assemblies

@@ -1,23 +1,30 @@
-﻿## SharePoint Online: PowerShell function to Activate Site Collection Features (SPOnline) ##
+﻿<#
+.SYNOPSIS
+    PowerShell function to Activate Site Collection Features (SPOnline).
 
-<#
-Overview: PowerShell Script that enables features (Feature GUID) in a SPO Site via CSOM
+.DESCRIPTION
+    PowerShell function to Activate Site Collection Features (SPOnline).
 
-Usage: Provide parameters listed below, and the paths to your SharePoint binaries for the CSOM
+.PARAMETER sSiteColUrl
+    s Site Col Url.
 
-Provide the required Parameters below in the Script: 
+.PARAMETER sUserName
+    s User Name.
 
-$sUserName: User Name to connect to the SharePoint Online Site Collection
-$sPassword: Password for the user 
-$sSiteColUrl: SharePoint Online Site Collection 
-$sFeatureGuid: GUID of the feature to be enabled 
+.PARAMETER sPassword
+    s Password.
 
-Provide the paths to your SharePoint DLLs for CSOM under '#Adding the CSOM Assemblies'
+.PARAMETER sFeatureGuid
+    s Feature Guid.
 
-Resource: https://gallery.technet.microsoft.com/office/How-to-enable-a-SharePoint-5bb614c7
+.EXAMPLE
+    PS C:\> .\SPOnlineActivateSiteCollectionFeature.ps1
+    PowerShell function to Activate Site Collection Features (SPOnline).
 
+.NOTES
+    Resources:  https://gallery.technet.microsoft.com/office/How-to-enable-a-SharePoint-5bb614c7
 #>
- 
+
 $host.Runspace.ThreadOptions = "ReuseThread" 
  
 #Definition of the function that allows to enable a SPO Feature 

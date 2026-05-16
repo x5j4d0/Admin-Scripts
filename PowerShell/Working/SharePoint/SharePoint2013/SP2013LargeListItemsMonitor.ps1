@@ -1,4 +1,26 @@
-﻿<# SharePoint Server: PowerShell Script To Monitor And Email Alerts On Lists with Large Numbers Of Items
+﻿<#
+.SYNOPSIS
+    SP2013 Large List Items Monitor.
+
+.DESCRIPTION
+    SP2013 Large List Items Monitor.
+
+.PARAMETER site
+    Change this to suit your environment.
+
+.PARAMETER limit
+    Change this item limit variable to match your environment requirements.
+
+.EXAMPLE
+    PS C:\> .\SP2013LargeListItemsMonitor.ps1
+    Edit the variables section and run to sP2013 Large List Items Monitor.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.Powershell
+    Resources:  http://kowalski.ms/2012/07/25/sharepoint-large-list-notifier
+#>
+
+<# SharePoint Server: PowerShell Script To Monitor And Email Alerts On Lists with Large Numbers Of Items
 
 Overview: PowerShell script that checks for list libraries with more items than specified, and emails a summary of these.
 Also has an 'Exclude' array to exclude reporting on specified list libraries.

@@ -1,38 +1,26 @@
-﻿## FIM Service: PowerShell Function To Clear The Synchronization Service Manager Runs History ##
+﻿<#
+.SYNOPSIS
+    PowerShell Function To Clear The Synchronization Service Manager Runs History.
 
-<#
+.DESCRIPTION
+    Clears the FIM Run History for Products like SharePoint Server and Microsoft Online
+    Services Directory Synchronization (Microsoft Online Directory Sync) The Synchronization
+    Service Manager (miisclient.exe) tool can generally be found in the following locations
+    for these products:.
 
-.OVERVIEW 
-Clears the FIM Run History stored in the Forefront Identity Manager FIM Synchronization Service Tool (miisclient.exe)
+.PARAMETER True
+    True.
 
-.DESCRIPTION 
-Clears the FIM Run History for Products like SharePoint Server and Microsoft Online Services Directory Synchronization (Microsoft Online Directory Sync)
+.PARAMETER true
+    true.
 
-The Synchronization Service Manager (miisclient.exe) tool can generally be found in the following locations for these products:
+.EXAMPLE
+    PS C:\> .\ClearSynchronizationServiceManagerRunsHistory.ps1
+    PowerShell Function To Clear The Synchronization Service Manager Runs History.
 
-.SharePoint Server 2010
-C:\Program Files\Microsoft Office Servers\14.0\Synchronization Service\UIShell\miisclient.exe
-
-.SharePoint Server 2013
-C:\Program Files\Microsoft Office Servers\15.0\Synchronization Service\UIShell\miisclient.exe
-
-.Microsoft Online Directory Sync
-C:\Program Files\Microsoft Online Directory Sync\SYNCBUS\Synchronization Service\UIShell\miisclient.exe
-
-.Windows Azure Active Directory Sync Tool
-C:\Program Files\Windows Azure Active Directory Sync\SYNCBUS\Synchronization Service\UIShell\miisclient.exe
-
-.USAGE EXAMPLE 
-
-PS> Clear-FIMRunHistory 30 
-
-Clears the FIM Run History until 30 days ago
-
-.RESOURCE
-
-http://social.technet.microsoft.com/wiki/contents/articles/2096.how-to-use-powershell-to-delete-the-run-history-based-on-a-specific-date-en-us.aspx
-
-#> 
+.NOTES
+    Resources:  http://social.technet.microsoft.com/wiki/contents/articles/2096.how-to-use-powershell-to-delete-the-run-history-based-on-a-specific-date-en-us.aspx
+#>
 
 Function Clear-FIMRunHistory { 
  

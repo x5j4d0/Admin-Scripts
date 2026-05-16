@@ -1,4 +1,14 @@
-## NIC Configuration: PowerShell Script to Get System NIC Configuration Details ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get System NIC Configuration Details.
+
+.DESCRIPTION
+    PowerShell Script to Get System NIC Configuration Details.
+
+.EXAMPLE
+    PS C:\> .\GetNicConfiurationDetails.ps1
+    PowerShell Script to Get System NIC Configuration Details.
+#>
 
 [cmdletbinding()]
 param (

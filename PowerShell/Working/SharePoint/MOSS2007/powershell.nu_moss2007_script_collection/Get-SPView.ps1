@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    Get SP View.
+
+.DESCRIPTION
+    Get SP View.
+
+.PARAMETER Url
+    Url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER View
+    View.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Get-SPView.ps1
+    Get SP View.
+#>
+
 ##################################################################################
 #
 #

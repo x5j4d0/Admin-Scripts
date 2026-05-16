@@ -1,4 +1,19 @@
-﻿<# SharePoint Server: PowerShell Script To Produce A CSV Report On Document Library Sizes And Versions For A Web Application
+﻿<#
+.SYNOPSIS
+    SP2007 Version Size Report.
+
+.DESCRIPTION
+    SP2007 Version Size Report.
+
+.EXAMPLE
+    PS C:\> .\SP2007VersionSizeReport.ps1
+    SP2007 Version Size Report.
+
+.NOTES
+    Resources:  http://sharepoint.YOURCompany.com"; http://www.sharepointdiary.com/2013/01/document-versions-size-report-powershell.html
+#>
+
+<# SharePoint Server: PowerShell Script To Produce A CSV Report On Document Library Sizes And Versions For A Web Application
 
 Overview: PowerShell script that queries properties of the SharePoint Object Model to produce a CSV file report in the same place as the script
 

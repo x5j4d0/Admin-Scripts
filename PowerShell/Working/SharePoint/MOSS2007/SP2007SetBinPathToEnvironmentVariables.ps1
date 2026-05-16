@@ -1,5 +1,14 @@
-﻿## SharePoint Server: PowerShell Script To Add The STSADM Path To The Environment Variables ##
-## Usage: Works on both MOSS 2007 and SharePoint Server 2010 Farms
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Add The STSADM Path To The Environment Variables.
+
+.DESCRIPTION
+    PowerShell Script To Add The STSADM Path To The Environment Variables.
+
+.EXAMPLE
+    PS C:\> .\SP2007SetBinPathToEnvironmentVariables.ps1
+    PowerShell Script To Add The STSADM Path To The Environment Variables.
+#>
 
 ""
 "######################################################################"

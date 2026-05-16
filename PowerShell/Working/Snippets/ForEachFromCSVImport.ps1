@@ -1,4 +1,17 @@
-﻿## PowerShell: Script showing how to use a 'ForEach' loop for importing data from a CSV File ##
+﻿<#
+.SYNOPSIS
+    Script showing how to use a 'ForEach' loop for importing data from a CSV File.
+
+.DESCRIPTION
+    Script showing how to use a 'ForEach' loop for importing data from a CSV File.
+
+.PARAMETER InputFilePath
+    Change this to match your environment.
+
+.EXAMPLE
+    PS C:\> .\ForEachFromCSVImport.ps1
+    Edit the variables section and run to script showing how to use a 'ForEach' loop for importing data from a CSV File.
+#>
 
 $InputFilePath = "C:\BoxBuild\Scripts\SPSitesReport.csv" #Change this to match your environment
 

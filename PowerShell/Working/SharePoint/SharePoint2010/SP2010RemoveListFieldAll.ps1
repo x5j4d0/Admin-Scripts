@@ -1,14 +1,26 @@
-﻿## SharePoint Server 2010: PowerShell Script To Remove Fields From Content Types And List Libraries ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Remove Fields From Content Types And List Libraries.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Remove Fields From Content Types And List Libraries.
 
-Overview: PowerShell script that removes a specified field from a specified content type and then goes and removes the field
-from all list libraries associated with the content type and column field
+.PARAMETER rootUrl
+    Change this to match your environment URL.
 
-Resource:
+.PARAMETER ContentTypeName
+    Change this to your Content Type Name".
 
-http://sharepointburger.wordpress.com/2012/04/12/removing-a-site-column-from-a-content-type-that-cannot-be-deleted-from-ui
+.PARAMETER FieldDisplayName
+    Change this to your Field Name.
 
+.EXAMPLE
+    PS C:\> .\SP2010RemoveListFieldAll.ps1
+    Edit the variables section and run to powerShell Script To Remove Fields From Content Types And List Libraries.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://sharepointburger.wordpress.com/2012/04/12/removing-a-site-column-from-a-content-type-that-cannot-be-deleted-from-ui
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue

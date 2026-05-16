@@ -1,8 +1,15 @@
-﻿## Exchange Online: PowerShell Script to Enable or Disable Mail Box Auditing in Exchange Online (o365) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Enable or Disable Mail Box Auditing in Exchange Online (o365).
 
-## Resource: https://www.ronnipedersen.com/2017/07/29/automate-mailbox-auditing-office-365
+.DESCRIPTION
+    PowerShell Script to Enable or Disable Mail Box Auditing in Exchange Online (o365).
 
-## Connect to Exchange Online
+.EXAMPLE
+    PS C:\> .\ExchangeOnlineSetMailBoxAuditing.ps1
+    PowerShell Script to Enable or Disable Mail Box Auditing in Exchange Online (o365).
+#>
+
 Import-PSSession $(New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Authentication Basic -AllowRedirection -Credential $(Get-Credential))
 
 ## Get the current state of audit logging

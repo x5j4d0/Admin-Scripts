@@ -1,20 +1,18 @@
-## =====================================================================
-## Title       : Get-IEXMailboxFolderStatistics
-## Description : Extend MailboxFolderStatistics object, including Newest and Oldest Item Received Date members in days 
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : Get-IEXMailboxFolderStatistics [[-Server] <String>] [[-Identity] <String>]
-##   
-## Output      : System.Management.Automation.PSCustomObject 
-## Usage       :
-##               1. Retrieve extended mailbox folder statistics for TestUser
-##               Get-IEXMailboxFolderStatistics -Server ExchangeServerName -Identity TestUser        
-##
-## Notes       :
-## Tag         : Exchange 2007, mailbox, folder, statistics, new
-## Change log  :
-## ===================================================================== 
- 
+﻿<#
+.SYNOPSIS
+    Retrieve Mailbox Folder Statistics.
+
+.DESCRIPTION
+    Retrieve Mailbox Folder Statistics.
+
+.PARAMETER Server
+    Server.
+
+.EXAMPLE
+    PS C:\> .\Get-IEXMailboxFolderStatistics.ps1
+
+#>
+
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
 
 function Get-IEXMailboxFolderStatistics

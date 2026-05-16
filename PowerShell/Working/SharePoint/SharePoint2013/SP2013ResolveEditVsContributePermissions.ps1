@@ -1,29 +1,17 @@
-﻿## SharePoint Server: PowerShell Function to 'resolve' the Edit vs. Contribute Role Permissions Change ##
+﻿<#
+.SYNOPSIS
+    PowerShell Function to 'resolve' the Edit vs. Contribute Role Permissions Change.
 
-<#
+.DESCRIPTION
+    PowerShell Function to 'resolve' the Edit vs. Contribute Role Permissions Change.
 
-Overview: In some SharePoint 2013 Farms there is new permission level called Edit, and it is assigned to the Members group by default. The Edit permission level states: Can add, edit and delete lists; can view, add, update and delete list items and documents.
+.EXAMPLE
+    PS C:\> .\SP2013ResolveEditVsContributePermissions.ps1
+    PowerShell Function to 'resolve' the Edit vs. Contribute Role Permissions Change.
 
-The function below can be used at Web Application and Site Collection level to enumerate all web applications, site collections, and webs to change the setting back from 'Edit' to 'Contribute'
-
-Environments: SharePoint Server 2013 Farms
-
-Resource: http://paulliebrand.com/2014/04/18/sharepoint-2013-edit-vs-contribute-solution
-
-Usage Examples:
-
-Example to process all web applications, sites, and webs
- 
-Measure-Command {
-    Get-SPWebApplication  | Fix-PLEditContribute
-}
- 
-Example to process a specific site collection and webs
- 
-Measure-Command {
-    Get-SPSite http://test/sites/site | Fix-PLEditContributeSite
-}
- 
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://paulliebrand.com/2014/04/18/sharepoint-2013-edit-vs-contribute-solution; http://test/sites/site
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue

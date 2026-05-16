@@ -1,18 +1,15 @@
-## =====================================================================
-## Title       : Get-IADDomainController
-## Description : Retrieve domain controller information.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No input                 
-##                      
-## Output      : System.Object[]
-## Usage       : Get-IADDomainController
-##             
-## Notes       :
-## Tag         : domain, domaincontroller, activedirectory
-## Change log  :
-## =====================================================================   
- 
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory domain controller objects using ADSI..
+
+.DESCRIPTION
+    Retrieve Active Directory domain controller objects using ADSI..
+
+.EXAMPLE
+    PS C:\> .\Get-IADDomainController.ps1
+    Run the script to perform the described operation.
+#>
+
 function Get-IADDomainController { 
    [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain().DomainControllers
 }

@@ -1,13 +1,17 @@
-﻿##===========================================================================================##
-## SharePoint Server 2010: PowerShell Recycle Bin Status Report With Email Functionality
-## Version: 1.0
-## Resource: http://sharepoint4newbie.blogspot.com/2011/12/monitor-sharepoint-recycle-bin.html
-## Description: This script will perform the following
-## 1) List recent deletion (from recent x number of day)
-## 2) List deleted documents that will be removed from first-stage recycle bin
-## 3) List deleted documents was removed from user recycle bin.
-## 4) Send out status email
-##===========================================================================================##
+﻿<#
+.SYNOPSIS
+    SP2010 Recycle Bin Report.
+
+.DESCRIPTION
+
+
+.PARAMETER fileName
+    file Name.
+
+.EXAMPLE
+    PS C:\> .\SP2010RecycleBinReport.ps1
+
+#>
 
 #$snapin = Get-PSSnapIn -name "Microsoft.SharePoint.PowerShell" -registered
 #if(!$snapin)

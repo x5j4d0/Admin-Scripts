@@ -1,3 +1,33 @@
+﻿<#
+.SYNOPSIS
+    Add SP Text Field.
+
+.DESCRIPTION
+    Add SP Text Field.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER Required
+    Required.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPTextField.ps1
+    Add SP Text Field.
+#>
+
 ##################################################################################
 #
 #

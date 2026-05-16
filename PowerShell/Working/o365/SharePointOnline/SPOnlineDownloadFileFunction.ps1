@@ -1,4 +1,15 @@
-﻿## SharePoint Online: PowerShell Function to Download Items from SharePoint Online (SPOnline) Libraries via CSOM ##
+﻿<#
+.SYNOPSIS
+    PowerShell Function to Download Items from SharePoint Online (SPOnline) Libraries via CSOM.
+
+.DESCRIPTION
+    PowerShell Function to Download Items from SharePoint Online (SPOnline) Libraries via
+    CSOM.
+
+.EXAMPLE
+    PS C:\> .\SPOnlineDownloadFileFunction.ps1
+    PowerShell Function to Download Items from SharePoint Online (SPOnline) Libraries via CSOM.
+#>
 
 [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
 [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.Runtime")

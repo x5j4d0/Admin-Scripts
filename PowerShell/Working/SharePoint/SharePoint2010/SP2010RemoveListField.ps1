@@ -1,16 +1,33 @@
-﻿## SharePoint Server 2010: PowerShell Scripts To Delete Column Fields Attached To Content Types Or Directly To Lists ##
+﻿<#
+.SYNOPSIS
+    PowerShell Scripts To Delete Column Fields Attached To Content Types Or Directly To Lists.
 
-<#
+.DESCRIPTION
+    PowerShell Scripts To Delete Column Fields Attached To Content Types Or Directly To
+    Lists.
 
-Overview: The 2 scripts below can be edited to be used for either of the following scenarios related to removing column fields
+.PARAMETER web
+    Change this to your URL.
 
-Script 1: Removes a Column attached to Content Types
+.PARAMETER ct
+    Change this to the Content Type name.
 
-Script 2: Removes a Column Field attached directly to List Libraries
+.PARAMETER spFieldLink
+    Change this to your Field name.
 
+.PARAMETER list
+    Change this to your List Name.
+
+.PARAMETER field
+    Change this to your Field name.
+
+.EXAMPLE
+    PS C:\> .\SP2010RemoveListField.ps1
+    Edit the variables section and run to powerShell Scripts To Delete Column Fields Attached To Content Types Or Directly To Lists.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
 #>
-
-## Script 1: Removes a Column attached to Content Types
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue
 

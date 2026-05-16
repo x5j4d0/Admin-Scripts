@@ -1,6 +1,4 @@
-﻿## Active Directory: PowerShell Script Solution to Monitor / Report on AD Group Membership Changes ##
-
-<#
+﻿<#
 .SYNOPSIS
 	This script is monitoring group(s) in Active Directory and send an email when someone is changing the membership.
 

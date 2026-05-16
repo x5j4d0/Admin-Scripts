@@ -1,18 +1,17 @@
-## =====================================================================
-## Title       : Get-MSSQL-ServerAttrib-Html
-## Description : Connect to SQL Server and output server attributes to HTML
-## Author      : Idera
-## Date        : 1/28/2009
-## Input       : -serverInstance <server\instance>
-## 				  -tempDir <file path>
-## 				  -verbose 
-## 				  -debug	
-## Output      : 
-## Usage			: PS> .\Get-MSSQL-ServerAttrib-Html -serverInstance MyServer -tempDir C:\TEMP\ -verbose -debug
-## Notes			:
-## Tag			: SQL Server, Attributes, HTML
-## Change log  : Revised SMO Asseblies
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Server Attrib Html.
+
+.DESCRIPTION
+    Retrieve Server Attrib Html.
+
+.PARAMETER serverInstance
+    server Instance.
+
+.EXAMPLE
+    PS C:\> .\Get-MSSQL-ServerAttrib-Html.ps1
+
+#>
 
 param
 (

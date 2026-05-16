@@ -1,10 +1,18 @@
-﻿## PowerShell: Script that uses SQL Server PowerShell Module (SQLPS) Function to Query a SQL Instance with Grid View Output (Out-GridView) ##
+﻿<#
+.SYNOPSIS
+    Script that uses SQL Server PowerShell Module (SQLPS) Function to Query a SQL Instance with Grid View Output (Out-GridView).
 
-## Overview: Function that uses SQL Server PowerShell Module (SQLPS) Query (Invoke-Sqlcmd) to query a SQL Instance and provides the results in Out-GridView format
+.DESCRIPTION
+    Script that uses SQL Server PowerShell Module (SQLPS) Function to Query a SQL Instance
+    with Grid View Output (Out-GridView).
 
-## Requires: SQL Server PowerShell Module (SQLPS) on remote clients
+.EXAMPLE
+    PS C:\> .\SQLOutGridViewQueryFunction.ps1
+    Script that uses SQL Server PowerShell Module (SQLPS) Function to Query a SQL Instance with Grid View Output (Out-GridView).
 
-## Usage: Edit the parameters in the 'Out-SqlGrid' function to match your requirements and run the script
+.NOTES
+    Requires:   SQLPS
+#>
 
 #Import SQL Server module
 Import-Module SQLPS -DisableNameChecking

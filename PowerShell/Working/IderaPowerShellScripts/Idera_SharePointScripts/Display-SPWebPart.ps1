@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : Display-SPWebPart
-## Description : Displays All WebParts
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : Display-SPWebPart [[-url] <String>]
-## Output      : 
-## Usage       : Display-SPWebPart -url http://moss/MyTeamPlace
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : Site, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Display Web Part.
+
+.DESCRIPTION
+    Display Web Part.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\Display-SPWebPart.ps1
+
+#>
 
 param (
 

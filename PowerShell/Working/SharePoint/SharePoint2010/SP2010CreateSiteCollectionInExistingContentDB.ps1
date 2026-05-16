@@ -1,4 +1,20 @@
-﻿## SharePoint Server 2010: PowerShell Script to provision a new Site Collection ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to provision a new Site Collection.
+
+.DESCRIPTION
+    PowerShell Script to provision a new Site Collection.
+
+.PARAMETER SiteCollectionTemplate
+    1".
+
+.EXAMPLE
+    PS C:\> .\SP2010CreateSiteCollectionInExistingContentDB.ps1
+    Edit the variables section and run to powerShell Script to provision a new Site Collection.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.Powershell
+#>
 
 Add-PSSnapin Microsoft.SharePoint.Powershell
 $SiteCollectionName = "Welcome to My Publishing Site"

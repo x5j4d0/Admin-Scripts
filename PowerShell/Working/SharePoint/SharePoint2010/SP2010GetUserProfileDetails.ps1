@@ -1,3 +1,18 @@
+﻿<#
+.SYNOPSIS
+    SP2010 Get User Profile Details.
+
+.DESCRIPTION
+    SP2010 Get User Profile Details.
+
+.EXAMPLE
+    PS C:\> .\SP2010GetUserProfileDetails.ps1
+    SP2010 Get User Profile Details.
+
+.NOTES
+    Resources:  http://myWebApplication"; http://sharepointpsscripts.codeplex.com/releases/view/21699
+#>
+
 <# SharePoint Server: PowerShell Script To Get Details On A Users Profile From The Object Model
 
 Overview: Powershell script that creates a function to enumerate properties on a user profile against a web application

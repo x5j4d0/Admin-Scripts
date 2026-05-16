@@ -1,7 +1,5 @@
-﻿## Active Directory: PowerShell Script to Validate user Account Credentials in AD ##
-
-<#
-.Synopsis
+﻿<#
+.SYNOPSIS
 Verify Active Directory credentials
 
 .DESCRIPTION

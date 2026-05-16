@@ -1,3 +1,24 @@
+﻿<#
+.SYNOPSIS
+    Remove SP List.
+
+.DESCRIPTION
+    Remove SP List.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Remove-SPList.ps1
+    Remove SP List.
+#>
+
 ##################################################################################
 #
 #

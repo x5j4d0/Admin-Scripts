@@ -1,6 +1,4 @@
-## SharePoint Server: PowerShell Script to Export Sites (Export-SPWeb) as CMP Object Files with additional CSV Reporting ##
-
-<#
+﻿<#
 .SYNOPSIS
     Export a designated Sharepoint site (web) to file, includes a
     CSV report for document counts

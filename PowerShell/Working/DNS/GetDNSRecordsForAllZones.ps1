@@ -1,15 +1,19 @@
-﻿## DNS: PowerShell Script to List All DNS Records in Each Zone on a Windows DNS Server ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to List All DNS Records in Each Zone on a Windows DNS Server.
 
-<#
+.DESCRIPTION
+    PowerShell Script to List All DNS Records in Each Zone on a Windows DNS Server.
 
-Overview: PowerShell Script to list all DNS records in each zone on a Windows DNS server (includes sub-zones)
+.PARAMETER DNSServer
+    Provide your DNS Server Name or IP address here.
 
-Note:  Script works on DNS role servers, along with AD / DNS role servers
+.EXAMPLE
+    PS C:\> .\GetDNSRecordsForAllZones.ps1
+    Edit the variables section and run to powerShell Script to List All DNS Records in Each Zone on a Windows DNS Server.
 
-Usage: Provide your DNS server under the '$DNSServer' variable and edit the '$Results' output properties to match your environment
-
-Resource: http://sigkillit.com/2015/10/27/list-all-dns-records-with-powershell
-
+.NOTES
+    Resources:  http://sigkillit.com/2015/10/27/list-all-dns-records-with-powershell
 #>
 
 $DNSServer = "YourServerName" #Provide your DNS Server Name or IP address here

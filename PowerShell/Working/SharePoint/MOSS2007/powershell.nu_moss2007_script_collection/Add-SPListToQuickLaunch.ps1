@@ -1,3 +1,24 @@
+﻿<#
+.SYNOPSIS
+    Add SP List To Quick Launch.
+
+.DESCRIPTION
+    Add SP List To Quick Launch.
+
+.PARAMETER Url
+    Url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPListToQuickLaunch.ps1
+    Add SP List To Quick Launch.
+#>
+
 ##################################################################################
 #
 #

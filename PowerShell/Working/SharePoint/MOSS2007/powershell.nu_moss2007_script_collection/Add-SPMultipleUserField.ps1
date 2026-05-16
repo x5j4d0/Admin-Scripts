@@ -1,3 +1,33 @@
+﻿<#
+.SYNOPSIS
+    Add SP Multiple User Field.
+
+.DESCRIPTION
+    Add SP Multiple User Field.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER Required
+    Required.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPMultipleUserField.ps1
+    Add SP Multiple User Field.
+#>
+
 ##################################################################################
 #
 #

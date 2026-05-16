@@ -1,4 +1,14 @@
-## SharePoint Server: PowerShell Function to Clear All Recycle Bin Items ##
+﻿<#
+.SYNOPSIS
+    PowerShell Function to Clear All Recycle Bin Items.
+
+.DESCRIPTION
+    PowerShell Function to Clear All Recycle Bin Items.
+
+.EXAMPLE
+    PS C:\> .\SP2010DeleteAllRecycleBinItems.ps1
+    PowerShell Function to Clear All Recycle Bin Items.
+#>
 
 # Overview: Clear all Recycle Bin Items for a site collection (Both Recycle Bin Stages)
 # Environments: MOSS 2007, and SharePoint Server 2010 / 2013 Farms   

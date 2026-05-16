@@ -1,6 +1,28 @@
-﻿## PowerShell Script to monitor disk space from machines listed in a text file - Includes HTML email functionality ##
-## Resource: http://www.simple-talk.com/sysadmin/powershell/disk-space-monitoring-and-early-warning-with-powershell/
-## Usage Example: ./diskspace.ps1 "C:\Boxbuild\Scripts\PowerShell\diskspacereport\list.txt"
+﻿<#
+.SYNOPSIS
+    PowerShell Script to monitor disk space from machines listed in a text file - Includes HTML email functionality.
+
+.DESCRIPTION
+    PowerShell Script to monitor disk space from machines listed in a text file - Includes
+    HTML email functionality.
+
+.PARAMETER users
+    List of users to email your report to (separate by comma).
+
+.PARAMETER server
+    enter your own SMTP server DNS name / IP address here.
+
+.PARAMETER list
+    This accepts the argument you add to your scheduled task for the list of servers. i.e. list.txt.
+
+.PARAMETER computers
+    grab the names of the servers/computers to check from the list.txt file.
+
+.EXAMPLE
+    PS C:\> .\diskspace.ps1
+    Edit the variables section and run to powerShell Script to monitor disk space from machines listed in a text file - Includes HTML email functionality.
+#>
+
 $users = "toaddress@yourdomain.com" # List of users to email your report to (separate by comma)
 $fromemail = "fromaddress@yourdomain.com"
 $server = "yourmailserver.yourdomain.com" #enter your own SMTP server DNS name / IP address here

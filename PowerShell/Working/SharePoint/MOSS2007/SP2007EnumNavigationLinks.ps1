@@ -1,23 +1,22 @@
-﻿## SharePoint Server: PowerShell Object Model Script Query To Produce A Report On SharePoint Navigation Links ##
+﻿<#
+.SYNOPSIS
+    PowerShell Object Model Script Query To Produce A Report On SharePoint Navigation Links.
 
-<# 
+.DESCRIPTION
+    PowerShell Object Model Script Query To Produce A Report On SharePoint Navigation Links.
 
-PowerShell Object Model Script that goes through a MOSS site and produces a CSV file report of the following links:
+.PARAMETER FeatureID
+    Feature ID.
 
-- Top/Global Navigation
-- Quick Launch
-- Links Lists
+.PARAMETER Web
+    Web.
 
-Overview: This script will print out a list of all links in the Quick Launch, Links Lists, and default
-page for each SPWeb object to a CSV file located in the directory specified in the variables.
+.EXAMPLE
+    PS C:\> .\SP2007EnumNavigationLinks.ps1
+    PowerShell Object Model Script Query To Produce A Report On SharePoint Navigation Links.
 
-Environments: MOSS 2007 and SharePoint Server 2010/2013 Farms
-
-Resource: http://blog.henryong.com/2011/05/20/sharepoint-link-reporter-using-powershell
-
-Notes: These columns are the most important for top navigation links: WebTitle; QLHeaderTitle;
-QLChildLinkTitle; and QLChildLink.
-
+.NOTES
+    Resources:  http://blog.henryong.com/2011/05/20/sharepoint-link-reporter-using-powershell
 #>
 
 ######################## Start Variables ##############################################

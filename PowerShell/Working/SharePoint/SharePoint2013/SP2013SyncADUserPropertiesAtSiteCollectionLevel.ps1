@@ -1,3 +1,18 @@
+﻿<#
+.SYNOPSIS
+    SP2013 Sync AD User Properties At Site Collection Level.
+
+.DESCRIPTION
+    SP2013 Sync AD User Properties At Site Collection Level.
+
+.EXAMPLE
+    PS C:\> .\SP2013SyncADUserPropertiesAtSiteCollectionLevel.ps1
+    SP2013 Sync AD User Properties At Site Collection Level.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
+
 ##############################################################################################################
 ###             Sync AD User Properties for each user on a Site Collection using PowerShell                ###
 ###             Author: Rahul G. Babar                                                                     ###

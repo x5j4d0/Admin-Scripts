@@ -1,26 +1,17 @@
-## =====================================================================
-## Title       : Get-IADSite
-## Description : Retrieve the site(s) information for a forest or current site.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No input              
-##                     
-## Output      : System.DirectoryServices.ActiveDirectory.ActiveDirectorySite, System.Object[]
-## Usage       : 
-##               1. Retrieve current site information 
-##               Get-IADSite 
-## 
-##               2. Retrieve all sites in the current forest 
-##               Get-IADSite -All 
-##            
-## Notes       :
-## Tag         : site, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory site objects using ADSI..
 
+.DESCRIPTION
+    Retrieve Active Directory site objects using ADSI..
 
+.PARAMETER All
+    All.
 
-
+.EXAMPLE
+    PS C:\> .\Get-IADSite.ps1
+    Run the script to perform the described operation.
+#>
 
 function Get-IADSite { 
 

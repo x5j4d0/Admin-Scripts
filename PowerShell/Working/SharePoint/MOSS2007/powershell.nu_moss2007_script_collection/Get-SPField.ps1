@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    Get SP Field.
+
+.DESCRIPTION
+    Get SP Field.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Get-SPField.ps1
+    Get SP Field.
+#>
+
 ##################################################################################
 #
 #

@@ -1,8 +1,18 @@
-﻿## Azure AD Connect: PowerShell Commands to Configure Accidental Deletion Functionality (Prevent Accidental Deletes) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Commands to Configure Accidental Deletion Functionality (Prevent Accidental Deletes).
 
-## Resource: http://blog.kloud.com.au/2015/08/05/azure-active-directory-connect-export-profile-error-stopped-server-down
+.DESCRIPTION
+    PowerShell Commands to Configure Accidental Deletion Functionality (Prevent Accidental
+    Deletes).
 
-## AAD Connect Commandlets: https://mikecrowley.wordpress.com/2015/10/11/azure-ad-connect-powershell-cmdlets
+.EXAMPLE
+    PS C:\> .\AzureADConnectSetPreventAccidentalDeletes.ps1
+    PowerShell Commands to Configure Accidental Deletion Functionality (Prevent Accidental Deletes).
+
+.NOTES
+    Requires:   ADSync
+#>
 
 #Import the Azure AD Connect Sync module
 

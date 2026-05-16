@@ -1,21 +1,24 @@
-## =====================================================================
-## Title       : Connect-MSSQL-IPSQLAuth
-## Description : Connect to $ServerName using SQL Server authentication.
-##               This connection is not encrypted. 
-##               User ID and Password are transmitted in plain text.
-## Author      : Idera
-## Date        : 1/28/2009
-## Input       : -ipAddress < xxx.xxx.xxx.xxx | xxx.xxx.xxx.xxx\instance >
-##               -verbose 
-##               -debug	
-## Output      : Database names and owners
-## Usage			: PS> .\Connect-MSSQL-IPSQLAuth -ipAddress 127.0.0.1 -verbose -debug
-## Notes 		: In SQL Server 2008, you must enable SQL Authentication and
-##               the SQL account you are using (sa is disabled by default)
-##	Tag			: MSSQL, connect, IP, SQL Authentication
-## Change Log  : Revised SMO Assemblies
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Connect to IPSQL Auth.
+
+.DESCRIPTION
+    Connect to IPSQL Auth.
+
+.PARAMETER ipAddress
+    ip Address.
+
+.PARAMETER verbose
+    verbose.
+
+.PARAMETER debug
+    debug.
+
+.EXAMPLE
+    PS C:\> .\Connect-MSSQL-IPSQLAuth.ps1
+
+#>
+
 param
 (
   	[string]$ipAddress = "127.0.0.1",

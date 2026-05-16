@@ -1,3 +1,18 @@
+﻿<#
+.SYNOPSIS
+    Get Share Point Orphaned Users.
+
+.DESCRIPTION
+    Get Share Point Orphaned Users.
+
+.EXAMPLE
+    PS C:\> .\GetSharePointOrphanedUsers.ps1
+    Get Share Point Orphaned Users.
+
+.NOTES
+    Resources:  http://sharepointpsscripts.codeplex.com/releases/view/21699; http://sharepointpsscripts.codeplex.com/releases/view/21693
+#>
+
 <# SharePoint Server: PowerShell Functions To Get Orphaned User Accounts Across Web Applications Or Site Collections
 
 Overview: PowerShell functions that query AD and the Object Model to produce a list of all accounts that exist in SharePoint, but are no longer in AD
@@ -90,7 +105,7 @@ function ListOrphanedUsersForAllColl([string]$WebAppURL, [string]$DomainCNX)
 	foreach ($Sites in $oApp.Sites)
 	{
 		$i = $i + 1
-		write-host "Collection N� ", $i, "on ", $oApp.Sites.Count
+		write-host "Collection N° ", $i, "on ", $oApp.Sites.Count
 
 		if($i -gt 0)
 		{

@@ -1,17 +1,20 @@
-﻿## Sharepoint Server: Powershell Script to Configure Web Application Recycle Bin Settings ##
+﻿<#
+.SYNOPSIS
+    Powershell Script to Configure Web Application Recycle Bin Settings.
 
-<#
+.DESCRIPTION
+    Powershell Script to Configure Web Application Recycle Bin Settings.
 
-Environments: SharePoint Server 2010 / 2013 Farms
+.PARAMETER WebApp
+    Change this to match your environment.
 
-Usage: Edit the following variables to match your requirements: '$WebApp'; '$WebApp.RecycleBinEnabled'; '$WebApp.RecycleBinRetentionPeriod'; '$WebApp.SecondStageRecycleBinQuota'
+.EXAMPLE
+    PS C:\> .\SP2013ConfigureRecycleBinSettings.ps1
+    Edit the variables section and run to powershell Script to Configure Web Application Recycle Bin Settings.
 
-Resources: 
-
-http://www.sharepointdiary.com/2013/05/set-sharepoint-recycle-bin-properties-programmatically-powershell.html
-
-http://www.sharepointdiary.com/2011/09/sharepoint-recycle-bins-lets-get-it-clear.html
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://www.sharepointdiary.com/2013/05/set-sharepoint-recycle-bin-properties-programmatically-powershell.html; http://www.sharepointdiary.com/2011/09/sharepoint-recycle-bins-lets-get-it-clear.html
 #>
 
 Add-PSSnapin Microsoft.SharePoint.PowerShell -ErrorAction SilentlyContinue

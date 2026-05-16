@@ -1,8 +1,21 @@
-﻿## SharePoint Online: PowerShell SharePoint Online Module Script to Enable / Disable Custom Script Features at Site Collection Level ##
+﻿<#
+.SYNOPSIS
+    PowerShell SharePoint Online Module Script to Enable / Disable Custom Script Features at Site Collection Level.
 
-## Usage: Edit the variables below to match your requirements and run the script
+.DESCRIPTION
+    PowerShell SharePoint Online Module Script to Enable / Disable Custom Script Features at
+    Site Collection Level.
 
-## Resources: https://emadmagdy.wordpress.com/2015/06/24/sharepoint-onlineenabling-custom-script
+.PARAMETER CustomScriptFlag
+    Change this boolean value to 1 if you want to disable Custom Script features.
+
+.EXAMPLE
+    PS C:\> .\SPOnlineEnableDisableCustomScriptForSiteCollections.ps1
+    Edit the variables section and run to powerShell SharePoint Online Module Script to Enable / Disable Custom Script Features at Site Collection Level.
+
+.NOTES
+    Requires:   Microsoft.Online.Sharepoint.PowerShell
+#>
 
 ### Start Variables ###
 $Tenant = "YourTenant"

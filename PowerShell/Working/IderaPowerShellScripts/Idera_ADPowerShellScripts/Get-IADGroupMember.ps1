@@ -1,20 +1,18 @@
-## =====================================================================
-## Title       : Get-IADGroupMember
-## Description : Retrieve the members of a group in Active Directory.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No Input
-##                     
-## Output      : System.DirectoryServices.DirectoryEntry
-## Usage       :
-##               1. Retrieve all members of a group TestGroup
-##               Get-IADGroup TestGroup | Get-IADGroupMember
-##            
-## Notes       :
-## Tag         : group, member, activedirectory
-## Change log  :
-## =====================================================================
-  
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory group member objects using ADSI..
+
+.DESCRIPTION
+    Retrieve Active Directory group member objects using ADSI..
+
+.PARAMETER Resolve
+    Resolve.
+
+.EXAMPLE
+    PS C:\> .\Get-IADGroupMember.ps1
+    Run the script to perform the described operation.
+#>
+
 filter Get-IADGroupMember {
 param (
 [switch]$Resolve

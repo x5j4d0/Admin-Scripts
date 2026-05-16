@@ -1,4 +1,23 @@
-﻿## Azure AD Connect: PowerShell Script to Trigger a Full Password Sync in Azure AD Sync (AAD Connect) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Trigger a Full Password Sync in Azure AD Sync (AAD Connect).
+
+.DESCRIPTION
+    PowerShell Script to Trigger a Full Password Sync in Azure AD Sync (AAD Connect).
+
+.PARAMETER adConnector
+    Replace this value with your domain (SourceConnector).
+
+.PARAMETER aadConnector
+    Replace this value with your Connector for your o365 Tenant (TargetConnector).
+
+.EXAMPLE
+    PS C:\> .\AzureADConnectFullPasswordSync.ps1
+    Edit the variables section and run to powerShell Script to Trigger a Full Password Sync in Azure AD Sync (AAD Connect).
+
+.NOTES
+    Requires:   adsync
+#>
 
 #Resource: http://social.technet.microsoft.com/wiki/contents/articles/28433.how-to-use-powershell-to-trigger-a-full-password-sync-in-azure-ad-sync.aspx
 

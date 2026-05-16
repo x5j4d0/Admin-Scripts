@@ -1,19 +1,29 @@
-﻿## Active Directory: PowerShell Script To Get / Remove / Add / Compare Group Membership in AD ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Get / Remove / Add / Compare Group Membership in AD.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Get / Remove / Add / Compare Group Membership in AD.
 
-Overview: PowerShell Script To Get / Remove / Add / Compare Group Membership in AD
+.PARAMETER GroupName
+    Provide your AD Group Name here.
 
-Requires: ActiveDirectory PowerShell Module
+.PARAMETER CurrentMembers
+    Provide the path to the file for a report on the Current group members.
 
-Usage: Edit the variables below to match your requirements and run the script
+.PARAMETER NewMembers
+    Provide the path to the file of new / edited group members.
 
-Resources:
+.PARAMETER AddedMembers
+    Provide the path to the file for a report on the New group members.
 
-http://tommymaynard.com/quick-learn-remove-and-add-users-to-an-active-directory-group-2016
+.EXAMPLE
+    PS C:\> .\GetRemoveAddADGroupMembers.ps1
+    Edit the variables section and run to powerShell Script To Get / Remove / Add / Compare Group Membership in AD.
 
-http://www.morgantechspace.com/2014/05/Add-AD-Group-Members-using-Powershell-Script.html
-
+.NOTES
+    Requires:   ActiveDirectory
+    Resources:  http://tommymaynard.com/quick-learn-remove-and-add-users-to-an-active-directory-group-2016; http://www.morgantechspace.com/2014/05/Add-AD-Group-Members-using-Powershell-Script.html
 #>
 
 Import-Module "ActiveDirectory"

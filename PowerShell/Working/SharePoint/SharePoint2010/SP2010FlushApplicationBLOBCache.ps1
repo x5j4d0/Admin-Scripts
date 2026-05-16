@@ -1,5 +1,20 @@
-﻿## SharePoint Server 2010: PowerShell Script to flush the BLOB cache for a Web Application ##
-## Resource: http://technet.microsoft.com/en-us/library/gg277249.aspx
+﻿<#
+.SYNOPSIS
+    PowerShell Script to flush the BLOB cache for a Web Application.
+
+.DESCRIPTION
+    PowerShell Script to flush the BLOB cache for a Web Application.
+
+.PARAMETER webApp
+    Change this URL to match your environment.
+
+.EXAMPLE
+    PS C:\> .\SP2010FlushApplicationBLOBCache.ps1
+    Edit the variables section and run to powerShell Script to flush the BLOB cache for a Web Application.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue
 

@@ -1,8 +1,18 @@
-﻿## SharePoint Server: PowerShell Script to Deploy and Install a Sand Box Solution (SPUserSolution) to All Site Collections in a Web Application ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Deploy and Install a Sand Box Solution (SPUserSolution) to All Site Collections in a Web Application.
 
-## Overview: Script that Adds (Add-SPUserSolution) and Installs (Install-SPUserSolution) Sand Box Solutions (SPUserSolution) to all Site Collections in a Web Application
+.DESCRIPTION
+    PowerShell Script to Deploy and Install a Sand Box Solution (SPUserSolution) to All Site
+    Collections in a Web Application.
 
-## Usage: Edit the Variables to match your requirements and run the script
+.EXAMPLE
+    PS C:\> .\DeploySPUserSolutionToSiteCollections.ps1
+    PowerShell Script to Deploy and Install a Sand Box Solution (SPUserSolution) to All Site Collections in a Web Application.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 ### Start Variables ###
 $WebApplication = "https://insidewebapp.theglobalfund.org"

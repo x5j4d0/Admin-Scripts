@@ -1,6 +1,4 @@
-﻿ ## Active Directory: PowerShell Function that uses the Active Directory Module to check AD whether Machines are Online and whether anyone is Logged On to them ##
- 
- <#
+﻿ <#
             .SYNOPSIS
                 Find specific machines in AD, check if they're online and if so, who's logged on
  

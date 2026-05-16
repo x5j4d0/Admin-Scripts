@@ -1,34 +1,18 @@
-﻿## SharePoint Online: PowerShell SharePoint Online Module Script to add Users / Groups to Multiple Site Collections from a CSV File (SPOnline) ##
+﻿<#
+.SYNOPSIS
+    PowerShell SharePoint Online Module Script to add Users / Groups to Multiple Site Collections from a CSV File (SPOnline).
 
-<#
+.DESCRIPTION
+    PowerShell SharePoint Online Module Script to add Users / Groups to Multiple Site
+    Collections from a CSV File (SPOnline).
 
-Overview: Add Multiple Users or Groups to Multiple SPO Sites from CSV file.
+.EXAMPLE
+    PS C:\> .\SPOnlineAddUsersAndGroupsFromCSVFile.ps1
+    PowerShell SharePoint Online Module Script to add Users / Groups to Multiple Site Collections from a CSV File (SPOnline).
 
-By default each site created from a standard template (eg. STS#0) is created with three membership groups, Owners, Members, and Visitors; with Full Control, Contribute, and View-only site permissions respectively 
-
-Usage: Create CSV file with content like the sample below (first line is the header row and needs to remain as is) 
-
-Site,Group,User 
-https://contoso.sharepoint.com/sites/TeamSite,Contoso Team Site Members,user2@contoso.com 
-https://contoso.sharepoint.com/sites/TeamSite,Contoso Team Site Members,user3@contoso.com 
-https://contoso.sharepoint.com/sites/TeamSite,Contoso Team Site Visitors,user4@contoso.com 
-https://contoso.sharepoint.com/sites/Blog,Contoso Blog Members,user5@contoso.com 
-https://contoso.sharepoint.com/sites/Blog,Contoso Blog Visitors,user6@contoso.com
-
-In the 'User' column provide the User or Group names you want to add to the respective site collections (appears to work with default groups and custom ones)
-
-Replace the 'contoso' placeholder value under 'Connect-SPOService' with your own tenant prefix and run the script
-
-Resources:
-
-http://powershell.office.com/scenarios/create-multiple-sharepoint-site-collections-with-different-owners
-
-http://powershell.office.com/script-samples/assign-group-members-to-sharepoint-site
-
-http://3sharp.com/blog/use-powershell-to-automate-groups-and-users-provisioning-in-sharepoint-online
-
-https://technet.microsoft.com/en-us/library/fp161371.aspx
-
+.NOTES
+    Requires:   Microsoft.Online.Sharepoint.PowerShell
+    Resources:  https://contoso.sharepoint.com/sites/TeamSite,Contoso; https://contoso.sharepoint.com/sites/Blog,Contoso
 #>
 
 #To begin, you will need to load the SharePoint Online module to be able to run commands in PowerShell

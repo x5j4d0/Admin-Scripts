@@ -1,8 +1,33 @@
-## PowerShell Script to create and reconfigure your locations for your Diagnostic and Usage Analysis Logs ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to create and reconfigure your locations for your Diagnostic and Usage Analysis Logs.
 
-## Overview: PowerShell script to create and configure key parameters related to Trace Logs and Usage Analysis Processing within SharePoint Server 2010
+.DESCRIPTION
+    PowerShell Script to create and reconfigure your locations for your Diagnostic and Usage
+    Analysis Logs.
 
-## Note: The excellent AutoSPInstaller lets your configure most of these within the 'input' XML file - http://autospinstaller.codeplex.com
+.PARAMETER DiagnosticLogMaxDiskSpaceUsageEnabled
+    Default should be '$True'.
+
+.PARAMETER DiagnosticLogDiskSpaceUsageGB
+    Default is 1000 GB.
+
+.PARAMETER DiagnosticLogCutInterval
+    Default is 30 minutes.
+
+.PARAMETER UsageAnalysisLogMaxSpaceGB
+    Default is 5 GB.
+
+.PARAMETER UsageAnalysisLogCutTime
+    Default is 5 minutes.
+
+.EXAMPLE
+    PS C:\> .\SP2010SetLoggingDirectories.ps1
+    Edit the variables section and run to powerShell Script to create and reconfigure your locations for your Diagnostic and Usage Analysis Logs.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 # Edit the parameters below to suit your environment
 

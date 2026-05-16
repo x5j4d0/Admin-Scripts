@@ -1,6 +1,4 @@
-﻿## PowerShell ISE: VIM Editor Style Theme ##
- 
-<#
+﻿<#
 .SYNOPSIS
     This script sets an ISE Theme to similar to the old VIM editor.
 .DESCRIPTION

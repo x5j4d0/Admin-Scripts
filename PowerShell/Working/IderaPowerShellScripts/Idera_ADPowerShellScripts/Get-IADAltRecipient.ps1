@@ -1,17 +1,14 @@
-## =====================================================================
-## Title       : Get-IADAltRecipient
-## Description : Get all objects which has an alternative recipient to receive e-mail
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       :   No Input             
-##                     
-## Output      : System.Management.Automation.PSCustomObject
-## Usage       : Get-IADAltRecipient | Format-Table Name,Description,AltRecipient -AutoSize 
-##    
-## Notes       :
-## Tag         : altrecipient, activedirectory, exchange
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory alt recipient objects using ADSI..
+
+.DESCRIPTION
+    Retrieve Active Directory alt recipient objects using ADSI..
+
+.EXAMPLE
+    PS C:\> .\Get-IADAltRecipient.ps1
+    Run the script to perform the described operation.
+#>
 
 function Get-IADAltRecipient 
 { 

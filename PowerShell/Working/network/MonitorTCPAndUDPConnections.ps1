@@ -1,4 +1,20 @@
-﻿#######################################################################################################################
+﻿<#
+.SYNOPSIS
+    The Get-CurrentTime function is used to write in the timestamp in the log file.
+
+.DESCRIPTION
+    The Get-CurrentTime functions is used for getting the current time of operation. As s
+    time source used [System.DateTime]::Now.TimeOfDay property.
+
+.PARAMETER Numeric
+    Numeric.
+
+.EXAMPLE
+    PS C:\> .\MonitorTCPAndUDPConnections.ps1
+    The Get-CurrentTime function is used to write in the timestamp in the log file.
+#>
+
+#######################################################################################################################
 # File:             LogPortsUsedByApplication.ps1                                                                     #
 # Version:          1.1                                                                                               #
 # Author:           Alexander Petrovskiy                                                                              #

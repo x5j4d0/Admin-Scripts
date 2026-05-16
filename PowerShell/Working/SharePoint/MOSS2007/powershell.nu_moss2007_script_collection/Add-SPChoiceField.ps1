@@ -1,3 +1,36 @@
+﻿<#
+.SYNOPSIS
+    Add SP Choice Field.
+
+.DESCRIPTION
+    Add SP Choice Field.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER Choices
+    Choices.
+
+.PARAMETER Required
+    Required.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPChoiceField.ps1
+    Add SP Choice Field.
+#>
+
 ##################################################################################
 #
 #

@@ -1,19 +1,27 @@
-## =====================================================================
-## Title       : Get-MSSQL-Port-UsingWMI
-## Description : Retrieve SQL Server port configured for use using WMI
-## Author      : Idera
-## Date        : 9/1/2008
-## Input       : -computer <computer name>
-## 				  -instance <instance name | default=MSSQLSERVER>
-## 				  -verbose 
-## 				  -debug	
-## Output      : SQL Server Port #
-## Usage			: PS> .\Get-MSSQL-Port-UsingWMI -Computer "." -Instance "MSSQLSERVER" -verbose -debug
-## Notes			: Adapted from Jakob Bindslet script
-## Tag			: SQL Server, WMI, Port, Configuration
-## Change log  :
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Retrieve Port Using WMI.
+
+.DESCRIPTION
+    Retrieve Port Using WMI.
+
+.PARAMETER Computer
+    Computer.
+
+.PARAMETER Instance
+    Instance.
+
+.PARAMETER verbose
+    verbose.
+
+.PARAMETER debug
+    debug.
+
+.EXAMPLE
+    PS C:\> .\Get-MSSQL-Port-UsingWMI.ps1
+
+#>
+
 param
 (
   	[string]$Computer = ".",

@@ -1,22 +1,18 @@
-## =====================================================================
-## Title       : CreateTable-MSSQL-UsingSMO
-## Description : Create a new table using SMO
-## Author      : Idera
-## Date        : 6/27/2008
-## Input       : -serverInstance <server\instance>
-## 				  -dbName <database name>
-## 				  -schemaName <schema name>
-## 				  -tblName <table name>
-## 				  -verbose 
-## 				  -debug	
-## Output      : Create a demo database and table
-## Usage			: PS> .\CreateTable-MSSQL-UsingSMO -serverInstance MyServer -dbName SMOTestDB 
-## 											-SchemaName SMOSchema -tblName SMOTable -verbose -debug
-## Notes			: Adapted from Allen White script
-## Tag			: SMO, SQL Server, Table
-## Change log  :
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Create a table in Using SMO.
+
+.DESCRIPTION
+    Create a table in Using SMO.
+
+.PARAMETER serverInstance
+    server Instance.
+
+.EXAMPLE
+    PS C:\> .\CreateTable-MSSQL-UsingSMO.ps1
+
+#>
+
 param
 (
   	[string]$serverInstance = "(local)",

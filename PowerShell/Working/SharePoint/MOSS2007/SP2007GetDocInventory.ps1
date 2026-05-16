@@ -1,4 +1,14 @@
-## SharePoint 2007: PowerShell Script to Enumerate All Documents on a MOSS 20007 Farm ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Enumerate All Documents on a MOSS 20007 Farm.
+
+.DESCRIPTION
+    PowerShell Script to Enumerate All Documents on a MOSS 20007 Farm.
+
+.EXAMPLE
+    PS C:\> .\SP2007GetDocInventory.ps1
+    PowerShell Script to Enumerate All Documents on a MOSS 20007 Farm.
+#>
 
 function Get-DocInventory() {
     [void][System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint")

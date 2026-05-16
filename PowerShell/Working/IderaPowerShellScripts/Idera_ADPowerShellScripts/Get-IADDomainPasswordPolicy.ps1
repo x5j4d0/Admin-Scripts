@@ -1,19 +1,15 @@
-## =====================================================================
-## Title       : Get-IADDomainPasswordPolicy
-## Description : Retrieve the domain password policy.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No input                 
-##                     
-## Output      : System.Management.Automation.PSCustomObject 
-## Usage       : Get-IADDomainPasswordPolicy
-##            
-## Notes       :
-## Tag         : password, policy, domain, security, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory domain password policy objects using ADSI..
 
-  
+.DESCRIPTION
+    Retrieve Active Directory domain password policy objects using ADSI..
+
+.EXAMPLE
+    PS C:\> .\Get-IADDomainPasswordPolicy.ps1
+    Run the script to perform the described operation.
+#>
+
 function Get-IADDomainPasswordPolicy 
 
 {  

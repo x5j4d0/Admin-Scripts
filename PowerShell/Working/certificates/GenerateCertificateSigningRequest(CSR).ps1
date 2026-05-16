@@ -1,6 +1,4 @@
-﻿## PowerShell Script to generate a Certificate Signing Request (CSR) using the SHA256 (SHA-256) signature algorithm and a 2048 bit key size (RSA) via the Cert Request Utility (certreq) ##
-
-<#
+﻿<#
 
 .SYNOPSIS
 This powershell script can be used to generate a Certificate Signing Request (CSR) using the SHA256 signature algorithm and a 2048 bit key size (RSA). Subject Alternative Names are supported.

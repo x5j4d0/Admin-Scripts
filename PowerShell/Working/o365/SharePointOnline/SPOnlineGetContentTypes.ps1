@@ -1,4 +1,20 @@
-﻿## SPOnline PowerShell Script to Get All Content Types from a CTHub via CSOM ##
+﻿<#
+.SYNOPSIS
+    SPOnline PowerShell Script to Get All Content Types from a CTHub via CSOM.
+
+.DESCRIPTION
+    SPOnline PowerShell Script to Get All Content Types from a CTHub via CSOM.
+
+.PARAMETER libPath
+    Change this to match your environment.
+
+.PARAMETER OutputFilePath
+    Change this to match your environment.
+
+.EXAMPLE
+    PS C:\> .\SPOnlineGetContentTypes.ps1
+    Edit the variables section and run to sPOnline PowerShell Script to Get All Content Types from a CTHub via CSOM.
+#>
 
 $libPath = "c:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\" #Change this to match your environment
 

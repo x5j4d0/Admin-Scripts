@@ -1,3 +1,39 @@
+﻿<#
+.SYNOPSIS
+    Add SP Multi Lookup Field.
+
+.DESCRIPTION
+    Add SP Multi Lookup Field.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER LookupList
+    Lookup List.
+
+.PARAMETER LookupField
+    Lookup Field.
+
+.PARAMETER Required
+    Required.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPMultiLookupField.ps1
+    Add SP Multi Lookup Field.
+#>
+
 ##################################################################################
 #
 #

@@ -1,6 +1,20 @@
-﻿## PowerShell: Script to send an Email with an Attachment, along with HTML Content ##
+﻿<#
+.SYNOPSIS
+    Script to send an Email with an Attachment, along with HTML Content.
 
-## Usage: Edit the variables to match your requirements, and comment out any parameters you don't want to use
+.DESCRIPTION
+    Script to send an Email with an Attachment, along with HTML Content.
+
+.PARAMETER body
+    Include a path to your HTML body file or provide your $body content within "".
+
+.PARAMETER attachment
+    Include the path to your file you want to attach.
+
+.EXAMPLE
+    PS C:\> .\SendEmailWithAttachment.ps1
+    Edit the variables section and run to script to send an Email with an Attachment, along with HTML Content.
+#>
 
 ### Start Variables ###
 $fromaddress = "YourFromAddress@YourDomain.com" 

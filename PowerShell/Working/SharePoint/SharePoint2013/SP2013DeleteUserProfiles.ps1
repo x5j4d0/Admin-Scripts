@@ -1,13 +1,20 @@
-﻿## SharePoint Server: PowerShell Script to delete all User Profiles from the User Profile Service Application ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to delete all User Profiles from the User Profile Service Application.
 
-<#
+.DESCRIPTION
+    PowerShell Script to delete all User Profiles from the User Profile Service Application.
 
-Overview: Deletes all User Profiles in SharePoint 2010 / 2013 from the User Profile Service Application (UPSA)
+.PARAMETER site
+    Change this path to your My Site web application.
 
-Usage: Edit the folowing areas to match your environment and run the script: '$site'; '$AccountName -ne'
+.EXAMPLE
+    PS C:\> .\SP2013DeleteUserProfiles.ps1
+    Edit the variables section and run to powerShell Script to delete all User Profiles from the User Profile Service Application.
 
-Resource: http://gallery.technet.microsoft.com/scriptcenter/Delete-all-User-Profiles-fa4e1428
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://gallery.technet.microsoft.com/scriptcenter/Delete-all-User-Profiles-fa4e1428
 #>
 
 #Add SharePoint PowerShell SnapIn if not already added 

@@ -1,8 +1,15 @@
-﻿## ADFS: PowerShell Script That Uses The ADFS PowerShell Snapin To Update The Token Signing SelfSSL Certificates ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script That Uses The ADFS PowerShell Snapin To Update The Token Signing SelfSSL Certificates.
 
-## Resources: http://community.office365.com/en-us/wikis/sso/2062.aspx; http://technet.microsoft.com/en-us/library/ee892330.aspx
+.DESCRIPTION
+    PowerShell Script That Uses The ADFS PowerShell Snapin To Update The Token Signing
+    SelfSSL Certificates.
 
-## Perform the following steps while logged on to the primary AD FS 2.0 server
+.EXAMPLE
+    PS C:\> .\UpdateADFSTokenCerts.ps1
+    PowerShell Script That Uses The ADFS PowerShell Snapin To Update The Token Signing SelfSSL Certificates.
+#>
 
 #Open a PowerShell command window and execute the command:
 

@@ -1,5 +1,14 @@
-﻿## PowerShell Script to Check for File/s and Sends an Email if these don't exist ##
-## Useful for checking for backup files etc.
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Check for File/s and Sends an Email if these don't exist.
+
+.DESCRIPTION
+    PowerShell Script to Check for File/s and Sends an Email if these don't exist.
+
+.EXAMPLE
+    PS C:\> .\CheckForFilesWithEmailAlert.ps1
+    PowerShell Script to Check for File/s and Sends an Email if these don't exist.
+#>
 
 function SendMail($filename)
 {

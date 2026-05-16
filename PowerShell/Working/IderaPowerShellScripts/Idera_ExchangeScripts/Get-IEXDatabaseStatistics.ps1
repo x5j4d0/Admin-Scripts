@@ -1,18 +1,17 @@
-## =====================================================================
-## Title       : Get-IEXDatabaseStatistics
-## Description : Retrieve database info.
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : Get-IEXDatabaseStatistics [[-Server] <String>]
-##   
-## Output      : System.Management.Automation.PSCustomObject 
-## Usage       : Get-IEXDatabaseStatistics -Server Exch1
-##       
-## Notes       :
-## Tag         : Exchange 2007, database, mailbox, get
-## Change log  :
-## ===================================================================== 
-  
+﻿<#
+.SYNOPSIS
+    Retrieve Database Statistics.
+
+.DESCRIPTION
+    Retrieve Database Statistics.
+
+.PARAMETER Server
+    Server.
+
+.EXAMPLE
+    PS C:\> .\Get-IEXDatabaseStatistics.ps1
+
+#>
 
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
 

@@ -1,6 +1,4 @@
-﻿## Exchange Server: PowerShell Script to Get a Membership Count of Every Distribution Group ##
-
-<#
+﻿<#
 .SYNOPSIS
 GetDistributionGroupMemberCounts.ps1 - Get the member count of every distribution group
 

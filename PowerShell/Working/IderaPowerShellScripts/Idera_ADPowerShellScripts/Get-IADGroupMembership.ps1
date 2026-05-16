@@ -1,23 +1,20 @@
-## =====================================================================
-## Title       : Get-IADGroupMembership
-## Description : Retrieve all groups to which an object belongs.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No Input
-##                     
-## Output      : System.DirectoryServices.DirectoryEntry,System.String
-## Usage       :
-##               1. Retrieve all groups to which computer Server1 belongs and return the results as DirectoryEntry types
-##               Get-IADComputer Server1 | Get-IADGroupMembership -Resolve
-##
-##               2. Retrieve all groups to which user Test1 belongs, including nested ones
-##               Get-IADUser Test1 | Get-IADGroupMembership -ExpandNested
-##            
-## Notes       :
-## Tag         : group, member, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory group membership objects using ADSI..
 
+.DESCRIPTION
+    Retrieve Active Directory group membership objects using ADSI..
+
+.PARAMETER ExpandNested
+    Expand Nested.
+
+.PARAMETER Resolve
+    Resolve.
+
+.EXAMPLE
+    PS C:\> .\Get-IADGroupMembership.ps1
+    Run the script to perform the described operation.
+#>
 
 filter Get-IADGroupMembership {
  param(

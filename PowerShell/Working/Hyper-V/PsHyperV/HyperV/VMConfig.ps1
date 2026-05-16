@@ -1,5 +1,21 @@
+﻿<#
+.SYNOPSIS
+    VM Config.
 
-  
+.DESCRIPTION
+    VM Config.
+
+.PARAMETER null
+    Without this the command will fail on Powershell V1.
+
+.PARAMETER Server
+    May need to look for VM(s) on Multiple servers.
+
+.EXAMPLE
+    PS C:\> .\VMConfig.ps1
+    Edit the variables section and run to vM Config.
+#>
+
 Function Add-VMKVP
 {# .ExternalHelp  MAML-VMConfig.XML
     [CmdletBinding(SupportsShouldProcess=$true)]

@@ -1,5 +1,20 @@
-## SharePoint Server 2013: PowerShell Script To Reset The Config Cache On All Servers In A Farm ##
-## Resource: http://woutersdemos.codeplex.com/releases
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Reset The Config Cache On All Servers In A Farm.
+
+.DESCRIPTION
+    PowerShell Script To Reset The Config Cache On All Servers In A Farm.
+
+.PARAMETER ConfigDbId
+    Path to the '15 hive' ConfigDB in the registry.
+
+.EXAMPLE
+    PS C:\> .\SP2013ResetFarmConfigCache.ps1
+    Edit the variables section and run to powerShell Script To Reset The Config Cache On All Servers In A Farm.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 Add-PSSnapin Microsoft.SharePoint.PowerShell
 $Servers = Get-SPServer | ? {$_.Role -ne "Invalid"} | Select -ExpandProperty Address

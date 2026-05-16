@@ -1,14 +1,14 @@
-## Create-MSSQL-TestDb.ps1
+﻿<#
+.SYNOPSIS
+    Create-MSSQL-TestDb.ps1.
 
-## This script will:
-## 1. Load SMO assemblies into the PowerShell process.
-## 2. Create an SMO Server object for the default SQL Server instance.
-##    The object will be called "$DefaultInstance".
-## 3. Create a database object for a database named "SMOTestDb"
-## 4. Use the object's Create() method to push the newly-created object
-##    to the server.
-## 5. Verify the creation of the new database by looking at 
-##    the properties of the server object
+.DESCRIPTION
+    Create-MSSQL-TestDb.ps1.
+
+.EXAMPLE
+    PS C:\> .\Create-MSSQL-TestDb.ps1
+    Create-MSSQL-TestDb.ps1.
+#>
 
 $TestDB = "SMOTestDb"
 

@@ -1,15 +1,18 @@
-﻿## SharePoint Server: PowerShell Script to Produce a HTML Report on All Site Collections and Sub Sites (webs) in a Web Application ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Produce a HTML Report on All Site Collections and Sub Sites (webs) in a Web Application.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Produce a HTML Report on All Site Collections and Sub Sites (webs)
+    in a Web Application.
 
-Overview: PowerShell Script to produce a HTML Report on All Site Collections and Sub Sites (webs) in a Web Application
+.EXAMPLE
+    PS C:\> .\SP2013EnumSitesAndSubSitesHTMLReport.ps1
+    PowerShell Script to Produce a HTML Report on All Site Collections and Sub Sites (webs) in a Web Application.
 
-Environments: SharePoint Server 2013 + Farms
-
-Usage: Edit the '$WebApplication' and '$SitesReport' variables to match your environment in the variables section, and run your script
-
-Resource: http://www.sharepoint-journey.com/get-sitecollection-and-subsite-lastmodifieddate-and-size.html
-
+.NOTES
+    Requires:   microsoft.sharepoint.powershell
+    Resources:  http://www.sharepoint-journey.com/get-sitecollection-and-subsite-lastmodifieddate-and-size.html
 #>
 
 ### Start Variables ###

@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    Get SP Item.
+
+.DESCRIPTION
+    Get SP Item.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Item
+    Item.
+
+.PARAMETER Field
+    Field.
+
+.EXAMPLE
+    PS C:\> .\Get-SPItem.ps1
+    Get SP Item.
+#>
+
 ##################################################################################
 #
 #

@@ -1,10 +1,18 @@
-﻿## SharePoint Online: PowerShell SharePoint Online Module Script to remove a Deleted Site Collection from the Recycle Bin (SPOnline) ##
+﻿<#
+.SYNOPSIS
+    PowerShell SharePoint Online Module Script to remove a Deleted Site Collection from the Recycle Bin (SPOnline).
 
-## Overview: PowerShell Script that uses the SharePoint Online Module 'Remove-SPODeletedSite' cmdlet to permanently remove a deleted site collection from the Recycle Bin
+.DESCRIPTION
+    PowerShell SharePoint Online Module Script to remove a Deleted Site Collection from the
+    Recycle Bin (SPOnline).
 
-## Usage: Replace the 'contoso' placeholder value under 'Connect-SPOService' with your own tenant prefix and provide the Site Collection URL under the '$SiteURL' variable
+.EXAMPLE
+    PS C:\> .\SPOnlineRemoveDeletedSiteCollection.ps1
+    PowerShell SharePoint Online Module Script to remove a Deleted Site Collection from the Recycle Bin (SPOnline).
 
-## Resource: https://technet.microsoft.com/en-us/library/fp161368.aspx
+.NOTES
+    Requires:   Microsoft.Online.Sharepoint.PowerShell
+#>
 
 $SiteURL = "https://contoso.sharepoint.com/sites/sitetoremove"
 

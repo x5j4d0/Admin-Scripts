@@ -1,15 +1,20 @@
-﻿## SharePoint Server: PowerShell Script To Extract All User Profile Details From A Web Application ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Extract All User Profile Details From A Web Application.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Extract All User Profile Details From A Web Application.
 
-Overview: The script below was generated using the 'UserProfileExport' tool listed under the resource link below. The script takes all possible user profile properties selectable in the 'UserProfileExport' tool and exports all user profiles from a specified web application.
+.PARAMETER serviceContext
+    Change this URL to suit your environment.
 
-Usage: Edit the '-Site' parameter in the '$serviceContext' variable to suit your environment, as well as the CSV file details under the 'Add-Content' commandlet. Save and run the script with the farm admin account or farm administrative rights.
+.EXAMPLE
+    PS C:\> .\SP2010GetUserProfiles.ps1
+    Edit the variables section and run to powerShell Script To Extract All User Profile Details From A Web Application.
 
-Important: The script must be run under the farm account credentials, or with farm administrative rights.
-
-Resource: http://csefi.blogspot.in/2012/02/sharepoint-2010-user-profile-export-to.html
-
+.NOTES
+    Requires:   Microsoft.Sharepoint.PowerShell
+    Resources:  http://csefi.blogspot.in/2012/02/sharepoint-2010-user-profile-export-to.html
 #>
 
 Add-PSSnapin "Microsoft.Sharepoint.PowerShell" -ErrorAction SilentlyContinue

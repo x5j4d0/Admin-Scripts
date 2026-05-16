@@ -1,15 +1,20 @@
-﻿## SharePoint Server: PowerShell Script to Get GUID IDs (GUIDs) for Lists in a Site Collection ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get GUID IDs (GUIDs) for Lists in a Site Collection.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Get GUID IDs (GUIDs) for Lists in a Site Collection.
 
-Overview: PowerShell Script that Gets the GUID for Site Collection Lists. Returns all lists or a sub-set of lists depending on the list Base Type
+.PARAMETER site
+    Edit this site collection URL to match your environment.
 
-Environments: SharePoint Server 2010 / 2013 Farms
+.EXAMPLE
+    PS C:\> .\SP2010GetSiteCollectionListGUIDs.ps1
+    Edit the variables section and run to powerShell Script to Get GUID IDs (GUIDs) for Lists in a Site Collection.
 
-Usage: Edit the '$site' variable to match your environment and run the script. Uncomment the queries below if the results requires additional filtering
-
-Resource: http://www.enjoysharepoint.com/Articles/Details/sharepoint-2013-get-sharepoint-list-or-document-library-guids-using-21333.aspx
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://www.enjoysharepoint.com/Articles/Details/sharepoint-2013-get-sharepoint-list-or-document-library-guids-using-21333.aspx
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell"

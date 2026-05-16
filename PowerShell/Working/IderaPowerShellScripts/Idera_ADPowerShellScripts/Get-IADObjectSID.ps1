@@ -1,22 +1,17 @@
-## =====================================================================
-## Title       : Get-IADObjectSID
-## Description : Retrieve AD object's SID.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : Get-IADObjectSID [[-InputObject] <Object>]
-##                     
-## Output      : System.String
-## Usage       : 
-##               1. Get the SID of the domain administrator account 
-##               Get-IADObjectSID -InputObject (Get-IADUser -Name Administrator) 
-## 
-##               2. Get the SID using the object's DN 
-##               Get-IADObjectSID -InputObject 'CN=Guest,CN=Users,DC=Domain,DC=com' 
-##            
-## Notes       :
-## Tag         : security, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory object sid objects using ADSI..
+
+.DESCRIPTION
+    Retrieve Active Directory object sid objects using ADSI..
+
+.PARAMETER InputObject
+    Input Object.
+
+.EXAMPLE
+    PS C:\> .\Get-IADObjectSID.ps1
+    Run the script to perform the described operation.
+#>
 
 function Get-IADObjectSID 
 { 

@@ -1,12 +1,18 @@
-﻿## SharePoint Online: PowerShell Script to Produce a Report on All Users OneDrive Sites (MSOnline / SPOnline) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Produce a Report on All Users OneDrive Sites (MSOnline / SPOnline).
 
-## Overview: PowerShell Script that uses the MSOnline and SPOnline  PowerShell Modules to report on all users OneDrive Sites
+.DESCRIPTION
+    PowerShell Script to Produce a Report on All Users OneDrive Sites (MSOnline / SPOnline).
 
-## Usage: Find and Replace  all instances of the 'YourTenant' prefix with your own tenant prefix and run the script
+.EXAMPLE
+    PS C:\> .\SPOnlineGetAllOneDriveSiteDetails.ps1
+    PowerShell Script to Produce a Report on All Users OneDrive Sites (MSOnline / SPOnline).
 
-## Resource: http://blogs.catapultsystems.com/dbroussard/archive/2015/10/20/pull-onedrive-for-business-usage-using-powershell/
+.NOTES
+    Requires:   MSOnline, MSOnlineExtended, Microsoft.Online.Sharepoint.PowerShell
+#>
 
-## Imports the MSOnline and SPOnline PowerShell Modules
 Import-Module MSOnline
 Import-Module MSOnlineExtended
 Import-Module Microsoft.Online.Sharepoint.PowerShell

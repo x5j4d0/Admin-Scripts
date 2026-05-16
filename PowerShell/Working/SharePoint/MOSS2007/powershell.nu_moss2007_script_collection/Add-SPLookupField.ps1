@@ -1,3 +1,39 @@
+﻿<#
+.SYNOPSIS
+    Add SP Lookup Field.
+
+.DESCRIPTION
+    Add SP Lookup Field.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER LookupList
+    Lookup List.
+
+.PARAMETER LookupField
+    Lookup Field.
+
+.PARAMETER Required
+    Required.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPLookupField.ps1
+    Add SP Lookup Field.
+#>
+
 ##################################################################################
 #
 #

@@ -1,19 +1,23 @@
-﻿## Azure: PowerShell Script to Upload Files to an Azure Web App From a Local Folder ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Upload Files to an Azure Web App From a Local Folder.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Upload Files to an Azure Web App From a Local Folder.
 
-Overview: PowerShell Script that Uploads files from a local file location to an Azure Web App via the Kudu API using the Publish Profile Credentials
+.PARAMETER tempFolder
+    Provide the path to your files here.
 
-Usage: Modify the variables below to suit your environment and run the script
+.PARAMETER kuduApiUrl
+    Change this path to another Azure web app folder location if required.
 
-Note: To upload files to a different location than the Azure web app 'wwwroot' folder, modify the path on the '$kuduApiUrl' variable
+.EXAMPLE
+    PS C:\> .\AzureWebAppUploadFromLocalFolder.ps1
+    Edit the variables section and run to powerShell Script to Upload Files to an Azure Web App From a Local Folder.
 
-Important: The Script currently only uploads 'flat' files in a directory and not folders and sub-folders
-
-Resource: http://blog.octavie.nl/index.php/2017/03/03/copy-files-to-azure-web-app-with-powershell-and-kudu-api
-
+.NOTES
+    Resources:  http://blog.octavie.nl/index.php/2017/03/03/copy-files-to-azure-web-app-with-powershell-and-kudu-api
 #>
-
 
 ### Start Variables ###
 $tempFolder = "C:\YourFolderName" #Provide the path to your files here

@@ -1,8 +1,17 @@
-﻿## Active Directory: PowerShell Script to Query Logon and Logoff Events from Computers in an OU ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Query Logon and Logoff Events from Computers in an OU.
 
-## Overview: PowerShell script that queries Logon and Logoff events for Computer/Computers in a specified OU. Requires the ActiveDirectory PowerShell Module
-## Usage: Edit the '$Computers' variable '-SearchBase' and '-Filter' properties to match your requirements and run the script
-## Resources: http://www.adamtheautomator.com/active-directory-auditing-logon-logoff; https://technet.microsoft.com/en-us/library/ee617192.aspx
+.DESCRIPTION
+    PowerShell Script to Query Logon and Logoff Events from Computers in an OU.
+
+.EXAMPLE
+    PS C:\> .\GetUsersLogonLogoffEvents.ps1
+    PowerShell Script to Query Logon and Logoff Events from Computers in an OU.
+
+.NOTES
+    Requires:   ActiveDirectory
+#>
 
 Import-Module "ActiveDirectory"
 

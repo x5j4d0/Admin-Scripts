@@ -1,94 +1,16 @@
-## MS Exchange: PowerShell Script to List / Export All Members of Distribution Lists ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to List / Export All Members of Distribution Lists.
 
-<#
+.DESCRIPTION
+    PowerShell Script to List / Export All Members of Distribution Lists.
 
-.OVERVIEW
-PowerShell Script that lists Exchange Distribution List Members in the Console or Exports these in CSV Format. Also includes Wild Card filter functionality
+.EXAMPLE
+    PS C:\> .\ExchangeOnlineGetDistributionGroupMemberReports.ps1
+    PowerShell Script to List / Export All Members of Distribution Lists.
 
-.REQUIRES -version 2 Runs in Exchange Management Shell, or with Exchange On-premises / Exchange Online (o365) PowerShell Sessions
-
-.ENVIRONMENTS
-Exchange Server 2010 / 2013 and Exchange Online (o365)
-
-.USAGE
-
-1. If the script is called from within the Exchange Management Shell; then comment out the two following 2 PowerShell Session sections:
-
-'On-Premises PSSession'
-'Exchange Online PSSession'
-
-2. If the script is to be used for Exchange On-premises; then comment out the following PowerShell Session section:
-
-'Exchange Online PSSession'
-
-3. If the script is to be used for Exchange Online; then comment out the following PowerShell Session section:
-
-'On-Premises PSSession'
-
-Run the script and where required provide your Exchange Administration Credentials
-
-.RESOURCES
-http://www.careexchange.in/how-to-export-all-distribution-group-and-all-members-of-it-exchange-2010
-https://gallery.technet.microsoft.com/Export-all-distribution-707c27eb
-
-Example 1
-
-[PS] C:\DG>.\DistributionGroupMemberReport.ps1
-
-Distribution Group Member Report
-----------------------------
-
-1.Display in Shell
-
-2.Export to CSV File
-
-Choose The Task: 1
-
-DisplayName                   Alias                         Primary SMTP address          Distriubtion Group
------------                   -----                         --------------------          ------------------
-Atlast1                       Atlast1                       Atlast1@targetexchange.in     Test1
-Atlast2                       Atlast2                       Atlast2@careexchange.in       Test1
-Blink                         Blink                         Blink@targetexchange.in       Test1
-blink1                        blink1                        blink1@targetexchange.in      Test1
-User2                         User2                         User2@careexchange.in         Test11
-User3                         User3                         User3@careexchange.in         Test11
-User4                         User4                         User4@careexchange.in         Test11
-WithClient                    WithClient                    WithClient@careexchange.in    Test11
-Blink                         Blink                         Blink@targetexchange.in       Test11
-blink1                        blink1                        blink1@targetexchange.in      Test11
-
-Example 2
-
-[PS] C:\DG>.\DistributionGroupMemberReport.ps1
-
-Distribution Group Member Report
-----------------------------
-
-1.Display in Shell
-
-2.Export to CSV File
-
-Choose The Task: 2
-Enter the Path of CSV file (Eg. C:\DG.csv): C:\DGmembers.csv
-
-.Author
-Written By: Satheshwaran Manoharan
-
-Change Log
-V1.0, 11/10/2012 - Initial version
-
-Change Log
-V1.1, 02/07/2014 - Added "Enter the Distribution Group name with Wild Card"
-
-Change Log
-V1.2, 19/07/2014 - Added "Recipient OU,Distribution Group Primary SMTP address,Distribution Group Managers,Distribution Group OU"
-V1.2.1, 19/07/2014 - Added "Option- Enter the Distribution Group name with Wild Card (Display)"
-V1.2.2, 19/07/2014 - Added "Fixed "Hashtable-to-Object conversion is not supported in restricted language mode or a Data section"
-V1.3,05/08/2014 - Hashtable-to-Object conversion is not supported - Fixed 
-V1.4,30/08/2015 - 
-Removed For loops - As its not listing distribution groups which has one member.
-Added Value for Empty groups. It will list empty groups now as well.
-V1.5,09/09/2015 - Progress Bars while exporting to CSV
+.NOTES
+    Resources:  http://www.careexchange.in/how-to-export-all-distribution-group-and-all-members-of-it-exchange-2010; https://gallery.technet.microsoft.com/Export-all-distribution-707c27eb
 #>
 
 <#

@@ -1,24 +1,19 @@
-﻿## SharePoint Server: PowerShell Script To Enumerate SharePoint Site Groups And Their Users ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Enumerate SharePoint Site Groups And Their Users.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Enumerate SharePoint Site Groups And Their Users.
 
-Overview: PowerShell script to get SharePoint Group Names, Member Counts, and Members
+.PARAMETER siteurl
+    siteurl.
 
-Environments: Works on both MOSS 2007 and SharePoint Server 2010 Farms
+.EXAMPLE
+    PS C:\> .\SP2010EnumSiteGroups.ps1
+    PowerShell Script To Enumerate SharePoint Site Groups And Their Users.
 
-Usage: Save PowerShell script as 'EnumSiteGroups.PS1' and run this like the following example: 
-
-./EnumSiteGroups.ps1 "http://URLHere.com"
-
-Or output to file types: 
-
-./EnumSiteGroups.ps1 http://yoursitename.com | out-file "yourfilepath\sharepoint_users.xls"
-
-./EnumSiteGroups.ps1 http://yoursitename.com | out-file "yourfilepath\sharepoint_users.xml"
-Or output with a date/time stamp:
-$FileName = "YourName_{0:ddMMyyyy-HHmm}" -f (Get-Date)
-./EnumSiteGroups.ps1 http://yoursitename.com | out-file "yourfilepath\$FileName.xml"
-
+.NOTES
+    Resources:  http://URLHere.com"; http://yoursitename.com
 #>
 
 #Accept the url of the target site collection as a parameter, throw an error if it's not provided

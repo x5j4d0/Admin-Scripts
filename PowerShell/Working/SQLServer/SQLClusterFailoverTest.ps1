@@ -1,4 +1,17 @@
-﻿## PowerShell: Script to Test SQL Server Clusters For Failover ##
+﻿<#
+.SYNOPSIS
+    Script to Test SQL Server Clusters For Failover.
+
+.DESCRIPTION
+    Script to Test SQL Server Clusters For Failover.
+
+.EXAMPLE
+    PS C:\> .\SQLClusterFailoverTest.ps1
+    Script to Test SQL Server Clusters For Failover.
+
+.NOTES
+    Requires:   FailoverClusters
+#>
 
 Import-Module FailoverClusters;
 

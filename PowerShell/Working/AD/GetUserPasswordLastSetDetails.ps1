@@ -1,6 +1,18 @@
-﻿## PowerShell: Script to Query Active Directory to Get Password Last Set and Password Expiration Details ##
+﻿<#
+.SYNOPSIS
+    Script to Query Active Directory to Get Password Last Set and Password Expiration Details.
 
-## Usage Example: Get-UserDetails 'cdee'
+.DESCRIPTION
+    Script to Query Active Directory to Get Password Last Set and Password Expiration
+    Details.
+
+.EXAMPLE
+    PS C:\> .\GetUserPasswordLastSetDetails.ps1
+    Script to Query Active Directory to Get Password Last Set and Password Expiration Details.
+
+.NOTES
+    Requires:   ActiveDirectory
+#>
 
 Import-Module ActiveDirectory
 

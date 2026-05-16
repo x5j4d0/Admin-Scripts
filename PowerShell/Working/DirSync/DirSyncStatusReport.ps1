@@ -1,23 +1,20 @@
-## DirSync: PowerShell Script that Displays Information about a DirSync Instance including SQL Info and Recent Sync Activity ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script that Displays Information about a DirSync Instance including SQL Info and Recent Sync Activity.
 
-<#
-Description:
-This script gathers DirSync information from various locations and reports to the screen.
+.DESCRIPTION
+    PowerShell Script that Displays Information about a DirSync Instance including SQL Info
+    and Recent Sync Activity.
 
-November 5 2013
-Mike Crowley
-http://mikecrowley.us
-http://mikecrowley.wordpress.com/2013/10/16/dirsync-report
-https://gallery.technet.microsoft.com/DirSync-Report-17521dfb
+.PARAMETER PasswordSyncBit
+    text'.
 
-Known Issues:
-1) All commands, including SQL queries run as the local user.  This may cause issues on locked-down SQL deployments.
-2) For remote SQL installations, the SQL PowerShell module must be installed on the dirsync server.
-    (http://technet.microsoft.com/en-us/library/hh231683.aspx)
-3) The Azure Service account field is actually just the last account to use the Sign In Assistant.  
-    There are multiple entries at that registry location.  We're just taking the last one.
-4) Assumes Dirsync version 6385.0012 or later.
+.EXAMPLE
+    PS C:\> .\DirSyncStatusReport.ps1
+    Edit the variables section and run to powerShell Script that Displays Information about a DirSync Instance including SQL Info and Recent Sync Activity.
 
+.NOTES
+    Resources:  http://mikecrowley.us; http://mikecrowley.wordpress.com/2013/10/16/dirsync-report
 #>
 
 #Console Prep

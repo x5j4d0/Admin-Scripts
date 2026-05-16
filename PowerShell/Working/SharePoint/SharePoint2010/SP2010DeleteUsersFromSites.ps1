@@ -1,7 +1,15 @@
-﻿## SharePoint Server 2007 / 2010: PowerShell Script to delete users from Sites and Site Collections in a Web Application ##
-## Link: http://blog.isaacblum.com/2011/02/24/remove-delete-users-from-all-sites-and-site-collections-within-a-web-application
-## Notes: The script doesn't appear to delete Site Collection 'Owners' and 'Administrators'
-## Reference to SharePoint DLL
+﻿<#
+.SYNOPSIS
+    PowerShell Script to delete users from Sites and Site Collections in a Web Application.
+
+.DESCRIPTION
+    PowerShell Script to delete users from Sites and Site Collections in a Web Application.
+
+.EXAMPLE
+    PS C:\> .\SP2010DeleteUsersFromSites.ps1
+    PowerShell Script to delete users from Sites and Site Collections in a Web Application.
+#>
+
 [void][System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint")
  
 ##Ask for WebApp Root url to enumerate or scope scan

@@ -1,4 +1,14 @@
-﻿## PowerShell: Function to return the number of .NET Framework Versions Installed on a Client ##
+﻿<#
+.SYNOPSIS
+    Function to return the number of .NET Framework Versions Installed on a Client.
+
+.DESCRIPTION
+    Function to return the number of .NET Framework Versions Installed on a Client.
+
+.EXAMPLE
+    PS C:\> .\GetDotNetFrameworkVersions.ps1
+    Function to return the number of .NET Framework Versions Installed on a Client.
+#>
 
 function Get-DotNETFrameworkVersions()
 {

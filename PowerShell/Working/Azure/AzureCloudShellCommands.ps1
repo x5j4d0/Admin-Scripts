@@ -1,4 +1,14 @@
-## Azure: PowerShell Commands For Managing Azure Cloud Shell ##
+﻿<#
+.SYNOPSIS
+    PowerShell Commands For Managing Azure Cloud Shell.
+
+.DESCRIPTION
+    PowerShell Commands For Managing Azure Cloud Shell.
+
+.EXAMPLE
+    PS C:\> .\AzureCloudShellCommands.ps1
+    PowerShell Commands For Managing Azure Cloud Shell.
+#>
 
 #Get CloudDrive details including Cloud Shell Directory (MountPoint)
 Get-CloudDrive

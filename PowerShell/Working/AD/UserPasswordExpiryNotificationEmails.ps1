@@ -1,15 +1,17 @@
-﻿## Active Directory: PowerShell Script For Active Directory Password Expiration Notification Emails ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script For Active Directory Password Expiration Notification Emails.
 
-<#
+.DESCRIPTION
+    PowerShell Script For Active Directory Password Expiration Notification Emails.
 
-Overview: PowerShell script that uses the 'ActiveDirectory' PowerShell Module to query and report on user accounts in Active Directory
-that are near expiry, or have expired. Has email functionality to send email reminders out to all the domain users, along with Admin Staff.
+.EXAMPLE
+    PS C:\> .\UserPasswordExpiryNotificationEmails.ps1
+    PowerShell Script For Active Directory Password Expiration Notification Emails.
 
-Resource: http://www.itouthouse.com/2012/06/active-directory-password-expiration.html
-
-Usage: Find all the variables under the 'CONFIG:' labels in the script, and edit these to suit your requirements. Save the script
-and run it on a machine that has the 'ActiveDirectory' PowerShell module installed on it.
-
+.NOTES
+    Requires:   ActiveDirectory
+    Resources:  http://www.itouthouse.com/2012/06/active-directory-password-expiration.html
 #>
 
 Import-Module ActiveDirectory

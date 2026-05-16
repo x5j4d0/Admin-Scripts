@@ -1,22 +1,26 @@
-﻿## SharePoint Server: PowerShell Function to Create List Libraries from the SPList Template Types ##
+﻿<#
+.SYNOPSIS
+    PowerShell Function to Create List Libraries from the SPList Template Types.
 
-<#
+.DESCRIPTION
+    PowerShell Function to Create List Libraries from the SPList Template Types.
 
-Overview: PowerShell function to create List Libraries from SPList Templates
+.PARAMETER Web
+    Web.
 
-Environments: SharePoint Server 2010 / 2013 Farms
+.PARAMETER ListName
+    List Name.
 
-Usage: Provide a web site URL for the '$web' variable and call the function like the example below
+.PARAMETER Description
+    Description.
 
-Create-ListLibrary $web "YourListName" "Your List Description"
+.EXAMPLE
+    PS C:\> .\SP2010CreateSPListLibrary.ps1
+    PowerShell Function to Create List Libraries from the SPList Template Types.
 
-Note: If you want to use this function to create other SPList templates, change the '$ListTemplate' variable to match the template type
-
-Resources:
-
-https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.splisttemplatetype.aspx
-http://www.sharepointdiary.com/2013/04/create-form-library-in-sharepoint-using-powershell.html
-
+.NOTES
+    Requires:   Microsoft.SharePoint.Powershell
+    Resources:  https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.splisttemplatetype.aspx; http://www.sharepointdiary.com/2013/04/create-form-library-in-sharepoint-using-powershell.html
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.Powershell" -ErrorAction SilentlyContinue

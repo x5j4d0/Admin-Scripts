@@ -1,4 +1,22 @@
-﻿Function Add-FTPItem
+﻿<#
+.SYNOPSIS
+    Send file to specific ftp location.
+
+.DESCRIPTION
+    The Add-FTPItem cmdlet send file to specific location on ftp server.
+
+.PARAMETER Path
+    Path.
+
+.EXAMPLE
+    PS C:\> .\Add-FTPItem.ps1
+    Send file to specific ftp location.
+
+.NOTES
+    Resources:  http://commandlinegeeks.com/
+#>
+
+Function Add-FTPItem
 {
     <#
 	.SYNOPSIS

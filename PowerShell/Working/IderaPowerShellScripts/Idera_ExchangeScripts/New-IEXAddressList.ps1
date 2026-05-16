@@ -1,24 +1,18 @@
-## =====================================================================
-## Title       : New-IEXAddressList
-## Description : Create new address list from distribution group
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : New-IEXAddressList [[-Name] <String>]
-##  
-## Output      : Microsoft.Exchange.Data.Directory.Management.AddressList
-## Usage       : 
-##               1. Create new address list from distribution group TestGroup. New address list gets the name of dist. group 
-##               Get-DistributionGroup TestGroup | New-IEXAddressList 
-##
-##               2. Create new address list from distribution group TestGroup with the name 'TestAL' 
-##               Get-DistributionGroup TestGroup | New-IEXAddressList -Name TestAL 
-##           
-## Notes       :
-## Tag         : Exchange 2007, address list, distribution group, new
-## Change log  :
-## ===================================================================== 
+﻿<#
+.SYNOPSIS
+    Create a new Address List.
 
- 
+.DESCRIPTION
+    Create a new Address List.
+
+.PARAMETER Name
+    Name.
+
+.EXAMPLE
+    PS C:\> .\New-IEXAddressList.ps1
+
+#>
+
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
 
   

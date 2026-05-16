@@ -1,25 +1,17 @@
-## =====================================================================
-## Title       : Remove-IADGroupMember
-## Description : Remove a member from a group in Active Directory.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : Remove-IADGroupMember [[-MemberDN] <String[]>]
-##                     
-## Output      : No output 
-##
-## Usage       :
-##               1. Remove the domain administrator account to the QA group 
-##               Get-IADGroup QA | Remove-IADGroupMember -MemberDN 'CN=Administrator,CN=Users,DC=domain,DC=com'  
-## 
-##               2. Remove multiple accounts to the QA group 
-##               $members = Get-IADUser -Name QAUser* | Foreach-Object { $_.distinguishedName } 
-##               Get-IADGroup QA | Remove-IADGroupMember -MemberDN $members         
-## Notes       :
-## Tag         : group, member, activedirectory
-## Change log  :
-## ===================================================================== 
- 
+﻿<#
+.SYNOPSIS
+    Remove Active Directory group member objects using ADSI..
 
+.DESCRIPTION
+    Remove Active Directory group member objects using ADSI..
+
+.PARAMETER MemberDN
+    Member DN.
+
+.EXAMPLE
+    PS C:\> .\Remove-IADGroupMember.ps1
+    Run the script to perform the described operation.
+#>
 
 filter Remove-IADGroupMember { 
  param(

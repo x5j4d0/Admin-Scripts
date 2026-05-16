@@ -1,10 +1,17 @@
-﻿## PowerShell: Useful function to Search a File Path Location for Phrase Key Words ##
+﻿<#
+.SYNOPSIS
+    Useful function to Search a File Path Location for Phrase Key Words.
 
-## Overview: PowerShell function that parses through a file path location to locate any files that match a search phrase. The results output to the Grid View window
+.DESCRIPTION
+    Useful function to Search a File Path Location for Phrase Key Words.
 
-## Usage: Run the function with the '-SearchPhrase' and '-Path' parameters (optional - otherwise the location set under '$Path' is used)
+.PARAMETER true
+    true.
 
-## Resource: http://www.asifsaif.com/2015/08/quickly-finding-scripts.html
+.EXAMPLE
+    PS C:\> .\SearchForPhraseInFiles.ps1
+    Useful function to Search a File Path Location for Phrase Key Words.
+#>
 
 #requires -Version 3
 function Find-Script

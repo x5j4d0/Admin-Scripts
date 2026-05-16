@@ -1,7 +1,5 @@
-﻿## PowerShell: Function to list Certificate Details from a Specified File Path ##
-
-<# 
-.Synopsis 
+﻿<# 
+.SYNOPSIS 
    Get certificate files from a specified path or paths and 
    get an object of the certificate including File name, Subject name, 
    the signature algoritm used, validity dates, and thumbprint. 

@@ -1,7 +1,18 @@
-﻿## SharePoint Server: PowerShell Script To Crawl Errors and Exceptions In Trace Logs With HTML Email Functionality ##
-## Environments: MOSS 2007 and SharePoint Server 2010 Environments - can be modified for any type of Logs
-## Usage: Edit variables and add any additional -Pattern items for $criticalItems. Script checks most recent log file
-## Resource: http://blog.henryong.com/2011/11/29/sharepoint-diagnostic-log-monitor-email-alert-powershell-script
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Crawl Errors and Exceptions In Trace Logs With HTML Email Functionality.
+
+.DESCRIPTION
+    PowerShell Script To Crawl Errors and Exceptions In Trace Logs With HTML Email
+    Functionality.
+
+.PARAMETER criticalItems
+    Add additional Items here e.g. , "Exception".
+
+.EXAMPLE
+    PS C:\> .\SP2007MonitorDiagnosticLogs.ps1
+    Edit the variables section and run to powerShell Script To Crawl Errors and Exceptions In Trace Logs With HTML Email Functionality.
+#>
 
 ############# Start Variables ################
 $logDirectory = "D:\Logs\Diagnostic Logs\*.log"

@@ -1,4 +1,14 @@
-﻿## PowerShell: Function to Convert File Length Properties into a more Readable Human Format ##
+﻿<#
+.SYNOPSIS
+    Function to Convert File Length Properties into a more Readable Human Format.
+
+.DESCRIPTION
+    Function to Convert File Length Properties into a more Readable Human Format.
+
+.EXAMPLE
+    PS C:\> .\ListFileSizesInDirectoryFunction.ps1
+    Function to Convert File Length Properties into a more Readable Human Format.
+#>
 
 $properties = @(
     'Name'

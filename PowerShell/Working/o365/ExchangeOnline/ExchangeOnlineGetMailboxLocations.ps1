@@ -1,34 +1,17 @@
-﻿## Exchange Online: PowerShell Script to Determine in which datacenters and Geographic locations Mailboxes for your Tenant are located ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Determine in which datacenters and Geographic locations Mailboxes for your Tenant are located.
 
+.DESCRIPTION
+    PowerShell Script to Determine in which datacenters and Geographic locations Mailboxes
+    for your Tenant are located.
 
-<#
- 
- Name:        ExchangeOnlineGetMailboxLocations.ps1                                                             
-                                                                                                   
- Version:     1.1                                                                                   
-                                                                                                   
- Description: Determines the number of datacenters and locations where Exchange Online mailboxes    
-              are distributed.                                                                      
-                                                                                                    
- Limitations: Table of datacenters is static and may need to be expanded as Microsoft brings        
-              additional datacenters online.
-                                                                                                                                                                        
- Assumptions: The original table of datacenters listed "Bay Area" which is assumed to be "San       
-              Francisco, California, USA".  Datacenter codes have been truncated to two characters  
-              with the assumption that it designates the location.                                  
-                                                                                                   
- Usage:       Additional information on the usage of this script can found at the following         
-              blog post:  http://blogs.perficient.com/microsoft/?p=30871                            
-                                                                                                    
- Requires:    Remote PowerShell Connection to Exchange Online                                      
-                                                                                                   
- Author:      Joe Palarchio                                                                         
-                                                                                                    
- Disclaimer:  This script is provided AS IS without any support. Please test in a lab environment   
-              prior to production use.
-              
- Resource: https://blogs.perficient.com/microsoft/2016/03/office-365-script-to-determine-exchange-online-mailbox-location                                                                          
-                                                                                                    
+.EXAMPLE
+    PS C:\> .\ExchangeOnlineGetMailboxLocations.ps1
+    PowerShell Script to Determine in which datacenters and Geographic locations Mailboxes for your Tenant are located.
+
+.NOTES
+    Resources:  http://blogs.perficient.com/microsoft/?p=30871; https://blogs.perficient.com/microsoft/2016/03/office-365-script-to-determine-exchange-online-mailbox-location
 #>
 
 $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $LiveCred -Authentication Basic –AllowRedirection

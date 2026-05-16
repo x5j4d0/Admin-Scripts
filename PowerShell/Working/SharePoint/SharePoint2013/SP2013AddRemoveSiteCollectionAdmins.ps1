@@ -1,13 +1,19 @@
-## SharePoint Server: PowerShell Script To Add and Remove Site Collection Administrators ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Add and Remove Site Collection Administrators.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Add and Remove Site Collection Administrators.
 
-Overview: PowerShell Script that uses the Object Model to add and remove user accounts from the Site Collectio Administrator role
+.PARAMETER siteURL
+    URL to any site in the web application.
 
-Environments: MOSS 2007, SharePoint Server 2010 / 2013 Farms
+.PARAMETER add
+    1 for adding the user, 0 to remove the user.
 
-Usage: Edit the variables below to suit your requirements and run the script. Note: When setting the '$add' variable; a '1' value adds the user, while a '0' value removes the user
-
+.EXAMPLE
+    PS C:\> .\SP2013AddRemoveSiteCollectionAdmins.ps1
+    Edit the variables section and run to powerShell Script To Add and Remove Site Collection Administrators.
 #>
 
 ######################## Start Variables ########################

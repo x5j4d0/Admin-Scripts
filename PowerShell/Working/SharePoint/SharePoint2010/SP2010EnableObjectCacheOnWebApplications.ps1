@@ -1,6 +1,23 @@
-﻿## SharePoint Server 2010: PowerShell Script / Function to Enable Object Cache Access on all Web Applications ##
-## Resource: http://blog.isaacblum.com/2011/06/28/enable-object-cache-all-web-applcations
-## If your web application is using claims based authentication accounts should be displayed like: i:0#.w|domain\superuser and i:0#w|domain\superreader
+﻿<#
+.SYNOPSIS
+    PowerShell Script / Function to Enable Object Cache Access on all Web Applications.
+
+.DESCRIPTION
+    PowerShell Script / Function to Enable Object Cache Access on all Web Applications.
+
+.PARAMETER SuperUserAcc
+    .w|domain\SPSObjectCacheF".
+
+.PARAMETER SuperReaderAcc
+    .w|domain\SPSObjectCacheR".
+
+.EXAMPLE
+    PS C:\> .\SP2010EnableObjectCacheOnWebApplications.ps1
+    Edit the variables section and run to powerShell Script / Function to Enable Object Cache Access on all Web Applications.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 #Edit accounts below to suit your environment if you are using claims based authentication
 $SuperUserAcc = "i:0#.w|domain\SPSObjectCacheF"

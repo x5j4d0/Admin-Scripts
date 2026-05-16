@@ -1,19 +1,14 @@
-## =====================================================================
-## Title       : Enable-IADObject
-## Description : Enable a user or computer object in Active Directory.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No Input
-##                                      
-## Output      : System.DirectoryServices.DirectoryEntry
-## Usage       : 
-##               1. Enable user Test1
-##               Get-IADUser Test1 | Enable-IADObject
-##            
-## Notes       :
-## Tag         : user, computer, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Enable Active Directory object objects using ADSI..
+
+.DESCRIPTION
+    Enable Active Directory object objects using ADSI..
+
+.EXAMPLE
+    PS C:\> .\Enable-IADObject.ps1
+    Run the script to perform the described operation.
+#>
 
 filter Enable-IADObject {
 

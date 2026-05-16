@@ -1,29 +1,25 @@
-﻿<# 
- 
- NAME: Get-HotFixReport.ps1 
- 
- AUTHOR: Jan Egil Ring 
- EMAIL: jan.egil.ring@powershell.no 
- 
- COMMENT: Script to generate an installation-report for specified hotfixes on a set of computers retrieved from Active Directory. 
-  
-          The script leverages Microsoft`s PowerShell-module for Active Directory to retrieve computers. 
-          Before running the script, customize the three variables under #Custom variables 
-           
-          More information: http://blog.powershell.no/2010/10/31/generate-an-installation-report-for-specific-hotfixes-using-windows-powershell 
- 
- You have a royalty-free right to use, modify, reproduce, and 
- distribute this script file in any way you find useful, provided that 
- you agree that the creator, owner above has no warranty, obligations, 
- or liability for such use. 
- 
- VERSION HISTORY: 
- 1.0 31.10.2010 - Initial release
- 
- RESOURCE: http://gallery.technet.microsoft.com/ScriptCenter/aa5cdfda-1613-4da1-aa5f-28b3b93e4eed/
- 
-#> 
- 
+﻿<#
+.SYNOPSIS
+    Get Hot Fix Report.
+
+.DESCRIPTION
+    Get Hot Fix Report.
+
+.PARAMETER HotFix
+    Add hot fix references here.
+
+.PARAMETER CsvFilePath
+    Change this path to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\Get-HotFixReport.ps1
+    Edit the variables section and run to get Hot Fix Report.
+
+.NOTES
+    Requires:   ActiveDirectory
+    Resources:  http://blog.powershell.no/2010/10/31/generate-an-installation-report-for-specific-hotfixes-using-windows-powershell; http://gallery.technet.microsoft.com/ScriptCenter/aa5cdfda-1613-4da1-aa5f-28b3b93e4eed/
+#>
+
 #requires -version 2 
  
 #Import Active Directory module 

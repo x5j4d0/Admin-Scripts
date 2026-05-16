@@ -1,4 +1,18 @@
-﻿## SharePoint Server: PowerShell Script to Identify and List Duplicate List Fields against a Content Database ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Identify and List Duplicate List Fields against a Content Database.
+
+.DESCRIPTION
+    PowerShell Script to Identify and List Duplicate List Fields against a Content Database.
+
+.EXAMPLE
+    PS C:\> .\SP2013GetDuplicateListFields.ps1
+    PowerShell Script to Identify and List Duplicate List Fields against a Content Database.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://blog.sharepoint-voodoo.net/?p=142
+#>
 
 <#>
 

@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : Add-SPList
-## Description : Creates a New SharePoint List
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : Add-SPList [[-url] <String>] [[-List] <String>] [[-Description] <String>] [[-Type] <String>]
-## Output      : 
-## Usage       : Add-SPList -url http://moss -List Users -Description "Company Users" -Type "Custom List"
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : List, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Add List.
+
+.DESCRIPTION
+    Add List.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\Add-SPList.ps1
+
+#>
 
 param (
 

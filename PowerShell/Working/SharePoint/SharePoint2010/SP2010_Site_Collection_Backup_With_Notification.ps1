@@ -1,4 +1,16 @@
-﻿# ====================================================================================================================================
+﻿<#
+.SYNOPSIS
+    SP2010 Site Collection Backup With Notification.
+
+.DESCRIPTION
+    SP2010 Site Collection Backup With Notification.
+
+.EXAMPLE
+    PS C:\> .\SP2010_Site_Collection_Backup_With_Notification.ps1
+    SP2010 Site Collection Backup With Notification.
+#>
+
+# ====================================================================================================================================
 # NAME: SP2010_Site_Collection_Backup_With_Notification.ps1
 # AUTHOR: Mukesh Parmar
 # DATE: 07 December 2010

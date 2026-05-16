@@ -1,23 +1,18 @@
-## =====================================================================
-## Title       : Get-IEXInactiveMailbox
-## Description : Retrieve inactive mailbox by checking the latest email in SentItems folder
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : Get-IEXInactiveMailbox [[-Server] <String>] [[-Days] <Int32>]
-##   
-## Output      : System.Management.Automation.PSCustomObject 
-## Usage       :
-##               1. Retrieve mailboxes that have the latest email sent more than 90 days ago.
-##               Get-IEXInactiveMailbox -Server ExchangeServerName -Days 90
-##
-##               2. Retrieve mailboxes that have the latest email sent more than 180 (default) days ago, and sort them in descending order.
-##               Get-IEXInactiveMailbox -Server ExchangeServerName | Sort-Object 'LastEmailSent(Days)' -Descending 
-##                             
-## Notes       :
-## Tag         : Exchange 2007, mailbox, get
-## Change log  :
-## ===================================================================== 
- 
+﻿<#
+.SYNOPSIS
+    Retrieve Inactive Mailbox.
+
+.DESCRIPTION
+    Retrieve Inactive Mailbox.
+
+.PARAMETER Server
+    Server.
+
+.EXAMPLE
+    PS C:\> .\Get-IEXInactiveMailbox.ps1
+
+#>
+
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
 
 function Get-IEXInactiveMailbox

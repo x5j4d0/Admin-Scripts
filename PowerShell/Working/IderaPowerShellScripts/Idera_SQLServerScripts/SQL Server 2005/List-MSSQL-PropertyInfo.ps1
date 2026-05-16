@@ -1,18 +1,24 @@
-## =====================================================================
-## Title       : List-MSSQL-PropertyInfo
-## Description : List Properties of a SQL Server instance using WMI
-## Author      : Idera
-## Date        : 9/1/2008
-## Input       : -serverInstance <server\instance>
-## 				  -verbose 
-## 				  -debug	
-## Output      : List of SQL Server instance advanced properties and settings
-## Usage			: PS> .\List-MSSQL-PropertyInfo -serverInstance MyServer -verbose -debug
-## Notes			:
-## Tag			: SQL Server, Advanced Properties, WMI
-## Change log  :
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    List Property Info.
+
+.DESCRIPTION
+    List Property Info.
+
+.PARAMETER serverInstance
+    server Instance.
+
+.PARAMETER verbose
+    verbose.
+
+.PARAMETER debug
+    debug.
+
+.EXAMPLE
+    PS C:\> .\List-MSSQL-PropertyInfo.ps1
+
+#>
+
 param
 (
   	[string]$serverInstance = ".",

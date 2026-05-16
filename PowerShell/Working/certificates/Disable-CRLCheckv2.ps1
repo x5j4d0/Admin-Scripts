@@ -1,6 +1,14 @@
-## PowerShell: Scripts to Disable The Certificate Revocation List Check (CRL) ##
+﻿<#
+.SYNOPSIS
+    Scripts to Disable The Certificate Revocation List Check (CRL).
 
-## Resource: http://joelblogs.co.uk/2011/09/20/certificate-revocation-list-check-and-sharepoint-2010-without-an-internet-connection
+.DESCRIPTION
+    Scripts to Disable The Certificate Revocation List Check (CRL).
+
+.EXAMPLE
+    PS C:\> .\Disable-CRLCheckv2.ps1
+    Scripts to Disable The Certificate Revocation List Check (CRL).
+#>
 
 #the following statement goes on one line
 set-ItemProperty -path "HKCU:\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing" -name State -value 146944

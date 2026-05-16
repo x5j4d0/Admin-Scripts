@@ -1,3 +1,24 @@
+﻿<#
+.SYNOPSIS
+    Set SP Quick Launch Order.
+
+.DESCRIPTION
+    Set SP Quick Launch Order.
+
+.PARAMETER Url
+    Url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Set-SPQuickLaunchOrder.ps1
+    Set SP Quick Launch Order.
+#>
+
 ##################################################################################
 #
 #

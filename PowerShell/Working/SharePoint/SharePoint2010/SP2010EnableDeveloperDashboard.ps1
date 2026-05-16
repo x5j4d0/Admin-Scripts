@@ -1,5 +1,17 @@
-﻿## SharePoint Server 2010: PowerShell Script To Toggle The Developer Dashboard On All Web Apps In A Farm ##
-## Overview: Same results as the following command: STSADM -o setproperty -pn developer-dashboard -pv OnDemand 
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Toggle The Developer Dashboard On All Web Apps In A Farm.
+
+.DESCRIPTION
+    PowerShell Script To Toggle The Developer Dashboard On All Web Apps In A Farm.
+
+.EXAMPLE
+    PS C:\> .\SP2010EnableDeveloperDashboard.ps1
+    PowerShell Script To Toggle The Developer Dashboard On All Web Apps In A Farm.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.Powershell
+#>
 
 Add-PSSnapin "Microsoft.SharePoint.Powershell" -ErrorAction SilentlyContinue
 

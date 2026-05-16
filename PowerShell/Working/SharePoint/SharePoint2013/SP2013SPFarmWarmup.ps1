@@ -1,6 +1,4 @@
-## SharePoint Server: PowerShell Script that Warms up a SharePoint Farm through opening IE Web Requests for Central Admin, Web Applications, and Site Collections ##
-
-<#  
+﻿<#  
 .SYNOPSIS  
     Warm up SharePoint IIS memory cache by viewing pages from Internet Explorer
 	

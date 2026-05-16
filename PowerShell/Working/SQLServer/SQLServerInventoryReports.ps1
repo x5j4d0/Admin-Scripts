@@ -1,4 +1,15 @@
-﻿## PowerShell: SQL Server System Info Inventory Report ##
+﻿<#
+.SYNOPSIS
+    SQL Server System Info Inventory Report.
+
+.DESCRIPTION
+    SQL Server System Info Inventory Report.
+
+.EXAMPLE
+    PS C:\> .\SQLServerInventoryReports.ps1
+    SQL Server System Info Inventory Report.
+#>
+
 # Overview: Runs queries against your SQL Servers and produces multiple file reports
 # Resource: http://www.sqlservercentral.com/scripts/87936
 # Usage: Edit the '$servers' and '$directoryname' variables to suit your environment

@@ -1,4 +1,17 @@
-﻿## PowerShell: Machine Audit Script with HTML Report Output ##
+﻿<#
+.SYNOPSIS
+    Machine Audit Script with HTML Report Output.
+
+.DESCRIPTION
+    Machine Audit Script with HTML Report Output.
+
+.PARAMETER auditlist
+    auditlist.
+
+.EXAMPLE
+    PS C:\> .\SystemInfoReportHTML.ps1
+    Machine Audit Script with HTML Report Output.
+#>
 
 # Overview: PowerShell script that takes a list of machines from a path specified, or the local machine, and then produces a collapsible HTML report of key system inventory
 

@@ -1,15 +1,18 @@
-﻿## SharePoint Server: PowerShell Script to List the Status of Service Applications, and then Start/Stop them if required ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to List the Status of Service Applications, and then Start/Stop them if required.
 
-<#
+.DESCRIPTION
+    PowerShell Script to List the Status of Service Applications, and then Start/Stop them if
+    required.
 
-Overview: 2 step PowerShell Script to first list and get the 'Status' of SharePoint Service Applications, and secondly to either 'Start' or 'Stop' the service
+.EXAMPLE
+    PS C:\> .\SP2013GetStartStopSPServices.ps1
+    PowerShell Script to List the Status of Service Applications, and then Start/Stop them if required.
 
-Environments: SharePoint Server 2010 / 2013 Farms
-
-Usage: Run the 1st script to get a list of all service applications, and then run the 2nd script using properties from the 1st script to start/stop SPServices
-
-Resource: http://get-spscripts.com/2011/12/manage-services-on-sharepoint-servers.html
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://get-spscripts.com/2011/12/manage-services-on-sharepoint-servers.html
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue

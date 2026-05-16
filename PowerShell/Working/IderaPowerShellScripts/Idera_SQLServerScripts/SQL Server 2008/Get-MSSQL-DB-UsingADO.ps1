@@ -1,18 +1,24 @@
-## =====================================================================
-## Title       : Get-MSSQL-DB-UsingADO
-## Description : Show all databases for a given server instance
-## Author      : Idera
-## Date        : 9/1/2008
-## Input       : -serverInstance <server\instance>
-## 				  -verbose 
-## 				  -debug	
-## Output      : List database ids and names
-## Usage			: PS> .\Get-MSSQL-DB-UsingADO -serverInstance MyServer -verbose -debug
-## Notes			: Adapted from Jakob Bindslet script
-## Tag			: SQL Server, SMO, List databases
-## Change log  :
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Retrieve DB Using ADO.
+
+.DESCRIPTION
+    Retrieve DB Using ADO.
+
+.PARAMETER serverInstance
+    server Instance.
+
+.PARAMETER verbose
+    verbose.
+
+.PARAMETER debug
+    debug.
+
+.EXAMPLE
+    PS C:\> .\Get-MSSQL-DB-UsingADO.ps1
+
+#>
+
 param
 (
   	[string]$serverInstance = ".",

@@ -1,3 +1,27 @@
+ï»¿<#
+.SYNOPSIS
+    Set SP Item.
+
+.DESCRIPTION
+    Set SP Item.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Field
+    Field.
+
+.EXAMPLE
+    PS C:\> .\Set-SPItem.ps1
+    Set SP Item.
+#>
+
 ##################################################################################
 #
 #
@@ -164,7 +188,7 @@ function Set-SPItem([string]$url, [string]$List, [string]$Name, [string]$Field =
 					$AddValue = $GetItem
 				}
 			}
-			Default { Write-Host ”Item Unknown” }
+			Default { Write-Host Â”Item UnknownÂ” }
 		}
 
 		$Item[$FieldName] = $AddValue

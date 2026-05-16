@@ -1,5 +1,27 @@
-﻿## ADFS: PowerShell Script That Uses The ADFS PowerShell Snapin To Export And Import Relying Party Trust Claim Rules ##
-## Resources: http://kingofidentity.wordpress.com/2011/04/23/backing-up-and-restoring-claims-in-adfs-2-0; http://botsikas.blogspot.ch/2012/11/adfs-export-and-import-claim.html
+﻿<#
+.SYNOPSIS
+    PowerShell Script That Uses The ADFS PowerShell Snapin To Export And Import Relying Party Trust Claim Rules.
+
+.DESCRIPTION
+    PowerShell Script That Uses The ADFS PowerShell Snapin To Export And Import Relying Party
+    Trust Claim Rules.
+
+.PARAMETER SourceRelyingPartyTrust
+    The name of your Source Relying Party Trust.
+
+.PARAMETER TargetRelyingPartyTrust
+    The name of your Target Relying Party Trust.
+
+.PARAMETER XMLFilePath
+    The file path and name of the Claim Rules XML export.
+
+.EXAMPLE
+    PS C:\> .\ExportAndImportADFSClaimRules.ps1
+    Edit the variables section and run to powerShell Script That Uses The ADFS PowerShell Snapin To Export And Import Relying Party Trust Claim Rules.
+
+.NOTES
+    Requires:   Microsoft.ADFS.PowerShell
+#>
 
 Add-PSSnapin "Microsoft.ADFS.PowerShell" -ErrorAction SilentlyContinue
 

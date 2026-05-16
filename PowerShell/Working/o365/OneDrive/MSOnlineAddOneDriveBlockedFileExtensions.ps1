@@ -1,7 +1,5 @@
-﻿## Office 365: PowerShell Function to Get the latest Ransomware File Extensions from the FSRM API, And Adds them to your Tenant One Drive for Business Blocked Files list ##
-
-<#
-    .Synopsis
+﻿<#
+    .SYNOPSIS
         Gets the latest ransomware file extensions from 'https://fsrm.experiant.ca/api/v1/get'. Includes functionality to add the list to your tenant One Drive for Business Blocked Files list - https://admin.onedrive.com/?v=SyncSettings
     .EXAMPLE
         Get-SPORansomWareFileExtensionBlackList

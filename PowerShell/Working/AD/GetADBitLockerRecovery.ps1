@@ -1,6 +1,4 @@
-## Active Directory: Get BitLocker Recovery Information from AD Using PowerShell ##
-
-<#
+﻿<#
 .SYNOPSIS
 Gets BitLocker recovery information for one or more Active Directory computer objects.
 .DESCRIPTION

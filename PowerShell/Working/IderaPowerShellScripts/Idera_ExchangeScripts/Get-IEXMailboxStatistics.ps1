@@ -1,23 +1,23 @@
-## =====================================================================
-## Title       : Get-IEXMailboxStatistics
-## Description : Retrieve extended mailbox statistics information. 
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : Get-IEXMailboxStatistics [[-Server] <String>] [[-Identity] <String>] [[-AddUserProperties] <String[]>]
-##   
-## Output      : Microsoft.Exchange.Data.Mapi.MailboxStatistics, System.Management.Automation.PSCustomObject
-## Usage       : 
-##               1. Get mailbox statistics for all mailboxes on a server and extend the results with mailbox user's SamAccountName,FirstName,LastName attributes 
-##               Get-IEXMailboxStatistics -Server ServerName -AddUserProperties SamAccountName,FirstName,LastName  
-## 
-##               2. Get mailbox statistics for a specified mailbox and extend the result with the mailbox user's SamAccountName,FirstName,LastName 
-##               Get-IEXMailboxStatistics -Identity Administrator -AddUserProperties SamAccountName,FirstName,LastName | Select SamAccountName,FirstName,LastName,ItemCount,TotalItemSize,DatabaseName 
-##       
-## Notes       :
-## Tag         : Exchange 2007, mailbox, statistics, get
-## Change log  :
-## ===================================================================== 
-  
+﻿<#
+.SYNOPSIS
+    Retrieve Mailbox Statistics.
+
+.DESCRIPTION
+    Retrieve Mailbox Statistics.
+
+.PARAMETER Server
+    Server.
+
+.PARAMETER Identity
+    Identity.
+
+.PARAMETER AddUserProperties
+    Add User Properties.
+
+.EXAMPLE
+    PS C:\> .\Get-IEXMailboxStatistics.ps1
+
+#>
 
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin  
  

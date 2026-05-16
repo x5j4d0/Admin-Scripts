@@ -1,16 +1,18 @@
-## IIS Server: PowerShell Script to List All Web Applications and Their Identity Details within an IIS Server ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to List All Web Applications and Their Identity Details within an IIS Server.
 
-<# 
+.DESCRIPTION
+    PowerShell Script to List All Web Applications and Their Identity Details within an IIS
+    Server.
 
-Overview: Uses the 'WebAdministration' PowerShell module to List All Web Applications and Their App Pool Identity Details within an IIS Server
+.EXAMPLE
+    PS C:\> .\IIS_Get_Web_Apps_And_Identity_Details.ps1
+    PowerShell Script to List All Web Applications and Their Identity Details within an IIS Server.
 
-Resource: https://melcher.it/2013/03/powershell-list-all-iis-webapplications-net-version-state-identity
-
-Sample Output:
-
-WebAppName	Version	State	UserIdentityType	Username	Password
-SharePoint – 80	v2.0	Started	SpecificUser	demo\spservices	pass@word1
-
+.NOTES
+    Requires:   WebAdministration
+    Resources:  https://melcher.it/2013/03/powershell-list-all-iis-webapplications-net-version-state-identity
 #>
 
 try{

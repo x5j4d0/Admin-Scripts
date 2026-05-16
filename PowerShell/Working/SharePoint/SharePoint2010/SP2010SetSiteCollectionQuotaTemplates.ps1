@@ -1,4 +1,18 @@
-﻿## SharePoint Server 2010: PowerShell Script To Set Site Quotas Across Site Collections ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Set Site Quotas Across Site Collections.
+
+.DESCRIPTION
+    PowerShell Script To Set Site Quotas Across Site Collections.
+
+.EXAMPLE
+    PS C:\> .\SP2010SetSiteCollectionQuotaTemplates.ps1
+    PowerShell Script To Set Site Quotas Across Site Collections.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
+
 # Resource: http://blogs.msdn.com/b/brporter/archive/2011/02/25/how-to-update-site-collection-quotas-for-existing-site-collections.aspx
 # Usage: The 3 different scripts cover the following 3 scenarios: Apply a new quota template; Replace an existing quota template; Remove an existing quota template
 

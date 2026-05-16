@@ -1,23 +1,36 @@
-## =====================================================================
-## Title       : Get-IADGroup
-## Description : Retrieve all groups in a domain or container that match the specified conditions.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : Get-IADGroup [[-Name] <String>] [[-SearchRoot] <String>] [[-PageSize] <Int32>] [[-SizeLimit] <Int32>] [[-SearchScope] <String>] [[-GroupType] <String>] [[-GroupScope] <String>]
-##                    
-## Output      : System.DirectoryServices.DirectoryEntry 
-##
-## Usage       :
-##               1. Retrieve distribution groups which name starts with 'test'
-##               Get-IADGroup -Name test* -GroupType distribution
-##
-##               2. Retrieve all universal security groups
-##               Get-IADGroup -GroupType security -GroupScope universal
-## Notes       :
-## Tag         : group, activedirectory
-## Change log  :
-## =====================================================================  
-  
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory group objects using ADSI..
+
+.DESCRIPTION
+    Retrieve Active Directory group objects using ADSI..
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER SearchRoot
+    Search Root.
+
+.PARAMETER PageSize
+    Page Size.
+
+.PARAMETER SizeLimit
+    Size Limit.
+
+.PARAMETER SearchScope
+    Search Scope.
+
+.PARAMETER GroupType
+    Group Type.
+
+.PARAMETER GroupScope
+    Group Scope.
+
+.EXAMPLE
+    PS C:\> .\Get-IADGroup.ps1
+    Run the script to perform the described operation.
+#>
+
 function Get-IADGroup {
  param(
   [string]$Name = "*",

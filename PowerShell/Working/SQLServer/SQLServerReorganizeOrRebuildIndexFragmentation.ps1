@@ -1,4 +1,22 @@
-﻿################################################################################################################################
+﻿<#
+.SYNOPSIS
+    SQL Server Reorganize Or Rebuild Index Fragmentation.
+
+.DESCRIPTION
+    SQL Server Reorganize Or Rebuild Index Fragmentation.
+
+.PARAMETER sqlserver
+    Change your SQL Server Instance here.
+
+.PARAMETER database
+    Change your Database name here.
+
+.EXAMPLE
+    PS C:\> .\SQLServerReorganizeOrRebuildIndexFragmentation.ps1
+    Edit the variables section and run to sQL Server Reorganize Or Rebuild Index Fragmentation.
+#>
+
+################################################################################################################################
 #
 # Name: PowerShell Script to check and fix SQL Server Index Fragmentation on a Database
 #

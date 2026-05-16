@@ -1,3 +1,15 @@
+﻿<#
+.SYNOPSIS
+    Adds content to a Zip file.
+
+.DESCRIPTION
+    Adds content to a Zip file.
+
+.EXAMPLE
+    PS C:\> .\Helper.ps1
+    Adds content to a Zip file.
+#>
+
 Function Add-ZIPContent 
 {<#
     .SYNOPSIS

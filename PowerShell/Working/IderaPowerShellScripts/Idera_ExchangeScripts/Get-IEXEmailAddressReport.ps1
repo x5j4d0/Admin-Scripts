@@ -1,20 +1,18 @@
-## =====================================================================
-## Title       : Get-IEXEmailAddressReport
-## Description : Enumerate email addresses
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : No input
-##   
-## Output      : System.Management.Automation.PSCustomObject 
-## Usage       : 
-##              1. Enumerate email addresses per user
-##              Get-IEXEmailAddressReport -Server ExchangeServerName
-##       
-## Notes       :
-## Tag         : Exchange 2007, mailbox, email address, get
-## Change log  :
-## ===================================================================== 
- 
+﻿<#
+.SYNOPSIS
+    Retrieve Email Address Report.
+
+.DESCRIPTION
+    Retrieve Email Address Report.
+
+.PARAMETER Server
+    Server.
+
+.EXAMPLE
+    PS C:\> .\Get-IEXEmailAddressReport.ps1
+
+#>
+
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
 
 function Get-IEXEmailAddressReport

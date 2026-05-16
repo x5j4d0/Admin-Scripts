@@ -1,4 +1,23 @@
-﻿## PowerShell Script to store and use the same credentials for PSRemoting scripting ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to store and use the same credentials for PSRemoting scripting.
+
+.DESCRIPTION
+    PowerShell Script to store and use the same credentials for PSRemoting scripting.
+
+.PARAMETER PasswordFileLocation
+    Change the path here to suit your environment.
+
+.PARAMETER PSRemotingUser
+    Change the domain and user here to suit your environment.
+
+.PARAMETER RemoteMachine
+    Change the remote machine name here to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\EncryptCredentialsForPSRemoting.ps1
+    Edit the variables section and run to powerShell Script to store and use the same credentials for PSRemoting scripting.
+#>
 
 # Set your PowerShell Variables here
 

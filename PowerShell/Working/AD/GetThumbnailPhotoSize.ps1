@@ -1,28 +1,23 @@
-## Active Directory: PowerShell Script to Check and Report on Thumbnail Photo Sizes ##
+ï»¿<#
+.SYNOPSIS
+    PowerShell Script to Check and Report on Thumbnail Photo Sizes.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Check and Report on Thumbnail Photo Sizes.
 
-Overview: PowerShell script that queries Active Directory to check the Thumbnail size attribute (thumbnailPhoto) for all user photos and identifies which ones have no photos; are good (below 10KB); and those above 10KB
+.EXAMPLE
+    PS C:\> .\GetThumbnailPhotoSize.ps1
+    PowerShell Script to Check and Report on Thumbnail Photo Sizes.
 
-The Script reports counts of users whose Active Directory photos are either too big, are of acceptable size, or are not set. The script writes the userPrincipalNames(UPN) and photo size in KB to separate .log files, named appropriately
-
-Office 365 Directory Synchronization will synchronize photos up to 100KB in size, and Exchange Online is currently the only Office 365 workload that imposes the 10KB photo size limit.
-
-Usage: Modify the '$Root' Variable LDAP path to match your environment and run the script
-
-The Script outputs 3 text files to the same location it was run from
-
-Output Files: thumbnailPhoto-NoPhoto.log; thumbnailPhoto-OK.log; thumbnailPhoto-TooLarge.log
-
-Resource: https://gallery.technet.microsoft.com/office/Office-365-thumbnailPhoto-e2755b03
-
+.NOTES
+    Resources:  https://gallery.technet.microsoft.com/office/Office-365-thumbnailPhoto-e2755b03
 #>
 
 #------------------------------------------------------------------------------ 
 # 
-# Copyright © 2012 Microsoft Corporation.  All rights reserved. 
+# Copyright Â© 2012 Microsoft Corporation.  All rights reserved. 
 # 
-# THIS CODE AND ANY ASSOCIATED INFORMATION ARE PROVIDED “AS IS” WITHOUT 
+# THIS CODE AND ANY ASSOCIATED INFORMATION ARE PROVIDED Â“AS ISÂ” WITHOUT 
 # WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT 
 # LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS 
 # FOR A PARTICULAR PURPOSE. THE ENTIRE RISK OF USE, INABILITY TO USE, OR  

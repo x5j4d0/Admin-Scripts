@@ -1,4 +1,17 @@
-## SharePoint 2010: PowerShell Script to Enumerate All Documents on a SharePoint Farm ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Enumerate All Documents on a SharePoint Farm.
+
+.DESCRIPTION
+    PowerShell Script to Enumerate All Documents on a SharePoint Farm.
+
+.EXAMPLE
+    PS C:\> .\SP2010GetDocInventory.ps1
+    PowerShell Script to Enumerate All Documents on a SharePoint Farm.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue
 

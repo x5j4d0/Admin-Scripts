@@ -1,23 +1,29 @@
-﻿## MSOnline: PowerShell Script that uses the O365ServiceCommunications module to send a HTML Email Report on Incidents in the o365 Message Center ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script that uses the O365ServiceCommunications module to send a HTML Email Report on Incidents in the o365 Message Center.
 
-<#
-    .DESCRIPTION
-    This sample script demonstrates using the O365ServiceCommunications module to alert on incidents posted in the Office 365 
-    Message Center (https://portal.office.com/adminportal/home#/servicehealth). It gathers information from the Service Communications API and builds custom HTML tables which are then 
-    added to an email message body. This script can be set to run on a schedule using the Windows Task Scheduler to make sure 
-    you are aware that an incident has been generated.
+.DESCRIPTION
+    This sample script demonstrates using the O365ServiceCommunications module to alert on
+    incidents posted in the Office 365 Message Center
+    (https://portal.office.com/adminportal/home#/servicehealth). It gathers information from
+    the Service Communications API and builds custom HTML tables which are then added to an
+    email message body. This script can be set to run on a schedule using the Windows Task
+    Scheduler to make sure you are aware that an incident has been generated. Don't forget to
+    save a credential object to file with 'Get-Credential'. This is required for
+    authentication to the API. You'll need to change the values of the $Splat variable below
+    to something that will work in your environment to successfully send and email message.
+    Usage: Uncomment the 'Get-Credential' command if not already run to store the o365
+    session credentials, and change the email properties in the ' $Splat' variable before
+    running Requires: O365ServiceCommunications PowerShell Module Resource:
+    https://github.com/mattmcnabb/O365ServiceCommunications/tree/master/Sample.
 
-    Don't forget to save a credential object to file with 'Get-Credential'. This is required for 
-    authentication to the API.
+.EXAMPLE
+    PS C:\> .\GetMSOnlineServiceHealthIncidentsEmail.ps1
+    PowerShell Script that uses the O365ServiceCommunications module to send a HTML Email Report on Incidents in the o365 Message Center.
 
-    You'll need to change the values of the $Splat variable below to something that will work in your environment to successfully
-    send and email message.
-
-    Usage: Uncomment the 'Get-Credential' command if not already run to store the o365 session credentials, and change the email properties in the ' $Splat' variable before running
-
-    Requires: O365ServiceCommunications PowerShell Module
-
-    Resource: https://github.com/mattmcnabb/O365ServiceCommunications/tree/master/Sample
+.NOTES
+    Requires:   O365ServiceCommunications
+    Resources:  https://portal.office.com/adminportal/home#/servicehealth; https://github.com/mattmcnabb/O365ServiceCommunications/tree/master/Sample
 #>
 
 Import-Module O365ServiceCommunications

@@ -1,19 +1,23 @@
-﻿## Azure AD: PowerShell Script to Create an Azure AD Application, and Create and Assign the Service Principal to it ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Create an Azure AD Application, and Create and Assign the Service Principal to it.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Create an Azure AD Application, and Create and Assign the Service
+    Principal to it.
 
-Overview: PowerShell Script to Create an Azure AD Application (New-AzureRmADApplication), and Create (New-AzureRmADServicePrincipal) and Assign (New-AzureRmRoleAssignment) the Service Principal to it with the 'Contributor' role
+.PARAMETER secret
+    Important: Keep this 'Client Secret' value safe as it can't be viewed via the Azure Portal.
 
-Usage: Edit the variables listed below under 'Start Variables', and update the '-EndDate' property under the '$azureAdApplication' before running the script
+.PARAMETER azureAdApplication
+    Change this End Date to match your requirements.
 
-Resources:
+.EXAMPLE
+    PS C:\> .\CreateAzureRmADApplication.ps1
+    Edit the variables section and run to powerShell Script to Create an Azure AD Application, and Create and Assign the Service Principal to it.
 
-https://octopus.com/docs/guides/azure-deployments/creating-an-azure-account/creating-an-azure-service-principal-account
-https://blogs.msdn.microsoft.com/azuresqldbsupport/2017/09/01/how-to-create-an-azure-ad-application-in-powershell
-https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
-
-Requires: AzureRM PowerShell Modules
-
+.NOTES
+    Resources:  https://octopus.com/docs/guides/azure-deployments/creating-an-azure-account/creating-an-azure-service-principal-account; https://blogs.msdn.microsoft.com/azuresqldbsupport/2017/09/01/how-to-create-an-azure-ad-application-in-powershell
 #>
 
 # Sign in to Azure

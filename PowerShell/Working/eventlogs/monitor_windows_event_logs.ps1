@@ -1,6 +1,24 @@
-﻿## PowerShell: Script to monitor Windows Event Logs and sends an email of monitored events ## 
-## Contributing authors - mck74,mjolinor, 
-## Resource: http://gallery.technet.microsoft.com/scriptcenter/ed188912-1a20-4be9-ae4f-8ac46cf2aae4
+﻿<#
+.SYNOPSIS
+    Script to monitor Windows Event Logs and sends an email of monitored events.
+
+.DESCRIPTION
+    Script to monitor Windows Event Logs and sends an email of monitored events.
+
+.PARAMETER ShowEvents
+    Show Events.
+
+.PARAMETER NoEmail
+    No Email.
+
+.PARAMETER useinstanceid
+    useinstanceid.
+
+.EXAMPLE
+    PS C:\> .\monitor_windows_event_logs.ps1
+    Script to monitor Windows Event Logs and sends an email of monitored events.
+#>
+
 param([switch]$ShowEvents = $false,[switch]$NoEmail = $false,[switch]$useinstanceid = $false) 
  
  

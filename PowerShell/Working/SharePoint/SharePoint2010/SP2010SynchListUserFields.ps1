@@ -1,7 +1,26 @@
-﻿## SharePoint Server 2010: PowerShell Script To Export And Import User Accounts Across SharePoint Lists ##
-## Overview: When copying a list from one site collection to another with a list template 'SPUserField' Information can be out of synch
-## Usage: Edit your 'Global Variables' and 'Export' and "Import' list variables and run ./SP2010SynchListUserFields.ps1
-## Resource: http://blogbaris.blogspot.ch/2012/05/synch-user-fields-when-copying-lists.html
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Export And Import User Accounts Across SharePoint Lists.
+
+.DESCRIPTION
+    PowerShell Script To Export And Import User Accounts Across SharePoint Lists.
+
+.PARAMETER csv
+    Change this to suit your environment.
+
+.PARAMETER log
+    Change this to suit your environment.
+
+.PARAMETER field
+    'Modified By'.
+
+.EXAMPLE
+    PS C:\> .\SP2010SynchListUserFields.ps1
+    Edit the variables section and run to powerShell Script To Export And Import User Accounts Across SharePoint Lists.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 if((Get-PSSnapin | Where {$_.Name -eq “Microsoft.SharePoint.PowerShell”}) -eq $null) {
        Add-PSSnapin Microsoft.SharePoint.PowerShell

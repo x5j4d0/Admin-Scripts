@@ -1,7 +1,34 @@
-## SQL Server: PowerShell Function to Get / regain Sysadmin Access to a SQL Instance (SA Access / Password Reset) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Function to Get / regain Sysadmin Access to a SQL Instance (SA Access / Password Reset).
 
-## Resource: https://gallery.technet.microsoft.com/scriptcenter/Reset-SQL-SA-Password-15fb488d
-## Requires -Version 2
+.DESCRIPTION
+    This function allows administrators to regain access to local or remote SQL Servers by
+    either resetting the sa password, adding sysadmin role to existing login, or adding a new
+    login (SQL or Windows) and granting it sysadmin privileges. This is accomplished by
+    stopping the SQL services or SQL Clustered Resource Group, then restarting SQL via the
+    command-line using the /mReset-SqlAdmin paramter which starts the server in Single-User
+    mode, and only allows this script to connect. Once the service is restarted, the
+    following tasks are performed: - Login is added if it doesn't exist - If login is a
+    Windows User, an attempt is made to ensure it exists - If login is a SQL Login, password
+    policy will be set to OFF when creating the login, and SQL Server authentication will be
+    set to Mixed Mode. - Login will be enabled and unlocked - Login will be added to sysadmin
+    role If failures occur at any point, a best attempt is made to restart the SQL Server. In
+    order to make this script as portable as possible, System.Data.SqlClient and
+    Get-WmiObject are used (as opposed to requiring the Failover Cluster Admin tools or SMO).
+    If using this function against a remote SQL Server, ensure WinRM is configured and
+    accessible. If this is not possible, run the script locally. Tested on Windows XP, 7,
+    8.1, Server 2012 and Windows Server Technical Preview 2. Tested on SQL Server 2005 SP4
+    through 2016 CTP2. THIS CODE IS PROVIDED "AS IS", WITH NO WARRANTIES.
+
+.EXAMPLE
+    PS C:\> .\SQLServerResetAdminAccess.ps1
+    PowerShell Function to Get / regain Sysadmin Access to a SQL Instance (SA Access / Password Reset).
+
+.NOTES
+    Resources:  https://gallery.technet.microsoft.com/scriptcenter/Reset-SQL-SA-Password-15fb488d
+#>
+
 Function Reset-SqlAdmin {
 	<# 
 	 .SYNOPSIS 

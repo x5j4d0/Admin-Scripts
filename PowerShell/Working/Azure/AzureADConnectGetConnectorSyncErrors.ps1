@@ -1,16 +1,16 @@
-﻿## Azure AD Connect: PowerShell Script to Export and Analyse the AAD Connect FIM Client Sync Errors ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Export and Analyse the AAD Connect FIM Client Sync Errors.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Export and Analyse the AAD Connect FIM Client Sync Errors.
 
-Overview: PowerShell Script that uses AAD Connect Sync tools to Export (CSExport.exe), and Analyse (CSExportAnalyzer.exe) the FIM Client Sync Errors
+.EXAMPLE
+    PS C:\> .\AzureADConnectGetConnectorSyncErrors.ps1
+    PowerShell Script to Export and Analyse the AAD Connect FIM Client Sync Errors.
 
-Usage: Edit the variables below to match your AAD Connect environment and run the script
-
-Resources:
-
-http://www.highclouder.com/azure-ad-connect-export-user-error-data
-https://technet.microsoft.com/en-us/library/jj590346(v=ws.10).aspx
-
+.NOTES
+    Resources:  http://www.highclouder.com/azure-ad-connect-export-user-error-data; https://technet.microsoft.com/en-us/library/jj590346(v=ws.10).aspx
 #>
 
 ### Start Variables ###

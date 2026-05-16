@@ -1,9 +1,24 @@
-﻿## SharePoint Server 2010: PowerShell Script To Loop Through All Users In All Site Collections And Updates Their User Names ## 
-## Overview: Resolves the User Name out of Synch issue between the "UserInfo Table" and the User Profile Store
-## Resource: http://blogbaris.blogspot.ch/2012/04/display-name-in-sharepoint-is-out-of.html
-## Usage: Edit the '$log' and '$webapp' variables and run ./SP2010UpdateUserDisplayNames.ps1
-## Important: Ensure that the account used to run the script has 'Full Control' on the User Profile Service Application
-## Tip: You can view User Profiles at site collection level by adding this on your query string '/_catalogs/users/simple.aspx'
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Loop Through All Users In All Site Collections And Updates Their User Names.
+
+.DESCRIPTION
+    PowerShell Script To Loop Through All Users In All Site Collections And Updates Their
+    User Names.
+
+.PARAMETER log
+    Change this to suit your environment.
+
+.PARAMETER webapp
+    Change this to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\SP2010UpdateUserDisplayNames.ps1
+    Edit the variables section and run to powerShell Script To Loop Through All Users In All Site Collections And Updates Their User Names.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.Powershell
+#>
 
 # Loading Microsoft.SharePoint.PowerShell
 $snapin = Get-PSSnapin | Where-Object {$_.Name -eq 'Microsoft.SharePoint.Powershell'}

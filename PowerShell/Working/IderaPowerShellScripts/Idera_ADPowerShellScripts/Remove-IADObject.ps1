@@ -1,23 +1,20 @@
-## =====================================================================
-## Title       : Remove-IADObject
-## Description : Delete the specified object(s) in Active Directory.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No Input
-##                     
-## Output      : Nothing
-## Usage       :
-##               1. Delete all disabled domain user, no confirmation
-##               Get-IADUser -Disabled | Remove-IADObject
-##
-##               2. Delete all objects which name starts with idera from the Test OU, confirm each action
-##               Get-IADUser -Name idera* -SearchRoot 'OU=TEST,DC=Domain,DC=com' | Remove-IADObject -Confirm  
-##           
-## Notes       :
-## Tag         : user, computer, group, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Remove Active Directory object objects using ADSI..
 
+.DESCRIPTION
+    Remove Active Directory object objects using ADSI..
+
+.PARAMETER whatif
+    whatif.
+
+.PARAMETER confirm
+    confirm.
+
+.EXAMPLE
+    PS C:\> .\Remove-IADObject.ps1
+    Run the script to perform the described operation.
+#>
 
 filter Remove-IADObject {
  param (

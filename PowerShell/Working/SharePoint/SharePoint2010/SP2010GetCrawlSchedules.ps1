@@ -1,7 +1,15 @@
-## SharePoint Server: PowerShell Script To Get Details On The Crawl Schedules For SSP Or Search Service Applications ##
-## Overview: The 'Get-Crawl-Scheduled-Information' function returns crawl schedule details for a specified SSP URL / Search Application
-## Environments: Should work on both MOSS 2007 and SharePoint Server 2010 farms
-## Usage: Ensure to put the full URL in for your '$SiteCollectionURL' parameter
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Get Details On The Crawl Schedules For SSP Or Search Service Applications.
+
+.DESCRIPTION
+    PowerShell Script To Get Details On The Crawl Schedules For SSP Or Search Service
+    Applications.
+
+.EXAMPLE
+    PS C:\> .\SP2010GetCrawlSchedules.ps1
+    PowerShell Script To Get Details On The Crawl Schedules For SSP Or Search Service Applications.
+#>
 
 function Get-Crawl-Scheduled-Information([string]$SiteCollectionURL) 
 { 

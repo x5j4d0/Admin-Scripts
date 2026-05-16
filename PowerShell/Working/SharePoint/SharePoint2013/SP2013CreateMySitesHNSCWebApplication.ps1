@@ -1,19 +1,20 @@
-## SharePoint Server: PowerShell Script To create A 'My Sites' Web Application With HNSC ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To create A 'My Sites' Web Application With HNSC.
 
-<# 
+.DESCRIPTION
+    PowerShell Script To create A 'My Sites' Web Application With HNSC.
 
-Overview: Sets up a SharePoint 2013 'My Sites' Web Application for hosting host-named site collections as per http://technet.microsoft.com/en-us/library/cc424952.aspx
+.PARAMETER hostingMainURL
+    Ensure that you use a Fully Qualified Domain Name (FQDN) for your 'place holder' web application.
 
-Resource: http://www.benjaminathawes.com/2013/12/11/using-host-named-site-collections-in-sharepoint-2013-with-mysites
+.EXAMPLE
+    PS C:\> .\SP2013CreateMySitesHNSCWebApplication.ps1
+    Edit the variables section and run to powerShell Script To create A 'My Sites' Web Application With HNSC.
 
-Usage: Change the following variables to match your requirements: $appPoolName; $appPoolUserName; $ownerAlias; $ownerEmail; $hostingMainURL; $webAppName; $contentDBName; $mysitehost. '-HostHeader' parameter has been added to 'New-SPWebApplication' too
-
-Note: For Dev environments if you want to use port '80'; you will need to do the following under 'New-SPWebApplication': Change -Port 443 to 80; add a -HostHeader "mysites.yourdomain.com" parameter; comment out the '-SecureSocketsLayer' parameter
-
-Important: If using a -HostHeader parameter for Port 80 environments; this needs to be different to the property you set for your '$mysitehost ' variable. Also remember to go to the IIS web site and change the 'Host Name' binding to match the '$mysitehost ' variable
-
-Update: When running the script for Port 443 / SSL environments: to avoid error messages regarding Host headers and Ports already in use; the only work around appears to be through adding a  '-HostHeader' parameter to the 'New-SPWebApplication' commandlet. Example: -HostHeader "mysitewebapp.DOMAIN.com"
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://technet.microsoft.com/en-us/library/cc424952.aspx; http://www.benjaminathawes.com/2013/12/11/using-host-named-site-collections-in-sharepoint-2013-with-mysites
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue

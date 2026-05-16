@@ -1,6 +1,20 @@
-﻿## SharePoint Server 2010: PowerShell Script to Enumerate Permissions for each Web Application ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Enumerate Permissions for each Web Application.
 
-##Important: Script needs to be run with the Farm account or another account with sufficient farm administration rights
+.DESCRIPTION
+    PowerShell Script to Enumerate Permissions for each Web Application.
+
+.PARAMETER logfilepath
+    Change this path to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\SP2010EnumerateWebApplicationPermissions.ps1
+    Edit the variables section and run to powerShell Script to Enumerate Permissions for each Web Application.
+
+.NOTES
+    Requires:   microsoft.sharepoint.powershell
+#>
 
 $logfilepath = "C:\BoxBuild\Scripts\PowerShell" #Change this path to suit your environment
  

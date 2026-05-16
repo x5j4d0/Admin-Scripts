@@ -1,5 +1,23 @@
-﻿## PowerShell: Script to connect to SQL Server and run a Query with Different Outputs ##
-## Source: http://mspowershell.blogspot.com/2009/02/t-sql-query-with-object-based-result.html ##
+﻿<#
+.SYNOPSIS
+    Script to connect to SQL Server and run a Query with Different Outputs.
+
+.DESCRIPTION
+    Script to connect to SQL Server and run a Query with Different Outputs.
+
+.PARAMETER server
+    server.
+
+.PARAMETER query
+    query.
+
+.PARAMETER database
+    database.
+
+.EXAMPLE
+    PS C:\> .\SQLServerConnectAndRunQueriesWithOutputs.ps1
+    Script to connect to SQL Server and run a Query with Different Outputs.
+#>
 
 function ConnectSQL {
     Param ($server, $query, $database)

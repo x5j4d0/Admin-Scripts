@@ -1,6 +1,4 @@
-﻿## PowerShell: Script To Show HTML Email Report Of Disk Space Used For Each Drive On A List Of Machines ##
-
-<#
+﻿<#
  .SYNOPSIS
     List for several machines the drives with size, free size and the percentage of free space (E-Mail).
  .DESCRIPTION

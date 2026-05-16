@@ -1,19 +1,15 @@
-## =====================================================================
-## Title       : Get-IADTombstoneComputer
-## Description : Retrieve all deleted computers in Active Directory.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No input            
-##                     
-## Output      : System.DirectoryServices.SearchResult
-## Usage       : Get-IADTombstoneComputer
-##            
-## Notes       :
-## Tag         : computer, tombstone, deleted, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory tombstone computer objects using ADSI..
 
-   
+.DESCRIPTION
+    Retrieve Active Directory tombstone computer objects using ADSI..
+
+.EXAMPLE
+    PS C:\> .\Get-IADTombstoneComputer.ps1
+    Run the script to perform the described operation.
+#>
+
 function Get-IADTombstoneComputer 
 { 
  $root= New-Object System.DirectoryServices.DirectoryEntry("LDAP://RootDSE")

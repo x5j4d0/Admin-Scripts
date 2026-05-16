@@ -1,19 +1,27 @@
-## =====================================================================
-## Title       : Get-IADEmptyGroup
-## Description : Retrieve all groups without members in a domain or container.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : Get-IADEmptyGroup [[-SearchRoot] <String>] [[-PageSize] <Int32>] [[-SizeLimit] <Int32>] [[-SearchScope] <String>] 
-##                     
-## Output      : System.DirectoryServices.DirectoryEntry
-## Usage       : Get-IADEmptyGroup
-##            
-## Notes       :
-## Tag         : group, member, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory empty group objects using ADSI..
 
-  
+.DESCRIPTION
+    Retrieve Active Directory empty group objects using ADSI..
+
+.PARAMETER SearchRoot
+    Search Root.
+
+.PARAMETER PageSize
+    Page Size.
+
+.PARAMETER SizeLimit
+    Size Limit.
+
+.PARAMETER SearchScope
+    Search Scope.
+
+.EXAMPLE
+    PS C:\> .\Get-IADEmptyGroup.ps1
+    Run the script to perform the described operation.
+#>
+
 function Get-IADEmptyGroup 
 {
 

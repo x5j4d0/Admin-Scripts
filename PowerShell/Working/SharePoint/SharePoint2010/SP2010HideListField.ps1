@@ -1,6 +1,14 @@
-﻿## SharePoint Server: PowerShell Function To Hide And Unhide SharePoint List Fields ##
-## Resource: http://www.powershell.nu/2009/01/13/hiding-a-listfield-in-newformeditform-in-sharepoint
-## Usage: Works on both MOSS 2007 and SharePoint Server 2010 Farms
+﻿<#
+.SYNOPSIS
+    PowerShell Function To Hide And Unhide SharePoint List Fields.
+
+.DESCRIPTION
+    PowerShell Function To Hide And Unhide SharePoint List Fields.
+
+.EXAMPLE
+    PS C:\> .\SP2010HideListField.ps1
+    PowerShell Function To Hide And Unhide SharePoint List Fields.
+#>
 
 function Hide-SPField([string]$url, [string]$List, [string]$Field) {
   [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint")

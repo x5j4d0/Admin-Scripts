@@ -1,3 +1,33 @@
+﻿<#
+.SYNOPSIS
+    Add SP Date Time Field.
+
+.DESCRIPTION
+    Add SP Date Time Field.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER Required
+    Required.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPDateTimeField.ps1
+    Add SP Date Time Field.
+#>
+
 ##################################################################################
 #
 #

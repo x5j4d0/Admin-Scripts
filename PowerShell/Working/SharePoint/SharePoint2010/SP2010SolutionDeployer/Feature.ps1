@@ -1,3 +1,18 @@
+﻿<#
+.SYNOPSIS
+    Feature Deployer and activator for SharePoint 2010.
+
+.DESCRIPTION
+    Feature Deployer and activator for SharePoint 2010.
+
+.EXAMPLE
+    PS C:\> .\Feature.ps1
+    Feature Deployer and activator for SharePoint 2010.
+
+.NOTES
+    Resources:  http://www.somesite.com/
+#>
+
 #############################################################################################################################
 #	Author:					Aaron Saikovski - Aaron.Saikovski@microsoft.com  												#
 #	Version:				1.0																				 				#

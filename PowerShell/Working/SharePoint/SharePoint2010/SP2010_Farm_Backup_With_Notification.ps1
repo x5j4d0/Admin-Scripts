@@ -1,4 +1,16 @@
-﻿# ==============================================================================================
+﻿<#
+.SYNOPSIS
+    SP2010 Farm Backup With Notification.
+
+.DESCRIPTION
+    SP2010 Farm Backup With Notification.
+
+.EXAMPLE
+    PS C:\> .\SP2010_Farm_Backup_With_Notification.ps1
+    SP2010 Farm Backup With Notification.
+#>
+
+# ==============================================================================================
 # NAME: SP2010_Farm_Backup_With_Notification.ps1
 # AUTHOR: Mukesh Parmar
 # DATE: 07 December 2010

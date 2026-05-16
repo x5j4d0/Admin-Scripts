@@ -1,7 +1,38 @@
-﻿## PowerShell: Script To Telnet To Remote Hosts And Run Commands Against Them With Output To A File ##
-## Overview: Useful for Telnet connections to Cisco Switches and other devices. Can add additional command strings
-## Usage Examples: Add your environment specific details into the parameters below, or include when calling the script:
-## ./PowerShellTelnetRemoteSession.ps1 "127.0.0.1" "23" "admin" "password" "term len 0" "en" "enablepassword" "show interface"
+﻿<#
+.SYNOPSIS
+    Script To Telnet To Remote Hosts And Run Commands Against Them With Output To A File.
+
+.DESCRIPTION
+    Script To Telnet To Remote Hosts And Run Commands Against Them With Output To A File.
+
+.PARAMETER remoteHost
+    remote Host.
+
+.PARAMETER port
+    port.
+
+.PARAMETER username
+    username.
+
+.PARAMETER password
+    password.
+
+.PARAMETER termlength
+    termlength.
+
+.PARAMETER enable
+    enable.
+
+.PARAMETER enablepassword
+    enablepassword.
+
+.PARAMETER command1
+    command1.
+
+.EXAMPLE
+    PS C:\> .\PowerShellTelnetRemoteSession.ps1
+    Script To Telnet To Remote Hosts And Run Commands Against Them With Output To A File.
+#>
 
 param(
     [string] $remoteHost = "", 

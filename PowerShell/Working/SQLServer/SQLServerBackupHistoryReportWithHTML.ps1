@@ -1,20 +1,18 @@
-## SQL Server: PowerShell Script to Query Backup History for SQL Instances with HTML Report Output ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Query Backup History for SQL Instances with HTML Report Output.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Query Backup History for SQL Instances with HTML Report Output.
 
-Overview: PowerShell Script that gets the most recent backup history for SQL Server Instances specified in a text file. Includes a HTML output report.
+.EXAMPLE
+    PS C:\> .\SQLServerBackupHistoryReportWithHTML.ps1
+    PowerShell Script to Query Backup History for SQL Instances with HTML Report Output.
 
-Usage: Edit the following variables to match your environment and run the script: '$ServerList'; '$OutputFile'
+.NOTES
+    Resources:  http://msdn.microsoft.com/en-us/library/ms162189.aspx; http://blogs.msdn.com/b/jason_howell/archive/2010/10/25/list-of-sql-server-feature-packs.aspx
+#>
 
-Note: The machine on which the script is run from does require the SQL Server Management Objects (SMO) to be installed
-
-http://msdn.microsoft.com/en-us/library/ms162189.aspx
-http://blogs.msdn.com/b/jason_howell/archive/2010/10/25/list-of-sql-server-feature-packs.aspx
-
-Resource: https://gallery.technet.microsoft.com/scriptcenter/Get-SQL-Database-Backup-db11669d
-
-#>                                            
- 
 #Change values of following variables as needed 
 $ServerList = Get-Content "C:\Install\SQLInstances.txt" 
 $OutputFile = "C:\Install\SQLBackupsReport.htm" 

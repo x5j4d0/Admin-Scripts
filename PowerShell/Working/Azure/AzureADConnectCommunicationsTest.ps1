@@ -1,6 +1,4 @@
-﻿## AAD Connect: PowerShell Script to Test Connectivity to Azure AD from Azure AD Connect Clients ##
-
-<#
+﻿<#
 .SYNOPSIS
 Test basic connectivity and name resolution for AAD Connect.
 

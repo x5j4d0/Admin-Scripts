@@ -1,7 +1,20 @@
-﻿## PowerShell: Script To Show HTML Report / Graph Of Disk Space Used For Each Drive On A Machine ##
-## Resource: http://jdhitsolutions.com/blog/2012/02/create-html-bar-charts-from-powershell
-## Usage Examples: ./DiskSpaceHTMLReport.ps1 YourMachineName
-## 				   ./DiskSpaceHTMLReport.ps1 "YourMachineName1", "YourMachineName2"
+﻿<#
+.SYNOPSIS
+    Script To Show HTML Report / Graph Of Disk Space Used For Each Drive On A Machine.
+
+.DESCRIPTION
+    Script To Show HTML Report / Graph Of Disk Space Used For Each Drive On A Machine.
+
+.PARAMETER computers
+    computers.
+
+.PARAMETER env
+    env.
+
+.EXAMPLE
+    PS C:\> .\DiskSpaceHTMLReport.ps1
+    Script To Show HTML Report / Graph Of Disk Space Used For Each Drive On A Machine.
+#>
 
 Param (
 [string[]]$computers=@($env:computername),

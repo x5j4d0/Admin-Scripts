@@ -1,10 +1,17 @@
-﻿## IIS Server: PowerShell Script to List All Web Sites within IIS, and Exports these to a CSV file ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to List All Web Sites within IIS, and Exports these to a CSV file.
 
-## Overview: Uses the 'WebAdministration' PowerShell module to report on IIS web sites within an IIS server
+.DESCRIPTION
+    PowerShell Script to List All Web Sites within IIS, and Exports these to a CSV file.
 
-## Usage: Modify the '-Path' variable to suit your environment and run the script
+.EXAMPLE
+    PS C:\> .\IIS_Get_Web_Sites.ps1
+    PowerShell Script to List All Web Sites within IIS, and Exports these to a CSV file.
 
-## Resource: http://technet.microsoft.com/en-us/library/ee790599.aspx
+.NOTES
+    Requires:   WebAdministration
+#>
 
 Import-Module WebAdministration
 

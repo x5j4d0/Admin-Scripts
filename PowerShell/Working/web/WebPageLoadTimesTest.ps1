@@ -1,13 +1,22 @@
-﻿## PowerShell: PowerShell Function that Measures Page Load Times and HTTP Protocol Status Codes ##
+﻿<#
+.SYNOPSIS
+    PowerShell Function that Measures Page Load Times and HTTP Protocol Status Codes.
 
-<#
+.DESCRIPTION
+    PowerShell Function that Measures Page Load Times and HTTP Protocol Status Codes.
 
-Overview: PowerShell Function that uses the 'System.Net.WebClient' to Measure Page Load Times, and HTTP Protocol Status Codes over a specified number of Times
+.PARAMETER URL
+    URL.
 
-Usage Example:
+.PARAMETER Times
+    Times.
 
-MeasurePageLoad "https://google.com" -Times 10
+.EXAMPLE
+    PS C:\> .\WebPageLoadTimesTest.ps1
+    PowerShell Function that Measures Page Load Times and HTTP Protocol Status Codes.
 
+.NOTES
+    Resources:  https://google.com"
 #>
 
 Function MeasurePageLoad {

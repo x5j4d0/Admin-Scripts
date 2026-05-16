@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    Import SP Site.
+
+.DESCRIPTION
+    Import SP Site.
+
+.PARAMETER url
+    url.
+
+.PARAMETER File
+    File.
+
+.PARAMETER Location
+    Location.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Import-SPSite.ps1
+    Import SP Site.
+#>
+
 ##################################################################################
 #
 #

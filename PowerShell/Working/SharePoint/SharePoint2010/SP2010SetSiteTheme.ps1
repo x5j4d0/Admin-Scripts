@@ -1,4 +1,24 @@
-﻿##SharePoint Server 2010: PowerShell Script To Set Your Site Theme Across SharePoint Sites and Sub Sites
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Set Your Site Theme Across SharePoint Sites and Sub Sites.
+
+.DESCRIPTION
+    PowerShell Script To Set Your Site Theme Across SharePoint Sites and Sub Sites.
+
+.PARAMETER SiteUrl
+    Change your Site URL here - Script will also set Theme for all Sub Sites.
+
+.PARAMETER NewTheme
+    Set your Theme here.
+
+.EXAMPLE
+    PS C:\> .\SP2010SetSiteTheme.ps1
+    Edit the variables section and run to powerShell Script To Set Your Site Theme Across SharePoint Sites and Sub Sites.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.Powershell
+#>
+
 #Usage Note: Setting the $NewTheme Variable to 'Default' doesn't appear to restore the 'out of the box theme'
 
 $SiteUrl = "http://intranet.contoso.com" #Change your Site URL here - Script will also set Theme for all Sub Sites

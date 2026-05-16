@@ -1,6 +1,4 @@
-﻿## MSOnline: PowerShell Script to Produce an Office 365 (o365) Tenant Health Report with Email Functionality ##
-
-<#
+﻿<#
 .SYNOPSIS
 Office365DailyCheck.ps1 - Generate an Office 365 daily check HTML file and send output via email.
 

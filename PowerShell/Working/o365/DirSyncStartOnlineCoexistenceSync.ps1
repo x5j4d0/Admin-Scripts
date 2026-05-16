@@ -1,6 +1,17 @@
-﻿## PowerShell: Commandlet to manually start Active Directory Synchronization (Dir Sync) with Office 365 ##
+﻿<#
+.SYNOPSIS
+    Commandlet to manually start Active Directory Synchronization (Dir Sync) with Office 365.
 
-## The 'Add-PSSnapin' method was replaced on later DirSync clients with the 'Import-Module' command below
+.DESCRIPTION
+    Commandlet to manually start Active Directory Synchronization (Dir Sync) with Office 365.
+
+.EXAMPLE
+    PS C:\> .\DirSyncStartOnlineCoexistenceSync.ps1
+    Commandlet to manually start Active Directory Synchronization (Dir Sync) with Office 365.
+
+.NOTES
+    Requires:   Dirsync
+#>
 
 #Add-PSSnapin "Coexistence-Configuration" -ErrorAction SilentlyContinue
 

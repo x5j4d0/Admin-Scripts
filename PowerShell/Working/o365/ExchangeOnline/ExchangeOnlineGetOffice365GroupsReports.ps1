@@ -1,6 +1,15 @@
-﻿## Exchange Online: PowerShell Script to Get Office 365 Group Information and Membership Details (o365 Groups) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get Office 365 Group Information and Membership Details (o365 Groups).
 
-## Resource: https://alexholmeset.blog/2017/08/24/office-365-groups-reporting
+.DESCRIPTION
+    PowerShell Script to Get Office 365 Group Information and Membership Details (o365
+    Groups).
+
+.EXAMPLE
+    PS C:\> .\ExchangeOnlineGetOffice365GroupsReports.ps1
+    PowerShell Script to Get Office 365 Group Information and Membership Details (o365 Groups).
+#>
 
 #Connect to Exchange Online
 Import-PSSession $(New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Authentication Basic -AllowRedirection -Credential $(Get-Credential))

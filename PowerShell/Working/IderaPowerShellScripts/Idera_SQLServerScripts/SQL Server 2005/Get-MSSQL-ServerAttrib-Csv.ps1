@@ -1,19 +1,18 @@
-## =====================================================================
-## Title       : Get-MSSQL-ServerAttrib-Csv
-## Description : Connect to SQL Server and output server attributes to CSV
-## Author      : Idera
-## Date        : 9/1/2008
-## Input       : -serverInstance <server\instance>
-## 				  -tempDir <output path>
-## 				  -verbose 
-## 				  -debug	
-## Output      : CSV file with server attributes
-## Usage			: PS> .\Get-MSSQL-ServerAttrib-Csv -serverInstance MyServer -tempDir C:\TEMP\ -verbose -debug
-## Notes			: 
-## Tag			: SQL Server, Attributes, CSV
-## Change log  :
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Retrieve Server Attrib Csv.
+
+.DESCRIPTION
+    Retrieve Server Attrib Csv.
+
+.PARAMETER serverInstance
+    server Instance.
+
+.EXAMPLE
+    PS C:\> .\Get-MSSQL-ServerAttrib-Csv.ps1
+
+#>
+
 param
 (
 	[string]$serverInstance = "(local)",

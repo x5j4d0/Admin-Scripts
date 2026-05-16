@@ -1,32 +1,20 @@
-﻿## PowerShell: Functions to store Credentials as Encrypted Secure Strings for re-use in Credential Parameters ##
+﻿<#
+.SYNOPSIS
+    Functions to store Credentials as Encrypted Secure Strings for re-use in Credential Parameters.
 
-<#
+.DESCRIPTION
+    Functions to store Credentials as Encrypted Secure Strings for re-use in Credential
+    Parameters.
 
-Overview: Functions to Export Credentials to a secure string in an XML to be used for 'Get' commands where Credential parameters can be provided
+.PARAMETER CredPath
+    Cred Path.
 
-Usage:
+.PARAMETER Help
+    Help.
 
-The first time the script is run if a credential file doesn't exist yet in the '$CredentialFile' variable path; the 'Export-Credential' function will open a window requesting the credentials to be stored as a Secure String
-When you want to use the stored credentials; calling the 'Get-MyCredential' function should retrieve these credentials from the '$CredentialFile' variable path
-
-# Checking the 'UserName' credentials stored in the '$CredentialFile'
-
-Get-MyCredential -CredPath $CredentialFile
-
-# Using credentials stored in the '$CredentialFile' in a script
-
-$Credentials = Get-MyCredential -CredPath $CredentialFile
-
-Invoke-Command -ComputerName YourMachineName -ScriptBlock {hostname} -Credential $Credentials
-
-# Calling the 'Get-MyCredential' function via the Dot Source (dot-source) method from another script
-
-. "C:\BoxBuild\EncryptedCredentialsFunctions.ps1"
-
-$Credentials = Get-MyCredential -CredPath $CredentialFile
-
-Invoke-Command -ComputerName YourMachineName -ScriptBlock {hostname} -Credential $Credentials
-
+.EXAMPLE
+    PS C:\> .\EncryptedCredentialsFunctions.ps1
+    Functions to store Credentials as Encrypted Secure Strings for re-use in Credential Parameters.
 #>
 
 ### Start Variables ###

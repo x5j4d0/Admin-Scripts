@@ -1,15 +1,18 @@
- ## DPM Server: Get Newest and Oldest Recovery Points and Write this to Email / HTML Report ##
- 
- <#
- 
- Overview: This script finds the newest and oldest recovery points from your dpm server/s and writes them to an html table for email / html reports
- 
- Usage: Edit the Variables below to match your environment and run the script
- 
- Resource: https://gallery.technet.microsoft.com/scriptcenter/DPM-2012-R2-Find-Recovery-2e01c6df
- 
- #>
- 
+﻿<#
+.SYNOPSIS
+    Get Newest and Oldest Recovery Points and Write this to Email / HTML Report.
+
+.DESCRIPTION
+    Get Newest and Oldest Recovery Points and Write this to Email / HTML Report.
+
+.EXAMPLE
+    PS C:\> .\DPMGetRecoveryPointsReport.ps1
+    Get Newest and Oldest Recovery Points and Write this to Email / HTML Report.
+
+.NOTES
+    Resources:  https://gallery.technet.microsoft.com/scriptcenter/DPM-2012-R2-Find-Recovery-2e01c6df
+#>
+
  ##################
  # Start Variables
  ##################

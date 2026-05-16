@@ -1,10 +1,18 @@
-﻿## SharePoint Online: PowerShell SharePoint Online Module Script to Get Deatils on All Site Collections in a Tenant (SPOnline) ##
+﻿<#
+.SYNOPSIS
+    PowerShell SharePoint Online Module Script to Get Deatils on All Site Collections in a Tenant (SPOnline).
 
-## Overview: PowerShell Script that uses the SharePoint Online Module to Get useful details on All site collections using the 'Get-SPOSite' commandlet
+.DESCRIPTION
+    PowerShell SharePoint Online Module Script to Get Deatils on All Site Collections in a
+    Tenant (SPOnline).
 
-## Usage: Replace the 'contoso' placeholder value under 'Connect-SPOService' with your own tenant prefix and run the script
+.EXAMPLE
+    PS C:\> .\SPOnlineGetAllSiteCollectionDetails.ps1
+    PowerShell SharePoint Online Module Script to Get Deatils on All Site Collections in a Tenant (SPOnline).
 
-## Resource: http://3sharp.com/blog/use-powershell-to-automate-site-collection-setup-in-sharepoint-online
+.NOTES
+    Requires:   Microsoft.Online.Sharepoint.PowerShell
+#>
 
 Import-Module Microsoft.Online.Sharepoint.PowerShell 
 $credential = Get-credential 

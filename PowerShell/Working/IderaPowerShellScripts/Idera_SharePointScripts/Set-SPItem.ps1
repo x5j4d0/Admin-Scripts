@@ -1,17 +1,17 @@
-## =====================================================================
-## Title       : Set-SPItem
-## Description : Modifies an SP Item
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : Set-SPItem [[-url] <String>] [[-List] <String>] [[-Field] <String>] [[-Item] <String>] [[-Values] <String>]
-## Output      : 
-## Usage       : Set-SPItem -url http://moss -List Users -Field Title -Item "My Item" -Values "Description=Hello,MultipleChoice=First;Second,Lookup=LookupItem"
-## Notes       : Sets The Item "My Item" from the Users List Where the Title field is equal to "My Item"
-##             : When Adding Multiple Choice or Lookup Fields, use a ; to Separate the Choices.
-##               Adapted From Niklas Goude Script
-## Tag         : Item, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+ï»¿<#
+.SYNOPSIS
+    Set properties on Item.
+
+.DESCRIPTION
+    Set properties on Item.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\Set-SPItem.ps1
+
+#>
 
 param (
 
@@ -142,7 +142,7 @@ function Set-SPItem([string]$url, [string]$List, [string]$Item, [string]$Field, 
 						$AddValue = $GetItem
 					}
 				}
-				Default { Write-Host ”Item Unknown” }
+				Default { Write-Host Â”Item UnknownÂ” }
 			}
 	
 			$OpenItem[$FieldName] = $AddValue

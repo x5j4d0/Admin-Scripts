@@ -1,4 +1,19 @@
-﻿Function Remove-FTPItem
+﻿<#
+.SYNOPSIS
+    Remove specific item from ftp server.
+
+.DESCRIPTION
+    The Remove-FTPItem cmdlet remove item from specific location on ftp server.
+
+.EXAMPLE
+    PS C:\> .\Remove-FTPItem.ps1
+    Remove specific item from ftp server.
+
+.NOTES
+    Resources:  http://commandlinegeeks.com/
+#>
+
+Function Remove-FTPItem
 {
     <#
 	.SYNOPSIS

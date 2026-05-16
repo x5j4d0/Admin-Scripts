@@ -1,14 +1,16 @@
-## SharePoint Server: PowerShell Script to Enumerate All Workflows in a SharePoint Farm ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Enumerate All Workflows in a SharePoint Farm.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Enumerate All Workflows in a SharePoint Farm.
 
-Overview: The script will return all Workflows currently associated within your SharePoint farm using PowerShell, and outputs it to a file.
-It returns the URL of the site, Title of the list, Title of the workflow, and the number of currently Running Instances of the workflow.
+.EXAMPLE
+    PS C:\> .\SP2007EnumWorkFlows.ps1
+    PowerShell Script to Enumerate All Workflows in a SharePoint Farm.
 
-Environments: MOSS 2007, SharePoint Server 2010 / 2013 Farms
-
-Resource: http://www.jeffholliday.com/2012/05/powershell-script-identify-all.html
-
+.NOTES
+    Resources:  http://www.jeffholliday.com/2012/05/powershell-script-identify-all.html
 #>
 
 [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint") > $null 

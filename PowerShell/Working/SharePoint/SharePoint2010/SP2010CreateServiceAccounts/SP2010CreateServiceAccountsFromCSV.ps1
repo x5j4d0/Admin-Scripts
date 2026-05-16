@@ -1,4 +1,25 @@
-﻿###################################################################################################################################
+﻿<#
+.SYNOPSIS
+    SP2010 Create Service Accounts From CSV.
+
+.DESCRIPTION
+    SP2010 Create Service Accounts From CSV.
+
+.PARAMETER domdns
+    for UPN generation.
+
+.PARAMETER ImportFile
+    Change this directory to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\SP2010CreateServiceAccountsFromCSV.ps1
+    Edit the variables section and run to sP2010 Create Service Accounts From CSV.
+
+.NOTES
+    Requires:   ActiveDirectory
+#>
+
+###################################################################################################################################
 #
 # Name: SP2010CreateServiceAccountsFromCSV.ps1
 # Author: Chris Dee

@@ -1,24 +1,21 @@
-## MSOnline: PowerShell Script To Connect To MS Online (o365) To Get Individual CSV Reports On User License Plan Assignments Across a Tenant  ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Connect To MS Online (o365) To Get Individual CSV Reports On User License Plan Assignments Across a Tenant.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Connect To MS Online (o365) To Get Individual CSV Reports On User
+    License Plan Assignments Across a Tenant.
 
-    GetMSOnlineUserLicensePlansAssignment.ps1
-    
-    makes a report of license type and service plans per use , and saves one Excel-sheet (CSV) per uses license type.
+.PARAMETER VerbosePreference
+    Makes verbose meldingen zichtbaar : Modify to your needs.
 
-    Resources: 
-    
-    https://gallery.technet.microsoft.com/scriptcenter/Export-a-Licence-b200ca2a?tduid=(26fc5a009171934296bd78c7f4dd6590)(256380)(2459594)(TnL5HPStwNw-0Z3.3otQ5VeALpBrI1CXBg)()
+.EXAMPLE
+    PS C:\> .\GetMSOnlineUserLicensePlansAssignment.ps1
+    Edit the variables section and run to powerShell Script To Connect To MS Online (o365) To Get Individual CSV Reports On User License Plan Assignments Across a Tenant.
 
-    http://sikkepitje.blogspot.ch/2016/10/get-msoluserlicense.html
-
-    created by Alan Byrne
-    modified 20161006 by p.wiegmans@bonhoeffer.nl/sikkepitje@hotmail.com
-
-    Changed separator from comma to semi-comma, fixes formatting errors whene displayname contains comma (very common).
-    Changed: separate output file , one for each license type.
-    Changed: added timestamp to filename. 
-    Changed: Fetching all users once, instead of every license type, givea huge speed boost.
+.NOTES
+    Requires:   MSOnline
+    Resources:  https://gallery.technet.microsoft.com/scriptcenter/Export-a-Licence-b200ca2a?tduid=(26fc5a009171934296bd78c7f4dd6590)(256380)(2459594)(TnL5HPStwNw-0Z3.3otQ5VeALpBrI1CXBg)(; http://sikkepitje.blogspot.ch/2016/10/get-msoluserlicense.html
 #>
 
 $VerbosePreference = 'Continue'    # Makes verbose meldingen zichtbaar : Modify to your needs

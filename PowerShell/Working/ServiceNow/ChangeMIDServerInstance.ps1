@@ -1,4 +1,26 @@
-﻿## ServiceNow: PowerShell Script To Change The ServiceNow Instance The MID Server Connects To ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Change The ServiceNow Instance The MID Server Connects To.
+
+.DESCRIPTION
+    PowerShell Script To Change The ServiceNow Instance The MID Server Connects To.
+
+.PARAMETER ServiceNowDirectory
+    The path to your ServiceNow installation directory.
+
+.PARAMETER ConfigXML
+    The path to your config.xml file.
+
+.PARAMETER DevInstance
+    Dev ServiceNow Instance.
+
+.PARAMETER ProdInstance
+    Prod ServiceNow Instance.
+
+.EXAMPLE
+    PS C:\> .\ChangeMIDServerInstance.ps1
+    Edit the variables section and run to powerShell Script To Change The ServiceNow Instance The MID Server Connects To.
+#>
 
 ## Overview: Useful script to update the URL of the instance a particular MID Server connects to. The script will also stop and restart the MID Server with the update.
 ## Important: This script assumes that the same MID server user credentials 'mid.instance.username' exist in each instance you connect to.

@@ -1,29 +1,39 @@
-## =====================================================================
-## Title       : Get-IADUser
-## Description : Retrieve all users in a domain or container.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : Get-IADUser [[-Name] <String>] [[-SearchRoot] <String>] [[-PageSize] <Int32>] [[-SizeLimit] <Int32>] [[-SearchScope] <String>]
-##                     
-## Output      : System.DirectoryServices.DirectoryEntry
-## Usage       : 
-##                1. Get all user objects from the domain 
-##                Get-IADUser 
-##
-##                2. Get all disabled users which name starts with J 
-##                Get-IADUser -Name J* -Disabled 
-##
-##                3. Get 10 user accounts from the Developers OU 
-##                Get-IADUser -SizeLimit 10 -SearchRoot 'OU=Developers,DC=domain,DC=com' 
-##
-##                4. Get all enabled users with non-expiring passwords
-##                Get-IADUser -Enabled  -PasswordNeverExpires
-##          
-## Notes       :
-## Tag         : user, activedirectory
-## Change log  :
-## =====================================================================
-  
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory user objects using ADSI..
+
+.DESCRIPTION
+    Retrieve Active Directory user objects using ADSI..
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER SearchRoot
+    Search Root.
+
+.PARAMETER PageSize
+    Page Size.
+
+.PARAMETER SizeLimit
+    Size Limit.
+
+.PARAMETER SearchScope
+    Search Scope.
+
+.PARAMETER Enabled
+    Enabled.
+
+.PARAMETER Disabled
+    Disabled.
+
+.PARAMETER AccountNeverExpires
+    Account Never Expires.
+
+.EXAMPLE
+    PS C:\> .\Get-IADUser.ps1
+    Run the script to perform the described operation.
+#>
+
 function Get-IADUser {
 
  

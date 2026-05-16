@@ -1,10 +1,27 @@
-﻿## FTP: PowerShell Script to Recursively list all files in FTP directory (recursive) ##
+<#
+.SYNOPSIS
+    Recursively lists all files in an FTP directory.
 
-## Overview: PowerShell function to Recursively list all files in a FTP directory
+.DESCRIPTION
+    Provides a function that traverses an FTP directory tree recursively, returning a flat list
+    of all file paths found. Results are displayed in a GridView window.
 
-## Usage: Edit the Variables to match your FTP server and directory path and run the script
+.PARAMETER Server
+    The base FTP URL including site path (e.g. ftp://YourServerName/site/wwwroot).
 
-## Resource: https://gist.github.com/arthurdent/0fd3880bd07e484a0af6
+.PARAMETER User
+    The FTP username for authentication.
+
+.PARAMETER Pass
+    The FTP password for authentication.
+
+.EXAMPLE
+    PS C:\> .\GetFTPDirectoryFiles.ps1
+    Edit the variables section and run to list all files in the configured FTP directory.
+
+.NOTES
+    Resources:  https://gist.github.com/arthurdent/0fd3880bd07e484a0af6
+#>
 
 ### Start Variables ###
 $Server = "ftp://YourServerName/site/wwwroot"
@@ -13,7 +30,7 @@ $Pass = "YourFTPPassword"
 ### End Variables ###
 
 Function Get-FtpDirectory($Directory) {
-    
+
     # Credentials
     $FTPRequest = [System.Net.FtpWebRequest]::Create("$($Server)$($Directory)")
     $FTPRequest.Credentials = New-Object System.Net.NetworkCredential($User,$Pass)
@@ -32,11 +49,11 @@ Function Get-FtpDirectory($Directory) {
     $StreamReader.Close()
 
     # Remove first two elements ( . and .. ) and last element (\n)
-    $DirListing = $DirListing[2..($DirListing.Length-2)] 
+    $DirListing = $DirListing[2..($DirListing.Length-2)]
 
     # Close the FTP connection so only one is open at a time
     $FTPResponse.Close()
-    
+
     # This array will hold the final result
     $FileTree = @()
 
@@ -61,7 +78,7 @@ Function Get-FtpDirectory($Directory) {
             $FileTree += ,"$($Directory)$($CurFile)"
         }
     }
-    
+
     Return $FileTree
 
 }

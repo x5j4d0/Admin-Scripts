@@ -1,26 +1,18 @@
-## =====================================================================
-## Title       : Create-MSSQLJob-UsingSMO
-## Description : Create a daily SQL job to call a powershell script
-## Author      : Idera
-## Date        : 9/1/2008
-## Input       : -server <server\instance>
-##					  -jobName <jobname>
-##               -taskDesc <job description>
-##					  -category <job category>
-## 				  -hrSched <n - hour military time>
-##               -minSched <n - minute military time>
-##					  -psScript <path\script.ps1>
-## 				  -verbose 
-## 				  -debug	
-## Output      : SQL Job, job step and schedule for running a PowerShell script
-## Usage			: PS> .\Create-MSSQLJob-UsingSMO -server MyServer -jobname MyJob 
-## 				         -taskDesc Perform something... -category Backup Job 
-## 						   -hrSchedule 2 -psScript C:\TEMP\test.ps1 -minSchedule 0 -verbose -debug
-## Notes			: Adapted from an Allen White script
-## Tag			: SQL Server, SMO, SQL job
-## Change Log  :
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Create Job Using SMO.
+
+.DESCRIPTION
+    Create Job Using SMO.
+
+.PARAMETER server
+    server.
+
+.EXAMPLE
+    PS C:\> .\Create-MSSQLJob-UsingSMO.ps1
+
+#>
+
 param
 (
   	[string]$server = "(local)",

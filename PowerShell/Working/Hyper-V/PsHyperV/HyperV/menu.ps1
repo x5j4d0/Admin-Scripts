@@ -1,4 +1,17 @@
+﻿<#
+.SYNOPSIS
+    Displays a menu to manage hyperv.
 
+.DESCRIPTION
+    Displays a menu to manage hyperv.
+
+.PARAMETER server
+    server.
+
+.EXAMPLE
+    PS C:\> .\menu.ps1
+    Displays a menu to manage hyperv.
+#>
 
 Function Show-HypervMenu
 {<#

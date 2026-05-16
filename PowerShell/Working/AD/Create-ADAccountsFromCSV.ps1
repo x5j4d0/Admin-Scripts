@@ -1,6 +1,19 @@
-﻿    ## PowerShell Script to create Functions using the ActiveDirectory module to create AD accounts and Groups imported from a CSV file ##
-	## Resource: http://get-spscripts.com/2011/08/creating-bulk-active-directory-user-and.html
-	
+﻿<#
+.SYNOPSIS
+    PowerShell Script to create Functions using the ActiveDirectory module to create AD accounts and Groups imported from a CSV file.
+
+.DESCRIPTION
+    PowerShell Script to create Functions using the ActiveDirectory module to create AD
+    accounts and Groups imported from a CSV file.
+
+.EXAMPLE
+    PS C:\> .\Create-ADAccountsFromCSV.ps1
+    PowerShell Script to create Functions using the ActiveDirectory module to create AD accounts and Groups imported from a CSV file.
+
+.NOTES
+    Requires:   ActiveDirectory
+#>
+
 	#Import the PowerShell module containing AD cmdlets
     Import-Module ActiveDirectory
        

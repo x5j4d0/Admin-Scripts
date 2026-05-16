@@ -1,3 +1,24 @@
+﻿<#
+.SYNOPSIS
+    Get SP List.
+
+.DESCRIPTION
+    Get SP List.
+
+.PARAMETER Url
+    Url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Get-SPList.ps1
+    Get SP List.
+#>
+
 ##################################################################################
 #
 #

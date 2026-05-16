@@ -1,3 +1,15 @@
+﻿<#
+.SYNOPSIS
+    En us.
+
+.DESCRIPTION
+    En us.
+
+.EXAMPLE
+    PS C:\> .\En-us.ps1
+    En us.
+#>
+
 $HyperVNamespace                      = "root\virtualization"
 $ImageManagementServiceName           = "Msvm_ImageManagementService"
 $VirtualSystemManagementServiceName   = "Msvm_VirtualSystemManagementService"

@@ -1,34 +1,24 @@
-﻿## PowerShell: Script To Show Percentage Graph Of Disk Space Used For Each Drive On A Machine ##
-## Resource: http://jdhitsolutions.com/blog/2012/06/friday-fun-another-powershell-console-graph
-## Usage Example: ./DiskSpacePercentageUsedGraph.ps1 YourMachineName
+﻿<#
+.SYNOPSIS
+    Script To Show Percentage Graph Of Disk Space Used For Each Drive On A Machine.
 
-<#
- -----------------------------------------------------------------------------
- Script: DiskSpacePercentageUsedGraph.ps1
- Version: 0.1
- Author: Jeffery Hicks
-    http://jdhitsolutions.com/blog
-    http://twitter.com/JeffHicks
-    http://www.ScriptingGeek.com
- Date: 6/1/2012
- Keywords: Console, Graphing, host
- Comments:
+.DESCRIPTION
+    Script To Show Percentage Graph Of Disk Space Used For Each Drive On A Machine.
 
- This is a demo script showing how to create a bar graph
- in the PowerShell console. Don't run this in the ISE.
- You won't get the same result.
+.PARAMETER computername
+    computername.
 
- "Those who forget to script are doomed to repeat their work."
+.PARAMETER env
+    env.
 
-  ****************************************************************
-  * DO NOT USE IN A PRODUCTION ENVIRONMENT UNTIL YOU HAVE TESTED *
-  * THOROUGHLY IN A LAB ENVIRONMENT. USE AT YOUR OWN RISK.  IF   *
-  * YOU DO NOT UNDERSTAND WHAT THIS SCRIPT DOES OR HOW IT WORKS, *
-  * DO NOT USE IT OUTSIDE OF A SECURE, TEST SETTING.             *
-  ****************************************************************
- -----------------------------------------------------------------------------
- #>
- 
+.EXAMPLE
+    PS C:\> .\DiskSpacePercentageUsedGraph.ps1
+    Script To Show Percentage Graph Of Disk Space Used For Each Drive On A Machine.
+
+.NOTES
+    Resources:  http://jdhitsolutions.com/blog; http://twitter.com/JeffHicks
+#>
+
 Param([string]$computername=$env:computername)
 
 Clear-Host

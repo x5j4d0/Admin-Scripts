@@ -1,31 +1,16 @@
 ﻿<#
-AUTHOR:    James Philip
-BLOG:      Powershelldude.blogspot.com | https://gallery.technet.microsoft.com/Read-HostArray-A-function-e9ac0115
+.SYNOPSIS
+    Read Host Array.
 
 .DESCRIPTION
-Read-HostArray, A function to paste an array value in PowerShell.
+    Read-HostArray, A function to paste an array value in PowerShell.
 
-.Usage
-Load this script to your PowerShell console by executing the command ". Filepath\Read-HostArray.ps1" and use the Function "Read-HostArray" wherever you need to get multi line Input from the user, as you use the default command Read-Host in PowerShell.
-
-.Tip:
-Paste this script code or add the command that you used to load this script, in your PowerShell Profile File to avoid loading this script everytime you open a new PowerShell Session. 
-Powershell Profile file is under your Documents Folder generally (\Documents\WindowsPowershell\Microsoft.Powershell_Profile.ps1). 
-You may need to create the Folder (WindowsPowershell) and File (Microsoft.Powershell_Profile.ps1) if they doesn't exist already.
-
-.EXAMPLE - 1
-Get services list from multiple computers
-Get-WmiObject -Class Win32_Service -ComputerName (Read-HostArray) | Select Name,State
-
-.EXAMPLE - 2
-Assign Fullaccess permission for multiple users on User2
-Read-HostArray | Foreach { Add-Mailboxpermission $User2 -User $_ -Accessrights Fullaccess}
-
-.EXAMPLE - 3
-Assign Fullaccess permission for user2 on multiple mailboxes.
-Read-HostArray | Foreach { Add-Mailboxpermission $_ -User User2 -Accessrights Fullaccess}
+.EXAMPLE
+    PS C:\> .\ReadHostArray.ps1
+    Read Host Array.
 
 .NOTES
+    Resources:  https://gallery.technet.microsoft.com/Read-HostArray-A-function-e9ac0115
 #>
 
 [void] [System.Reflection.Assembly]::LoadWithPartialName("System.Drawing") 

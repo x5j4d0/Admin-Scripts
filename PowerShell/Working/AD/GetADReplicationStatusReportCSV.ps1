@@ -1,8 +1,18 @@
-﻿## Active Directory: PowerShell Script to check the Status of AD Replication across a Forest. Includes CSV and HTML Status Output Functionality ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to check the Status of AD Replication across a Forest. Includes CSV and HTML Status Output Functionality.
 
-## Overview: PowerShell Script that checks the status of AD Replication across a Forest and outputs the detailed results to a CSV file, along with a HTML status summary
+.DESCRIPTION
+    PowerShell Script to check the Status of AD Replication across a Forest. Includes CSV and
+    HTML Status Output Functionality.
 
-## Resource: https://balladelli.com/replication-status
+.PARAMETER replStatus
+    -Header $headers.
+
+.EXAMPLE
+    PS C:\> .\GetADReplicationStatusReportCSV.ps1
+    Edit the variables section and run to powerShell Script to check the Status of AD Replication across a Forest. Includes CSV and HTML Status Output Functionality.
+#>
 
 # save the location of the current script
 $scriptpath = $MyInvocation.MyCommand.Path

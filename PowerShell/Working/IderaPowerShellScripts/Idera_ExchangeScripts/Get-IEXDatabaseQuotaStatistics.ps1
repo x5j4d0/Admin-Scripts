@@ -1,21 +1,15 @@
-## =====================================================================
-## Title       : Get-IEXDatabaseQuotaStatistics
-## Description : Retrieve all User Mailboxes that have custom Database Quota values and extend the results with custom properties
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       :  No input
-##   
-## Output      : System.Management.Automation.PSCustomObject 
-## Usage       : 
-##              1.  Gets all User Mailboxes that have custom Database Quota values and extend the results with custom properties 
-##              Get-IEXDatabaseQuotaStatistics
-##                 
-##                             
-## Notes       :
-## Tag         : Exchange 2007, mailbox, statistics, get
-## Change log  : 
-## =====================================================================
-  
+﻿<#
+.SYNOPSIS
+    Retrieve Database Quota Statistics.
+
+.DESCRIPTION
+    Retrieve Database Quota Statistics.
+
+.EXAMPLE
+    PS C:\> .\Get-IEXDatabaseQuotaStatistics.ps1
+
+#>
+
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
 
 

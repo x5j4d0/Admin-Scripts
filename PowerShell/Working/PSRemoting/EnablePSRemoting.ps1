@@ -1,17 +1,19 @@
-﻿## PowerShell: Script To Configure And Enable Client And Target Machines For PowerShell Remoting (WinRM) ##
+﻿<#
+.SYNOPSIS
+    Script To Configure And Enable Client And Target Machines For PowerShell Remoting (WinRM).
 
-<#
+.DESCRIPTION
+    Script To Configure And Enable Client And Target Machines For PowerShell Remoting
+    (WinRM).
 
-Overview: This script is composed of 2 parts.
+.PARAMETER DelegateMachines
+    Change the machine names or use a whole domain like the example below.
 
-1. This is to be run on all client machines that will execute remote commands to machines specified for delegation (client role)
-2. This is to be run on all target machines that will be enabled to receive remote PowerShell commands (server role)
-
+.EXAMPLE
+    PS C:\> .\EnablePSRemoting.ps1
+    Edit the variables section and run to script To Configure And Enable Client And Target Machines For PowerShell Remoting (WinRM).
 #>
 
-## 1: Enable PSRemoting on your Client (source machine that will be executing the remote commands) ##
-
-## Add the clients (target machines you want to delegate PSRemoting commands to)
 $DelegateMachines = "SERVER1", "SERVER2", "SERVER3" #Change the machine names or use a whole domain like the example below
 #$DelegateMachines = "*.DOMAIN.com"
 

@@ -1,6 +1,39 @@
-﻿## PowerShell Script: List And Delete Files After A Certain Number Of Days Functionality. Also Includes Logging ##
+﻿<#
+.SYNOPSIS
+    List And Delete Files After A Certain Number Of Days Functionality. Also Includes Logging.
 
-## Resource: http://gallery.technet.microsoft.com/scriptcenter/Delete-files-older-than-x-13b29c09
+.DESCRIPTION
+    List And Delete Files After A Certain Number Of Days Functionality. Also Includes
+    Logging.
+
+.PARAMETER folderpath
+    folderpath.
+
+.PARAMETER fileage
+    fileage.
+
+.PARAMETER logfile
+    logfile.
+
+.PARAMETER exclude
+    exclude.
+
+.PARAMETER help
+    help.
+
+.PARAMETER listonly
+    listonly.
+
+.PARAMETER verboselog
+    verboselog.
+
+.PARAMETER autolog
+    autolog.
+
+.EXAMPLE
+    PS C:\> .\ListOrDeleteFilesAfterNumberOfDays.ps1
+    List And Delete Files After A Certain Number Of Days Functionality. Also Includes Logging.
+#>
 
 #-------------------------------------------------------------------------------
 # DELETEOLD.ps1          ::      Script to delete or list old files in a folder

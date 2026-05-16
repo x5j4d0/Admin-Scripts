@@ -1,4 +1,20 @@
-﻿Function Set-FTPConnection
+﻿<#
+.SYNOPSIS
+    Set config to ftp Connection.
+
+.DESCRIPTION
+    The Set-FTPConnection cmdlet creates a Windows PowerShell configuration to ftp server.
+    When you create a ftp connection, you may run multiple commands that use this config.
+
+.EXAMPLE
+    PS C:\> .\Set-FTPConnection.ps1
+    Set config to ftp Connection.
+
+.NOTES
+    Resources:  http://commandlinegeeks.com/
+#>
+
+Function Set-FTPConnection
 {
     <#
 	.SYNOPSIS

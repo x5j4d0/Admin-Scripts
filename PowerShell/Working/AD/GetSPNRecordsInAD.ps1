@@ -1,6 +1,19 @@
-﻿## Active Directory: PowerShell Function to Get Service Principal Names (SPNs) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Function to Get Service Principal Names (SPNs).
 
-## Resource: https://gallery.technet.microsoft.com/scriptcenter/Get-SPN-Get-Service-3bd5524a
+.DESCRIPTION
+    Get Service Principal Names Output includes: ComputerName - SPN Host Specification - SPN
+    Port (or Instance) ServiceClass - SPN Service Class (MSSQLSvc, HTTP, etc.) sAMAccountName
+    - sAMAccountName for the AD object with a matching SPN SPN - Full SPN string.
+
+.EXAMPLE
+    PS C:\> .\GetSPNRecordsInAD.ps1
+    PowerShell Function to Get Service Principal Names (SPNs).
+
+.NOTES
+    Resources:  http://www.itadmintools.com/2011/08/list-spns-in-active-directory-using.html; http://poshcode.org/3234
+#>
 
 function Get-SPN
 {

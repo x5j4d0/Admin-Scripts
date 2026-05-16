@@ -1,3 +1,21 @@
+﻿<#
+.SYNOPSIS
+    Remove SP Site.
+
+.DESCRIPTION
+    Remove SP Site.
+
+.PARAMETER Url
+    Url.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Remove-SPSite.ps1
+    Remove SP Site.
+#>
+
 ##################################################################################
 #
 #

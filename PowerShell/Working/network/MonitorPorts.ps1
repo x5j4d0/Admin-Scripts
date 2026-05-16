@@ -1,4 +1,18 @@
-## PowerShell: Port Monitoring Script for Devices And Also Includes HTML Email Functionality ##
+ï»¿<#
+.SYNOPSIS
+    Port Monitoring Script for Devices And Also Includes HTML Email Functionality.
+
+.DESCRIPTION
+    Port Monitoring Script for Devices And Also Includes HTML Email Functionality.
+
+.PARAMETER htmlbody
+    000000' vlink='#000000' alink='#00000F' text='#000000' bgcolor='#888888'>".
+
+.EXAMPLE
+    PS C:\> .\MonitorPorts.ps1
+    Edit the variables section and run to port Monitoring Script for Devices And Also Includes HTML Email Functionality.
+#>
+
 # 
 # Resource: http://www.corelan.be/index.php/2009/01/28/monitoring-your-network-with-powershell
 # Version : 1.0
@@ -35,7 +49,7 @@
 # Functions
 function Test-TcpPort([string]$dhost, [string]$dport)
 {
-	$ErrorActionPreference = “SilentlyContinue”
+	$ErrorActionPreference = Â“SilentlyContinueÂ”
 	$socket = new-object Net.Sockets.TcpClient
 	$socket.Connect($dhost, $dport)
 

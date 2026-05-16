@@ -1,10 +1,17 @@
-﻿## SharePoint Server 2007: PowerShell Content Type Specific Queries ##
-## Overview: The 3 queries below cover Content Types used on SharePoint document and list libraries
-## Script 1: Get all lists where a specific content type has been applied to
-## Script 2: Get all list items where a specific content type has been applied to
-## Script 3: Gets a summary of all content types used on site collections and webs
+﻿<#
+.SYNOPSIS
+    PowerShell Content Type Specific Queries.
 
-## 1. PowerShell Script To Show All Lists Where A Specific Content Type Has Been Used
+.DESCRIPTION
+    PowerShell Content Type Specific Queries.
+
+.PARAMETER site
+    Change the URL to match your environment.
+
+.EXAMPLE
+    PS C:\> .\SP2007GetContentTypeQueries.ps1
+    Edit the variables section and run to powerShell Content Type Specific Queries.
+#>
 
 [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint")
 

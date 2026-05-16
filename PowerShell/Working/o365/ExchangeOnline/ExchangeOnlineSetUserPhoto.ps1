@@ -1,6 +1,20 @@
-## Exchange Online: PowerShell Script to Add / Update a User Photo in Exchange Online (o365) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Add / Update a User Photo in Exchange Online (o365).
 
-## Resource: https://blogs.technet.microsoft.com/dpickett/2016/09/09/o365-user-photos-not-updating
+.DESCRIPTION
+    PowerShell Script to Add / Update a User Photo in Exchange Online (o365).
+
+.PARAMETER UserName
+    Change this to match your User Name.
+
+.PARAMETER PhotoPath
+    Change this path to match your environment.
+
+.EXAMPLE
+    PS C:\> .\ExchangeOnlineSetUserPhoto.ps1
+    Edit the variables section and run to powerShell Script to Add / Update a User Photo in Exchange Online (o365).
+#>
 
 ### Start Variables ###
 $UserName = "Johnny Smith" #Change this to match your User Name

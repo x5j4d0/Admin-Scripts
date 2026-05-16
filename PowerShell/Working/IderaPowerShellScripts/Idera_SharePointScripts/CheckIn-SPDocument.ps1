@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : CheckIn-SPDocument
-## Description : Checks in a Document in SharePoint
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : CheckIn-SPDocument [[-url] <String>] [[-List] <String>] [[-Document] <String>]
-## Output      : 
-## Usage       : CheckIn-SPDocument -url http://moss -List "Shared Documents" -Document "MyDoc.Doc"
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : Document, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    CheckIn Document.
+
+.DESCRIPTION
+    CheckIn Document.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\CheckIn-SPDocument.ps1
+
+#>
 
 param (
 

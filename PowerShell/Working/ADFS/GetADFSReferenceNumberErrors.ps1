@@ -1,13 +1,16 @@
-﻿## ADFS: PowerShell Script to find AD FS 2.0 Errors by their Reference Number ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to find AD FS 2.0 Errors by their Reference Number.
 
-<#
+.DESCRIPTION
+    PowerShell Script to find AD FS 2.0 Errors by their Reference Number.
 
-Add your list of ADFS servers here (not proxies) to have this script search all your servers. The names should be the hostnames of the AD FS servers not the AD FS service name.
+.PARAMETER ADFSServers
+    Leave this line in place if you want to search for the error on the current machine.
 
-Then uncomment the line with your servers by removing the leading #
-
-example: $ADFSServers = @("adfs01.example.com","adfs02.example.com") 
-
+.EXAMPLE
+    PS C:\> .\GetADFSReferenceNumberErrors.ps1
+    Edit the variables section and run to powerShell Script to find AD FS 2.0 Errors by their Reference Number.
 #>
 
 $ADFSServers = @($env:computername) #Leave this line in place if you want to search for the error on the current machine

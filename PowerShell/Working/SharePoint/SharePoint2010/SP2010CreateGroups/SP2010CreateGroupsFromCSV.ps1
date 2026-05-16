@@ -1,4 +1,22 @@
-﻿################################################################################################
+﻿<#
+.SYNOPSIS
+    SP2010 Create Groups From CSV.
+
+.DESCRIPTION
+    SP2010 Create Groups From CSV.
+
+.PARAMETER FileLocation
+    Columns:'Web','GroupName','User','GroupDescription'.
+
+.EXAMPLE
+    PS C:\> .\SP2010CreateGroupsFromCSV.ps1
+    Edit the variables section and run to sP2010 Create Groups From CSV.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.Powershell
+#>
+
+################################################################################################
 # Name: SP2010CreateGroupsFromCSV.ps1														   #
 # Author: Chris Dee																			   #
 # Version: 1.0 																				   #

@@ -1,25 +1,18 @@
-## =====================================================================
-## Title       : Insert-MSSQL-SampleData-Csv
-## Description : Inserts data from a csv file into a table
-## Author      : Idera
-## Date        : 1/29/2009
-## Input       : -serverInstance <server\instance>
-## 				  -dbName <database name>
-## 				  -schemaName <schema name>
-## 				  -tblName <table name>
-## 				  -tempDir <output path>
-## 				  -csvFile <CSV filename>
-## 				  -verbose 
-## 				  -debug	
-## Output      : Insert data into a table from a CSV file
-## Usage			: PS> .\Insert-MSSQL-SampleData-Csv -serverInstance MyServer -dbName SMOTestDB
-## 							-schemaName SMOSchema -tblName SMOTable -tempDir C:\TEMP\
-## 							-csvFile SampleData.csv -verbose -debug
-## Notes			: Make sure the SampleData.csv is put in the path specified by $tempDir
-## Tag			: SQL Server, SMO, Insert Data
-## Change log  : Revised SMO Assemblies
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Insert sample data into Sample Data Csv.
+
+.DESCRIPTION
+    Insert sample data into Sample Data Csv.
+
+.PARAMETER serverInstance
+    server Instance.
+
+.EXAMPLE
+    PS C:\> .\Insert-MSSQL-SampleData-Csv.ps1
+
+#>
+
 param
 (
   	[string]$serverInstance = "(local)",

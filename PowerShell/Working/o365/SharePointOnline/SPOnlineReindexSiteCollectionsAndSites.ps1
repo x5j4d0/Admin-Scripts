@@ -1,23 +1,20 @@
-## SharePoint Online: PowerShell Script to trigger a Re-index of all Site Collections and Sub-sites (webs) in a tenant via CSOM ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to trigger a Re-index of all Site Collections and Sub-sites (webs) in a tenant via CSOM.
 
-<#
+.DESCRIPTION
+    PowerShell Script to trigger a Re-index of all Site Collections and Sub-sites (webs) in a
+    tenant via CSOM.
 
-Overview: PowerShell Script to trigger a re-index of all Site Collections and Sub-sites (webs) in a tenant via CSOM
+.EXAMPLE
+    PS C:\> .\SPOnlineReindexSiteCollectionsAndSites.ps1
+    PowerShell Script to trigger a Re-index of all Site Collections and Sub-sites (webs) in a tenant via CSOM.
 
-Usage: Edit the following variables to match your environment and run the script: '$tenant'; '$username'; '$password'; '$csomPath'
-
-Requires:
-
-SharePoint Online Client Components SDK - https://www.microsoft.com/en-us/download/details.aspx?id=42038
-
-SharePoint Online PowerShell Module - https://www.microsoft.com/en-us/download/details.aspx?id=35588
-
-Note: This script doesn't appear to work with Federated domain accounts, and requires a cloud account with appropriate SharePoint Admin access permissions to work
-
-Resource: http://www.techmikael.com/2014/02/how-to-trigger-full-re-index-in.html
-
+.NOTES
+    Requires:   Microsoft.Online.SharePoint.PowerShell
+    Resources:  https://www.microsoft.com/en-us/download/details.aspx?id=42038; https://www.microsoft.com/en-us/download/details.aspx?id=35588
 #>
- 
+
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 
 # replace these details or use Get-Credential to enter password securely as script runs

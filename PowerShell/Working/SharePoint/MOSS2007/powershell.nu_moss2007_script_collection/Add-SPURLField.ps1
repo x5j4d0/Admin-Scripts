@@ -1,3 +1,33 @@
+﻿<#
+.SYNOPSIS
+    Add SPURL Field.
+
+.DESCRIPTION
+    Add SPURL Field.
+
+.PARAMETER url
+    url.
+
+.PARAMETER List
+    List.
+
+.PARAMETER Name
+    Name.
+
+.PARAMETER Description
+    Description.
+
+.PARAMETER Required
+    Required.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPURLField.ps1
+    Add SPURL Field.
+#>
+
 ##################################################################################
 #
 #

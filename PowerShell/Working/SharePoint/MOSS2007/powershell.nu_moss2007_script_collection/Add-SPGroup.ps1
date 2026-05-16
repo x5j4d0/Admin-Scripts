@@ -1,3 +1,30 @@
+﻿<#
+.SYNOPSIS
+    Add SP Group.
+
+.DESCRIPTION
+    Add SP Group.
+
+.PARAMETER url
+    url.
+
+.PARAMETER Group
+    Group.
+
+.PARAMETER Role
+    Role.
+
+.PARAMETER Owner
+    Owner.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPGroup.ps1
+    Add SP Group.
+#>
+
 ##################################################################################
 #
 #

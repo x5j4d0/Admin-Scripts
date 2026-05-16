@@ -1,5 +1,18 @@
-﻿## PowerShell: Function to Delete Files In a Folder older than a Specified Number of Days ##
- 
+﻿<#
+.SYNOPSIS
+    Function to Delete Files In a Folder older than a Specified Number of Days.
+
+.DESCRIPTION
+    Function to Delete Files In a Folder older than a Specified Number of Days.
+
+.PARAMETER FilePath
+    File Path.
+
+.EXAMPLE
+    PS C:\> .\DeleteFilesAfterNumberOfDaysFunction.ps1
+    Function to Delete Files In a Folder older than a Specified Number of Days.
+#>
+
 $days=-7 #Change this to reflect the number of days files you wish to retain
 (Get-Variable Path).Options="ReadOnly"
 $Path="C:\inetpub\logs\LogFiles\W3SVC1" #Change this path to suit your environment

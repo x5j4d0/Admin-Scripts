@@ -1,12 +1,14 @@
-﻿## SharePoint Server: PowerShell Script To Update All Sites Request Access Email Addresses ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Update All Sites Request Access Email Addresses.
 
-## Environments: MOSS 2007 and SharePoint Server 2010 / 2013 Farms
+.DESCRIPTION
+    PowerShell Script To Update All Sites Request Access Email Addresses.
 
-## Overview: PowerShell script that updates the Object Model 'RequestAccessEmail' property on all sites within a Web Application
-
-## Usage: Update the '$SPweb.RequestAccessEmail' variable with an email address to suite your environment and run the script providing a Web App URL when prompted
-
-## Resource: http://www.sharepointdiary.com/2012/06/change-all-sites-access-request-emails.html
+.EXAMPLE
+    PS C:\> .\SP2013UpdateRequestAccessEmail.ps1
+    PowerShell Script To Update All Sites Request Access Email Addresses.
+#>
 
 [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint") > $null
 

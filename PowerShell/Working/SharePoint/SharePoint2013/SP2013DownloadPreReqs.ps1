@@ -1,5 +1,20 @@
-﻿## SharePoint Server 2013: PowerShell Script To Download SP2013 Prerequisites ##
-## Resources: http://www.dontpapanic.com/blog/?p=241; http://dontpapanic.com/download/DownloadAllSP2013PreReqs.txt
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Download SP2013 Prerequisites.
+
+.DESCRIPTION
+    PowerShell Script To Download SP2013 Prerequisites.
+
+.PARAMETER UrlList
+    Microsoft .NET Framework 4.5.
+
+.EXAMPLE
+    PS C:\> .\SP2013DownloadPreReqs.ps1
+    Edit the variables section and run to powerShell Script To Download SP2013 Prerequisites.
+
+.NOTES
+    Requires:   BitsTransfer
+#>
 
 Import-Module BitsTransfer
 ## Prompt for the destination path

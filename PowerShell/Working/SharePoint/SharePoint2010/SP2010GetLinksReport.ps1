@@ -1,15 +1,23 @@
-﻿## SharePoint Server: PowerShell Script To Produce a Report on Hyperlinks for All Site Collections in a Web Application ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Produce a Report on Hyperlinks for All Site Collections in a Web Application.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Produce a Report on Hyperlinks for All Site Collections in a Web
+    Application.
 
-Overview: This script will print out a list of all links in the Quick Launch, Links Lists, and default page for each SPWeb object to a CSV file located in the directory specified in the variables section
+.PARAMETER FeatureID
+    Feature ID.
 
-Environments: SharePoint Server 2010 / 2013 + Farms
+.PARAMETER Web
+    Web.
 
-Usage: Edit the following variables to match your environment and run the script: '$siteURL'; '$filePath'
+.EXAMPLE
+    PS C:\> .\SP2010GetLinksReport.ps1
+    PowerShell Script To Produce a Report on Hyperlinks for All Site Collections in a Web Application.
 
-Resource: https://blog.henryong.com/2011/05/20/sharepoint-link-reporter-using-powershell/
-
+.NOTES
+    Resources:  https://blog.henryong.com/2011/05/20/sharepoint-link-reporter-using-powershell/
 #>
 
 ######################## Start Variables ########################

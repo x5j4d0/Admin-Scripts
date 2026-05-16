@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : Remove-SPSite
-## Description : Removes a site from the Site Collection
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : Remove-SPSite [[-url] <String>]
-## Output      : 
-## Usage       : Remove-SPSite -url http://moss/IT
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : Site, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Remove Site.
+
+.DESCRIPTION
+    Remove Site.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\Remove-SPSite.ps1
+
+#>
 
 param (
 

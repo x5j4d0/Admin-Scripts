@@ -1,4 +1,33 @@
-## SharePoint Server 2013: PowerShell Script to Produce a CSV Report on Web Analytics Data From Web Application And / Or Site Collection Level ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Produce a CSV Report on Web Analytics Data From Web Application And / Or Site Collection Level.
+
+.DESCRIPTION
+    PowerShell Script to Produce a CSV Report on Web Analytics Data From Web Application And
+    / Or Site Collection Level.
+
+.PARAMETER RootSiteUrl
+    Root Site Url.
+
+.PARAMETER Scope
+    Scope.
+
+.PARAMETER IncludeSites
+    Include Sites.
+
+.PARAMETER IncludeWebs
+    Include Webs.
+
+.PARAMETER OutputFilePath
+    Output File Path.
+
+.EXAMPLE
+    PS C:\> .\SP2013GetWebAnalyticsReport.ps1
+    PowerShell Script to Produce a CSV Report on Web Analytics Data From Web Application And / Or Site Collection Level.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 #------------------------------------------------------------------------------------------- 
 # Name:            ExportRollupAnalyticsData

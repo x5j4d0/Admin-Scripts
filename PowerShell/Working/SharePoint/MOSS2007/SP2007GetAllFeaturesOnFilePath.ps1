@@ -1,4 +1,14 @@
-﻿## SharePoint Server: Using PowerShell to list all Feature IDs and Feature Titles on a File System Path ##
+﻿<#
+.SYNOPSIS
+    Using PowerShell to list all Feature IDs and Feature Titles on a File System Path.
+
+.DESCRIPTION
+    Using PowerShell to list all Feature IDs and Feature Titles on a File System Path.
+
+.EXAMPLE
+    PS C:\> .\SP2007GetAllFeaturesOnFilePath.ps1
+    Using PowerShell to list all Feature IDs and Feature Titles on a File System Path.
+#>
 
 # Specify the directory path/s where your features are that you want to list
 

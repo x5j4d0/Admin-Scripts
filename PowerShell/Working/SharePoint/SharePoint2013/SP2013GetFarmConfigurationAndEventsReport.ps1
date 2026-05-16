@@ -1,4 +1,19 @@
-﻿#==================================================================================================================
+﻿<#
+.SYNOPSIS
+    SP2013 Get Farm Configuration And Events Report.
+
+.DESCRIPTION
+    SP2013 Get Farm Configuration And Events Report.
+
+.PARAMETER install
+    install.
+
+.EXAMPLE
+    PS C:\> .\SP2013GetFarmConfigurationAndEventsReport.ps1
+    SP2013 Get Farm Configuration And Events Report.
+#>
+
+#==================================================================================================================
 #  SharePoint Server: PowerShell Farm Configuration And Event Reporting Script With Email Functionality
 #==================================================================================================================
 #  Filename:        SP2013GetFarmConfigurationAndEventsReport.ps1

@@ -1,6 +1,4 @@
-## SharePoint Server: PowerShell Script to Import Sites (Import-SPWeb) as CMP Object Files with additional CSV Reporting ##
-
-<#
+﻿<#
 .SYNOPSIS
     Take the export from ExportSPSite.PS1 and import it back into
     a Sharepoint site.

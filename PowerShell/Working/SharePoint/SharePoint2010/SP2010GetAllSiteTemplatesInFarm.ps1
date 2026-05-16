@@ -1,6 +1,17 @@
-## SharePoint Server: PowerShell Script To List Details On All Site Templates In A Farm ##
-## Environments: SharePoint Server 2010 / 2013 Farms
-## Resource: http://get-spscripts.com/2011/02/finding-site-template-names-and-ids-in.html
+﻿<#
+.SYNOPSIS
+    PowerShell Script To List Details On All Site Templates In A Farm.
+
+.DESCRIPTION
+    PowerShell Script To List Details On All Site Templates In A Farm.
+
+.EXAMPLE
+    PS C:\> .\SP2010GetAllSiteTemplatesInFarm.ps1
+    PowerShell Script To List Details On All Site Templates In A Farm.
+
+.NOTES
+    Requires:   Microsoft.Sharepoint.PowerShell
+#>
 
 Add-PSSnapin "Microsoft.Sharepoint.PowerShell" -ErrorAction SilentlyContinue
 

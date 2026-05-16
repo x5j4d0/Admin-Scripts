@@ -1,3 +1,24 @@
+﻿<#
+.SYNOPSIS
+    Set SP Theme.
+
+.DESCRIPTION
+    Set SP Theme.
+
+.PARAMETER Url
+    Url.
+
+.PARAMETER Theme
+    Theme.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Set-SPTheme.ps1
+    Set SP Theme.
+#>
+
 ##################################################################################
 #
 #

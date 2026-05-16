@@ -1,8 +1,28 @@
-﻿## MSOnline: PowerShell Script To Assign Service Plan Licenses To Office 365 Users From a CSV File (o365) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Assign Service Plan Licenses To Office 365 Users From a CSV File (o365).
 
-## Resources: http://exitcodezero.wordpress.com/2013/03/14/how-to-assign-selective-office-365-license-options/comment-page-1; http://social.technet.microsoft.com/wiki/contents/articles/11349.office-365-license-users-for-office-365-workloads.aspx
+.DESCRIPTION
+    PowerShell Script To Assign Service Plan Licenses To Office 365 Users From a CSV File
+    (o365).
 
-## Import MSOnline Modules and Connect to the tenant
+.PARAMETER AccountSkuId
+    Change this to match your 'AccountSkuId'.
+
+.PARAMETER UsageLocation
+    Change this to match your usage location (Country Code).
+
+.PARAMETER Users
+    Change this path to the CSV file location.
+
+.EXAMPLE
+    PS C:\> .\AssignMSOnlineUserPlanLicenses.ps1
+    Edit the variables section and run to powerShell Script To Assign Service Plan Licenses To Office 365 Users From a CSV File (o365).
+
+.NOTES
+    Requires:   MSOnline, MSOnlineExtended
+#>
+
 Import-Module MSOnline
 Import-Module MSOnlineExtended
 # launches the prompt for your 'onmicrosoft.com' account credentials

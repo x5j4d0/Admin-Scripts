@@ -1,6 +1,20 @@
-﻿## Active Directory: PowerShell Script to Check when Users Passwords Were Last Set (Changed) With CSV Output ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Check when Users Passwords Were Last Set (Changed) With CSV Output.
 
-## Usage: Provide a numeric value to the 'AddDays' property, and provide a path to the 'Export-CSV' command to match your requirements before running the script
+.DESCRIPTION
+    PowerShell Script to Check when Users Passwords Were Last Set (Changed) With CSV Output.
+
+.PARAMETER When
+    Change the 'AddDays' property to match the number of Days back you want to query.
+
+.EXAMPLE
+    PS C:\> .\GetADUserPasswordLastSetReport.ps1
+    Edit the variables section and run to powerShell Script to Check when Users Passwords Were Last Set (Changed) With CSV Output.
+
+.NOTES
+    Requires:   activedirectory
+#>
 
 Import-Module activedirectory
 $When = ((Get-Date).AddDays(-30)).Date #Change the 'AddDays' property to match the number of Days back you want to query

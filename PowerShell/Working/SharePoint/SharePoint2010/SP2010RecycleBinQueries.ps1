@@ -1,9 +1,20 @@
-﻿## SharePoint Server 2010: PowerShell Functions To Report On Site Collection And Web Application Recycle Bins ##
-## Usage Examples: One function for Web Application level, and another for Site Collection level
-## Get-SPWebApplicationRecyleBinItemsReport -url "{web application url}" | ft *
-## Get-SPWebApplicationRecyleBinItemsReport -url "{web application url}" | Where {$_.Size -gt 2000} | ft *
-## Get-SPSiteCollectionRecycleBinItemsReport -siteCollectionUrl "{site collection url}" | ft *
-## Get-SPSiteCollectionRecycleBinItemsReport -siteCollectionUrl "{site collection url}" | Where {$_.Size -gt 2000} | ft *
+﻿<#
+.SYNOPSIS
+    PowerShell Functions To Report On Site Collection And Web Application Recycle Bins.
+
+.DESCRIPTION
+    PowerShell Functions To Report On Site Collection And Web Application Recycle Bins.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\SP2010RecycleBinQueries.ps1
+    PowerShell Functions To Report On Site Collection And Web Application Recycle Bins.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 Add-PSSnapin Microsoft.SharePoint.PowerShell -ea SilentlyContinue  
  

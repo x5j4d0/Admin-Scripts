@@ -1,21 +1,22 @@
-﻿## Exchange Online: PowerShell Script to Get a List of All Distribution Groups and Members in an Exchange Online (o365) Tenant into a CSV Report ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Get a List of All Distribution Groups and Members in an Exchange Online (o365) Tenant into a CSV Report.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Get a List of All Distribution Groups and Members in an Exchange
+    Online (o365) Tenant into a CSV Report.
 
-Overview: PowerShell Script to Get a List of All Distribution Groups and their Members in an Exchange Online (o365) Tenant, with CSV file output functionality
+.PARAMETER OutputFile
+    The CSV Output file that is created, change for your purposes.
 
-Resource: https://www.cogmotive.com/blog/powershell/list-all-users-and-their-distribution-group-membership-in-office-365
+.EXAMPLE
+    PS C:\> .\ExchangeOnlineGetDistributionGroupMembers.ps1
+    Edit the variables section and run to powerShell Script to Get a List of All Distribution Groups and Members in an Exchange Online (o365) Tenant into a CSV Report.
 
-Usage: Edit the following variable and run the script like the usage example below: '$OutputFile'
-
-Usage Example:
-
-.\ExchangeOnlineGetDistributionGroupMembers.ps1 -Office365Username "admin@xxxxxx.onmicrosoft.com" -Office365Password "Password123"
-
-
+.NOTES
+    Resources:  https://www.cogmotive.com/blog/powershell/list-all-users-and-their-distribution-group-membership-in-office-365
 #>
 
-  
 #Accept input parameters  
 Param(  
     [Parameter(Position=0, Mandatory=$false, ValueFromPipeline=$true)]  

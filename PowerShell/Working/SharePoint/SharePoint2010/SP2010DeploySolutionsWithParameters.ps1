@@ -1,6 +1,18 @@
-﻿## SharePoint Server 2010: PowerShell Script to Deploy Solutions with Parameters ##
-## Resource: http://blog.falchionconsulting.com/index.php/2011/04/deploying-sharepoint-2010-solution-package-using-powershell-revisited
-## Example Usage: .\SP2010DeploySolutionsWithParameters.ps1; Deploy-SPSolutions -Identity "C:\BoxBuild\SharePointSolutions"
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Deploy Solutions with Parameters.
+
+.DESCRIPTION
+    PowerShell Script to Deploy Solutions with Parameters.
+
+.EXAMPLE
+    PS C:\> .\SP2010DeploySolutionsWithParameters.ps1
+    PowerShell Script to Deploy Solutions with Parameters.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+    Resources:  http://example.com/</WebApplication>; http://demo
+#>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue
 

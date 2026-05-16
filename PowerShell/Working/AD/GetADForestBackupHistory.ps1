@@ -1,15 +1,20 @@
-﻿## Active Directory: PowerShell Script to check Active Directory Backup Dates on All Domains in a Forest ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to check Active Directory Backup Dates on All Domains in a Forest.
 
-<#
+.DESCRIPTION
+    PowerShell Script to check Active Directory Backup Dates on All Domains in a Forest.
 
-Overview: PowerShell Script to check Active Directory Backup Dates on All Domains in a Forest. Returns the Domain; Domain Controller/s; and Partitions that were backed up
+.PARAMETER backup_age_threshold
+    Change this threshold days value to match your requirements.
 
-Usage: Edit the '$backup_age_threshold' variable to match your requirements and run the query
+.EXAMPLE
+    PS C:\> .\GetADForestBackupHistory.ps1
+    Edit the variables section and run to powerShell Script to check Active Directory Backup Dates on All Domains in a Forest.
 
-Requires: Active Directory PowerShell Module
-
-Resource: https://www.shellandco.net/active-directory-backup-check
-
+.NOTES
+    Requires:   ActiveDirectory
+    Resources:  https://www.shellandco.net/active-directory-backup-check
 #>
 
 Import-Module "ActiveDirectory"

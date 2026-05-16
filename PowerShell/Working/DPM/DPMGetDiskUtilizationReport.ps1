@@ -1,17 +1,18 @@
-﻿## DPM Server: Get Protection Groups Disk Utilization and Write this to Email / HTML Report ##
- 
- <#
- 
- Overview: This script finds Protection Groups Replica Sizes and Recovery Point Sizes to produce a Disk Utilization Email / HTML report
- 
- Usage: Provide parameters to match your environment like the 'usage example' below and run the script. The report is written to the same directory the script is run from
+﻿<#
+.SYNOPSIS
+    Get Protection Groups Disk Utilization and Write this to Email / HTML Report.
 
- Usage Example: .\DPMGetDiskUtilizationReport.ps1 -DPMServer "YourDPMServerName" -SendEmailTo "YourToAddress@YourDomain.com" -SMTPServer "YourSMTPServerName.com"
- 
- Resource: https://geekeefy.wordpress.com/2015/09/22/powershell-get-disk-utilization-of-dpm-2010-server
- 
- #>
- 
+.DESCRIPTION
+    Get Protection Groups Disk Utilization and Write this to Email / HTML Report.
+
+.EXAMPLE
+    PS C:\> .\DPMGetDiskUtilizationReport.ps1
+    Get Protection Groups Disk Utilization and Write this to Email / HTML Report.
+
+.NOTES
+    Requires:   DataProtectionManager
+    Resources:  https://geekeefy.wordpress.com/2015/09/22/powershell-get-disk-utilization-of-dpm-2010-server
+#>
 
 # Parameter Definition
 Param

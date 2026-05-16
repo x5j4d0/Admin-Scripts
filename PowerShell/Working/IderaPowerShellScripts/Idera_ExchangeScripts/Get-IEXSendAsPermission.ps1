@@ -1,21 +1,18 @@
-## =====================================================================
-## Title       : Get-IEXSendAsPermission
-## Description : Retrieve the users that have "Send As" permission.
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : Get-IEXSendAsPermission [[-Server] <String>] [-Inherited]
-##  
-## Output      : Microsoft.Exchange.Management.RecipientTasks.ADAcePresentationObject
-## Usage       :
-##               1. Retrieve the users that have "Send As" permission.
-##               Get-IEXSendAsPermission -Server Exch1 | Select-Object Identity,User
-##           
-## Notes       :
-## Tag         : Exchange 2007, mailbox, permission, get
-## Change log  :
-## =====================================================================
-  
- 
+﻿<#
+.SYNOPSIS
+    Retrieve Send As Permission.
+
+.DESCRIPTION
+    Retrieve Send As Permission.
+
+.PARAMETER Server
+    Server.
+
+.EXAMPLE
+    PS C:\> .\Get-IEXSendAsPermission.ps1
+
+#>
+
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
  
 function Get-IEXSendAsPermission

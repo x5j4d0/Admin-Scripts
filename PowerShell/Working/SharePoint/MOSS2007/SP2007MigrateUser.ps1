@@ -1,4 +1,16 @@
-﻿# FileName: spMigrateUser.ps1
+﻿<#
+.SYNOPSIS
+    SP2007 Migrate User.
+
+.DESCRIPTION
+    SP2007 Migrate User.
+
+.EXAMPLE
+    PS C:\> .\SP2007MigrateUser.ps1
+    SP2007 Migrate User.
+#>
+
+# FileName: spMigrateUser.ps1
 # Name: spMigrateUser.ps1
 # Version: 1.0
 # Author: Lognoul Marc (lognoulm@hotmail.com)

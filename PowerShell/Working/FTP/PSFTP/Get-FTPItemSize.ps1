@@ -1,4 +1,19 @@
-﻿Function Get-FTPItemSize
+﻿<#
+.SYNOPSIS
+    Gets the item size.
+
+.DESCRIPTION
+    The Get-FTPItemSize cmdlet gets the specific item size.
+
+.EXAMPLE
+    PS C:\> .\Get-FTPItemSize.ps1
+    Gets the item size.
+
+.NOTES
+    Resources:  http://commandlinegeeks.com/
+#>
+
+Function Get-FTPItemSize
 {
     <#
 	.SYNOPSIS

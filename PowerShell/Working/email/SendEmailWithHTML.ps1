@@ -1,4 +1,26 @@
-﻿##PowerShell: Script To Send an Email with HTML Formatting In The Message Body
+﻿<#
+.SYNOPSIS
+    Script To Send an Email with HTML Formatting In The Message Body.
+
+.DESCRIPTION
+    Script To Send an Email with HTML Formatting In The Message Body.
+
+.PARAMETER smtpServer
+    Add your SMTP Server details here.
+
+.PARAMETER smtpFrom
+    Change the from address here.
+
+.PARAMETER smtpTo
+    Change the to address here. Add additional recipients with a ',' after each other.
+
+.PARAMETER messageSubject
+    Change the subject here.
+
+.EXAMPLE
+    PS C:\> .\SendEmailWithHTML.ps1
+    Edit the variables section and run to script To Send an Email with HTML Formatting In The Message Body.
+#>
 
 $getdate = get-date  -Format D
 

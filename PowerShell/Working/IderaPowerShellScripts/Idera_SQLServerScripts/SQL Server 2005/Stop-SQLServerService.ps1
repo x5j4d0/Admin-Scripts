@@ -1,18 +1,24 @@
-## =====================================================================
-## Title       : Stop-SQLServerService
-## Description : Stop SQL Server service for default instance
-## Author      : Idera
-## Date        : 6/27/2008
-## Input       : -service <sqlserver service (MSSQLServer, MSSQL$Instance)
-## 				  -verbose 
-## 				  -debug	
-## Output      : 
-## Usage			: PS> .\Stop-SQLServerService -service MSSQLServer -verbose -debug
-## Notes			: service
-## Tag			:
-## Change log  :
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Stop SQL Server Service.
+
+.DESCRIPTION
+    Stop SQL Server Service.
+
+.PARAMETER service
+    service.
+
+.PARAMETER verbose
+    verbose.
+
+.PARAMETER debug
+    debug.
+
+.EXAMPLE
+    PS C:\> .\Stop-SQLServerService.ps1
+
+#>
+
 param
 (
 	[string]$service = "MSSQLServer",

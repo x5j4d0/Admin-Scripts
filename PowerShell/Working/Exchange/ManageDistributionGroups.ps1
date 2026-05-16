@@ -1,43 +1,16 @@
-﻿## Exchange Server: PowerShell Script to Connect to an Exchange Server to View and Manage Distribution Lists ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Connect to an Exchange Server to View and Manage Distribution Lists.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Connect to an Exchange Server to View and Manage Distribution Lists.
 
-Overview: This script allows users to do some simple distribution list management tasks via PowerShell. It is intended to be used by users with mailboxes that have been migrated to Office 365, but use distribution lists that are created on-premises and are synced via DirSync.
+.EXAMPLE
+    PS C:\> .\ManageDistributionGroups.ps1
+    PowerShell Script to Connect to an Exchange Server to View and Manage Distribution Lists.
 
-Usage: When prompted; provide the name of the Exchange Server (on-premises) you want to connect to manage DLs
-
-Resource: https://gallery.technet.microsoft.com/Manage-DistributionLists-7a99268e
-
-ManageDistributionLists
-v1.7
-1/2/2015
-By Nathan O'Bryan
-nathan@mcsmlab.com
-http://www.mcsmlab.com
-
-THIS CODE AND ANY ASSOCIATED INFORMATION ARE PROVIDED “AS IS” WITHOUT
-WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS
-FOR A PARTICULAR PURPOSE. THE ENTIRE RISK OF USE, INABILITY TO USE, OR 
-RESULTS FROM THE USE OF THIS CODE REMAINS WITH THE USER.
-
-This script allows users to do some simple distribution list management
-tasks via PowerShell.It is intended to be used by users with mailboxes
-that have been migrated to Office 365, but use distribution lists that
-are created on-premises and are synced via DirSync.
-    
-This script gives users menu driven options for managing distribution
-lists.
-
-This script runs inside regular a regular PowerShell 2.0 or greater session.
-
-Users will require RBAC rights to distribution lists management cmdlets.
-
-Change Log
-1.5 - Added choice to preserve results from list of DLs or DL members on
-screen in a notepad windows.
-1.7 - General improvemets in PowerShell scripting. Added help and error handling.
-
+.NOTES
+    Resources:  https://gallery.technet.microsoft.com/Manage-DistributionLists-7a99268e; http://www.mcsmlab.com
 #>
 
 <#

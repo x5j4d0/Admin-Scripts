@@ -1,15 +1,17 @@
-## =====================================================================
-## Title       : Export-SPSite
-## Description : Exports a Site to a Backup File
-## Author      : Idera
-## Date        : 24/11/2009
-## Input       : Add-SPList [[-url] <String>] [[-File] <String>] [[-Location] <String>]
-## Output      : 
-## Usage       : Export-SPSite -url http://moss -file Backup.bak -Location C:\Backup\
-## Notes       : Adapted From Niklas Goude Script
-## Tag         : Site, Sharepoint, Powershell
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Export Site.
+
+.DESCRIPTION
+    Export Site.
+
+.PARAMETER url
+    url.
+
+.EXAMPLE
+    PS C:\> .\Export-SPSite.ps1
+
+#>
 
 param (
 

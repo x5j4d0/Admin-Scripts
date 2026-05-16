@@ -1,6 +1,15 @@
-﻿## Exchange Online: PowerShell Script to List all Users who have 'Full Access' and 'Send As' Rights on other Users Mail Boxes (o365)  ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to List all Users who have 'Full Access' and 'Send As' Rights on other Users Mail Boxes (o365).
 
-## Resource: http://www.ehloworld.com/277
+.DESCRIPTION
+    PowerShell Script to List all Users who have 'Full Access' and 'Send As' Rights on other
+    Users Mail Boxes (o365).
+
+.EXAMPLE
+    PS C:\> .\ExchangeOnlineGetMailBoxPermissions.ps1
+    PowerShell Script to List all Users who have 'Full Access' and 'Send As' Rights on other Users Mail Boxes (o365).
+#>
 
 $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $LiveCred -Authentication Basic –AllowRedirection
 Import-PSSession $Session

@@ -1,4 +1,14 @@
-﻿## PowerShell: Script to Query Active Directory to Return All Users Last Logon Date and Time ##
+﻿<#
+.SYNOPSIS
+    Script to Query Active Directory to Return All Users Last Logon Date and Time.
+
+.DESCRIPTION
+    Script to Query Active Directory to Return All Users Last Logon Date and Time.
+
+.EXAMPLE
+    PS C:\> .\GetUsersLastLogonDateTime.ps1
+    Script to Query Active Directory to Return All Users Last Logon Date and Time.
+#>
 
 $SearchAD = New-Object DirectoryServices.DirectorySearcher([adsi]"")
 

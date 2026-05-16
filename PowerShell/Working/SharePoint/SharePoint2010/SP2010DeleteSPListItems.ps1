@@ -1,3 +1,18 @@
+﻿<#
+.SYNOPSIS
+    SP2010 Delete SP List Items.
+
+.DESCRIPTION
+    SP2010 Delete SP List Items.
+
+.EXAMPLE
+    PS C:\> .\SP2010DeleteSPListItems.ps1
+    SP2010 Delete SP List Items.
+
+.NOTES
+    Resources:  http://sharepointpsscripts.codeplex.com; http://sharepointpsscripts.codeplex.com/releases/view/21702
+#>
+
 <# SharePoint Server: PowerShell Script To Clear All Items From A List ##
 
 Overview: PowerShell script that deletes all items from a list library. The list will remain, while all the items

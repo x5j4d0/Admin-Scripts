@@ -1,13 +1,22 @@
-﻿## SharePoint Server: PowerShell Script To Update User Display Names (DisplayName) From AD ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To Update User Display Names (DisplayName) From AD.
 
-<#
+.DESCRIPTION
+    PowerShell Script To Update User Display Names (DisplayName) From AD.
 
-Overview: The script below is designed to resolve the common issue in SharePoint Server where the user name (DisplayName) property might show as 'DOMAIN\UserName' or 'UserName' instead of the full Display Name
+.PARAMETER SPWeb
+    Change this to match your environment.
 
-Environments: SharePoint Server 2010 / 2013 Farms
+.PARAMETER Donain
+    Change this domain syntax to match your DC properties.
 
-Usage: Edit the variables below to match your environment and run the script. Check your log files generated prior to against the ones generated after the script has run to ensure the affected accounts have been updated
+.EXAMPLE
+    PS C:\> .\SP2010UpdateUserDisplayNameFromADSync.ps1
+    Edit the variables section and run to powerShell Script To Update User Display Names (DisplayName) From AD.
 
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
 #>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue

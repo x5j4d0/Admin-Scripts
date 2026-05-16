@@ -1,3 +1,27 @@
+﻿<#
+.SYNOPSIS
+    SQL Server Inventory Reports With Docs And Scripts.
+
+.DESCRIPTION
+    SQL Server Inventory Reports With Docs And Scripts.
+
+.PARAMETER title
+    title.
+
+.PARAMETER heading
+    heading.
+
+.PARAMETER body
+    body.
+
+.PARAMETER filePath
+    file Path.
+
+.EXAMPLE
+    PS C:\> .\SQLServerInventoryReportsWithDocsAndScripts.ps1
+    SQL Server Inventory Reports With Docs And Scripts.
+#>
+
 ################################################################################################################################
 #
 # Script Name : SQLServerInventoryReportsWithDocsAndScripts

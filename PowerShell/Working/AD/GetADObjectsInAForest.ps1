@@ -1,15 +1,17 @@
-﻿## Active Directory: PowerShell Script to Search for Forest Wide Objects ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Search for Forest Wide Objects.
 
-<#
+.DESCRIPTION
+    PowerShell Script to Search for Forest Wide Objects.
 
-Overview: PowerShell Script to search for objects forest wide. The search is based on a LDAP filter
+.EXAMPLE
+    PS C:\> .\GetADObjectsInAForest.ps1
+    PowerShell Script to Search for Forest Wide Objects.
 
-Usage: Edit the parameters under the object search filter under '$objSearcher.Filter' and run the query
-
-Requires: Active Directory PowerShell Module
-
-Resource: https://www.shellandco.net/search-an-object-forest-wide
-
+.NOTES
+    Requires:   ActiveDirectory
+    Resources:  https://www.shellandco.net/search-an-object-forest-wide
 #>
 
 Import-Module "ActiveDirectory"

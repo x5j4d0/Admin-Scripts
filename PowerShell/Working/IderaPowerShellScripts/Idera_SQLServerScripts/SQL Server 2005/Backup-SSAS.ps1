@@ -1,23 +1,18 @@
-## =====================================================================
-## Title       : Backup-SSAS
-## Description : Backup all Analysis Server databases
-## Author      : Idera
-## Date        : 6/27/2008
-## Input       : -serverInstance <server\inst>
-##               -backupDestination <drive:\x\y | \\unc\path>
-##               -retentionDays <n>
-##               -logDir <drive:\x\y | \\unc\path>
-##               -verbose 
-##               -debug	
-## Output      : write backup files (*.abf)
-## 				  create log file of activity
-## Usage			: PS> .\Backup-SSAS -serverInstance MyServer -BackupDestination C:\SSASbackup 
-##                                 -RetentionDays 2 -LogDir C:\SSASLog -verbose -debug
-## Notes			: Original script attributed to Ron Klimaszewski
-## Tag			: Microsoft Analysis Server, SSAS, backup
-## Change Log  :
-## =====================================================================
- 
+﻿<#
+.SYNOPSIS
+    Backup SSAS.
+
+.DESCRIPTION
+    Backup SSAS.
+
+.PARAMETER ServerInstance
+    Server Instance.
+
+.EXAMPLE
+    PS C:\> .\Backup-SSAS.ps1
+
+#>
+
 param 
 ( 
 	[string]$ServerInstance = "(local)", 

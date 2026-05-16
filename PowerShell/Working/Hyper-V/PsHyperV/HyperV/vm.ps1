@@ -1,4 +1,17 @@
+﻿<#
+.SYNOPSIS
+    Vm.
 
+.DESCRIPTION
+    Vm.
+
+.PARAMETER Server
+    May need to look for VM(s) on Multiple servers.
+
+.EXAMPLE
+    PS C:\> .\vm.ps1
+    Edit the variables section and run to vm.
+#>
 
 Function Export-VM
 {# .ExternalHelp  MAML-VM.XML

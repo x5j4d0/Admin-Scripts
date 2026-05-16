@@ -1,20 +1,18 @@
-## =====================================================================
-## Title       : Get-IEXMailboxCountReport
-## Description : Get mailbox count per mailbox database
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : Get-IEXMailboxCountReport [[-Server] <String>]
-##  
-## Output      : Microsoft.PowerShell.Commands.GroupInfo
-## Usage       : 
-##               1. Get mailbox count per mailbox database on server ExchangeServerName 
-##               Get-IEXMailboxCountReport -Server ExchangeServerName
-##           
-## Notes       :
-## Tag         : Exchange 2007, mailbox, get
-## Change log  :
-## ===================================================================== 
-  
+﻿<#
+.SYNOPSIS
+    Retrieve Mailbox Count Report.
+
+.DESCRIPTION
+    Retrieve Mailbox Count Report.
+
+.PARAMETER Server
+    Server.
+
+.EXAMPLE
+    PS C:\> .\Get-IEXMailboxCountReport.ps1
+
+#>
+
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
    
 

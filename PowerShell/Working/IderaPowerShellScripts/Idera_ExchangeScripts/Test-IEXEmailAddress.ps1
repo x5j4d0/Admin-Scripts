@@ -1,19 +1,18 @@
-## =====================================================================
-## Title       : Test-IEXEmailAddress
-## Description : Check the validity of an email address. Returns $true for all valid email addresses, otherwise $false.
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : Test-IEXEmailAddress [[-EmailAddress] <String>]
-##  
-## Output      : System.Boolean 
-## Usage       : 1. Test email address user@domain.local
-##               Test-EmailAddress -EmailAddress user@domain.local
-## Notes       :
-## Tag         : Exchange 2007, email address, validity, .NET Framework, test
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Test Email Address.
 
- 
+.DESCRIPTION
+    Test Email Address.
+
+.PARAMETER EmailAddress
+    Email Address.
+
+.EXAMPLE
+    PS C:\> .\Test-IEXEmailAddress.ps1
+
+#>
+
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
 
 

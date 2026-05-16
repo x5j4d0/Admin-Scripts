@@ -1,22 +1,14 @@
-## =====================================================================
-## Title       : Get-IEXAvailableSpace
-## Description : Retrieve available space in the database(s) on a mailbox server
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       : No Input
-##  
-## Output      : System.Management.Automation.PSCustomObject
-## Usage       :
-##              1. Retrieve available space and sort the result
-##              Get-MailboxServer | Get-IEXAvailableSpace | Sort-Object 'Free(MB)' -Descending 
-##
-##              2. Retrieve available space on server Server1 and format result as a table
-##              Get-MailboxServer Server1 | Get-IEXAvailableSpace | Format-Table * -Autosize 
-##           
-## Notes       :
-## Tag         : Exchange 2007, mailbox, database, space, get
-## Change log  :
-## ===================================================================== 
+﻿<#
+.SYNOPSIS
+    Retrieve Available Space.
+
+.DESCRIPTION
+    Retrieve Available Space.
+
+.EXAMPLE
+    PS C:\> .\Get-IEXAvailableSpace.ps1
+
+#>
 
 #requires -pssnapin Microsoft.Exchange.Management.PowerShell.Admin 
 

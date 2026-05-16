@@ -1,24 +1,18 @@
-## =====================================================================
-## Title       : New-IEXMailboxFromCsv
-## Description : Create mailbox using data from CSV file.
-## Author      : Idera
-## Date        : 09/15/2009
-## Input       :  New-IEXMailboxFromCsv [[-CsvFilePath] <String>] [-ResetPasswordOnNextLogon] [-WhatIf] [-Confirm]
-##   
-## Output      : Microsoft.Exchange.Data.Directory.Management.Mailbox
-## Usage       :
-##               1. Check what would happen if you try to create mailboxes using c:\users.csv as input file.
-##               New-IEXMailboxFromCsv -CsvFilePath c:\users.csv -WhatIf
-##
-##               2. Create mailboxes using data from c:\users.csv, set "User must change password at next log on", and ask for confirmation.
-##               New-IEXMailboxFromCsv -CsvFilePath c:\users.csv -ResetPasswordOnNextLogon -Confirm            
-##                             
-## Notes       :
-## Tag         : Exchange 2007, mailbox, create
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Create a new Mailbox From Csv.
 
-## sample CSV file
+.DESCRIPTION
+    Create a new Mailbox From Csv.
+
+.PARAMETER CsvFilePath
+    Csv File Path.
+
+.EXAMPLE
+    PS C:\> .\New-IEXMailboxFromCsv.ps1
+
+#>
+
 # Name,SamAccountName,Password,FirstName,LastName,Database,OrganizationalUnit
 # Test1,Test1,P@ssw0rd,Test,User1,Mailbox Database,"domain.com/users"
 # Test2,Test2,P@ssw0rd,Test,User2,Mailbox Database,

@@ -1,6 +1,17 @@
-﻿## SharePoint Server: PowerShell Script to Set the Path for Diagnostic Logs (ULS) and Usage and Health Data ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Set the Path for Diagnostic Logs (ULS) and Usage and Health Data.
 
-## Environments: SharePoint Server 201 / 2013 Farms
+.DESCRIPTION
+    PowerShell Script to Set the Path for Diagnostic Logs (ULS) and Usage and Health Data.
+
+.EXAMPLE
+    PS C:\> .\SP2010SetLoggingLocationPaths.ps1
+    PowerShell Script to Set the Path for Diagnostic Logs (ULS) and Usage and Health Data.
+
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
+#>
 
 Add-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue
 

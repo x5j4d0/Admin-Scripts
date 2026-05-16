@@ -1,28 +1,17 @@
-## =====================================================================
-## Title       : New-IADUser
-## Description : Create a new user object in Active Directory.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : New-IADUser [[-Name] <String>] [[-sAMAccountName] <String>] [[-ParentContainer] <String>] [[-Password] <String>]             
-##                     
-## Output      : System.DirectoryServices.DirectoryEntry
-## Usage       :
-##               1. Create new user in the Test OU and enable the account
-##               New-IADUser -Name 'Idera User' -sAMAccountname 'IUser' -ParentContainer 'OU=TEST,DC=Domain,DC=com' -Password 'P@ssw0rd' -EnableAccount
-##
-##               2. Create new user in the Test OU and enable the account. The user will have to change password at next logon
-##               New-IADUser -Name 'Idera User' -sAMAccountname 'IUser' -ParentContainer 'OU=TEST,DC=Domain,DC=com' -Password 'P@ssw0rd' -EnableAccount -UserMustChangePassword
-##
-##               3.Create new user in the Test OU and enable the account. The user password will not expire.
-##               New-IADUser -Name 'Idera User' -sAMAccountname 'IUser' -ParentContainer 'OU=TEST,DC=Domain,DC=com' -Password 'P@ssw0rd' -EnableAccount -PasswordNeverExpires
-##
-##               4. Create disabled users from text file in the Test OU (spaces are not allowed in sAMAccountName )
-##               Get-Content users.txt | foreach { New-IADUser -Name $_ -sAMAccountName ($_ -replace " ") -ParentContainer 'OU=TEST,DC=Domain,DC=com' -Password 'P@ssw0rd'} 
-##            
-## Notes       :
-## Tag         : user, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Create a new Active Directory user objects using ADSI..
+
+.DESCRIPTION
+    Create a new Active Directory user objects using ADSI..
+
+.PARAMETER Name
+    Name.
+
+.EXAMPLE
+    PS C:\> .\New-IADUser.ps1
+    Run the script to perform the described operation.
+#>
 
 function New-IADUser {  
 

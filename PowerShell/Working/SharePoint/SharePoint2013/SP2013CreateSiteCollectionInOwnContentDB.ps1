@@ -1,15 +1,16 @@
-﻿## SharePoint Server: PowerShell Script to provision a new Site Collection in it's own Content Database ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to provision a new Site Collection in it's own Content Database.
 
-<#
+.DESCRIPTION
+    PowerShell Script to provision a new Site Collection in it's own Content Database.
 
-Environments: SharePoint Server 2010 / 2013 Farms
+.EXAMPLE
+    PS C:\> .\SP2013CreateSiteCollectionInOwnContentDB.ps1
+    PowerShell Script to provision a new Site Collection in it's own Content Database.
 
-Usage: After provisioning the Site Collection; when you go to the $site URL you will need to choose a site template
-
-The new content database will be visible in Central Admin under: Central Administration -- Manage Content Databases
-
-Note: The script will set the Maximum Sites count on the new content database to 1 (-MaxSiteCount). Change this if needed
-
+.NOTES
+    Requires:   Microsoft.SharePoint.PowerShell
 #>
 
 Add-PSSnapin Microsoft.SharePoint.PowerShell –ErrorAction SilentlyContinue

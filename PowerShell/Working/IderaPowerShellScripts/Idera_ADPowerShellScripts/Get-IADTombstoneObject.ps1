@@ -1,18 +1,14 @@
-## =====================================================================
-## Title       : Get-IADTombstoneObject
-## Description : Retrieve all deleted objects in Active Directory.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : No input                
-##                     
-## Output      : System.DirectoryServices.SearchResult
-## Usage       : Get-IADTombstoneObject
-##            
-## Notes       :
-## Tag         : tombstone, deleted, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Retrieve Active Directory tombstone object objects using ADSI..
 
+.DESCRIPTION
+    Retrieve Active Directory tombstone object objects using ADSI..
+
+.EXAMPLE
+    PS C:\> .\Get-IADTombstoneObject.ps1
+    Run the script to perform the described operation.
+#>
 
 function Get-IADTombstoneObject 
  {

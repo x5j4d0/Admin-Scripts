@@ -1,3 +1,36 @@
+﻿<#
+.SYNOPSIS
+    Add SP User.
+
+.DESCRIPTION
+    Add SP User.
+
+.PARAMETER url
+    url.
+
+.PARAMETER Group
+    Group.
+
+.PARAMETER Domain
+    Domain.
+
+.PARAMETER sAMAccountName
+    s AM Account Name.
+
+.PARAMETER mail
+    mail.
+
+.PARAMETER FullName
+    Full Name.
+
+.PARAMETER help
+    help.
+
+.EXAMPLE
+    PS C:\> .\Add-SPUser.ps1
+    Add SP User.
+#>
+
 ##################################################################################
 #
 #

@@ -1,9 +1,20 @@
-﻿## SharePoint Server: PowerShell Script To List All InfoPath Form Template Libraries In A Web Application ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script To List All InfoPath Form Template Libraries In A Web Application.
 
-## Overview: PowerShell script checks the Object Model for all site collections in a web application and reports on XML form template document libraries, along with work flows associated with these
-## Environments: MOSS 2007, and SharePoint Server 2010 / 2013 Farms
-## Usage: Edit the following 2 variables to suit your environment before running the script '$WebAppURL', '$ReportPath'
-## Resource: http://www.sharepointdiary.com/2012/09/find-all-infopath-form-libraries.html
+.DESCRIPTION
+    PowerShell Script To List All InfoPath Form Template Libraries In A Web Application.
+
+.PARAMETER WebAppURL
+    Edit this URL to suit your environment.
+
+.PARAMETER ReportPath
+    Edit this path to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\SP2013EnumFormTemplateLibraries.ps1
+    Edit the variables section and run to powerShell Script To List All InfoPath Form Template Libraries In A Web Application.
+#>
 
 [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint") > $null
  

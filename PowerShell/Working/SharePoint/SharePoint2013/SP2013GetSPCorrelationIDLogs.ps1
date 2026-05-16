@@ -1,7 +1,21 @@
-## SharePoint Server: PowerShell Script to Check ULS logs and Merge the Correlation ID Events into One Log File ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Check ULS logs and Merge the Correlation ID Events into One Log File.
 
-## Environments: SharePoint Server 2013 Farms
-## Resource: http://habaneroconsulting.com/insights/An-Even-Better-Way-to-Get-the-Real-SharePoint-Error#.VG84ATTF98F
+.DESCRIPTION
+    PowerShell Script to Check ULS logs and Merge the Correlation ID Events into One Log
+    File.
+
+.PARAMETER CorrelationID
+    Provide your Correlation ID GUID here.
+
+.PARAMETER LogFile
+    Change this log path to suit your environment.
+
+.EXAMPLE
+    PS C:\> .\SP2013GetSPCorrelationIDLogs.ps1
+    Edit the variables section and run to powerShell Script to Check ULS logs and Merge the Correlation ID Events into One Log File.
+#>
 
 Add-PSSnapIn Microsoft.SharePoint.PowerShell
 

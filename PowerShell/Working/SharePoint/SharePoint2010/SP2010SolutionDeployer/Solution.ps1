@@ -1,4 +1,16 @@
-﻿#############################################################################################################################
+﻿<#
+.SYNOPSIS
+    SharePoint 2010 Solution packager deployer. - For use with NON Sandboxed solutions.
+
+.DESCRIPTION
+    SharePoint 2010 Solution packager deployer. - For use with NON Sandboxed solutions.
+
+.EXAMPLE
+    PS C:\> .\Solution.ps1
+    SharePoint 2010 Solution packager deployer. - For use with NON Sandboxed solutions.
+#>
+
+#############################################################################################################################
 #	Author:					Aaron Saikovski - Aaron.Saikovski@microsoft.com  												#
 #	Version:				1.1																					 			#
 #	Description:			SharePoint 2010 Solution deployer 																#

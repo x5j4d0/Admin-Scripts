@@ -1,26 +1,20 @@
-## =====================================================================
-## Title       : Move-IADObject
-## Description : Move one or more objects to a different container in Active Directory.
-## Author      : Idera
-## Date        : 8/11/2009
-## Input       : Move-IADObject [[-ObjectDN] <Object[]>] [[-NewLocationDN] <String>]                
-##                     
-## Output      : No output
-## Usage       : 
-##               1. Get all users which name starts with Test and move them to the Test OU 
-##               Get-IADUser test* | Move-IADObject -NewLocationDN "OU=TEST,DC=domain,DC=com" 
-## 
-##               2. Move users Test1 and Test2 to NewTEST OU 
-##               Move-IADObject -ObjectDN "CN=Test1,OU=TEST,DC=domain,DC=com","CN=Test2,OU=TEST,DC=domain,DC=com" -NewLocationDN "OU=NewTEST,DC=domain,DC=com"
-##            
-## Notes       :
-## Tag         : user, computer, group, activedirectory
-## Change log  :
-## =====================================================================
+﻿<#
+.SYNOPSIS
+    Move Active Directory object objects using ADSI..
 
+.DESCRIPTION
+    Move Active Directory object objects using ADSI..
 
-  
+.PARAMETER ObjectDN
+    Object DN.
 
+.PARAMETER NewLocationDN
+    New Location DN.
+
+.EXAMPLE
+    PS C:\> .\Move-IADObject.ps1
+    Run the script to perform the described operation.
+#>
 
 function Move-IADObject { 
 

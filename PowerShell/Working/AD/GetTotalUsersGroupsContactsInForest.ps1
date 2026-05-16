@@ -1,4 +1,16 @@
-﻿## Active Directory: PowerShell Script to Search Domains in a Forest to Calculate the Users, Groups, and Contacts (with CSV Output) ##
+﻿<#
+.SYNOPSIS
+    PowerShell Script to Search Domains in a Forest to Calculate the Users, Groups, and Contacts (with CSV Output).
+
+.DESCRIPTION
+    Search Active Directory and calculate the total number of users, groups, and contacts for
+    each domain in the forest. Object type totals are written to the PowerShell console and
+    saved to a CSV file.
+
+.EXAMPLE
+    PS C:\> .\GetTotalUsersGroupsContactsInForest.ps1
+    PowerShell Script to Search Domains in a Forest to Calculate the Users, Groups, and Contacts (with CSV Output).
+#>
 
 #------------------------------------------------------------------------------
 #
