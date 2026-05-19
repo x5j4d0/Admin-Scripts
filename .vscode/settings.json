@@ -1,4 +1,5 @@
 {
+    "snyk.features.openSourceEnabled": false,
     "snyk.advanced.autoSelectOrganization": true,
     "snyk.advanced.organization": "c2d6db9b-d446-4c44-bfaf-80f4668e02b6"
 }
